@@ -1,0 +1,38 @@
+// =============================================================================
+// Ordered list
+// 
+// =============================================================================
+
+@list-number-color: 	@mid-blue;
+@list-item-v-spacing: 	0.25em;
+
+.generatedcontent {
+    ol {
+        list-style-type:none;
+        padding:0;
+        counter-reset: item;
+        li { 
+            position: relative;
+            padding-left: 1.25em;
+            margin-top: @list-item-v-spacing;
+            &:first-child {margin-top: 0;}
+            &:before {
+                content: counter(item) ". ";
+                counter-increment: item;
+                color: @list-number-color;
+                display:inline-block;
+                text-align: right;
+                padding-right:0.25em;
+                position:absolute;
+                top:0;
+                left:0;
+            }
+        }
+        ol, ul {
+            margin:0 0 0 2.5em;
+            li {
+                &:first-child {margin-top: @list-item-v-spacing;}
+            }
+        }
+    }
+}

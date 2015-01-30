@@ -1,0 +1,422 @@
+/* TODO:  THIS CANT STAY HERE. MOVE IT ELSEWHERE IN THE FRAMEWORK BEFORE WE GIVE IT TO ANY DEVELOPERS TO USE ON A SITE!!!! 
+  The logic behind is is that the the headerandfooter area is for the headers + footers, but the secondary nav is no longer part of the header + footer. 
+ 
+ */
+
+.ou-nav-mob-overlay {
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    bottom: 0;
+    left: -15%;
+    width: 15%;
+    background: rgba(0, 0, 0, 0.75);
+}
+.ou-secondary-nav, .ou-secondary-nav *
+{
+    -ms-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.ou-secondary-nav:before, .ou-secondary-nav:after
+{
+    content: "\0020";
+    display: block;
+    height: 0;
+    overflow: hidden;
+}
+.ou-secondary-nav:after
+{
+    clear: both;
+}
+.ou-secondary-nav
+{
+    background: #a6d0ff;
+}
+/*Ensures margin between header and nav remain the same if secondary nav exists on a transaction page without a primary nav*/
+.ou-ia-nonav .ou-secondary-nav
+{
+    margin-top: 1.25em;
+}
+.ou-secondary-nav .ou-container
+{
+    zoom: 1;
+    width: 100%;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 1180px;
+}
+.ou-secondary-nav ul li:before {
+    content: "";
+    display: none;
+}
+.ou-secondary-nav ul li {
+    padding: 0;
+    float: left;
+    display: inline;
+}
+.ou-secondary-nav ul li a {
+    color: #0b55a8;
+    display: table-cell;
+    text-decoration: none;
+    font-weight: bold;
+}
+.ou-secondary-nav ul li a:hover
+{
+    text-decoration: underline;
+}
+.ou-secondary-nav ul li a span {
+    display: block;
+    padding: 11px 20px;
+}
+
+
+/*CHANGE FA class to int-icon before deploying*/
+.ou-secondary-nav ul li a.int-nav-trigger,
+.ou-secondary-nav ul li.ou-nav-active a.int-nav-trigger
+{
+    padding: 7px 15px;
+    border-left: 1px dotted #7fb3d9;
+    font-size: 0.875em;
+    border-right: 1px solid #7fb3d9;
+}
+.ou-secondary-nav ul li a.int-nav-trigger:hover
+{
+    background: #0b55a8;
+}
+.ou-secondary-nav ul li a.int-nav-trigger span
+{
+    padding: 0;
+}
+.ou-secondary-nav ul li a.int-nav-trigger:hover i
+{
+    color: #d4e8ff;
+}
+.ou-secondary-nav ul li a.int-nav-trigger .fa.fa-chevron-up,
+.ou-secondary-nav ul li.ou-nav-active a.int-nav-trigger .fa.fa-chevron-down,
+.ou-secondary-nav ul li a.int-nav-trigger .fa.fa-chevron-right,
+.ou-secondary-nav ul li.ou-nav-active a.int-nav-trigger .fa.fa-chevron-right
+{
+    display: none;
+}
+
+.ou-secondary-nav ul li.ou-nav-active a.int-nav-trigger .fa.fa-chevron-up, .ou-secondary-nav ul li a.int-nav-trigger .fa.fa-chevron-down
+{
+    display: block;
+}
+
+
+.ou-secondary-nav ul li.ou-nav-inactive a.int-nav-trigger .fa.fa-chevron-up,
+.ou-secondary-nav ul li.ou-nav-inactive a.int-nav-trigger .fa.fa-chevron-right
+{
+	display:none;
+}
+.ou-secondary-nav ul li.ou-nav-inactive a.int-nav-trigger .fa.fa-chevron-down
+
+{
+	display:block;
+}
+.ou-secondary-nav ul li.ou-nav-active > a
+{
+    background: #d4e8ff;
+    border-color: #d4e8ff;
+}
+.ou-secondary-nav ul li.ou-nav-active ul:before
+{
+
+}
+.ou-secondary-nav ul li.ou-nav-active ul
+{
+    background: #d4e8ff;
+}
+
+/*
+.ou-secondary-nav [role="menuitem"] ul
+{
+    display: none;
+}
+*/
+.ou-secondary-nav li > .ou-nav-sub-menu
+{
+    display: none;
+}
+.ou-secondary-nav li.ou-nav-active > .ou-nav-sub-menu
+{
+    display: block;
+}
+.ou-secondary-nav li .ou-nav-sub-menu
+{
+	/*display: none;*/
+}
+
+.ou-secondary-nav li.ou-nav-active[role="menuitem"] ul
+{
+    display: block;
+}
+.ou-secondary-nav ul li a.ou-backToMainMenu
+{
+    display: none;
+}
+
+.ou-nav-sub-menu
+{
+    width: 100%;
+    float: left;
+    position: absolute;
+    left: 0;
+    
+}
+.ou-nav-sub-menu
+{
+    background: #d4e8ff;
+}
+.ou-nav-sub-menu ul li a
+{
+    font-weight: normal;
+}
+.ou-nav-sub-menu ul li.ou-nav-active > a
+{
+    font-weight: bold;
+}
+.ou-nav-sub-menu .ou-nav-sub-menu
+{
+    background: #fff;
+    border-bottom: 1px solid #7fb3d9;
+}
+.ou-secondary-nav .ou-nav-sub-menu > .ou-nav-sub-menu ul li.ou-nav-active > a
+{
+    background: #fff;
+    border-color: #fff;
+}
+
+.ou-secondary-nav ul li.ou-nav-active a.ou-showSubSubMenu
+{
+    display: none;
+}
+
+/*Mobile nav*/
+@media (max-width: 767px) {
+    .ou-secondary-nav {
+        -webkit-transition: all 0.2s ease-out;
+        -moz-transition: all 0.2s ease-out;
+        -o-transition: all 0.2s ease-out;
+        transition: all 0.2s ease-out;
+        display: none;
+        position: fixed;
+        right: -85%;
+        top: 0;
+        bottom: 0;
+        width: 85%;
+        z-index: 110;
+        background: #0b55a8;
+        border-left: 1px solid rgba(255, 255, 255, 0.75);
+    }
+    .ou-secondary-nav > .ou-container
+    {
+        padding: 18px 0 0 0;
+        background: #a6d0ff;
+        top: 0;
+        bottom: 0;
+        left: 8px;
+        right: 0;
+        position: absolute;
+    }
+    .ou-secondary-nav ul li
+    {
+        float: none;
+        display: table;
+        width: 100%;
+    }
+    .ou-secondary-nav ul li a
+    {
+        font-weight: normal;
+    }
+     .ou-secondary-nav ul li > a
+    {
+        color: #312b39;
+        display: table-cell;
+        padding: 0 20px 0 10px;
+        text-decoration: none;
+        /*float: left;*/
+        width: 100%;
+    }
+    .ou-secondary-nav ul li a:hover
+    {
+        text-decoration: underline;
+    }
+    .ou-secondary-nav ul li a:hover, .ou-secondary-nav ul li.ou-nav-active > a, .ou-secondary-nav ul li.ou-nav-active a:hover
+    {
+        background: #002158;
+        color: #fff;
+        font-weight: normal;
+    }
+    .ou-secondary-nav ul li a span
+    {
+        display: block;
+        padding: 10px;
+        border-top: 1px solid #81b2ea;
+
+    }
+    .ou-secondary-nav ul li a.ou-backToMainMenu
+    {
+        display: block;
+    }
+    .ou-secondary-nav ul li a.ou-backToMainMenu i,
+    .ou-secondary-nav ul li a.ou-backUpLevel i
+    {
+        margin-right: .5em;
+    }
+    .ou-secondary-nav ul li a.int-nav-trigger,
+    .ou-secondary-nav ul li.ou-nav-active a.int-nav-trigger
+    {
+        position: absolute;
+        right: 20px;
+        height: 42px;
+        width: 45px;
+        vertical-align: middle;
+        padding: 14px;
+        color: #002158;
+        border: 1px solid #7fb3d9;
+        border-top: 0;
+        margin-top: 1px;
+    }
+    .ou-secondary-nav > ul > li > a.int-nav-trigger
+    {
+        background: #a6d0ff;
+    }
+    .ou-secondary-nav > ul > li .ou-nav-sub-menu a.int-nav-trigger
+    {
+        background: #e7eff7;
+    }
+    .ou-secondary-nav ul li a.int-nav-trigger:hover,
+    .ou-secondary-nav ul li a.int-nav-trigger:hover i
+    {
+        background: #002158;
+        color: #fff;
+        border: 0;
+    }
+    .ou-secondary-nav ul li.ou-nav-inactive a.int-nav-trigger .fa.fa-chevron-down,
+    .ou-secondary-nav ul li a.int-nav-trigger .fa.fa-chevron-up,
+    .ou-secondary-nav ul li.ou-nav-active a.int-nav-trigger .fa.fa-chevron-up,
+    .ou-secondary-nav ul li a.int-nav-trigger .fa.fa-chevron-down
+    {
+        display: none;
+    }
+    .ou-secondary-nav ul li a.int-nav-trigger .fa.fa-chevron-right,
+    .ou-secondary-nav ul li.ou-nav-active a.int-nav-trigger .fa.fa-chevron-right,
+    .ou-secondary-nav ul li.ou-nav-inactive a.int-nav-trigger .fa.fa-chevron-right
+    {
+        left: 4px;
+        top: 0px;
+        position: relative;
+        display: block;
+    }
+    .ou-secondary-nav ul li.ou-nav-active ul
+    {
+        background: transparent;
+    }
+    .ou-secondary-nav ul li a.int-nav-trigger span
+    {
+        border: 0;
+    }
+    .ou-secondary-nav.ou-nav-open
+    {
+        z-index: 200;
+        display: block;
+    }
+    .ou-backToMainMenu
+    {
+        background: #a6d0ff;
+        color: #002158;
+    }
+    .ou-nav-sub-menu .ou-nav-sub-menu .ou-backToMainMenu
+    {
+        background: #e7eff7;
+    }
+    .ou-nav-sub-menu .ou-showSubSubMenu
+    {
+        display: block;
+        width: 43px;
+        height: 43px;
+        padding: 13px 0 0 0;
+        position: absolute;
+        /*right: 20px;*/
+        margin-top: -42px;
+        /*border-left: 1px dotted #81b2ea;
+        border-right: 1px dotted #81b2ea;
+        border-top: 1px solid #81b2ea;
+        border-bottom: 1px solid #81b2ea;*/
+        text-align: center;
+        /*background: #a6d0ff;*/
+        z-index: 140;
+    }
+    .ou-secondary-nav > ul > li > .ou-nav-sub-menu {
+        -webkit-transition: all 0.2s ease-out;
+        -moz-transition: all 0.2s ease-out;
+        -o-transition: all 0.2s ease-out;
+        transition: all 0.2s ease-out;
+        position: absolute;
+        background: #e7eff7;
+        top: 0;
+        left: 100%;
+        width: 100%;
+        bottom: 0;
+        z-index: 150;
+    }
+    .ou-secondary-nav ul > li > .ou-nav-sub-menu,
+    .ou-secondary-nav ul > li > .ou-nav-sub-menu .ou-nav-sub-sub-menu
+    {
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+    .ou-secondary-nav > ul > li.ou-nav-active > .ou-nav-sub-menu,
+    .ou-secondary-nav > ul > li.ou-nav-active > .ou-nav-sub-menu .ou-nav-active .int-nav-sub-menu
+    {
+        display: block;
+    }
+    .ou-secondary-nav > ul > li.ou-nav-active .ou-nav-sub-menu
+    {
+        position: absolute;
+        top: 0;
+        z-index: 150;
+    }
+    .int-nav-toggle, .ou-nav-toggle {
+        border: 1px solid rgba(255, 255, 255, 0.75);
+        border-right: 0;
+        -webkit-border-radius: 5px 0 0 5px;
+        -moz-border-radius: 5px 0 0 5px;
+        border-radius: 5px 0 0 5px;
+        -webkit-transition: all 0.2s ease-out;
+        -moz-transition: all 0.2s ease-out;
+        -o-transition: all 0.2s ease-out;
+        transition: all 0.2s ease-out;
+        position: absolute;
+        z-index: 110;
+        top: 60px;
+        left: -44px;
+        display: block;
+        width: 44px;
+        height: 44px;
+        padding-top: 12px;
+        text-align: center;
+        background: #0b55a8;
+        color: #a6d0ff;
+        text-decoration: none;
+    }
+
+	.ou-secondary-nav.ou-nav-open-active {
+		right: 0;
+	}
+
+    /*.ou-nav-sub-menu
+    {
+        display: none;
+    }*/
+}

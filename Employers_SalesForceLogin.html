@@ -1,0 +1,286 @@
+<apex:page showHeader="false" standardController="Lead" standardStylesheets="false" extensions="preChatRemoting_Con">
+    <apex:stylesheet value="{!URLFOR($Resource.ScreenCSS, 'screen.css')}"/>
+    <style>
+        .cl-floatLeft,
+        .int-floatLeft {
+            float: left;
+        }
+
+        .cl-floatRight,
+        .int-floatRight {
+            float: right;
+        }
+
+        label.int-floatRight,
+        .int-label.int-floatRight {
+            float: right;
+            text-align: right;
+        }
+
+        @media (min-width: 960px) {
+        }
+
+        @media (max-width: 959px) {
+        }
+
+        @media (max-width: 767px) {
+            .cl-mobile-hidden,
+            .cl-hidden-sm {
+                display: none;
+            }
+
+            label.int-floatRight,
+            .int-label.int-floatRight {
+                float: left;
+                text-align: left;
+            }
+        }
+        /*Custom*/
+        #liveAgentChatLog,
+        #waitingMessageContainer{
+            border: 4px solid #929fb0;
+            border-radius: 4px;
+            padding: 1em;
+            width: 100%;
+            background-color: #e7eff7;
+            color: #424242;
+            margin-bottom: .6em;
+            z-index: 1;
+            overflow: auto;
+            word-wrap:break-word;
+        }
+        #liveAgentChatLog p,
+        #waitingMessageContainer p{
+            color: #424242;
+        }
+        .operator .name{
+            color: #470D43;
+        }
+        .client .name{
+            color: #0B55A8;
+        }
+        #waitingMessageContainer{
+            position: absolute;
+        }
+        #waitingMessageRow{
+            position: relative;
+            z-index: 0;
+        }
+        #clientChatLogRow{
+            position: relative;
+            z-index: 1;
+        }
+        #liveAgentChatLog{
+            height: 300px;
+        }
+        body,html{
+            padding: 0;
+            margin:0;
+        }
+        #header{
+            background-color: #fff;
+            padding: 1em 0;
+        }
+        #liveAgentQueuePosition{
+            display: inline;
+        }
+    </style>
+    <style>
+        .int-errorMessage {
+            display: inline-block;
+            background: #F9E5EA;
+            width: 100%;
+            padding: .5em .5em .5em 1em;
+            font-weight: bold;
+            margin: -.7em 0 1em 0;
+            color: #de2a1e;
+            border: 2px solid #de2a1e;
+        }
+    </style>
+    <!-- This script takes the endpoint URL parameter passed from the deployment
+      page and makes it the action for the form -->
+    <script type="text/javascript">
+        (function() {
+            function handlePageLoad() {
+                var endpointMatcher = new RegExp("[\\?\\&]endpoint=([^&#]*)");
+                document.getElementById('prechatForm').setAttribute('action',
+                        decodeURIComponent(endpointMatcher.exec(document.location.search)[1]));
+            } if (window.addEventListener) {
+                window.addEventListener('load', handlePageLoad, false);
+            } else { window.attachEvent('onload', handlePageLoad, false);
+            }})();
+    </script>
+    <body class="interaction">
+    <div id="header">
+        <div class="int-container">
+            <div class="int-row">
+                <img id="logo" src="{!URLFOR($Resource.LogoOUChat)}" alt="The Open University"/>
+            </div>
+        </div>
+    </div>
+    <div class="int-container">
+        <h1>Your details</h1>
+        <form method='post' action='https://d.la7cs.salesforceliveagent.com/chat/rest/' id='prechatForm'>
+            <p><span class="int-requiredAsterisk" role="presentation">*</span>Mandatory field</p>
+
+            <div class="int-row">
+                <div class="int-grid3">
+                    <label for="FirstName" class="int-floatRight">Forenames<span class="int-requiredAsterisk" role="presentation">*</span></label>
+                </div>
+                <div class="int-grid6">
+                    <input type='text' name='liveagent.prechat:FirstNameDetail' id='FirstName' placeholder="Forenames"
+                           required=""
+                           aria-required="true"
+                           data-val="true"
+                           data-val-namevalidator="Cannot contain a forward slash in the first character position."
+                           data-val-namevalidator-errormessage="Cannot contain a forward slash in the first character position."
+                           data-val-namevalidator-maxlength="40"
+                           data-val-namevalidator-minlength="1"
+                           data-val-namevalidator-optional="false"
+                           data-val-namevalidator-regexerrormessage="Can only contain alphas, spaces, hyphens, apostrophes, brackets, at signs and forward slashes."
+                           data-val-namevalidator-regexpattern="^[A-Za-z\040\-\'\(\)\@\/]*$"
+                           maxlength="40"
+                            />
+                    <span class="field-validation-valid" data-valmsg-for="liveagent.prechat:FirstNameDetail" data-valmsg-replace="true"></span>
+                </div>
+            </div>
+            <div class="int-row">
+                <div class="int-grid3"><label for="LastName" class="int-floatRight">Surname<span class="int-requiredAsterisk" role="presentation">*</span></label></div>
+                <div class="int-grid6">
+                    <input type='text' name='liveagent.prechat:LastNameDetail' id='LastName' placeholder="Surname"
+                           required=""
+                           aria-required="true"
+                           data-val="true"
+                           data-val-namevalidator="Cannot contain a forward slash in the first character position."
+                           data-val-namevalidator-errormessage="Cannot contain a forward slash in the first character position."
+                           data-val-namevalidator-maxlength="40"
+                           data-val-namevalidator-minlength="1"
+                           data-val-namevalidator-optional="false"
+                           data-val-namevalidator-regexerrormessage="Can only contain alphas, spaces, hyphens, apostrophes, brackets, at signs and forward slashes."
+                           data-val-namevalidator-regexpattern="^[A-Za-z\040\-\'\(\)\@\/]*$"
+                           maxlength="40"
+                            />
+                    <span class="field-validation-valid" data-valmsg-for="liveagent.prechat:LastNameDetail" data-valmsg-replace="true"></span>
+                </div>
+            </div>
+            <div class="int-row">
+                <div class="int-grid3"><label for="Company" class="int-floatRight">Organisation name<span class="int-requiredAsterisk" role="presentation">*</span></label></div>
+                <div class="int-grid6">
+                    <input type='text' name='liveagent.prechat:CompanyDetail' id='Company' placeholder="Company"
+                           required=""
+                           aria-required="true"
+                           data-val="true"
+                           data-val-stringvalidator=""
+                           data-val-stringvalidator-cannotbeblankerrormessage="Cannot be blank."
+                           data-val-stringvalidator-cannotbelessthanncharacterserrormessage="Cannot be less than 1 characters long."
+                           data-val-stringvalidator-cannotbemorethanncharacterserrormessage="Cannot be more than 50 characters long."
+                           data-val-stringvalidator-cannotbemorethanonecharactererrormessage="Cannot be more than 1 character long."
+                           data-val-stringvalidator-doublequoteserrormessage="If double quotes (&quot;&quot;) are valid, they must be in pairs."
+                           data-val-stringvalidator-maxlength="50"
+                           data-val-stringvalidator-minlength="1"
+                           data-val-stringvalidator-mustbeexactlyncharacterserrormessage="Must be exactly 1 characters long."
+                           data-val-stringvalidator-mustbeexactlyonecharactererrormessage="Must be exactly 1 character long."
+                           data-val-stringvalidator-optional="false"
+                           maxlength="50"
+                            />
+                    <span class="field-validation-valid" data-valmsg-for="liveagent.prechat:CompanyDetail" data-valmsg-replace="true"></span>
+                </div>
+            </div>
+
+            <input type='hidden' name="liveagent.prechat:DupeCheckIdentifierDetails" id="Dedupe"/>
+            <input type="hidden" name="liveagent.prechat:LeadSourceDetails" value="Chat"/>
+            <input type='hidden' name="liveagent.prechat.buttons" value="573M000000000Ji"/>
+            <input type="hidden" name="liveagent.prechat.findorcreate.map:Lead"
+                   value="FirstName,FirstNameDetail;LastName,LastNameDetail;Company,CompanyDetail;DupeCheckIdentifier1__c,DupeCheckIdentifierDetails;LeadSource,LeadSourceDetails;" />
+            <input type="hidden" name="liveagent.prechat.findorcreate.map:Contact" value="DupeCheckIdentifier__c,DupeCheckIdentifierDetails;" />
+            <input type="hidden" name="liveagent.prechat.findorcreate.map.doFind:Contact" value="DupeCheckIdentifier__c,true;"/>
+            <input type="hidden" name="liveagent.prechat.findorcreate.map.isExactMatch:Contact" value="DupeCheckIdentifier__c,true;" />
+            <input type="hidden" name="liveagent.prechat.query:DupeCheckIdentifierDetails" value="Contact,Contact.DupeCheckIdentifier__c" />
+
+
+            <!-- Return results only if there is an exact match of LastName-->
+            <input type="hidden" name="liveagent.prechat.findorcreate.map.isExactMatch:Lead"
+                   value="DupeCheckIdentifier1__c,true;" />
+
+            <!-- Specify to query for a matching Lead records FirstName field based on
+              the value of FirstName -->
+            <input type="hidden" name="liveagent.prechat.findorcreate.map.doFind:Lead" value="DupeCheckIdentifier1__c,true;"/>
+
+            <!-- If no match in search, create a new Lead record with the mapped value
+              of firstname and last name -->
+            <input type="hidden" id="optionA" name="liveagent.prechat.findorcreate.map.doCreate:Lead" value="FirstName,true;LastName,true;Company,true;DupeCheckIdentifier1__c,true;LeadSource,true;" />
+
+            <!-- If a new Lead record has been created, open it as a subtab -->
+            <input type="hidden" id="optionB" name="liveagent.prechat.findorcreate.showOnCreate:Lead" value="true"/>
+
+            <!-- Save the Lead id to transcript's field LeadId -->
+            <input type="hidden" name="liveagent.prechat.findorcreate.saveToTranscript:Lead" value="LeadId"/>
+
+            <input type= "hidden" name= "liveagent.prechat.findorcreate.displayToAgent:DupeCheckIdentifierDetails" value= "false"/>
+            <input type= "hidden" name= "liveagent.prechat.findorcreate.displayToAgent:LeadSourceDetails" value= "false"/>
+
+            <div class="int-row">
+                <div class="int-grid3">&nbsp;</div>
+                <div class="int-grid6">
+                    <button type='button' id='prechat_submit' class="int-floatRight">Proceed to Chat</button>
+                </div>
+            </div>
+
+        </form>
+    </div>
+    <script src="https://code.jquery.com/jquery-1.11.2.min.js" type="text/javascript"></script>
+    <script src="{!URLFOR($Resource.OUValidation, 'jquery.validate.js')}" type="text/javascript"></script>
+    <script src="{!URLFOR($Resource.OUValidation, 'jquery.validate.unobtrusive.js')}" type="text/javascript"></script>
+    <script src="{!URLFOR($Resource.OUValidation, 'ou.infrastructure.validation.js')}" type="text/javascript"></script>
+    <script>
+        (function($){
+            var $form = $('#prechatForm'),
+                $firstName = $('#FirstName'),
+                $lastName = $('#LastName'),
+                $company = $('#Company'),
+                $dupeCheckIdentifier = $('#Dedupe'),
+                    $optionA = $("#optionA"),
+                    $optionB = $("#optionB"),
+                    $submitButton = $('#prechat_submit');
+
+            $submitButton.click(function(){
+                var deDupeValues = getAllValues();
+                $dupeCheckIdentifier.val(deDupeValues);
+                getRemoteContact(deDupeValues);
+            });
+
+            function getAllValues(){
+                return ($firstName.val()+$lastName.val()+$company.val()).toString();
+            }
+
+            function SubmitForm(createLead) {
+                if (!createLead) {  //We found a matching contact based on email provided, so DO NOT send parameters to create a new lead.
+                    $optionA.val("");
+                    $optionB.val("false");
+                }
+                else {   //No matching contact was found, so send parameters required to create a new lead.
+                    $optionA.val("FirstName,true;LastName,true;Company,true;DupeCheckIdentifier1__c,true;LeadSource,true;");
+                    $optionB.val("true");
+                }
+                $form.submit();
+            }
+
+            function getRemoteContact(deDupeValues)
+            {
+                Visualforce.remoting.Manager.invokeAction('{!$RemoteAction.preChatRemoting_Con.getcontact}', deDupeValues, function(result, event){
+                        if (event.status) {
+                            SubmitForm(false);  //contact found, don't create a lead
+                        } else if (event.type === 'exception') {
+                            SubmitForm(true);  //contact NOT found, DO create a lead
+                        } else {
+                            SubmitForm(false);  //unknown error, DON'T create a lead
+                        }
+                    },
+                    {escape: true}
+                );
+            }
+        })(jQuery);
+    </script>
+
+    </body>
+</apex:page>

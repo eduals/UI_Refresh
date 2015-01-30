@@ -1,0 +1,7 @@
+.print-hide {
+    display: none;
+}
+
+a:after {
+    content: " [" attr(href) "] ";
+}

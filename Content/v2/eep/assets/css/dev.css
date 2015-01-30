@@ -1,0 +1,630 @@
+/*
+    dev.css | v24 | Fix for alert success anchor colour
+*/
+/*Alert link colour*/
+.interaction div.int-alert a{
+    color:#808
+}
+div.int-alert.int-success a.int-alertRemove {
+    color: #090;
+}
+/*Select Widget Styles*/
+.select-widget
+{
+    background: #ffffff url(../img/form-sprites-new.png) no-repeat right -6px;
+    font-family: "futura-pt", verdana, sans-serif;
+    cursor: pointer;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    font-size: 1.25em;
+    padding: 0.32em 73px 0.32em .8em;
+    border: 4px solid #fff;
+    margin-bottom: 0.5em;
+    position: relative;
+    overflow: hidden;
+    color: #000;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    line-height: 1.4;
+}
+.select-widget:focus,
+.select-widget.active
+{
+    border-color: #ffc23d;
+    background-position: right -81px;
+}
+.select-widget.is-error{
+    border-color: #de2a1e;
+}
+.select-widget-menu
+{
+    padding: 0;
+    border: 1px solid #2892fb;
+    border-radius: 0;
+    margin-top: -.6em;
+    background: #fff;
+    min-height: 0;
+    max-height: 300px;
+    display: none;
+    overflow: hidden;
+    overflow-y: auto;
+}
+.select-widget-menu div
+{
+    padding: .05em 1em;
+    color: #000;
+    font-family: "futura-pt", verdana, sans-serif;
+    font-size: 1.25em;
+}
+.select-widget-menu div:focus{
+    border: 0;
+    background: #2892fb;
+    color: #fff
+}
+/*No Left padding options for list items*/
+.no-indent.int-noBullets li{
+    padding-left: 0;
+}
+/*Styling For search box on my accounts*/
+.int-search-box-my-account{
+    padding-left: 96px;
+}
+.int-search-box-my-account .int-row{
+    position: relative;
+}
+.int-search-box-my-account button{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 47px;
+}
+.int-search-box-my-account .searchBoxContainer{
+    margin-right: 65px;
+}
+@media (max-width: 767px){
+.int-search-box-my-account button{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 42px;
+}
+.int-search-box-my-account .searchBoxContainer{
+    margin-right: 55px;
+}
+}
+/*Additional styling to add padding once the menu becomes sticky - DV*/
+div#int-course-detail-tabs nav.int-sticky ~ section.ui-tabs-panel{
+    /*padding-top:6em;*/
+    padding-top: 0;
+}
+/*Focus*/
+div:focus, section:focus {
+    outline: 0;
+}
+/*Radio and Checkbox Focus*/
+.generatedcontent input[type=checkbox]:focus+label:before, .generatedcontent input[type=radio]:focus+label:before {
+    outline: 2px solid #ffc23d !important;
+}
+/*Tooltip Paragraph Sizing*/
+.int-tooltip p {
+    font-size: 1em;
+}
+/*In Page Sticky On Blue Background*/
+.int-sticky-inpage.int-sticky-inpage-blue
+{
+    background: #0b55a8;
+}
+.int-sticky-inpage.int-sticky-inpage-blue a
+{
+    color: #fff;
+}
+.int-sticky-inpage.int-sticky-inpage-blue .ui-state-active a
+{
+    color: #312b39;
+}
+/*Change text colour of toggler to darker blue - DV*/
+.js .int-toggler  span
+{
+    color: #0b55a8;
+}
+/*Change checkbox image to blue box on white background - sprite already uploaded - DV*/
+.generatedcontent  .int-toggler input[type="checkbox"] + label:before
+{
+    background-position: 0 -350px;
+}
+.generatedcontent  .int-toggler input[type="checkbox"]:checked + label:before
+{
+    background-position: 0 -400px;
+}
+.generatedcontent .int-toggler label.checkbox-checked:before
+{
+    background-position: 0 -400px !important;
+}
+/*Set toggler label text colour to blue- DV*/
+.int-toggler label
+{
+    color: #0b55a8;
+}
+/*Set margin to login box within IE8 Only - to be added to IE8 specific styles - DV*/
+.int-container .int-wrap .interaction
+{
+    margin: 1em 0;
+}
+/*In Page Sticky On Blue Background For Accounts Tab*/
+.accounts-tab-nav
+{
+    border-bottom: 1px solid #81b2ea;
+    width: 100%;
+    z-index: 100;
+}
+.accounts-tab-nav, .accounts-tab-nav.int-sticky-inpage
+{
+    background: #0b55a8;
+    position: relative;
+}
+.accounts-tab li a:hover,
+.accounts-tab li a:focus
+{
+    background: #a6d0ff;
+    border-bottom: 1px solid #81b2ea;
+    text-decoration: underline;
+    color:#312b39;
+}
+/*media query added to style menu on larger viewports*/
+@media (min-width: 768px) {
+    .accounts-tab li.active a:hover,
+    .accounts-tab li.active a:focus
+    {
+        background: #ffc23d;
+        border-bottom: 1px solid #ffc23d;
+        text-decoration: underline;
+    }
+    .accounts-tab-nav li a {
+        color: #fff;
+    }
+    .accounts-tab li.active a
+    {
+        color: #312b39;
+        background: #ffc23d;
+        border-bottom: 1px solid #ffc23d;
+        border-right: 1px solid #ffc23d;
+        padding-left: 19px;
+        left: -1px;
+        margin-right: -1px;
+    }
+    .accounts-tab li.active a:after
+    {
+        content: '';
+        display: block;
+        width: 0;
+        height: 0;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-top: 10px solid #ffc23d;
+        position: absolute;
+        bottom: -10px;
+        left: 50%;
+        margin-left: -10px;
+    }
+}
+@media (max-width: 767px){
+    .accounts-tab-nav.int-sticky-inpage .int-container
+    {
+        background: #a6d0ff;
+    }
+}
+.accounts-tab section
+{
+    display: none;
+}
+/*Context Tooltip*/
+.int-tooltip.int-tooltip-context
+{
+    position: absolute;
+    display: none;
+    z-index: 3;
+    outline: 0;
+}
+.int-tooltip.int-tooltip-context div
+{
+    outline: 0;
+}
+.int-tooltip.int-tooltip-context .close-tooltip
+{
+    float: right;
+}
+.int-tooltip.int-tooltip-context .close-tooltip-container
+{
+    width: 100%;
+    height: 30px;
+    margin-bottom: 10px;
+}
+.int-tooltip.int-tooltip-context.int-tooltip-arrow-left:before
+{
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-right: 20px solid #002158;
+    position: absolute;
+    top: 15px;
+    left: -20px;
+}
+/*Accordion Toggler*/
+.interaction .int-accordion-toggler
+{
+    margin: 1em 0;
+}
+.interaction .int-accordion-toggler p,
+.interaction .int-accordion-toggler ul,
+.interaction .int-accordion-toggler ol,
+.interaction .int-accordion-toggler dl,
+.interaction .int-accordion-toggler dd,
+.interaction .int-accordion-toggler label,
+.interaction .int-accordion-toggler h1,
+.interaction .int-accordion-toggler h2,
+.interaction .int-accordion-toggler h3,
+.interaction .int-accordion-toggler h4,
+.interaction .int-accordion-toggler h5,
+.interaction .int-accordion-toggler h6
+{
+    color: #0b55a8;
+}
+.interaction .int-accordion-toggler a
+{
+    color: #808;
+}
+.interaction .int-accordion-toggler > div
+{
+    display: none;
+    background-color: #fff;
+    -webkit-border-radius:  0 0 4px 4px;
+    -moz-border-radius:  0 0 4px 4px;
+    border-radius:  0 0 4px 4px;
+    color: #0b55a8;
+}
+.interaction .int-accordion-toggler > h3:first-child
+{
+    margin-top: 0;
+}
+.interaction .int-accordion-toggler > h3
+{
+    cursor: pointer;
+    margin: 0.25em 0 0;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    font-size: 1.5em;
+    background-color: #fff;
+    padding: .5em .3em;
+    color: #0b55a8;
+}
+.interaction .int-accordion-toggler > h3:hover
+{
+    text-decoration: underline;
+}
+.interaction .int-accordion-toggler > h3.int-togglerHeadActive
+{
+    -webkit-border-radius: 4px 4px 0 0;
+    -moz-border-radius: 4px 4px 0 0;
+    border-radius: 4px 4px 0 0;
+}
+.interaction .int-accordion-toggler > h3 [class*="int-icon"]
+{
+    text-align: center;
+    display: inline-block;
+    margin: 0 .3em .1em;
+    color: #0b55a8;
+    font-size: 1.125em;
+    position: relative;
+    vertical-align: middle;
+}
+.interaction .int-accordion-toggler > h3.int-togglerHeadActive [class*="int-icon"]
+{
+    color: #880088;
+}
+.interaction .int-accordion-toggler > div.int-togglerContentActive
+{
+    display: block;
+}
+.interaction .int-accordion-toggler-content
+{
+    padding-left: 2.7em;
+    padding-top: .5em;
+    padding-bottom: 1em;
+}
+.interaction .int-accordion-toggler .todo
+{
+    color: #880088;
+}
+.js .int-toggler.int-active .int-toggleContent
+{
+    border: 4px solid #e7eff7;
+    border-top: 0;
+    padding: 1em;
+}
+/*Styling for validation messages ready for QA - DV*/
+div.int-alert, div.int-alert.int-success, div.int-alert.int-error, .int-errorMessage
+{
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    border-width: 2px;
+    border-style: solid;
+    position: relative;
+    vertical-align:middle;
+}
+div.int-alert, div.int-alert.int-success, div.int-alert.int-error
+{
+    margin: 1.25em 0 0;
+    background: #fff;
+    padding: .75em 2.8em;
+}
+.accounts-tab div[class*="int-alert"]
+{
+    margin-top: 1.25em;
+}
+
+.int-alert.int-alertSticky
+{
+    -moz-animation: fadein 1s;
+    -webkit-animation: fadein 1s;
+    -o-animation: fadein 1s;
+    animation: fadein 1s;
+}
+.int-alertSticky
+{
+    position: fixed;
+    width: auto;
+    margin-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    top: 6.8em;
+    left: 24.5%;
+    right: 6.5%;
+    display: block;
+    border-top: 0;
+    -moz-border-radius: 0 0 3px 3px;
+    -webkit-border-radius: 0 0 3px 3px;
+    border-radius: 0 0 3px 3px;
+    -moz-box-shadow: 0 4px 11px -4px rgba(0,0,0,0.3);
+    -webkit-box-shadow: 0 4px 11px -4px rgba(0,0,0,0.3);
+    box-shadow: 0 4px 11px -4px rgba(0,0,0,0.3);
+    border-bottom-color: rgba(255,255,255,0.5);
+    z-index: 999999;
+    opacity: .95;
+    filter: alpha(opacity=95);
+}
+.int-alert:before, .int-note:before, .int-alert:after, .int-note:after
+{
+    display: table;
+    line-height: 0;
+    content: "";
+}
+.int-alert a.int-alertRemove
+{
+    line-height: 1.2em;
+    position: relative;
+    float: right;
+    -moz-text-shadow: 0px 1px 0px #FFFFFF;
+    -webkit-text-shadow: 0px 1px 0px #FFFFFF;
+    text-shadow: 0px 1px 0px #FFFFFF;
+    color:#008A00;
+    margin-left: 1em;
+}
+.int-alert a.int-alertRemove:focus
+{
+    outline: thin dotted
+}
+.int-alert a.int-alertRemove [class*="int-icon"]:hover
+{
+    color: #060;
+    text-decoration: underline;
+}
+.int-alert .int-icon
+{
+    position: absolute;
+    top: .2em;
+    left: .2em;
+}
+/*Alert*/
+.generatedcontent .int-alert ul li:before
+{
+    color: #B65E00;
+}
+div.int-alert,
+div.int-alert p,
+div.int-alert ul,
+div.int-alert ol,
+div.int-alert dl,
+div.int-alert dd,
+div.int-alert label,
+div.int-alert h1,
+div.int-alert h2,
+div.int-alert h3,
+div.int-alert h4,
+div.int-alert h5,
+div.int-alert h6
+{
+    border-color: #B65E00;
+    color: #B65E00;
+}
+.int-alert h3
+{
+    font-weight: bold;
+    color: #B65E00;
+}
+.int-alert .int-icon + h3
+{
+    margin-top: .2em;
+}
+div.int-alert a, .ui-dialog div.int-alert a
+{
+    font-weight: bold;
+    color: #B65E00;
+}
+/*Success*/
+.generatedcontent .int-alert.int-success ul li:before
+{
+    color: #008A00;
+}
+.int-alert.int-success,
+div.int-alert.int-success p,
+div.int-alert.int-success ul,
+div.int-alert.int-success ol,
+div.int-alert.int-success dl,
+div.int-alert.int-success dd,
+div.int-alert.int-success label,
+div.int-alert.int-success h1,
+div.int-alert.int-success h2,
+div.int-alert.int-success h3,
+div.int-alert.int-success h4,
+div.int-alert.int-success h5,
+div.int-alert.int-success h6
+{
+    border-color: #008A00;
+    color: #008A00;
+}
+.int-alert.int-success h3
+{
+    font-weight: bold;
+    color: #008A00;
+}
+.int-alert.int-success a
+{
+    color: #008A00;
+}
+/*Error*/
+div.int-error-msg /*To override legacy error message*/
+{
+    font-weight: bold;
+    display:block;
+    font-size:1em;
+}
+.generatedcontent .int-alert.int-error ul li:before
+{
+    color: #de2a1e;
+}
+div.int-alert.int-error,
+div.int-alert.int-error p,
+div.int-alert.int-error ul,
+div.int-alert.int-error ol,
+div.int-alert.int-error dl,
+div.int-alert.int-error dd,
+div.int-alert.int-error label,
+div.int-alert.int-error h1,
+div.int-alert.int-error h2,
+div.int-alert.int-error h3,
+div.int-alert.int-error h4,
+div.int-alert.int-error h5,
+div.int-alert.int-error h6
+{
+    border-color: #de2a1e;
+    color: #de2a1e;
+}
+div.int-alert.int-error h3
+{
+    color: #de2a1e;
+}
+div.int-alert.int-error a
+{
+    font-weight: bold;
+    color: #de2a1e;
+}
+/*Inline error messages*/
+.int-errorMessage{
+    display:inline-block;
+    background: #F9E5EA;
+    width:100%;
+    padding: .5em .5em .5em 1em;
+    font-weight:bold;
+    margin:-.7em 0 1em 0;
+    color: #de2a1e;
+    border: 2px solid #de2a1e;
+}
+.int-errorMessage a, .ui-dialog .int-errorMessage a
+{
+    color: #de2a1e;
+}
+.ui-dialog .int-errorMessage a:hover
+{
+    text-decoration: underline;
+}
+@media (max-width: 767px)
+{
+    div.int-error-msg, div.int-alert.int-error, div.int-alert.int-success
+    {
+        margin-top:4.5em;
+    }
+}
+div.ui-dialog .int-alert
+{
+    margin: 0 0 .5em;
+}
+.ui-dialog .int-alert ul li
+{
+    padding-left: 1.5em;
+}
+.ui-dialog .int-alert ul li a, .ui-dialog .int-errorMessage a
+{
+    display: inline;
+    border: 0;
+    top: 0;
+    padding: 0;
+}
+.ui-dialog .int-alert ul li a:hover
+{
+    background: inherit;
+    border: inherit;
+}
+
+
+#int-content > .interaction /*Stops page from being hidden in responsive view when .interaction is used to as the immediate child beneath main #int-content*/
+{
+    width: 100%;
+}
+/* List no bullet style*/
+.generatedcontent .int-noBullets li:before
+{
+    content: "";
+    display: none;
+}
+
+/*New modal and tabs*/
+
+.ui-dialog-titlebar-close
+{
+    padding: 0; 
+    margin: 0;
+    position: absolute;
+    right: .8em;
+    top: .8em;
+}
+.ui-dialog-titlebar-close:hover .ui-icon-closethick
+{
+    text-decoration: underline;
+}
+.ui-tabs, .int-dialogContent
+{
+    position:absolute;
+    left: 0;
+    right: 0;
+    border-bottom: 1px solid #a6d0ff;
+}
+.int-dialogInnerContainer
+{
+    padding: 0 30px;
+}
+.int-dialogContent {
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+}

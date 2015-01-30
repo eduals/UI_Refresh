@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<!--[if (IE 8)&!(IEMobile)]>
+<html lang="en-GB class=" no-js lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="en-GB" class="no-js"><!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+
+    <title>Component Library</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+
+    <script src="Content/v2/eep/assets/js/vendor/modernizr-2.6.2.min.js"></script>
+
+    <link rel="stylesheet" href="Content/v2/headerandfooter/assets/css/headerandfooter.css">
+    <link rel="stylesheet" href="Content/v2/eep/assets/css/screen.css">
+    <link rel="stylesheet" href="Content/v2/eep/assets/css/kentico-custom-styles.css">
+    <link rel="stylesheet" href="Content/v2/headerandfooter/assets/css/ou-df-header.css">
+
+
+    <!--[if lt IE 9]>
+    <link rel="stylesheet" href="Content/v2/eep/assets/css/ie8.css">
+    <link rel="stylesheet" href="Content/v2/headerandfooter/assets/css/headerandfooter-ie.css">
+    <![endif]-->
+
+    <!--[if lt IE 8]>
+    <link rel="stylesheet" href="Content/v2/eep/assets/css/ie.css">
+    <![endif]-->
+
+    <!--[if IE 7]>
+    <link rel="stylesheet" href="Content/v2/eep/assets/fonts/fontawesome/css/font-awesome-ie7.css">
+    <![endif]-->
+
+    <link rel="stylesheet" href="Content/v2/eep/assets/css/print.css" media="print">
+
+    <!-- favicons -->
+    <link rel="apple-touch-icon" href="Content/v2/external/assets/img/favicons/apple-touch-icon.png">
+    <link rel="icon" href="Content/v2/external/assets/img/favicons/favicon.png">
+    <link rel="shortcut icon" href="Content/v2/external/assets/img/favicon.ico">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="Content/v2/external/assets/img/favicons/ie10-win8-tile-icon.png">
+
+    <script type="text/javascript" src="Content/v2/headerandfooter/assets/js/ou-df-header.js"></script>
+    <script type="text/javascript">if (typeof window.ou_sitestat == 'function') ou_sitestat();</script>
+    <script type="text/javascript" src="Content/v2/headerandfooter/assets/js/ou-cookie-policy.js"></script>
+    <!-- TODO Remove In Production Release -->
+    <link rel="stylesheet" href="Content/v2/eep/assets/css/dev.css">
+    <link rel="stylesheet" href="Content/employers.css">
+</head>
+<body data-page-id="courses-tab">
+
+<div id="int-site">
+    <a href="#int-content" id="int-skip-link" class="btn-skip">
+        <i class="int-icon int-icon-chevron-down"></i>
+        <span> Skip to content</span>
+    </a>
+    <!-- cookie bar-->
+    <div id="int-cookies-bar" class="int-cookies-bar">
+        <div class="interaction">
+            <div class="int-container">
+                <div class="int-row">
+                    <div class="int-grid12">
+                        <h3>Cookies on our website</h3>
+                    </div>
+                </div>
+                <div class="int-row">
+                    <div class="int-grid10">
+                        <p>We use cookies to make sure our websites work effectively and to improve your user
+                            experience. If you continue to use this site we will assume that you are happy with this.
+                            However, you can <a href="#">change your cookie settings</a> at any time. <a href="#">More
+                                info</a></p>
+                    </div>
+                    <div class="int-grid2">
+                        <a href="#" onclick="JavaScript:oudoAccept();" class="int-button" id="int-cookies-bar-button"
+                           role="button">Continue</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end of cookie bar -->
+    <!-- Header -->
+    <div id="int-ouHeader" role="banner">
+        <!--Header -->
+        <div id="int-header">
+            <a class="int-ouLogo" href="http://www.open.ac.uk/">
+                <img src="Content/v2/headerandfooter/assets/img/ou-logo.png" alt="The Open University"/>
+            </a>
+
+            <div role="navigation" id="int-serviceLinks" class="int-serviceLinks sg-responsive int-container">
+                <ul>
+                    <li class="ou-role-signin" id="ou-signin1">
+                        <a href="https://msds.open.ac.uk/signon/sams001.aspx" id="ou-signin2">Sign in</a> <span>|</span>
+                    </li>
+                    <li>
+                        <a href="https://msds.open.ac.uk/students/">My account</a> <span>/</span>
+                    </li>
+                    <li id="ou-signout" class="ou-role-signout">
+                        <a href="https://msds.open.ac.uk/signon/samsoff.aspx" id="ou-signout2">Sign out</a>
+                        <span>|</span>
+                    </li>
+                    <li>
+                        <a href="http://www.open.ac.uk/contact">Contact us</a> <span>|</span>
+                    </li>
+                    <li id="ou-studenthome" class="ou-role-studenthome">
+                        <a href="http://www.open.ac.uk/students/" id="ou-studenthome2">Current students</a>
+                    </li>
+                    <li class="int-headerSearch">
+                        <div class="int-inputAppend">
+                            <fieldset>
+                                <legend class="int-hide">Site search</legend>
+                                <label for="headerSearch" class="int-hide">Search</label>
+                                <input id="headerSearch" type="search" placeholder="Search..."/>
+                                <!--<input type="submit" id="headerSearchButton" class="int-button" onclick="javascript:ou_search();" value="Search" />-->
+                                <a id="headerSearchButton" href="#" class="int-button" onclick="javascript:ou_search();"
+                                   role="button">Search</a>
+                            </fieldset>
+                        </div>
+                    </li>
+                </ul>
+                <a href="#" class="int-mob-menu-toggle">
+                    <span>Menu title</span>
+                    <i class="int-icon int-icon-chevron-down"></i>
+                    <i class="int-icon int-icon-chevron-up"></i>
+                </a>
+            </div>
+        </div>
+        <!--end of Header -->
+
+        <div role="navigation" id="ou-global-primary-navigation">
+            <div class="int-primary">
+                <div class="int-toplevel-nav int-nav-level" id="OU-1" role="navigation" aria-haspopup="true"
+                     aria-selected="false" aria-owns="OU-2">
+                    <ul class="int-container" role="menu" aria-expanded="true" aria-hidden="false">
+                        <li class="ou-df-ia-home int-home" role="menuitem"><a
+                                href="http://www.open.ac.uk"><span>Home</span></a></li>
+                        <li class="ou-df-ia-courses" role="menuitem"><a href="http://www.open.ac.uk/courses"><span>Courses</span></a>
+                        </li>
+                        <li class="ou-df-ia-postgraduate" role="menuitem"><a
+                                href="http://www.open.ac.uk/postgraduate"><span>Postgraduate</span></a></li>
+                        <li class="ou-df-ia-research" role="menuitem"><a
+                                href="http://www.open.ac.uk/research/main/"><span>Research</span></a></li>
+                        <li class="ou-df-ia-about" role="menuitem"><a href="http://www.open.ac.uk/about/main/"><span>About</span></a>
+                        </li>
+                        <li class="ou-df-ia-news" role="menuitem"><a href="http://www.open.ac.uk/news"><span>News &amp; media</span></a>
+                        </li>
+                        <li class="ou-df-ia-employers int-nav-active int-hasChildren" role="menuitem"><a
+                                href="http://www.open.ac.uk/employers"><span class="ou-page-home"
+                                                                             id="OU-4">Employers</span></a>
+                            <ul>
+                                <li><a href="/employers/why-choose-ou" title="Why choose the OU?"><span
+                                        class="ou-page-9">Why choose the OU?</span></a>
+                                    <ul>
+                                        <li><a href="/employers/why-choose-ou/where-we-work" title="Where we work"><span
+                                                class="ou-page-61">Where we work</span></a></li>
+                                        <li><a href="/employers/why-choose-ou/who-we-work"
+                                               title="Who we work with"><span class="ou-page-69">Who we work with</span></a>
+                                        </li>
+                                        <li><a href="/employers/why-choose-ou/ou-and-cbi"
+                                               title="The OU and the Confederation of British Industry (CBI)"><span
+                                                class="ou-page-60">The OU and the CBI</span></a>
+                                            <ul>
+                                                <li>
+                                                    <a href="/employers/why-choose-ou/ou-and-cbi/business-competitiveness"
+                                                       title="CBI policy theme: Boosting business’ capacity to grow and compete"><span
+                                                            class="ou-page-63">CBI: Business competitiveness</span></a>
+                                                </li>
+                                                <li><a href="/employers/why-choose-ou/ou-and-cbi/growth-all"
+                                                       title="CBI policy theme: Ensuring growth makes a difference to everyone"><span
+                                                        class="ou-page-67">CBI: Growth for all</span></a></li>
+                                                <li><a href="/employers/why-choose-ou/ou-and-cbi/organisational-trust"
+                                                       title="CBI policy theme: Winning the public’s confidence in business"><span
+                                                        class="ou-page-68">CBI: Organisational trust</span></a></li>
+                                                <li>
+                                                    <a href="/employers/why-choose-ou/ou-and-cbi/sustainable-growth-and-digital-infrastructures"
+                                                       title="CBI policy theme: Getting Britain building to deliver investment and jobs"><span
+                                                            class="ou-page-66">CBI: Sustainable growth and digital infrastructures</span></a>
+                                                </li>
+                                                <li>
+                                                    <a href="/employers/why-choose-ou/ou-and-cbi/video-importance-ous-relationship-cbi"><span
+                                                            class="ou-page-77">Video: The importance of the OU's relationship with the CBI</span></a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a href="/employers/sector-solutions" title="Sector solutions"><span
+                                        class="ou-page-43">Sector solutions</span></a>
+                                    <ul>
+                                        <li><a href="/employers/sector-solutions/charity-and-voluntary"
+                                               title="Charity and Voluntary"><span class="ou-page-72">Charity and Voluntary</span></a>
+                                        </li>
+                                        <li><a href="/employers/sector-solutions/education" title="Education"><span
+                                                class="ou-page-31">Education</span></a></li>
+                                        <li><a href="/employers/sector-solutions/engineering-and-manufacturing"
+                                               title="Engineering and Manufacturing"><span class="ou-page-32">Engineering and Manufacturing</span></a>
+                                        </li>
+                                        <li><a href="/employers/sector-solutions/health-and-social-care"
+                                               title="Health and Social Care"><span class="ou-page-33">Health and Social Care</span></a>
+                                            <ul>
+                                                <li>
+                                                    <a href="/employers/sector-solutions/health-and-social-care/children-young-people"
+                                                       title="Children &amp; Young People"><span class="ou-page-45">Children &amp; Young People</span></a>
+                                                </li>
+                                                <li>
+                                                    <a href="/employers/sector-solutions/health-and-social-care/nursing-and-health"
+                                                       title="Nursing and Health"><span class="ou-page-46">Nursing and Health</span></a>
+                                                </li>
+                                                <li>
+                                                    <a href="/employers/sector-solutions/health-and-social-care/social-work-and-social-care-ou"
+                                                       title="Social work and social care at the OU"><span
+                                                            class="ou-page-51">Social work and social care at the OU</span></a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="/employers/sector-solutions/it-and-telecoms"
+                                               title="IT and Telecoms"><span
+                                                class="ou-page-34">IT and Telecoms</span></a>
+                                            <ul>
+                                                <li><a href="/employers/it-and-telecoms/cpd-it-professionals"
+                                                       title="CPD for IT Professionals"><span class="ou-page-35">CPD for IT Professionals</span></a>
+                                                </li>
+                                                <li><a href="/employers/it-and-telecoms/cyber-security-challenge"
+                                                       title="Cyber Security Challenge"><span class="ou-page-37">Cyber Security Challenge</span></a>
+                                                </li>
+                                                <li><a href="/employers/it-and-telecoms/it-vendor-certification"
+                                                       title="IT Vendor Certification"><span class="ou-page-36">IT Vendor Certification</span></a>
+                                                </li>
+                                                <li>
+                                                    <a href="/employers/it-and-telecoms/postgraduate-certificate-advanced-professional-practice-it-service-management"
+                                                       title="Postgraduate Certificate in Advanced Professional Practice (IT Service Management)"><span
+                                                            class="ou-page-38">Postgraduate Certificate – IT Service Management</span></a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="/employers/sector-solutions/local-government"
+                                               title="Local Government"><span class="ou-page-39">Local Government</span></a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a href="/employers/access-ou-expertise" title="Access OU expertise"><span
+                                        class="ou-page-8">Access OU expertise</span></a></li>
+                                <li>
+                                    <a href="https://css2.open.ac.uk/employers/sponsorhome/brochurerequest/chooseprospectus.aspx?catcode=UALWKT"
+                                       title="Request a brochure"><span class="ou-page-">Request a brochure</span></a>
+                                </li>
+                                <li><a href="https://css2.open.ac.uk/employers/sponsorhome/faqs/contactus.aspx"
+                                       title="Contact us"><span class="ou-page-">Contact us</span></a></li>
+                            </ul>
+                            <a href="#" class="int-nav-trigger" role="button" aria-controls="OU-2"
+                               aria-labelledby="OU-4"><span><i class="int-icon int-icon-chevron-down"></i><i
+                                    class="int-icon int-icon-chevron-up"></i></span></a></li>
+                    </ul>
+                </div>
+                <div class="int-secondlevel-nav int-nav-level" id="OU-2" role="navigation" aria-haspopup="true"
+                     aria-selected="false" aria-owns="OU-3">
+                    <ul class="int-container" role="menu" aria-expanded="true" aria-hidden="false">
+                        <li class="int-hasChildren" role="menuitem"><a href="/employers/why-choose-ou"
+                                                                       title="Why choose the OU?"><span
+                                class="ou-page-9" id="OU-5">Why choose the OU?</span></a>
+                            <ul>
+                                <li><a href="/employers/why-choose-ou/where-we-work" title="Where we work"><span
+                                        class="ou-page-61">Where we work</span></a></li>
+                                <li><a href="/employers/why-choose-ou/who-we-work" title="Who we work with"><span
+                                        class="ou-page-69">Who we work with</span></a></li>
+                                <li><a href="/employers/why-choose-ou/ou-and-cbi"
+                                       title="The OU and the Confederation of British Industry (CBI)"><span
+                                        class="ou-page-60">The OU and the CBI</span></a>
+                                    <ul>
+                                        <li><a href="/employers/why-choose-ou/ou-and-cbi/business-competitiveness"
+                                               title="CBI policy theme: Boosting business’ capacity to grow and compete"><span
+                                                class="ou-page-63">CBI: Business competitiveness</span></a></li>
+                                        <li><a href="/employers/why-choose-ou/ou-and-cbi/growth-all"
+                                               title="CBI policy theme: Ensuring growth makes a difference to everyone"><span
+                                                class="ou-page-67">CBI: Growth for all</span></a></li>
+                                        <li><a href="/employers/why-choose-ou/ou-and-cbi/organisational-trust"
+                                               title="CBI policy theme: Winning the public’s confidence in business"><span
+                                                class="ou-page-68">CBI: Organisational trust</span></a></li>
+                                        <li>
+                                            <a href="/employers/why-choose-ou/ou-and-cbi/sustainable-growth-and-digital-infrastructures"
+                                               title="CBI policy theme: Getting Britain building to deliver investment and jobs"><span
+                                                    class="ou-page-66">CBI: Sustainable growth and digital infrastructures</span></a>
+                                        </li>
+                                        <li>
+                                            <a href="/employers/why-choose-ou/ou-and-cbi/video-importance-ous-relationship-cbi"><span
+                                                    class="ou-page-77">Video: The importance of the OU's relationship with the CBI</span></a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <a href="#" class="int-nav-trigger" role="button" aria-controls="OU-3"
+                               aria-labelledby="OU-5"><span><i class="int-icon int-icon-chevron-down"></i><i
+                                    class="int-icon int-icon-chevron-up"></i></span></a></li>
+                        <li class="int-hasChildren" role="menuitem"><a href="/employers/sector-solutions"
+                                                                       title="Sector solutions"><span class="ou-page-43"
+                                                                                                      id="OU-6">Sector solutions</span></a>
+                            <ul>
+                                <li><a href="/employers/sector-solutions/charity-and-voluntary"
+                                       title="Charity and Voluntary"><span
+                                        class="ou-page-72">Charity and Voluntary</span></a></li>
+                                <li><a href="/employers/sector-solutions/education" title="Education"><span
+                                        class="ou-page-31">Education</span></a></li>
+                                <li><a href="/employers/sector-solutions/engineering-and-manufacturing"
+                                       title="Engineering and Manufacturing"><span class="ou-page-32">Engineering and Manufacturing</span></a>
+                                </li>
+                                <li><a href="/employers/sector-solutions/health-and-social-care"
+                                       title="Health and Social Care"><span
+                                        class="ou-page-33">Health and Social Care</span></a>
+                                    <ul>
+                                        <li>
+                                            <a href="/employers/sector-solutions/health-and-social-care/children-young-people"
+                                               title="Children &amp; Young People"><span class="ou-page-45">Children &amp; Young People</span></a>
+                                        </li>
+                                        <li>
+                                            <a href="/employers/sector-solutions/health-and-social-care/nursing-and-health"
+                                               title="Nursing and Health"><span
+                                                    class="ou-page-46">Nursing and Health</span></a></li>
+                                        <li>
+                                            <a href="/employers/sector-solutions/health-and-social-care/social-work-and-social-care-ou"
+                                               title="Social work and social care at the OU"><span class="ou-page-51">Social work and social care at the OU</span></a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a href="/employers/sector-solutions/it-and-telecoms" title="IT and Telecoms"><span
+                                        class="ou-page-34">IT and Telecoms</span></a>
+                                    <ul>
+                                        <li><a href="/employers/it-and-telecoms/cpd-it-professionals"
+                                               title="CPD for IT Professionals"><span class="ou-page-35">CPD for IT Professionals</span></a>
+                                        </li>
+                                        <li><a href="/employers/it-and-telecoms/cyber-security-challenge"
+                                               title="Cyber Security Challenge"><span class="ou-page-37">Cyber Security Challenge</span></a>
+                                        </li>
+                                        <li><a href="/employers/it-and-telecoms/it-vendor-certification"
+                                               title="IT Vendor Certification"><span class="ou-page-36">IT Vendor Certification</span></a>
+                                        </li>
+                                        <li>
+                                            <a href="/employers/it-and-telecoms/postgraduate-certificate-advanced-professional-practice-it-service-management"
+                                               title="Postgraduate Certificate in Advanced Professional Practice (IT Service Management)"><span
+                                                    class="ou-page-38">Postgraduate Certificate – IT Service Management</span></a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a href="/employers/sector-solutions/local-government"
+                                       title="Local Government"><span class="ou-page-39">Local Government</span></a>
+                                </li>
+                            </ul>
+                            <a href="#" class="int-nav-trigger" role="button" aria-controls="OU-3"
+                               aria-labelledby="OU-6"><span><i class="int-icon int-icon-chevron-down"></i><i
+                                    class="int-icon int-icon-chevron-up"></i></span></a></li>
+                        <li role="menuitem"><a href="/employers/access-ou-expertise" title="Access OU expertise"><span
+                                class="ou-page-8">Access OU expertise</span></a></li>
+                        <li role="menuitem"><a
+                                href="https://css2.open.ac.uk/employers/sponsorhome/brochurerequest/chooseprospectus.aspx?catcode=UALWKT"
+                                title="Request a brochure"><span class="ou-page-">Request a brochure</span></a></li>
+                        <li role="menuitem"><a href="https://css2.open.ac.uk/employers/sponsorhome/faqs/contactus.aspx"
+                                               title="Contact us"><span class="ou-page-">Contact us</span></a></li>
+                    </ul>
+                </div>
+                <div class="int-thirdlevel-nav int-nav-level" id="OU-3" role="navigation" aria-haspopup="true"
+                     aria-selected="false"></div>
+            </div>
+        </div>
+
+
+        <div id="int-nav-mobile" class="int-nav-alt-mob">
+            <div class="int-nav-mob-overlay"></div>
+            <div class="int-nav-alt-primary"></div>
+            <a href="#" id="int-nav-toggle" class="int-nav-toggle">
+                <i class="int-icon int-icon-bars int-icon-lg"></i>
+                <i class="int-icon int-icon-times int-icon-lg"></i>
+            </a>
+        </div>
+    </div>
+    <!--end of header -->
+
+    <!-- content -->
+    <main id="int-content">
+
+
+
+
+
+        <!-- App -->
+        <div class="interaction" id="mainSection">
+            <div class="int-container">
+                <form id="contactUsRadioForm">
+                    <fieldset id="contactUsRadioFieldset">
+                        <h1>Contact us</h1>
+                        <p>Please select how you wish to contact us:</p>
+                        <div class="int-row">
+                            <input type="radio" name="contactUsRadio" id="contactUsRadio" value="1">
+                            <label for="contactUsRadio">Contact form</label>
+                        </div>
+                        <div class="int-row">
+                            <input type="radio" name="contactUsRadio" id="callBackRadio" value="2" title="This option is only available between 09:00-17:00 GMT, Monday to Friday">
+                            <label for="callBackRadio" title="This option is only available between 09:00-17:00 GMT, Monday to Friday">Request a call back <span class="int-hide">This option is only available between 09:00-17:00 GMT, Monday to Friday</span></label>
+                        </div>
+                        <div class="int-row hidden">
+                            <input type="radio" name="contactUsRadio" id="webChatRadio" value="3" title="This option is only available between 09:00-17:00 GMT, Monday to Friday">
+                            <label for="webChatRadio" title="This option is only available between 09:00-17:00 GMT, Monday to Friday">Web chat <span class="int-hide">This option is only available between 09:00-17:00 GMT, Monday to Friday</span></label>
+                        </div>
+                        <div class="int-row">
+                            <input type="radio" name="contactUsRadio" id="callBDT" value="4" title="This option is only available between 09:00-17:00 GMT, Monday to Friday; voice-mail is available out of hours.">
+                            <label for="callBDT" title="This option is only available between 09:00-17:00 GMT, Monday to Friday; voice-mail is available out of hours.">Call our business development team <span class="int-hide">This option is only available between 09:00-17:00 GMT, Monday to Friday; voice-mail is available out of hours.</span></label>
+                        </div>
+                    </fieldset>
+                </form>
+
+                <div class="timer">
+
+                </div>
+
+
+                <div id="contactRegion" aria-live="assertive">
+
+                </div>
+            </div>
+        </div>
+        <!-- End App -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div id="int-btn-top" class="btn-top" role="button">
+            <a href="#int-site">
+                <i class="int-icon int-icon-chevron-up"></i>
+                <span> Back to top</span>
+            </a>
+        </div>
+    </main>
+    <!-- end of content-->
+
+    <!-- footer -->
+    <div class="int-ouFooter" role="contentinfo">
+        <div class="int-container">
+            <div class="header">
+                <div class="crest">
+                    <img src="Content/v2/headerandfooter/assets/img/ou-crest.png" alt="The Open University Crest">
+                </div>
+                <div class="contact">
+                    <h3>The Open University</h3>
+                </div>
+            </div>
+            <div class="nav-footer">
+                <ul>
+                    <li><a href="http://www.open.ac.uk/contact">Contact us</a></li>
+                    <li><a href="http://www3.open.ac.uk/employment/">Jobs</a></li>
+                    <li>
+                        <a href="http://www.open.ac.uk/about/main/admin-and-governance/policies-and-statements/website-accessibility-the-open-university">Accessibility</a>
+                    </li>
+                    <li><a href="http://www3.open.ac.uk/near-you/wales/p6.asp">Cymraeg </a></li>
+                    <li>
+                        <a href="http://www.open.ac.uk/about/main/admin-and-governance/policies-and-statements/conditions-use-open-university-websites">Conditions
+                            of use</a></li>
+                    <li>
+                        <a href="http://www.open.ac.uk/about/main/admin-and-governance/policies-and-statements/website-privacy-the-ou">Privacy
+                            and cookies</a></li>
+                    <li>
+                        <a href="http://www.open.ac.uk/about/main/admin-and-governance/policies-and-statements/copyright-ou-websites">Copyright</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="small-print">
+                <p class="copyright">
+                    <small>&copy; 2014. All rights reserved. The Open University is incorporated by Royal Charter (RC
+                        000391), an exempt charity in England & Wales and a charity registered in Scotland (SC 038302).
+                        Open University Student Budget Accounts Limited (OUSBA) is a wholly owned subsidiary of The Open
+                        University, Companies House number 303735 and until 31 March 2014 was licensed by the Office of
+                        Fair Trading (OFT) under licence number 573250 and from 1 April 2014 is authorised and regulated
+                        by the Financial Conduct Authority (FCA) under interim permission number 573250.
+                    </small>
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- end of footer -->
+
+</div>
+
+<input type="hidden" id="loaded-components" value="">
+
+<script src="Content/v2/eep/assets/js/vendor/jquery-1.10.2.min.js"></script>
+<!--Vantage files-->
+<script src="Content/v2/core/assets/js/vendor/spin.js"></script>
+<script src="Content/v2/core/assets/js/ou.widgets.js"></script>
+<!--end of Vantage files-->
+<!-- header and footer -->
+<script src="Content/v2/headerandfooter/assets/js/modules/ou-primary-navigation.js"></script>
+<script>
+    //Function that has to be called on the page to initialise the nav
+    (function ($, window) {
+
+        window.OU.PrimaryNavigation = new window.OU.DigitalFramework.Global.PrimaryNavigation({
+            serviceLink: true,    //Set to false to switch off the service links toggle functionality and responsive styling i.e. if you are not using service links on the page. Default is true.
+            activeItem: true      //Set to true to initialise the nav item using js, default is false
+        });
+
+    })(jQuery, window);
+</script>
+<!-- end of header and footer -->
+<script src="Content/v2/eep/assets/js/vendor/min/jquery-ui-1.10.4.custom.min.js"></script>
+<script src="Content/v2/eep/assets/js/vendor/jquery.placeholder.js"></script>
+<script src="Content/v2/eep/assets/js/vendor/jquery.smartresize.js"></script>
+<script src="Content/v2/eep/assets/js/vendor/cookies.js"></script>
+<script src="Content/v2/eep/assets/js/ou.eep.js"></script>
+
+<!--[if lt IE 9]>
+<script src="Content/v2/eep/assets/js/vendor/respond.js"></script>
+<![endif]-->
+
+<script src="Content/v2/eep/assets/js/main.js"></script>
+<script src="Content/employers.js"></script>
+
+
+<script>
+
+</script>
+
+</body>
+</html>

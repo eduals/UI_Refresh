@@ -1,0 +1,70 @@
+// =============================================================================
+// Typography
+// 
+// =============================================================================
+
+@bg-color: 			@white;
+@bg-color-alt: 		@mid-blue;
+@text-color: 		@black;
+@text-color-alt:    @white;
+@link-color:        @purple;
+@link-color-alt: 	@gold;
+@error-color: 		@red;
+@valid-color: 		@green;
+@sml-text-size: 	0.875em;
+@lrg-text-size: 	1.25em;
+
+/* Base settings */
+body { 
+	color: @text-color; 
+	text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+	font-weight: normal;
+}
+
+p, ul, ol, dl {
+	margin-top: 0;
+	line-height: 1.4;
+}
+
+// Links
+a {
+	font-weight: bold;
+	color: @link-color;
+	text-decoration: none;
+	&:hover, &:focus {
+		text-decoration: underline;
+		outline:0;
+	}
+}
+
+.interaction {
+	background: @bg-color-alt;
+	color:@text-color-alt;
+	p, ul, ol, dl, dd, label, h1, h2, h3, h4, h5, h6 {
+		color: @text-color-alt;
+	}
+	a {
+		color: @link-color-alt;
+	}
+    h1, h2, h3, h4, h5, h6 {
+        a:hover, a:focus {
+            color:@white;
+        }
+    }
+	hr {
+		border-color: #206dc3;
+		color: #206dc3;
+	}
+}
+
+.int-promo {
+	background: @light-grey-blue;
+	margin-bottom: 2em;
+}
+
+aside {
+    p, ul, ol, dl {
+        font-size: @sml-text-size;   
+    }
+}

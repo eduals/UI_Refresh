@@ -1,0 +1,206 @@
+<%@ Page Language="vb" AutoEventWireup="false" Codebehind="SAMS001_Default.aspx.vb" Inherits="SAMS001_Default" ValidateRequest="false"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Sign IN - Open University</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="description" content="Sign in to the OU website" />
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+<script src="/oudigital/eep/assets/js/vendor/modernizr-2.6.2.min.js"></script>
+
+<script src="/oudigital/eep/assets/js/vendor/jquery-1.10.2.min.js"></script>
+
+<link rel="stylesheet" href="/oudigital/headerandfooter/assets/css/headerandfooter.css">
+<link rel="stylesheet" href="/oudigital/eep/assets/css/screen.css">
+<link rel="stylesheet" href="/oudigital/eep/assets/css/kentico-custom-styles.css">
+<link rel="stylesheet" href="/oudigital/headerandfooter/assets/css/ou-df-header.css">
+
+<!--[if lt IE 9]>
+<link rel="stylesheet" href="/oudigital/eep/assets/css/ie8.css">
+<link rel="stylesheet" href="/oudigital/headerandfooter/assets/css/headerandfooter-ie.css">
+<![endif]-->
+
+<!--[if lt IE 8]>
+<link rel="stylesheet" href="/oudigital/eep/assets/css/ie.css">
+<![endif]-->
+
+<!--[if IE 7]>
+<link rel="stylesheet" href="/oudigital/eep/assets/fonts/fontawesome/css/font-awesome-ie7.css">
+<![endif]-->
+
+<link rel="stylesheet" href="/oudigital/eep/assets/css/print.css" media="print">
+<script type="text/javascript" src="/oudigital/headerandfooter/assets/js/ou-df-header.js"></script>
+<script type="text/javascript">if (typeof window.ou_sitestat == 'function') ou_sitestat();</script>
+<!-- favicons -->
+<link rel="apple-touch-icon" href="/oudigital/external/assets/img/favicons/apple-touch-icon.png">
+<link rel="icon" href="/oudigital/external/assets/img/favicons/favicon.png">
+<link rel="shortcut icon" href="/oudigital/external/assets/img/favicon.ico">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/oudigital/external/assets/img/favicons/ie10-win8-tile-icon.png">
+
+<script src="<%= ResolveUrl("~/Assets/sams-signin.js")%>"></script>
+<link rel="stylesheet" href="<%= ResolveUrl("~/Assets/sams-signin.css")%>">
+</head>
+<body class="ou ou-mobile ou-three">
+<script type='text/javascript'>
+// Reset the Jquery $ notation.
+var $ = jQuery.noConflict();
+
+</script>
+
+<!-- Start of generic site template markup -->
+<div id="int-site">
+
+    <!-- Load the common header -->
+    <!-- #Include virtual="~/Assets/contact-us-header.html" -->
+
+    <!-- Main Content section -->
+    <main id="int-content">
+        <div class="int-container">
+            <!-- sams content start -->
+            <h1>Sign in to the OU website</h1>
+
+            <div class="int-wrap">
+                <div class="int-col1of2 interaction">
+
+                    <% If Not String.IsNullOrEmpty(ErrorMessage) Then%>
+                    <div id="error-wrapper">
+                        <br>
+                        <div class="int-error-msg" id="error-box">
+                            <i class="int-icon int-icon-2x int-icon-exclamation-circle"></i>
+                            <%= ErrorMessage%>
+                        </div>
+                    </div>
+                    <% End If%>
+
+                    <asp:literal id="litForm" runat="server" />
+                    <fieldset>
+                        <div class="int-row">
+                            <div class="int-grid6">
+                                <label for="username">Username</label>
+                                <p>Either the email address you signed up with or, for students and staff, your OU computer username or PI.</p>
+                                <input name="username" id="username" type="text" size="25"  maxlength="100" class="password_l" <asp:literal id="litOucuValue" runat="server" />/>
+                            </div>
+                        </div>
+                        <div class="int-row">
+                            <div class="int-grid6">
+                                <label for="password">Password</label>
+                                <input name="password" id="password" type="password" size="25" class="password_l" />
+                                <p>
+                                    You can <b><asp:literal id="litForgottenPasswordURL" runat="server" />.</b>
+                                </p>
+                                <p>
+                                    More information on our sign in and security features can be found on our <a href="http://www.open.ac.uk/students/help/">Help page</a>.
+                                </p>
+
+                            </div>
+                        </div>
+
+                        <div class="int-row">
+                            <div class="int-grid6">
+                                <asp:placeholder id="plhDestinationList" runat="server" visible="true">
+                                    <label for="DestUrl">Choose page to sign in to</label>
+                                    <select name="DestURL" id="DestURL" width="40" >
+                                        <asp:literal id="litDestinationList" runat="server"/>
+                                    </select>
+                                </asp:placeholder>
+                            </div>
+                        </div>
+                        <div class="int-row">
+                            <div class="int-grid6">
+                                <input type="submit" name="Proceed1" value="Sign in" alt="Sign in" class="button_l" />
+                            </div>
+                        </div>
+                        <asp:literal id="litHiddenFromURL" runat="server" />
+                    </fieldset>
+                </div>
+
+                <div class="int-col2of2">
+
+                    <h3>New visitor?</h3>
+                    <p>
+                        <asp:literal id="litSRUURL" runat="server" />.
+                        <br />
+                        Whether you’re planning your OU studies, using free OpenLearn materials or contacting us for information, do it faster by creating an account.
+                    </p>
+                </div>
+            </div>
+            <!-- sams content end -->
+
+            <!-- Back to top -->
+            <div id="int-btn-top" class="btn-top">
+                <a href="#int-site"><i class="int-icon int-icon-chevron-up"></i><span> Back to top</span></a>
+            </div>
+        </div>
+    </main>
+
+    <!-- site footer -->
+    <div class="ab"></div>
+
+    <!-- #Include virtual="~/Assets/contact-us-footer.html" -->
+
+    <!-- /site footer -->
+
+</div>
+<!-- /ou container -->
+
+
+<asp:literal id="litAthensLogout" runat="server" />
+
+
+<input type="hidden" id="loaded-components" value="">
+
+
+<!--Vantage files-->
+<script src="/oudigital/core/assets/js/ou.widgets.js"></script>
+<script src="/oudigital/eep/assets/js/modules/eep-framework.js"></script>
+<script src="/oudigital/headerandfooter/assets/js/modules/ou-primary-navigation.js"></script>
+
+<script>
+    //Function that has to be called on the page to initialise the nav
+    (function ($, window) {
+
+        window.OU.PrimaryNavigation = new window.OU.DigitalFramework.Global.PrimaryNavigation({
+            serviceLink: true,    //Set to false to switch off the service links toggle functionality and responsive styling i.e. if you are not using service links on the page. Default is true.
+            activeItem: true      //Set to true to initialise the nav item using js, default is false
+        });
+
+    })(jQuery, window);
+</script>
+
+
+
+<!--end of Vantage files-->
+<script src="/oudigital/eep/assets/js/vendor/min/jquery-ui-1.10.4.custom.min.js"></script>
+<script src="/oudigital/eep/assets/js/vendor/jquery.placeholder.js"></script>
+<script src="/oudigital/eep/assets/js/vendor/jquery.smartresize.js"></script>
+<script src="/oudigital/eep/assets/js/vendor/cookies.js"></script>
+<script src="/oudigital/eep/assets/js/app.js"></script>
+<script src="/oudigital/eep/assets/js/helpers.js"></script>
+<script src="/oudigital/eep/assets/js/modules/ui-widgets.js"></script>
+<script src="/oudigital/eep/assets/js/modules/course-details.js"></script>
+<script src="/oudigital/eep/assets/js/modules/back-to-top.js"></script>
+<script src="/oudigital/eep/assets/js/modules/modal.js"></script>
+
+<!--[if lt IE 9]>
+<script src="/oudigital/eep/assets/js/vendor/respond.js"></script>
+<![endif]-->
+
+<script src="/oudigital/eep/assets/js/main.js"></script>
+
+<!-- header and footer -->
+
+<!-- end of header and footer -->
+
+<script type="text/javascript">
+    $("link[href*='jquery-ui.css']").remove();
+</script>
+
+<script type="text/javascript">if (typeof window.ou_init == 'function') ou_init();</script>
+</body>
+</html>
+

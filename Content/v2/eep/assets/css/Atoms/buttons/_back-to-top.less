@@ -1,0 +1,89 @@
+// Back to top button
+// 
+// =============================================================================
+
+@button-top-bg: 			@light-blue;
+@button-top-color: 			@dark-grey;
+@button-top-hover-bg: 	    @dark-blue;
+@button-top-hover-color:    @white;
+
+.btn-top {
+	clear: both;
+	text-align:right;
+	a {
+		.transition();
+		display:inline-block;
+		margin:0 auto;
+		font-size: @sml-text-size;
+		font-weight: normal;
+		color: @button-top-color;
+		background: @button-top-bg;
+        border:1px solid @button-top-hover-bg;
+        border-bottom:0;
+		padding: 0.8em;
+		text-decoration: none;
+		&:hover, &:focus {
+			background: @button-top-hover-bg;
+			color: @button-top-hover-color;
+			border-color: @button-top-hover-bg;
+		}
+        
+        @media (max-width: @screen-xs-max) {
+            .border-radius(5px, 5px, 0, 0);
+            margin-right:2px;
+            width:44px;
+            height:44px;
+            padding-top:1.4em;
+            opacity:0.9;
+            text-align:center;
+            span { 
+                .int-hide;
+            }
+            &:hover {
+                opacity:1;   
+            }
+        }
+        
+	}
+}
+
+.btn-skip { 
+    position:absolute;
+    top:-48px;
+    left:0;
+    .transition();
+    display:inline-block;
+    margin:0 auto;
+    font-size: @sml-text-size;
+    font-weight: normal;
+    color: @button-top-color;
+    background: @button-top-bg;
+    padding: 0.8em;
+    text-decoration: none;
+    z-index: 100;
+    &:hover, &:focus {
+        background: @button-top-hover-bg;
+        color: @button-top-hover-color;
+        border-color: @gold;
+        top:0;
+        text-decoration: none;
+    }
+
+    @media (max-width: @screen-xs-max) {
+        .border-radius(0, 0, 5px, 5px);
+        margin-right:2px;
+        width:44px;
+        height:44px;
+        padding-top:1.4em;
+        opacity:0.9;
+        text-align:center;
+        span { 
+            .int-hide;
+        }
+        &:hover {
+            opacity:1;   
+        }
+    }
+}
+
+.lt-ie9 .btn-skip { display:none; }

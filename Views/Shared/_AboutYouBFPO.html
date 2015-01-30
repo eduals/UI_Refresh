@@ -1,0 +1,172 @@
+<div class="interaction hidden " id="yourDetailsBFPOInteraction">
+    <form action="/qualreg/Address/AboutYouBFPO" id="postBfpoAddressForm" method="post" novalidate="novalidate">
+        <fieldset>
+            <legend class="h2"><span>About you</span></legend>
+            <div id="aboutYouFormMessage" aria-live="polite"></div>
+            <p>Fields marked with <span class="int-requiredAsterisk" role="presentation">*</span> must be filled in.</p>
+            <hr>
+            <div class="int-row">
+                <div class="int-grid3">
+                    <label for="addressInputLine1" class="int-floatRight">Address line 1</label>
+                </div>
+                <div class="int-grid6">
+                    <input data-val="true" data-val-addressvalidator="" data-val-addressvalidator-allowablecharserrormessage="Can only contain digits, alphas, spaces, hyphens, obliques, brackets, pairs of double quotes, ampersands, apostrophes, colons, hash." data-val-addressvalidator-cannotbelessthanncharacterserrormessage="Address line cannot be shorter than 1 characters." data-val-addressvalidator-cannotbemorethanncharacterserrormessage="Address line cannot be longer than 35 characters." data-val-addressvalidator-doublequoteserrormessage="If double quotes (&quot;&quot;) are valid, they must be in pairs." data-val-addressvalidator-maxlength="35" data-val-addressvalidator-minlength="1" data-val-addressvalidator-optional="false" disabled="disabled" id="addressInputLine1" name="AddressLine1" placeholder="Address line 1" type="text" value="">
+                    <input id="addressInputLine1Hidden" name="AddressLine1" type="hidden" value="BFPO 58">
+                    <span class="field-validation-valid" data-valmsg-for="AddressLine1" data-valmsg-replace="true"></span>
+                </div>
+            </div>
+            <div class="int-row">
+                <div class="int-grid3">
+                    <label for="addressInputLine2" class="int-floatRight">Address line 2</label>
+
+                </div>
+
+                <div class="int-grid6">
+                    <input data-val="true" data-val-addressvalidator="" data-val-addressvalidator-allowablecharserrormessage="Can only contain digits, alphas, spaces, hyphens, obliques, brackets, pairs of double quotes, ampersands, apostrophes, colons, hash." data-val-addressvalidator-cannotbelessthanncharacterserrormessage="Address line cannot be shorter than 1 characters." data-val-addressvalidator-cannotbemorethanncharacterserrormessage="Address line cannot be longer than 35 characters." data-val-addressvalidator-doublequoteserrormessage="If double quotes (&quot;&quot;) are valid, they must be in pairs." data-val-addressvalidator-maxlength="35" data-val-addressvalidator-minlength="1" data-val-addressvalidator-optional="true" id="addressInputLine2" name="AddressLine2" placeholder="Address line 2" type="text" value="">
+                    <span class="field-validation-valid" data-valmsg-for="AddressLine2" data-valmsg-replace="true"></span>
+                </div>
+            </div>
+            <div class="int-row">
+                <div class="int-grid3">
+                    <label for="addressInputLine3" class="int-floatRight">Address line 3</label>
+
+                </div>
+
+                <div class="int-grid6">
+                    <input data-val="true" data-val-addressvalidator="" data-val-addressvalidator-allowablecharserrormessage="Can only contain digits, alphas, spaces, hyphens, obliques, brackets, pairs of double quotes, ampersands, apostrophes, colons, hash." data-val-addressvalidator-cannotbelessthanncharacterserrormessage="Address line cannot be shorter than 1 characters." data-val-addressvalidator-cannotbemorethanncharacterserrormessage="Address line cannot be longer than 35 characters." data-val-addressvalidator-doublequoteserrormessage="If double quotes (&quot;&quot;) are valid, they must be in pairs." data-val-addressvalidator-maxlength="35" data-val-addressvalidator-minlength="1" data-val-addressvalidator-optional="true" id="addressInputLine3" name="AddressLine3" placeholder="Address line 3" type="text" value="">
+                    <span class="field-validation-valid" data-valmsg-for="AddressLine3" data-valmsg-replace="true"></span>
+                </div>
+            </div>
+            <div class="int-row">
+                <div class="int-grid3">
+                    <label for="addressTownCityInput" class="int-floatRight">Town / City</label>
+
+                </div>
+
+                <div class="int-grid6">
+                    <input data-val="true" data-val-addressvalidator="" data-val-addressvalidator-allowablecharserrormessage="Can only contain digits, alphas, spaces, hyphens, obliques, brackets, pairs of double quotes, ampersands, apostrophes, colons, hash." data-val-addressvalidator-cannotbelessthanncharacterserrormessage="Address line cannot be shorter than 1 characters." data-val-addressvalidator-cannotbemorethanncharacterserrormessage="Address line cannot be longer than 35 characters." data-val-addressvalidator-doublequoteserrormessage="If double quotes (&quot;&quot;) are valid, they must be in pairs." data-val-addressvalidator-maxlength="35" data-val-addressvalidator-minlength="1" data-val-addressvalidator-optional="false" id="addressTownCityInput" name="Town" placeholder="Town / City" type="text" value="" class="valid">
+                    <span class="field-validation-valid" data-valmsg-for="Town" data-valmsg-replace="true"></span>
+                </div>
+            </div>
+            <div class="int-row">
+                <div class="int-grid3">
+                    <label for="addressPostCodeInput" class="int-floatRight">Postcode</label>
+
+                </div>
+
+                <div class="int-grid6">
+                    <input data-val="true" data-val-postcodevalidator="Not a valid postcode format." data-val-postcodevalidator-invalidbfpoerrormessage="Not a valid BFPO postcode format." data-val-postcodevalidator-invalidpostcodeerrormessage="Not a valid postcode format." data-val-postcodevalidator-lengtherrormessage="Must be between 5 and 8 characters long." data-val-postcodevalidator-maximumlength="8" data-val-postcodevalidator-minimumlength="5" data-val-postcodevalidator-optional="false" data-val-postcodevalidator-regexerrormessage="Can only contain letters, digits and spaces." disabled="disabled" id="addressPostCodeInput" name="Postcode" placeholder="Postcode" type="text" value="">
+                    <input id="addressPostCodeInputHidden" name="Postcode" type="hidden" value="BF1 2AU">
+                    <span class="field-validation-valid" data-valmsg-for="Postcode" data-valmsg-replace="true"></span>
+                </div>
+            </div>
+            <div class="int-row">
+                <div class="int-grid3">
+                    <label for="addressCountrySelect" class="int-floatRight">Country<span class="int-requiredAsterisk" role="presentation">*</span></label>
+
+                </div>
+
+                <div class="int-grid6">
+                    <select data-val="true" data-val-required="The Country field is required." id="addressCountrySelect" name="BfpoCountry">
+                        <option value="">Choose</option>
+                        <option value="BFPONonCyprus">BFPO (except Cyprus)</option>
+                        <option value="BFPOCyprus">BFPO (Cyprus)</option>
+                    </select>
+                    <span class="field-validation-valid" data-valmsg-for="BfpoCountry" data-valmsg-replace="true"></span>
+                    <input data-val="true" data-val-required="The Country field is required." id="Country" name="Country" type="hidden" value="GB">
+                </div>
+            </div>
+            <hr>
+            <div class="int-row">
+                <div class="int-grid3">
+                    <label for="titleListSelect" class="int-floatRight">Title<span class="int-requiredAsterisk" role="presentation">*</span></label>
+
+                </div>
+                <div class="int-grid6">
+                    <select data-val="true" data-val-required="The Title field is required." id="titleListSelect" name="PersonalDetailsModel.Title">
+                        <option value="">Choose</option>
+                        <option value="1">Mr</option>
+                        <option value="2">Mrs</option>
+                        <option value="3">Miss</option>
+                        <option value="4">Ms</option>
+                        <option value="5">Doctor</option>
+                        <option value="6">Reverend</option>
+                        <option value="7">Lady</option>
+                        <option value="8">Sir</option>
+                        <option value="9">Professor</option>
+                        <option value="10">Other</option>
+                    </select>
+                    <span class="field-validation-valid" data-valmsg-for="PersonalDetailsModel.Title" data-valmsg-replace="true"></span>
+                </div>
+            </div>
+            <div id="titleDetailsRegion" aria-live="assertive">
+                <div class="int-row hidden " id="otherTitleInputContainer">
+                    <div class="int-grid3">
+                        <label for="otherTitleInput" class="int-floatRight">Other title<span class="int-hide">&nbsp;As you have selected 'Other' as your title from the select list above, please specify here or select a different option from the list of titles.</span><span class="int-requiredAsterisk" role="presentation">*</span></label>
+
+                    </div>
+                    <div class="int-grid6">
+                        <input data-val="true" data-val-namevalidator="Cannot contain a forward slash in the first character position." data-val-namevalidator-errormessage="Cannot contain a forward slash in the first character position." data-val-namevalidator-maxlength="40" data-val-namevalidator-minlength="1" data-val-namevalidator-optional="false" data-val-namevalidator-regexerrormessage="Can only contain alphas, spaces, hyphens, apostrophes, brackets, at signs and forward slashes." data-val-namevalidator-regexpattern="^[A-Za-z\040\-\'\(\)\@\/]*$" id="otherTitleInput" name="PersonalDetailsModel.OtherTitle" placeholder="Other title" title="As you have selected 'Other' as your title from the select list above, please specify here or select a different option from the list of titles." type="text" value="">
+                        <span class="field-validation-valid" data-valmsg-for="PersonalDetailsModel.OtherTitle" data-valmsg-replace="true"></span>
+                    </div>
+                </div>
+            </div>
+            <div id="genderSelectRegion" aria-live="assertive">
+                <div class="int-row hidden " id="genderSelectRow">
+                    <div class="int-grid3">
+                        <label for="genderSelect" class="int-floatRight">Gender <span class="int-requiredAsterisk" role="presentation">*</span></label>
+                    </div>
+                    <div class="int-grid6">
+                        <select data-val="true" data-val-required="The Gender field is required." id="genderSelect" name="PersonalDetailsModel.Gender">
+                            <option value="">Choose</option>
+                            <option value="M">Male</option>
+                            <option value="F">Female</option>
+                        </select>
+                        <span class="field-validation-valid" data-valmsg-for="PersonalDetailsModel.Gender" data-valmsg-replace="true"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="int-row">
+                <div class="int-grid3">
+                    <label for="firstNameInput" class="int-floatRight">First name(s)<span class="int-requiredAsterisk" role="presentation">*</span></label>
+
+                </div>
+                <div class="int-grid6">
+                    <input data-val="true" data-val-namevalidator="Cannot contain a forward slash in the first character position." data-val-namevalidator-errormessage="Cannot contain a forward slash in the first character position." data-val-namevalidator-maxlength="40" data-val-namevalidator-minlength="1" data-val-namevalidator-optional="false" data-val-namevalidator-regexerrormessage="Can only contain alphas, spaces, hyphens, apostrophes, brackets, at signs and forward slashes." data-val-namevalidator-regexpattern="^[A-Za-z\040\-\'\(\)\@\/]*$" id="firstNameInput" maxlength="40" name="PersonalDetailsModel.FirstName" placeholder="First name(s)" type="text" value="">
+                    <span class="field-validation-valid" data-valmsg-for="PersonalDetailsModel.FirstName" data-valmsg-replace="true"></span>
+                </div>
+            </div>
+            <div class="int-row">
+                <div class="int-grid3">
+                    <label for="lastNameInput" class="int-floatRight">Last name<span class="int-requiredAsterisk" role="presentation">*</span></label>
+
+                </div>
+                <div class="int-grid6">
+                    <input data-val="true" data-val-namevalidator="Cannot contain a forward slash in the first character position." data-val-namevalidator-errormessage="Cannot contain a forward slash in the first character position." data-val-namevalidator-maxlength="25" data-val-namevalidator-minlength="1" data-val-namevalidator-optional="false" data-val-namevalidator-regexerrormessage="Can only contain alphas, spaces, hyphens, apostrophes, brackets, at signs and forward slashes." data-val-namevalidator-regexpattern="^[A-Za-z\040\-\'\(\)\@\/]*$" id="lastNameInput" maxlength="25" name="PersonalDetailsModel.LastName" placeholder="Last name" type="text" value="">
+                    <span class="field-validation-valid" data-valmsg-for="PersonalDetailsModel.LastName" data-valmsg-replace="true"></span>
+                </div>
+            </div>
+            <div class="int-row">
+                <div class="int-grid3">
+                    <label for="dateOfBirthInput" class="int-floatRight">Date of birth (DD-MM-YYYY)<span class="int-requiredAsterisk" role="presentation">*</span></label>
+
+                </div>
+                <div class="int-grid6">
+                    <input data-val="true" data-val-pastdatevalidator="Invalid date." data-val-pastdatevalidator-blankinputerrormessage="Blanks are not allowed." data-val-pastdatevalidator-datemustbeinpasterrormessage="Date must be in the past." data-val-pastdatevalidator-invaliddateformaterrormessage="Invalid date format." data-val-pastdatevalidator-invalidrangeerrormessage="Year must be in range 1582 to 2382." data-val-pastdatevalidator-maxyear="2382" data-val-pastdatevalidator-minyear="1582" data-val-pastdatevalidator-optional="false" id="dateOfBirthInput" name="PersonalDetailsModel.DateOfBirth" placeholder="DD-MM-YYYY" type="text" value="">
+                    <span class="field-validation-valid" data-valmsg-for="PersonalDetailsModel.DateOfBirth" data-valmsg-replace="true"></span>
+                </div>
+            </div>
+            <hr>
+            <div class="int-row">
+                <div class="int-grid3">
+                    <label for="OUPIInput" class="int-floatRight">OU personal identifier (if known)</label>
+
+                </div>
+                <div class="int-grid6">
+                    <input data-val="true" data-val-regexvalidator="The OU computer user name must begin with at least one letter followed by at least one digit, with no zeroes or ones." data-val-regexvalidator-maxlength="8" data-val-regexvalidator-minlength="0" data-val-regexvalidator-optional="true" data-val-regexvalidator-regexerrormessage="The OU computer user name must begin with at least one letter followed by at least one digit, with no zeroes or ones." data-val-regexvalidator-regexpattern="^[A-Za-z]{1,7}[2-9]{1,7}$" id="OUPIInput" name="PersonalDetailsModel.Oucu" placeholder="OU personal identifier (optional)" type="text" value="">
+                    <span class="field-validation-valid" data-valmsg-for="PersonalDetailsModel.Oucu" data-valmsg-replace="true"></span>
+                </div>
+            </div>
+        </fieldset>
+    </form>
+</div>

@@ -1,0 +1,26 @@
+// =============================================================================
+// Quick facts
+// 
+// =============================================================================
+
+@qf-bg:     @light-grey-blue;
+@qf-border: @light-blue;
+
+.int-quick-facts {
+	background: @qf-bg;
+	border: 1px solid @qf-border;
+    margin-bottom:2em;
+    @media (min-width: @screen-md) {
+		.rounded(4px);
+		border-width:20px;
+	}
+	h2, dt, dd {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	dt {
+		margin-top:11px;
+		padding-top:16px;
+		border-top: 1px solid @qf-border;
+	}
+}

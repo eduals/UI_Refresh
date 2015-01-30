@@ -1,0 +1,106 @@
+// =============================================================================
+//  Tooltip
+// 
+// =============================================================================
+
+@tooltip-bg: @dark-blue;
+@tooltip-error-bg: @red;
+@tooltip-arrow-size: 20px;
+
+.int-tooltip {
+	position: relative;
+	margin-bottom: 5px;
+	max-width:280px;
+	.rounded(4px);
+	color: #ffffff;
+	background-color: @dark-blue;
+	padding: 1em;
+	h6 {
+		color: @white;
+		padding-right:12px;
+	}
+	p {
+		font-size: @sml-text-size;
+	}
+	.int-close {
+		-webkit-backface-visibility: hidden;
+		-webkit-perspective: 1000;
+		.transition();
+		color: @white;
+		position:absolute;
+		top:10px;
+		right:10px;
+		width: auto;
+		i { 
+			font-size: 25px;
+			width:22px;
+		}
+		&:hover, &:focus {
+			.transform(scale(1.1),rotate(360deg));
+		}
+	}
+	// arrow styles
+
+	&.int-tooltip-arrow-left {
+		margin-left:@tooltip-arrow-size;
+		&:before {
+			.triangle(left, @tooltip-arrow-size, @tooltip-bg);
+			position:absolute;
+			top:15px;
+			left:-@tooltip-arrow-size;
+		}
+	}
+
+	&.int-tooltip-arrow-right {
+		margin-right:@tooltip-arrow-size;
+		&:before {
+			.triangle(right, @tooltip-arrow-size, @tooltip-bg);
+			position:absolute;
+			top:15px;
+			right:-@tooltip-arrow-size;
+		}
+	}
+
+	&.int-tooltip-arrow-top, &.int-tooltip-arrow-top-right {
+		margin-top:@tooltip-arrow-size;
+		&:before {
+			.triangle(up, @tooltip-arrow-size, @tooltip-bg);
+			position:absolute;
+			top:-@tooltip-arrow-size;
+		}
+	}
+
+	&.int-tooltip-arrow-bottom, &.int-tooltip-arrow-bottom-right {
+		margin-bottom:@tooltip-arrow-size;
+		&:before {
+			.triangle(down, @tooltip-arrow-size, @tooltip-bg);
+			position:absolute;
+			bottom:-@tooltip-arrow-size;
+		}
+	}
+
+	&.int-tooltip-arrow-top:before, &.int-tooltip-arrow-bottom:before {
+		left:15px;
+	}
+
+	&.int-tooltip-arrow-top-right:before, &.int-tooltip-arrow-bottom-right:before {
+		right:15px;
+	}
+
+	&.int-tooltip-error {
+		background: @red;
+		&.int-tooltip-arrow-bottom:before, &.int-tooltip-arrow-bottom-right:before {
+			border-top-color: @red;
+		}
+		&.int-tooltip-arrow-top:before, &.int-tooltip-arrow-top-right:before {
+			border-bottom-color: @red;
+		}
+		&.int-tooltip-arrow-left:before {
+			border-right-color: @red;
+		}
+		&.int-tooltip-arrow-right:before {
+			border-left-color: @red;
+		}
+	}
+
+}

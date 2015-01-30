@@ -1,0 +1,80 @@
+// =============================================================================
+// Tags
+// 
+// =============================================================================
+
+@tags-color: @mid-blue;
+@tags-bg: @light-blue;
+@tags-toggle-color: @light-blue;
+@tags-toggle-bg: @mid-blue;
+@tags-disabled-color: #536173;
+@tags-disabled-bg: @light-grey-blue;
+
+.int-tags {
+	.clearfix();
+	padding: 0;
+    margin-bottom: 0.25em;
+    dt {
+        color: @tags-color;
+        padding-bottom: 0.25em;
+    }
+	dd {
+		padding: 0;
+		&:before {
+			content:'';
+			display: none;
+		}
+	}
+    li {
+        padding: 0;
+        &:before {
+            content:'';
+            display: none;
+        }
+        display: inline-block;
+    }
+    h1, h2, h3, h4 ,h5, h6, a, span {
+        font-family: @secondary-font-family;
+        font-weight: normal;
+		font-size: 1em;
+        line-height: 2;
+        text-decoration: none;
+        text-align: center;
+        float: left;
+        width: auto;
+        padding: 7px 10px 5px 10px;
+        margin: 0 1px 1px 0;
+        white-space: nowrap;
+        display: inline-block;
+    }
+    a, .active {
+        color: @tags-color;
+        background-color: @tags-bg;
+        &:hover, &:focus, &.active {
+            color: @white;
+            background-color: @tags-toggle-bg;
+        }
+    }
+    .active:focus {
+        color: @gold;  
+    }
+    h1, h2, h3, h4 ,h5, h6, span {
+        color: @tags-disabled-color;
+        background-color: @tags-disabled-bg;
+    }
+	&.int-tags-sq h1, 
+	&.int-tags-sq h2, 
+	&.int-tags-sq h3, 
+	&.int-tags-sq h4,
+	&.int-tags-sq h5,
+	&.int-tags-sq h6,
+	&.int-tags-sq a, 
+	&.int-tags-sq span {
+		line-height: 46px;
+		padding: 0;
+		width: 44px;
+		height: 44px;
+	}
+}
+
+.generatedcontent .int-tags li, .int-tags li { padding-left: 0; }

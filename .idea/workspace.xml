@@ -1,0 +1,1120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="c0cdec45-1341-46cd-84a1-3f85786723b5" name="Default" comment="" />
+    <ignored path="DEV_RegistrationPathway.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <ignored path=".idea/dataSources.local.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="DaemonCodeAnalyzer">
+    <disable_hints />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="DEV_RegistrationPathway" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="UIRefresh_ContactUs.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/UIRefresh_ContactUs.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.70945156" vertical-offset="7535" max-vertical-offset="13192">
+              <caret line="479" column="125" selection-start-line="479" selection-start-column="125" selection-end-line="479" selection-end-column="125" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#main#0;n#div#4;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#1;n#div#7;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#main#0;n#div#4;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="tag#div#1;tag#div#0;tag#div#1;tag#div#7;tag#div#1;tag#div#0;tag#div#0;tag#div#0;tag#div#0;tag#div#1;tag#main#0;tag#div#4;tag#form#0;tag#body#0;tag#html#0" expanded="false" />
+                <element signature="tag#div#6;tag#div#0;tag#div#2;tag#div#7;tag#div#1;tag#div#0;tag#div#0;tag#div#0;tag#div#0;tag#div#1;tag#main#0;tag#div#4;tag#form#0;tag#body#0;tag#html#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ui_refresh_contact_us.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Content/modules/ui_refresh/ui_refresh_contact_us.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1513">
+              <caret line="30" column="54" selection-start-line="30" selection-start-column="54" selection-end-line="30" selection-end-column="54" />
+              <folding>
+                <element signature="e#40#128#0" expanded="false" />
+                <element signature="e#476#645#0" expanded="false" />
+                <element signature="e#1631#1778#0" expanded="false" />
+                <element signature="e#1664#1713#0" expanded="false" />
+                <element signature="e#1719#1772#0" expanded="false" />
+                <element signature="e#2144#2221#0" expanded="false" />
+                <element signature="e#2502#3905#0" expanded="false" />
+                <element signature="e#2519#3897#0" expanded="false" />
+                <element signature="e#2831#2888#0" expanded="false" />
+                <element signature="e#2927#3887#0" expanded="false" />
+                <element signature="e#3130#3275#0" expanded="false" />
+                <element signature="e#3281#3873#0" expanded="false" />
+                <element signature="e#3417#3853#0" expanded="false" />
+                <element signature="e#3526#3663#0" expanded="false" />
+                <element signature="e#3669#3831#0" expanded="false" />
+                <element signature="e#3939#3976#0" expanded="false" />
+                <element signature="e#4009#4054#0" expanded="false" />
+                <element signature="e#4087#4132#0" expanded="false" />
+                <element signature="e#4162#4616#0" expanded="false" />
+                <element signature="e#4388#4567#0" expanded="false" />
+                <element signature="e#4656#4699#0" expanded="false" />
+                <element signature="e#4739#4787#0" expanded="false" />
+                <element signature="e#4823#5003#0" expanded="false" />
+                <element signature="e#5052#5454#0" expanded="false" />
+                <element signature="e#5486#5531#0" expanded="false" />
+                <element signature="e#5571#5689#0" expanded="false" />
+                <element signature="e#5724#5781#0" expanded="false" />
+                <element signature="e#5816#5854#0" expanded="false" />
+                <element signature="e#5883#6004#0" expanded="false" />
+                <element signature="e#5959#5998#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="cl5976.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Content/modules/cl5976/cl5976.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="765">
+              <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+              <folding>
+                <element signature="e#607#1222#0" expanded="false" />
+                <element signature="e#906#1214#0" expanded="false" />
+                <element signature="e#996#1204#0" expanded="false" />
+                <element signature="e#1041#1188#0" expanded="false" />
+                <element signature="e#1267#1346#0" expanded="false" />
+                <element signature="e#1307#1340#0" expanded="false" />
+                <element signature="e#1405#1666#0" expanded="false" />
+                <element signature="e#1441#1658#0" expanded="false" />
+                <element signature="e#1593#1648#0" expanded="false" />
+                <element signature="e#1716#1884#0" expanded="false" />
+                <element signature="e#1764#1878#0" expanded="false" />
+                <element signature="e#1810#1868#0" expanded="false" />
+                <element signature="e#1940#2191#0" expanded="false" />
+                <element signature="e#1978#2183#0" expanded="false" />
+                <element signature="e#2012#2173#0" expanded="false" />
+                <element signature="e#2086#2159#0" expanded="false" />
+                <element signature="e#2242#2469#0" expanded="false" />
+                <element signature="e#2262#2461#0" expanded="false" />
+                <element signature="e#2294#2358#0" expanded="false" />
+                <element signature="e#2391#2451#0" expanded="false" />
+                <element signature="e#2538#2702#0" expanded="false" />
+                <element signature="e#2731#4690#0" expanded="false" />
+                <element signature="e#2751#3300#0" expanded="false" />
+                <element signature="e#3243#3290#0" expanded="false" />
+                <element signature="e#3328#3759#0" expanded="false" />
+                <element signature="e#3521#3603#0" expanded="false" />
+                <element signature="e#3648#3723#0" expanded="false" />
+                <element signature="e#3821#4201#0" expanded="false" />
+                <element signature="e#4080#4163#0" expanded="false" />
+                <element signature="e#4251#4362#0" expanded="false" />
+                <element signature="e#4409#4684#0" expanded="false" />
+                <element signature="e#4464#4589#0" expanded="false" />
+                <element signature="e#4505#4566#0" expanded="false" />
+                <element signature="e#4595#4648#0" expanded="false" />
+                <element signature="e#4763#4903#0" expanded="false" />
+                <element signature="e#4944#6013#0" expanded="false" />
+                <element signature="e#4964#5276#0" expanded="false" />
+                <element signature="e#5034#5234#0" expanded="false" />
+                <element signature="e#5304#5358#0" expanded="false" />
+                <element signature="e#5397#5776#0" expanded="false" />
+                <element signature="e#5571#5738#0" expanded="false" />
+                <element signature="e#5823#6007#0" expanded="false" />
+                <element signature="e#5864#5995#0" expanded="false" />
+                <element signature="e#6079#6340#0" expanded="false" />
+                <element signature="e#6369#9570#0" expanded="false" />
+                <element signature="e#6389#6641#0" expanded="false" />
+                <element signature="e#6673#6918#0" expanded="false" />
+                <element signature="e#6741#6809#0" expanded="false" />
+                <element signature="e#6815#6876#0" expanded="false" />
+                <element signature="e#6970#7380#0" expanded="false" />
+                <element signature="e#7107#7158#0" expanded="false" />
+                <element signature="e#7229#7280#0" expanded="false" />
+                <element signature="e#7425#7746#0" expanded="false" />
+                <element signature="e#7484#7689#0" expanded="false" />
+                <element signature="e#7521#7580#0" expanded="false" />
+                <element signature="e#7616#7675#0" expanded="false" />
+                <element signature="e#7786#8061#0" expanded="false" />
+                <element signature="e#7845#8023#0" expanded="false" />
+                <element signature="e#7883#8009#0" expanded="false" />
+                <element signature="e#7924#7991#0" expanded="false" />
+                <element signature="e#8096#8463#0" expanded="false" />
+                <element signature="e#8296#8453#0" expanded="false" />
+                <element signature="e#8498#8864#0" expanded="false" />
+                <element signature="e#8697#8854#0" expanded="false" />
+                <element signature="e#8909#9119#0" expanded="false" />
+                <element signature="e#8980#9107#0" expanded="false" />
+                <element signature="e#9147#9564#0" expanded="false" />
+                <element signature="e#9339#9483#0" expanded="false" />
+                <element signature="e#9639#9995#0" expanded="false" />
+                <element signature="e#10034#15601#0" expanded="false" />
+                <element signature="e#10054#11322#0" expanded="false" />
+                <element signature="e#10075#10283#0" expanded="false" />
+                <element signature="e#10311#10486#0" expanded="false" />
+                <element signature="e#10552#10993#0" expanded="false" />
+                <element signature="e#11350#11409#0" expanded="false" />
+                <element signature="e#11453#12302#0" expanded="false" />
+                <element signature="e#11736#12264#0" expanded="false" />
+                <element signature="e#11959#12250#0" expanded="false" />
+                <element signature="e#12008#12230#0" expanded="false" />
+                <element signature="e#12376#13175#0" expanded="false" />
+                <element signature="e#12493#12936#0" expanded="false" />
+                <element signature="e#12556#12922#0" expanded="false" />
+                <element signature="e#12942#13165#0" expanded="false" />
+                <element signature="e#13231#13956#0" expanded="false" />
+                <element signature="e#13991#14044#0" expanded="false" />
+                <element signature="e#14115#14590#0" expanded="false" />
+                <element signature="e#14683#15595#0" expanded="false" />
+                <element signature="e#14919#14997#0" expanded="false" />
+                <element signature="e#15057#15165#0" expanded="false" />
+                <element signature="e#15650#16309#0" expanded="false" />
+                <element signature="e#16336#22330#0" expanded="false" />
+                <element signature="e#16356#16861#0" expanded="false" />
+                <element signature="e#16381#16532#0" expanded="false" />
+                <element signature="e#16889#17146#0" expanded="false" />
+                <element signature="e#17196#17626#0" expanded="false" />
+                <element signature="e#17389#17588#0" expanded="false" />
+                <element signature="e#17466#17527#0" expanded="false" />
+                <element signature="e#17672#17809#0" expanded="false" />
+                <element signature="e#17752#17799#0" expanded="false" />
+                <element signature="e#17860#18190#0" expanded="false" />
+                <element signature="e#17954#18091#0" expanded="false" />
+                <element signature="e#18014#18075#0" expanded="false" />
+                <element signature="e#18097#18154#0" expanded="false" />
+                <element signature="e#18223#18741#0" expanded="false" />
+                <element signature="e#18357#18703#0" expanded="false" />
+                <element signature="e#18774#19202#0" expanded="false" />
+                <element signature="e#18908#19164#0" expanded="false" />
+                <element signature="e#19256#19391#0" expanded="false" />
+                <element signature="e#19428#19640#0" expanded="false" />
+                <element signature="e#19493#19602#0" expanded="false" />
+                <element signature="e#19687#20023#0" expanded="false" />
+                <element signature="e#19748#19844#0" expanded="false" />
+                <element signature="e#19847#19945#0" expanded="false" />
+                <element signature="e#20074#20305#0" expanded="false" />
+                <element signature="e#20179#20269#0" expanded="false" />
+                <element signature="e#20356#20584#0" expanded="false" />
+                <element signature="e#20461#20548#0" expanded="false" />
+                <element signature="e#20612#21011#0" expanded="false" />
+                <element signature="e#20673#20752#0" expanded="false" />
+                <element signature="e#20787#20875#0" expanded="false" />
+                <element signature="e#20914#20973#0" expanded="false" />
+                <element signature="e#21054#21920#0" expanded="false" />
+                <element signature="e#21108#21817#0" expanded="false" />
+                <element signature="e#21178#21801#0" expanded="false" />
+                <element signature="e#21225#21280#0" expanded="false" />
+                <element signature="e#21527#21628#0" expanded="false" />
+                <element signature="e#21683#21783#0" expanded="false" />
+                <element signature="e#21823#21884#0" expanded="false" />
+                <element signature="e#21970#22324#0" expanded="false" />
+                <element signature="e#22089#22288#0" expanded="false" />
+                <element signature="e#22139#22236#0" expanded="false" />
+                <element signature="e#22410#22975#0" expanded="false" />
+                <element signature="e#22648#22946#0" expanded="false" />
+                <element signature="e#22790#22875#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="OU_Sign_Up_Authenticated.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Content/modules/ui_refresh/eep/OU_Sign_Up_Authenticated.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1734">
+              <caret line="90" column="17" selection-start-line="90" selection-start-column="17" selection-end-line="90" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="OU_SignUp.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Content/modules/ui_refresh/eep/OU_SignUp.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="289">
+              <caret line="6" column="7" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="cl5976.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Content/modules/cl5976/cl5976.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="2040" max-vertical-offset="4624">
+              <caret line="21" column="27" selection-start-line="21" selection-start-column="27" selection-end-line="21" selection-end-column="27" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindManager">
+    <FindUsagesManager>
+      <setting name="OPEN_NEW_TAB" value="false" />
+    </FindUsagesManager>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="changedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/MVC_3_MoreAboutYou2.html" />
+        <option value="$PROJECT_DIR$/MVC_1_ModuleStart.html" />
+        <option value="$PROJECT_DIR$/TestNewHelpBox.html" />
+        <option value="$PROJECT_DIR$/xSignUPPageTESTHARNESS.html" />
+        <option value="$PROJECT_DIR$/ouhome-assets/ouhome1.css" />
+        <option value="$PROJECT_DIR$/xMainPage.html" />
+        <option value="$PROJECT_DIR$/Views/Shared/_AboutYouUK.html" />
+        <option value="$PROJECT_DIR$/Views/Shared/_AboutYouNonUK.html" />
+        <option value="$PROJECT_DIR$/MVC_2_Address.html" />
+        <option value="$PROJECT_DIR$/Content/Orp/js/pathway-your-contact-details.js" />
+        <option value="$PROJECT_DIR$/Views/Shared/_AboutYouBFPO.html" />
+        <option value="$PROJECT_DIR$/specs/spec-your-details.js" />
+        <option value="$PROJECT_DIR$/RegistrationSpecRunner - YourDetails.html" />
+        <option value="$PROJECT_DIR$/RegistrationSpecRunner.html" />
+        <option value="$PROJECT_DIR$/specs/spec-registration.js" />
+        <option value="$PROJECT_DIR$/SalesForceLogin.html" />
+        <option value="$PROJECT_DIR$/Employers_LiveAgentDeployment(1).html" />
+        <option value="$PROJECT_DIR$/Employers_Chat_v3.html" />
+        <option value="$PROJECT_DIR$/dump.js" />
+        <option value="$PROJECT_DIR$/Employers_Chat.html" />
+        <option value="$PROJECT_DIR$/Registration_2_YourDetails_DupeCheck.html" />
+        <option value="$PROJECT_DIR$/Content/registration/css/pathway.css" />
+        <option value="$PROJECT_DIR$/Registration_2_YourDetails.html" />
+        <option value="$PROJECT_DIR$/xPPTNewJourney.html" />
+        <option value="$PROJECT_DIR$/ppt.css" />
+        <option value="$PROJECT_DIR$/xSignUPPage.html" />
+        <option value="$PROJECT_DIR$/Content/registration/js/pathway-your-contact-details.js" />
+        <option value="$PROJECT_DIR$/ui.refresh_ContactUsLandingPage.html" />
+        <option value="$PROJECT_DIR$/UIRefresh_Contact.html" />
+        <option value="$PROJECT_DIR$/xEmailUsPage.html" />
+        <option value="$PROJECT_DIR$/Employers_SalesForceLogin_2.html" />
+        <option value="$PROJECT_DIR$/Employers_SalesForceLogin.html" />
+        <option value="$PROJECT_DIR$/UIRefresh_RequestACallback.html" />
+        <option value="$PROJECT_DIR$/Content/ui_refresh/eep/OU_Call_Me_Back.js" />
+        <option value="$PROJECT_DIR$/HeadersFooters.html" />
+        <option value="$PROJECT_DIR$/UIRefresh_Callback_Additions.html" />
+        <option value="$PROJECT_DIR$/Content/ui_refresh/data/dummy_data1.json" />
+        <option value="$PROJECT_DIR$/Content/ui_refresh/data/dummy_data0.json" />
+        <option value="$PROJECT_DIR$/Content/ui_refresh/eep/OU_ContactUsForm.js" />
+        <option value="$PROJECT_DIR$/UIRefresh_Callback.html" />
+        <option value="$PROJECT_DIR$/Content/ui_refresh/data/dummy_data2.json" />
+        <option value="$PROJECT_DIR$/Content/ui_refresh/eep/OU_SignUp.js" />
+        <option value="$PROJECT_DIR$/Content/ui_refresh/eep/OU_Sign_Up_Authenticated.js" />
+        <option value="$PROJECT_DIR$/Content/ui_refresh/ui_refresh_callback.js" />
+        <option value="$PROJECT_DIR$/Content/ui_refresh/ui_refresh_contact_us.js" />
+        <option value="$PROJECT_DIR$/Content/ui_refresh/ui_refresh_create_account.js" />
+        <option value="$PROJECT_DIR$/UIRefresh_CreateAccount.html" />
+        <option value="$PROJECT_DIR$/Content/modules/cl5976/cl5976.js" />
+        <option value="$PROJECT_DIR$/Content/modules/cl5976/cl5976.css" />
+        <option value="$PROJECT_DIR$/Content/modules/ui_refresh/ui_refresh_contact_us.js" />
+        <option value="$PROJECT_DIR$/UIRefresh_ContactUs.html" />
+      </list>
+    </option>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectReloadState">
+    <option name="STATE" value="0" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DEV_RegistrationPathway" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DEV_RegistrationPathway" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="UI Refresh" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DEV_RegistrationPathway" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="UI Refresh" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Content" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DEV_RegistrationPathway" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="UI Refresh" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Content" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ui_refresh" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DEV_RegistrationPathway" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="UI Refresh" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Content" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="LayoutCode.rearrangeEntriesHTML" value="false" />
+    <property name="FullScreen" value="false" />
+    <property name="DefaultHtmlFileTemplate" value="Html5" />
+    <property name="LayoutCode.rearrangeEntriesJavaScript" value="false" />
+    <property name="LayoutCode.rearrangeEntriesJSON" value="false" />
+    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://C:/Users/Chih-Kuei/Dropbox/Dev/DEV_OU/DEV_RegistrationPathway/Content/Orp/js/pathway.js" />
+    <property name="LayoutCode.rearrangeEntriesCSS" value="false" />
+    <property name="recentsLimit" value="5" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Chih-Kuei\Dropbox\Dev\DEV_OU\UI Refresh" />
+      <recent name="C:\Users\Chih-Kuei\Dropbox\Dev\DEV_OU\dev_registration" />
+      <recent name="C:\Users\Chih-Kuei\Dropbox\Dev\DEV_OU\dev_registration\Content\modules\cl5976\img" />
+      <recent name="C:\Users\Chih-Kuei\Dropbox\Dev\DEV_OU\DEV_RegistrationPathway" />
+      <recent name="C:\Users\Chih-Kuei\Dropbox\Dev\DEV_OU\DEV_RegistrationPathway\Views\Shared" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Chih-Kuei\Dropbox\Dev\DEV_OU\UI Refresh\Content\modules" />
+      <recent name="C:\Users\Chih-Kuei\Dropbox\Dev\DEV_OU\UI Refresh\Content\ui_refresh\eep" />
+      <recent name="C:\Users\Chih-Kuei\Dropbox\Dev\DEV_OU\DEV_RegistrationPathway\Content\modules\cl5976" />
+      <recent name="C:\Users\Chih-Kuei\Dropbox\Dev\DEV_RegistrationPathway" />
+      <recent name="C:\Users\cl5976\Dropbox\Dev\DEV_RegistrationPathway\Views\Shared" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JavaScript Debug.MVC_1_QualStart.html">
+    <configuration default="false" name="MVC_1_QualStart.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/DEV_RegistrationPathway/MVC_1_QualStart.html">
+      <RunnerSettings RunnerId="JavascriptDebugRunner" />
+      <ConfigurationWrapper RunnerId="JavascriptDebugRunner" />
+      <method />
+    </configuration>
+    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpBehatConfigurationType" factoryName="Behat">
+      <BehatRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <pass-parent-env-vars>false</pass-parent-env-vars>
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
+      <method />
+    </configuration>
+    <list size="1">
+      <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.MVC_1_QualStart.html" />
+    </list>
+    <recent_temporary>
+      <list size="1">
+        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.MVC_1_QualStart.html" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration" myUseAcceleration="nothing">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c0cdec45-1341-46cd-84a1-3f85786723b5" name="Default" comment="" />
+      <created>1413898920264</created>
+      <option name="number" value="Default" />
+      <updated>1413898920264</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1828125" sideWeight="0.6710098" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3284055" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39915523" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+    </layout>
+    <layout-to-restore>
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3284055" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39915523" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1828125" sideWeight="0.6710098" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="myTodoPanelSettings">
+      <TodoPanelSettings />
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="167" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/xSignInPageASPXOriginal.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xSignInPage_1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xSignInPageASPXTake2ServerReady.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xSignInPageASPXTake2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Content/registration/js/pathway-start-qualification.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestNewHelpBox.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ouhome-assets/ouhome1.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xMainPage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Views/Shared/_AboutYouUK.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Views/Shared/_AboutYouNonUK.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Views/Shared/_AboutYouBFPO.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Data/AddressList0.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Data/AddressList1.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Data/AddressList2.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Data/AddressListBFPO.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Content/registration/js/pathway-start-module.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Content/employers.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Employers_LiveAgentDeployment(1).html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Employers_Chat_Backup1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2414">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dump.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.45535713" vertical-offset="0" max-vertical-offset="896">
+          <caret line="24" column="2" selection-start-line="24" selection-start-column="2" selection-end-line="24" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Content/v2/headerandfooter/assets/css/headerandfooter.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="35105">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Content/v2/headerandfooter/assets/css/footer.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.39087948" vertical-offset="3533" max-vertical-offset="4454">
+          <caret line="229" column="5" selection-start-line="229" selection-start-column="5" selection-end-line="229" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RegistrationSpecRunner.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/specs/spec-registration.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Employers_Chat.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="39.615383" vertical-offset="4090" max-vertical-offset="5746">
+          <caret line="180" column="91" selection-start-line="180" selection-start-column="91" selection-end-line="180" selection-end-column="91" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/UIRefresh_QualificationQ64.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="5.088435" vertical-offset="680" max-vertical-offset="7378">
+          <caret line="333" column="26" selection-start-line="333" selection-start-column="26" selection-end-line="333" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ou.widgets.eep.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="864" max-vertical-offset="1785">
+          <caret line="254" column="23" selection-start-line="254" selection-start-column="23" selection-end-line="254" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Registration_2_YourDetails.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2251732" vertical-offset="8390" max-vertical-offset="9282">
+          <caret line="505" column="56" selection-start-line="505" selection-start-column="56" selection-end-line="505" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Employers.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="6392" max-vertical-offset="9299">
+          <caret line="402" column="0" selection-start-line="402" selection-start-column="0" selection-end-line="405" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Employers_SalesForceLogin.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.6905028" vertical-offset="2641" max-vertical-offset="3536">
+          <caret line="203" column="0" selection-start-line="203" selection-start-column="0" selection-end-line="203" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/UIRefresh_Callback_v1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="2.3461537" vertical-offset="8629" max-vertical-offset="10574">
+          <caret line="515" column="201" selection-start-line="515" selection-start-column="201" selection-end-line="515" selection-end-column="201" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Content/registration/css/pathway.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33257142" vertical-offset="15" max-vertical-offset="3536">
+          <caret line="18" column="15" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HeadersFooters.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.38548753" vertical-offset="952" max-vertical-offset="10438">
+          <caret line="76" column="0" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Content/modules/ui_refresh/eep/OU_Call_Me_Back.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1819">
+          <caret line="0" column="15" selection-start-line="0" selection-start-column="15" selection-end-line="0" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xEmailUsPage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-370.69232" vertical-offset="4523" max-vertical-offset="14331">
+          <caret line="833" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="837" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Content/registration/js/pathway-your-contact-details.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3355049" vertical-offset="82" max-vertical-offset="1003">
+          <caret line="118" column="32" selection-start-line="118" selection-start-column="32" selection-end-line="118" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/UIRefresh_Contact.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.9047619" vertical-offset="5883" max-vertical-offset="9180">
+          <caret line="393" column="12" selection-start-line="393" selection-start-column="12" selection-end-line="393" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Content/registration/js/pathway.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.606949" vertical-offset="274" max-vertical-offset="5474">
+          <caret line="54" column="52" selection-start-line="54" selection-start-column="0" selection-end-line="64" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/UIRefresh_Callback.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.21315193" vertical-offset="7683" max-vertical-offset="10557">
+          <caret line="502" column="18" selection-start-line="496" selection-start-column="11" selection-end-line="502" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Content/modules/ui_refresh/data/dummy_data0.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="895">
+          <caret line="0" column="8" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Content/modules/ui_refresh/eep/OU_ContactUsForm.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="187">
+          <caret line="1" column="34" selection-start-line="1" selection-start-column="34" selection-end-line="1" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Content/modules/ui_refresh/data/dummy_data2.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.9615384" vertical-offset="0" max-vertical-offset="4284">
+          <caret line="3" column="40" selection-start-line="3" selection-start-column="40" selection-end-line="3" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Content/modules/ui_refresh/ui_refresh_callback.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.35070574" vertical-offset="0" max-vertical-offset="921">
+          <caret line="24" column="4" selection-start-line="24" selection-start-column="4" selection-end-line="24" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Content/modules/ui_refresh/eep/OU_SignUp.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="289">
+          <caret line="6" column="7" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Content/modules/cl5976/cl5976.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="2040" max-vertical-offset="4624">
+          <caret line="21" column="27" selection-start-line="21" selection-start-column="27" selection-end-line="21" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Content/modules/ui_refresh/eep/OU_Sign_Up_Authenticated.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1734">
+          <caret line="90" column="17" selection-start-line="90" selection-start-column="17" selection-end-line="90" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Content/modules/cl5976/cl5976.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="765">
+          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding>
+            <element signature="e#607#1222#0" expanded="false" />
+            <element signature="e#906#1214#0" expanded="false" />
+            <element signature="e#996#1204#0" expanded="false" />
+            <element signature="e#1041#1188#0" expanded="false" />
+            <element signature="e#1267#1346#0" expanded="false" />
+            <element signature="e#1307#1340#0" expanded="false" />
+            <element signature="e#1405#1666#0" expanded="false" />
+            <element signature="e#1441#1658#0" expanded="false" />
+            <element signature="e#1593#1648#0" expanded="false" />
+            <element signature="e#1716#1884#0" expanded="false" />
+            <element signature="e#1764#1878#0" expanded="false" />
+            <element signature="e#1810#1868#0" expanded="false" />
+            <element signature="e#1940#2191#0" expanded="false" />
+            <element signature="e#1978#2183#0" expanded="false" />
+            <element signature="e#2012#2173#0" expanded="false" />
+            <element signature="e#2086#2159#0" expanded="false" />
+            <element signature="e#2242#2469#0" expanded="false" />
+            <element signature="e#2262#2461#0" expanded="false" />
+            <element signature="e#2294#2358#0" expanded="false" />
+            <element signature="e#2391#2451#0" expanded="false" />
+            <element signature="e#2538#2702#0" expanded="false" />
+            <element signature="e#2731#4690#0" expanded="false" />
+            <element signature="e#2751#3300#0" expanded="false" />
+            <element signature="e#3243#3290#0" expanded="false" />
+            <element signature="e#3328#3759#0" expanded="false" />
+            <element signature="e#3521#3603#0" expanded="false" />
+            <element signature="e#3648#3723#0" expanded="false" />
+            <element signature="e#3821#4201#0" expanded="false" />
+            <element signature="e#4080#4163#0" expanded="false" />
+            <element signature="e#4251#4362#0" expanded="false" />
+            <element signature="e#4409#4684#0" expanded="false" />
+            <element signature="e#4464#4589#0" expanded="false" />
+            <element signature="e#4505#4566#0" expanded="false" />
+            <element signature="e#4595#4648#0" expanded="false" />
+            <element signature="e#4763#4903#0" expanded="false" />
+            <element signature="e#4944#6013#0" expanded="false" />
+            <element signature="e#4964#5276#0" expanded="false" />
+            <element signature="e#5034#5234#0" expanded="false" />
+            <element signature="e#5304#5358#0" expanded="false" />
+            <element signature="e#5397#5776#0" expanded="false" />
+            <element signature="e#5571#5738#0" expanded="false" />
+            <element signature="e#5823#6007#0" expanded="false" />
+            <element signature="e#5864#5995#0" expanded="false" />
+            <element signature="e#6079#6340#0" expanded="false" />
+            <element signature="e#6369#9570#0" expanded="false" />
+            <element signature="e#6389#6641#0" expanded="false" />
+            <element signature="e#6673#6918#0" expanded="false" />
+            <element signature="e#6741#6809#0" expanded="false" />
+            <element signature="e#6815#6876#0" expanded="false" />
+            <element signature="e#6970#7380#0" expanded="false" />
+            <element signature="e#7107#7158#0" expanded="false" />
+            <element signature="e#7229#7280#0" expanded="false" />
+            <element signature="e#7425#7746#0" expanded="false" />
+            <element signature="e#7484#7689#0" expanded="false" />
+            <element signature="e#7521#7580#0" expanded="false" />
+            <element signature="e#7616#7675#0" expanded="false" />
+            <element signature="e#7786#8061#0" expanded="false" />
+            <element signature="e#7845#8023#0" expanded="false" />
+            <element signature="e#7883#8009#0" expanded="false" />
+            <element signature="e#7924#7991#0" expanded="false" />
+            <element signature="e#8096#8463#0" expanded="false" />
+            <element signature="e#8296#8453#0" expanded="false" />
+            <element signature="e#8498#8864#0" expanded="false" />
+            <element signature="e#8697#8854#0" expanded="false" />
+            <element signature="e#8909#9119#0" expanded="false" />
+            <element signature="e#8980#9107#0" expanded="false" />
+            <element signature="e#9147#9564#0" expanded="false" />
+            <element signature="e#9339#9483#0" expanded="false" />
+            <element signature="e#9639#9995#0" expanded="false" />
+            <element signature="e#10034#15601#0" expanded="false" />
+            <element signature="e#10054#11322#0" expanded="false" />
+            <element signature="e#10075#10283#0" expanded="false" />
+            <element signature="e#10311#10486#0" expanded="false" />
+            <element signature="e#10552#10993#0" expanded="false" />
+            <element signature="e#11350#11409#0" expanded="false" />
+            <element signature="e#11453#12302#0" expanded="false" />
+            <element signature="e#11736#12264#0" expanded="false" />
+            <element signature="e#11959#12250#0" expanded="false" />
+            <element signature="e#12008#12230#0" expanded="false" />
+            <element signature="e#12376#13175#0" expanded="false" />
+            <element signature="e#12493#12936#0" expanded="false" />
+            <element signature="e#12556#12922#0" expanded="false" />
+            <element signature="e#12942#13165#0" expanded="false" />
+            <element signature="e#13231#13956#0" expanded="false" />
+            <element signature="e#13991#14044#0" expanded="false" />
+            <element signature="e#14115#14590#0" expanded="false" />
+            <element signature="e#14683#15595#0" expanded="false" />
+            <element signature="e#14919#14997#0" expanded="false" />
+            <element signature="e#15057#15165#0" expanded="false" />
+            <element signature="e#15650#16309#0" expanded="false" />
+            <element signature="e#16336#22330#0" expanded="false" />
+            <element signature="e#16356#16861#0" expanded="false" />
+            <element signature="e#16381#16532#0" expanded="false" />
+            <element signature="e#16889#17146#0" expanded="false" />
+            <element signature="e#17196#17626#0" expanded="false" />
+            <element signature="e#17389#17588#0" expanded="false" />
+            <element signature="e#17466#17527#0" expanded="false" />
+            <element signature="e#17672#17809#0" expanded="false" />
+            <element signature="e#17752#17799#0" expanded="false" />
+            <element signature="e#17860#18190#0" expanded="false" />
+            <element signature="e#17954#18091#0" expanded="false" />
+            <element signature="e#18014#18075#0" expanded="false" />
+            <element signature="e#18097#18154#0" expanded="false" />
+            <element signature="e#18223#18741#0" expanded="false" />
+            <element signature="e#18357#18703#0" expanded="false" />
+            <element signature="e#18774#19202#0" expanded="false" />
+            <element signature="e#18908#19164#0" expanded="false" />
+            <element signature="e#19256#19391#0" expanded="false" />
+            <element signature="e#19428#19640#0" expanded="false" />
+            <element signature="e#19493#19602#0" expanded="false" />
+            <element signature="e#19687#20023#0" expanded="false" />
+            <element signature="e#19748#19844#0" expanded="false" />
+            <element signature="e#19847#19945#0" expanded="false" />
+            <element signature="e#20074#20305#0" expanded="false" />
+            <element signature="e#20179#20269#0" expanded="false" />
+            <element signature="e#20356#20584#0" expanded="false" />
+            <element signature="e#20461#20548#0" expanded="false" />
+            <element signature="e#20612#21011#0" expanded="false" />
+            <element signature="e#20673#20752#0" expanded="false" />
+            <element signature="e#20787#20875#0" expanded="false" />
+            <element signature="e#20914#20973#0" expanded="false" />
+            <element signature="e#21054#21920#0" expanded="false" />
+            <element signature="e#21108#21817#0" expanded="false" />
+            <element signature="e#21178#21801#0" expanded="false" />
+            <element signature="e#21225#21280#0" expanded="false" />
+            <element signature="e#21527#21628#0" expanded="false" />
+            <element signature="e#21683#21783#0" expanded="false" />
+            <element signature="e#21823#21884#0" expanded="false" />
+            <element signature="e#21970#22324#0" expanded="false" />
+            <element signature="e#22089#22288#0" expanded="false" />
+            <element signature="e#22139#22236#0" expanded="false" />
+            <element signature="e#22410#22975#0" expanded="false" />
+            <element signature="e#22648#22946#0" expanded="false" />
+            <element signature="e#22790#22875#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Content/modules/ui_refresh/ui_refresh_create_account.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.42453855" vertical-offset="0" max-vertical-offset="921">
+          <caret line="23" column="42" selection-start-line="23" selection-start-column="42" selection-end-line="23" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/UIRefresh_CreateAccount.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.15192744" vertical-offset="8145" max-vertical-offset="14042">
+          <caret line="487" column="0" selection-start-line="487" selection-start-column="0" selection-end-line="487" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Content/modules/ui_refresh/ui_refresh_contact_us.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1513">
+          <caret line="30" column="54" selection-start-line="30" selection-start-column="54" selection-end-line="30" selection-end-column="54" />
+          <folding>
+            <element signature="e#40#128#0" expanded="false" />
+            <element signature="e#476#645#0" expanded="false" />
+            <element signature="e#1631#1778#0" expanded="false" />
+            <element signature="e#1664#1713#0" expanded="false" />
+            <element signature="e#1719#1772#0" expanded="false" />
+            <element signature="e#2144#2221#0" expanded="false" />
+            <element signature="e#2502#3905#0" expanded="false" />
+            <element signature="e#2519#3897#0" expanded="false" />
+            <element signature="e#2831#2888#0" expanded="false" />
+            <element signature="e#2927#3887#0" expanded="false" />
+            <element signature="e#3130#3275#0" expanded="false" />
+            <element signature="e#3281#3873#0" expanded="false" />
+            <element signature="e#3417#3853#0" expanded="false" />
+            <element signature="e#3526#3663#0" expanded="false" />
+            <element signature="e#3669#3831#0" expanded="false" />
+            <element signature="e#3939#3976#0" expanded="false" />
+            <element signature="e#4009#4054#0" expanded="false" />
+            <element signature="e#4087#4132#0" expanded="false" />
+            <element signature="e#4162#4616#0" expanded="false" />
+            <element signature="e#4388#4567#0" expanded="false" />
+            <element signature="e#4656#4699#0" expanded="false" />
+            <element signature="e#4739#4787#0" expanded="false" />
+            <element signature="e#4823#5003#0" expanded="false" />
+            <element signature="e#5052#5454#0" expanded="false" />
+            <element signature="e#5486#5531#0" expanded="false" />
+            <element signature="e#5571#5689#0" expanded="false" />
+            <element signature="e#5724#5781#0" expanded="false" />
+            <element signature="e#5816#5854#0" expanded="false" />
+            <element signature="e#5883#6004#0" expanded="false" />
+            <element signature="e#5959#5998#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/UIRefresh_ContactUs.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.70945156" vertical-offset="7535" max-vertical-offset="13192">
+          <caret line="479" column="125" selection-start-line="479" selection-start-column="125" selection-end-line="479" selection-end-column="125" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#main#0;n#div#4;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#1;n#div#7;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#main#0;n#div#4;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="tag#div#1;tag#div#0;tag#div#1;tag#div#7;tag#div#1;tag#div#0;tag#div#0;tag#div#0;tag#div#0;tag#div#1;tag#main#0;tag#div#4;tag#form#0;tag#body#0;tag#html#0" expanded="false" />
+            <element signature="tag#div#6;tag#div#0;tag#div#2;tag#div#7;tag#div#1;tag#div#0;tag#div#0;tag#div#0;tag#div#0;tag#div#1;tag#main#0;tag#div#4;tag#form#0;tag#body#0;tag#html#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
+

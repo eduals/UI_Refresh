@@ -1,0 +1,72 @@
+/*Kentico custom styles*/
+
+/*Tabs*/
+#int-course-nav .ui-helper-reset
+{
+	line-height: 1.4;
+}
+#int-course-nav .ui-tabs-nav
+{
+	border-bottom: 0 !important;
+	height: auto;
+}
+#int-course-nav .ui-tabs-nav li
+{
+	margin: 0;
+	top: 0;
+}
+#int-course-nav .ui-tabs-nav .ui-state-default, #int-course-nav .ui-tabs-nav .ui-state-active
+{
+	background-image: none;
+	border: 0;
+}
+@media (max-width: 767px)
+{
+	#int-course-nav .ui-tabs-nav li
+	{
+		float: none;
+	}
+	#int-course-nav .ui-tabs-nav li a
+	{
+		float: none;
+		padding: 12px 15px;
+	}
+}
+/*Infographic*/
+.int-modal-window .ui-tabs .ui-tabs-nav
+{
+	border: 0;
+	height: auto;
+}
+.int-modal-window .ui-tabs .ui-tabs-nav li
+{
+	float: none;
+}
+.int-modal-window .ui-tabs .ui-tabs-nav li a
+{
+	float: none;
+	font-size: inherit;
+	font-weight: inherit;
+}
+.int-modal-window .ui-state-default, .int-modal-window .ui-state-active
+{
+	background: none;
+	border: 0 !important;
+}
+.modalPrinter{
+    margin: 5px;
+    position: absolute;
+    top: .1em;
+    right: 2.2em;
+    z-index: 220;
+}
+.int-modal-window .interaction .int-btn-close {
+    position: absolute;
+    top: .4em;
+    right: .5em;
+    z-index: 220;
+    visibility: hidden;
+}
+.int-modal-window .ui-tabs-nav{
+    padding-top: 2.5em !important;
+}

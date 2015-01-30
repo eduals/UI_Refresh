@@ -1,0 +1,111 @@
+#ouhome-image-main {
+    width: 100%;
+    max-height: 280px;
+}
+
+#ou-home-intro {
+    position: absolute;
+    margin: 0;
+    padding: 1.5em 0 0 32px;
+}
+
+#ou-home-intro h1 {
+    color: #fff;
+    font-size: 1.7em;
+    margin-top: 0;
+}
+
+#ou-home-intro p {
+    width: 50%;
+    max-width: 800px;
+    color: #fff;
+    font-size: 11.5pt;
+}
+
+#ou-home-intro a {
+    color: #ffc23d;
+}
+
+main {
+    padding-bottom: 0;
+}
+
+#ou-home-signin {
+    padding-bottom: 1em;
+    padding-top: 1em;
+}
+
+a.ou-home-news {
+    color: #0B55A8;
+    font-weight: normal;
+}
+
+#ou-home-news {
+    display: none;
+}
+
+@media all and (max-width: 1030px) {
+
+    #ou-home-intro p {
+        width: 60%;
+        font-size: 10pt;
+    }
+}
+
+@media all and (max-width: 948px) {
+
+    #ou-home-intro {
+        padding-top: 1em;
+    }
+
+    #ou-home-intro p {
+        width: 90%;
+    }
+}
+
+@media all and (max-width: 830px) {
+
+    #ou-home-intro {
+        position: relative;
+        padding: 0 0 1em;
+    }
+
+    #ou-home-intro h1 {
+        position: absolute;
+        padding: 16px 0 0 24px;
+    }
+
+    #ouhome-image-main {
+        margin-bottom: 1em;
+    }
+
+    #ou-home-intro p {
+        color: #424242;
+        font-size: 11.5pt;
+    }
+
+    #ou-home-intro a {
+        color: #808;
+    }
+
+}
+
+button, input[type=button], input[type=submit], .int-button, a.int-button {
+    padding: .5em .8em;
+}
+
+@media (max-width: 767px) {
+    /*General Styles*/
+    .cl-mobile-hidden {
+        display: none;
+    }
+
+    .cl-floatRight-sm {
+        float: right;
+    }
+
+    .cl-floatLeft-sm {
+        float: left;
+    }
+}
+

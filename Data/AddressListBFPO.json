@@ -1,0 +1,19 @@
+{
+    "ContentEncoding": null,
+    "ContentType": null,
+    "Data": {
+        "PostcodeFormatValid": true,
+        "PostcodeInvalidMessage": "",
+        "IsBfpo": true,
+        "AddressList": [
+            {
+                "AddressLine1": "BFPO 58",
+                "AddressLine2": "",
+                "AddressLine3": "",
+                "Town": "BFPO",
+                "Postcode": "BF1 2AU"
+            }
+        ]
+    },
+    "JsonRequestBehavior": 1
+}

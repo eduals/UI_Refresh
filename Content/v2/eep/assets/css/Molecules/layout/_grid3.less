@@ -1,0 +1,30 @@
+/*Grids
+..........................................................*/
+
+body:after {
+  display:none;
+  content: 'xs';
+}
+@media (min-width: @screen-sm-min) {
+  body:after {
+    content: 'sm';
+  }
+}
+@media (min-width: @screen-md-min) {
+  body:after {
+    content: 'md';
+  }
+}
+@media (min-width: @screen-lg-min) {
+  body:after {
+    content: 'lg';
+  }
+}
+
+.int-container {
+	.clearfix();
+	width:100%;
+	padding:0 15px;
+	margin:0 auto;
+	max-width: @container-lg;
+}

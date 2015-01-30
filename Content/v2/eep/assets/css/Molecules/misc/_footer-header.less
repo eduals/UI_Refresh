@@ -1,0 +1,98 @@
+// =============================================================================
+// Footer nav
+// 
+// =============================================================================
+
+@site-footer-bg: @dark-blue;
+@site-footer-color: @white;
+@site-footer-small-print: #8090ac;
+
+
+footer[role=contentinfo] {
+	background: @site-footer-bg;
+	@media (min-width: @screen-sm) { font-size:@sml-text-size; }
+	padding:20px 0;
+	header {
+		.clearfix();
+		position:relative;
+		padding:0 0 20px 66px;
+		color: @site-footer-color;
+		font-size:@sml-text-size;
+		@media (min-width: @screen-md) {
+			padding:0;
+		}
+		.crest {
+			width:50px;
+			position:absolute;
+			top:5px;
+			left:0em;
+			@media (min-width: @screen-md) {
+				width:12%;
+				top:15px;
+				left:2.5em;
+			}
+			img { 
+				display:block;
+				width:100%;
+				height:auto;
+				max-width:89px;
+			}
+		}
+		h3 {
+			color: @site-footer-color;
+			padding-bottom:0.75em;
+		}
+		a {
+			color:@site-footer-color;
+			@media (min-width: @screen-md) {
+				&:hover {
+					text-decoration:none;
+					color:@gold;
+				}
+			}
+		}
+		section {
+			div {
+				padding-bottom:8px;
+				.circle {
+					.rounded(50%);
+					display:inline-block;
+					padding:3px;
+					background:#2a7cc5;
+					color: @dark-blue;
+					margin-right:5px;
+					width:20px;
+                    height:20px;
+					text-align:center;
+				}
+			}	
+			@media (min-width: @screen-md) {
+				margin-left:15%;
+				width:82%;
+				float:left;
+				border-bottom:1px solid #1a3869;
+				padding-top:8px;
+				h3, .tel, .email {
+					float:left;
+					padding-right:35px;
+					padding-bottom:12px;
+					
+				}
+				h3 { 
+					padding-bottom:13px; 
+					margin-top:0;
+				}
+			}
+		}
+	}
+	.small-print {
+		color: @site-footer-small-print;
+		@media (min-width: @screen-sm) {
+			padding-left:66px;
+			padding-right:66px;
+		}
+		@media (min-width: @screen-md) {
+			padding-left:15%;
+		}
+	}
+}

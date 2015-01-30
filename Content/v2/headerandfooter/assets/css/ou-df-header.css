@@ -1,0 +1,337 @@
+div#int-cookies-bar div#int-cookies-bar .interaction {
+  background: #0b55a8;
+  color: #ffffff;
+}
+div#int-cookies-bar div#int-cookies-bar .interaction p,
+div#int-cookies-bar div#int-cookies-bar .interaction ul,
+div#int-cookies-bar div#int-cookies-bar .interaction ol,
+div#int-cookies-bar div#int-cookies-bar .interaction dl,
+div#int-cookies-bar div#int-cookies-bar .interaction dd,
+div#int-cookies-bar div#int-cookies-bar .interaction label,
+div#int-cookies-bar div#int-cookies-bar .interaction h1,
+div#int-cookies-bar div#int-cookies-bar .interaction h2,
+div#int-cookies-bar div#int-cookies-bar .interaction h3,
+div#int-cookies-bar div#int-cookies-bar .interaction h4,
+div#int-cookies-bar div#int-cookies-bar .interaction h5,
+div#int-cookies-bar div#int-cookies-bar .interaction h6 {
+  color: #ffffff;
+}
+div#int-cookies-bar .interaction a {
+  color: #0b55a8;
+}
+div#int-cookies-bar .interaction a:hover {
+  color: #ffc23d;
+}
+div#int-cookies-bar .interaction h1 a:hover,
+div#int-cookies-bar .interaction h2 a:hover,
+div#int-cookies-bar .interaction h3 a:hover,
+div#int-cookies-bar .interaction h4 a:hover,
+div#int-cookies-bar .interaction h5 a:hover,
+div#int-cookies-bar .interaction h6 a:hover,
+div#int-cookies-bar .interaction h1 a:focus,
+div#int-cookies-bar .interaction h2 a:focus,
+div#int-cookies-bar .interaction h3 a:focus,
+div#int-cookies-bar .interaction h4 a:focus,
+div#int-cookies-bar .interaction h5 a:focus,
+div#int-cookies-bar .interaction h6 a:focus {
+  color: #ffffff;
+}
+div#int-cookies-bar .interaction hr {
+  border-color: #206dc3;
+  color: #206dc3;
+}
+
+div#int-cookies-bar .interaction a.cookieInfo {color:#ffc23d;}
+
+.int-cookies-bar {
+  display: none;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+  overflow: hidden;
+  max-height: 0px;
+  height: 0;
+  position: relative;
+  top: -100px;
+}
+.int-cookies-bar.int-active {
+  max-height: 16em;
+  height: auto;
+  display: block;
+  top: 0;
+}
+.int-cookies-bar .int-button {
+  float: right;
+}
+.int-cookies-bar p {
+  font-size: 0.875em;
+}
+@media (max-width: 767px) {
+  .int-cookies-bar p {
+    padding-right: 45px;
+  }
+  .int-cookies-bar .int-button {
+    font-size: 0.875em;
+  }
+}
+
+button,
+input[type=button],
+input[type=submit],
+.int-button,
+a.int-button {
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+  font-family: "CaratReg", "Book Antiqua", Georgia, serif;
+  font-size: 1.25em;
+  background: #ffc23d;
+  color: #0b55a8;
+  font-weight: normal;
+  text-decoration: none;
+  padding: 0.6em 0.8em;
+  display: inline-block;
+  margin-bottom: 0.875em;
+  border: 1px solid #ffc23d;
+}
+button:hover,
+input[type=button]:hover,
+input[type=submit]:hover,
+.int-button:hover,
+a.int-button:hover,
+button:focus,
+input[type=button]:focus,
+input[type=submit]:focus,
+.int-button:focus,
+a.int-button:focus {
+  background: #880088;
+  color: #ffc23d;
+  text-decoration: none;
+}
+button:focus,
+input[type=button]:focus,
+input[type=submit]:focus,
+.int-button:focus,
+a.int-button:focus {
+    outline: thin dotted;
+}
+button:active,
+input[type=button]:active,
+input[type=submit]:active,
+.int-button:active,
+a.int-button:active {
+  background: #470d43;
+  color: #ffc23d;
+}
+.int-button-disabled,
+.int-button-disabled:hover,
+.int-button-disabled:focus {
+  background: #a6d0ff;
+  border-color: #a6d0ff;
+  opacity: 0.5;
+  color: #07376d;
+  cursor: default;
+  outline: 0;
+}
+
+
+
+
+div#int-header div#int-serviceLinks li.ou-hide,
+div#int-header div#int-serviceLinks li#ou-person,
+div#int-header div#int-serviceLinks li#ou-signout,
+div#int-header div#int-serviceLinks li#ou-tutorhome,
+div#int-header div#int-serviceLinks li#ou-intranet,
+div#int-header div#int-serviceLinks li#ou-sponsor {display:none;}
+/*div.ou-role-nav li.ou-hide, li#ou-person, li#ou-signout, li#ou-tutorhome, li#ou-intranet, li#ou-sponsor {display:none !important;}*/
+
+
+body.ou-df-ia-courses div.int-primary li.ou-df-ia-courses a, 
+body.ou-df-ia-postgraduate div.int-primary li.ou-df-ia-postgraduate a, 
+body.ou-df-ia-research div.int-primary li.ou-df-ia-research a, 
+body.ou-df-ia-employers div.int-primary li.ou-df-ia-employers a, 
+body.ou-df-ia-news div.int-primary li.ou-df-ia-news a, 
+body.ou-df-ia-about div.int-primary li.ou-df-ia-about a {background-color:#296e8f !important; color:#fff !important;}
+
+
+body.ou-df-ia-courses div.int-primary li.ou-df-ia-courses, 
+body.ou-df-ia-postgraduate div.int-primary li.ou-df-ia-postgraduate, 
+body.ou-df-ia-research div.int-primary li.ou-df-ia-research, 
+body.ou-df-ia-employers div.int-primary li.ou-df-ia-employers, 
+body.ou-df-ia-news div.int-primary li.ou-df-ia-news, 
+body.ou-df-ia-about div.int-primary li.ou-df-ia-about {border-right-color:#fff !important;}
+
+
+body.wls a#ou-logo-wls {display:inline-block;}
+body.wls a#ou-logo-eng {display:none;}
+body.wls a#ou-logo-sct {display:none;}
+
+body.eng a#ou-logo-eng {display:inline-block;}
+body.eng a#ou-logo-sct {display:none;}
+body.eng a#ou-logo-wls {display:none;}
+
+body.sct a#ou-logo-sct {display:inline-block;}
+body.sct a#ou-logo-eng {display:none;}
+body.sct a#ou-logo-wls {display:none;}
+
+body.nir a#ou-logo-eng {display:inline-block;}
+body.nir a#ou-logo-sct {display:none;}
+body.nir a#ou-logo-wls {display:none;}
+
+body.ire a#ou-logo-eng {display:inline-block;}
+body.ire a#ou-logo-sct {display:none;}
+body.ire a#ou-logo-wls {display:none;}
+
+body.no-nation a#ou-logo-eng {display:inline-block;}
+body.no-nation a#ou-logo-sct {display:none;}
+body.no-nation a#ou-logo-wls {display:none;}
+
+
+
+/*body a#ou-logo-eng {display:inline-block;}
+body a#ou-logo-wls {display:none;}
+body a#ou-logo-sct {display:none;}*/
+
+
+/* === wales === */
+body.ou-df-ia-courses.wls div.int-primary li.ou-df-ia-courses a, 
+body.ou-df-ia-postgraduate.wls div.int-primary li.ou-df-ia-postgraduate a, 
+body.ou-df-ia-research.wls div.int-primary li.ou-df-ia-research a, 
+body.ou-df-ia-employers.wls div.int-primary li.ou-df-ia-employers a, 
+body.ou-df-ia-news.wls div.int-primary li.ou-df-ia-news a, 
+body.ou-df-ia-about.wls div.int-primary li.ou-df-ia-about a {background-color:#d01418 !important; color:#fff !important;}
+
+/*body.wls div.int-primary li.int-hasChildren a {background-color:#d01418 !important; color:#fff !important;}*/
+body.wls div.int-primary ul li.int-hasChildren .int-nav-trigger span {border-left: 1px dotted #d01418;}
+/*body.wls div#int-cookies-bar .interaction {background: #d01418 !important;color: #ffffff !important;}*/
+body.wls div.int-primary .int-toplevel-nav ul li {border-right: 1px solid #d01418 !important;}
+body.wls div.int-primary .int-toplevel-nav ul {border-left: 1px solid #d01418 !important;}
+body.wls div.int-primary .int-toplevel-nav {border-bottom: 1px solid #d01418 !important;}
+
+
+body.wls .int-primary .int-secondlevel-nav {background: #e699ad;}
+body.wls .int-primary .int-thirdlevel-nav {background: #f3ccd6;}
+body.wls .int-primary .int-secondlevel-nav ul li.int-nav-active a {background: #f3ccd6;border-color: #e699ad;}
+body.wls .int-primary .int-secondlevel-nav ul li a {color: #000;}
+body.wls .int-primary .int-thirdlevel-nav ul li a {color: #000000;}
+body.wls .int-primary .int-secondlevel-nav ul li .int-nav-trigger {border-right: 1px solid #d01418;}
+
+/* === Republic of Ireland & Northern Ireland === */
+body.ou-df-ia-courses.ire div.int-primary li.ou-df-ia-courses a, 
+body.ou-df-ia-postgraduate.ire div.int-primary li.ou-df-ia-postgraduate a, 
+body.ou-df-ia-research.ire div.int-primary li.ou-df-ia-research a, 
+body.ou-df-ia-employers.ire div.int-primary li.ou-df-ia-employers a, 
+body.ou-df-ia-news.ire div.int-primary li.ou-df-ia-news a, 
+body.ou-df-ia-about.ire div.int-primary li.ou-df-ia-about a {background-color:#a01851 !important; color:#fff !important;}
+
+/*body.wls div.int-primary li.int-hasChildren a {background-color:#d01418 !important; color:#fff !important;}*/
+body.ire div.int-primary ul li.int-hasChildren .int-nav-trigger span {border-left: 1px dotted #a01851;}
+/*body.ire div#int-cookies-bar .interaction {background: #a01851 !important;color: #ffffff !important;}*/
+body.ire div.int-primary .int-toplevel-nav ul li {border-right: 1px solid #a01851 !important;}
+body.ire div.int-primary .int-toplevel-nav ul {border-left: 1px solid #a01851 !important;}
+body.ire div.int-primary .int-toplevel-nav {border-bottom: 1px solid #a01851 !important;}
+
+body.ire .int-primary .int-secondlevel-nav {background: #d0b3c1;}
+body.ire .int-primary .int-thirdlevel-nav {background: #e0ccd6;}
+body.ire .int-primary .int-secondlevel-nav ul li.int-nav-active a {background: #e0ccd6;border-color: #d0b3c1;}
+body.ire .int-primary .int-secondlevel-nav ul li a {color: #000;}
+body.ire .int-primary .int-thirdlevel-nav ul li a {color: #000000;}
+body.ire .int-primary .int-secondlevel-nav ul li .int-nav-trigger {border-right: 1px solid #a01851;}
+
+
+/*nir*/
+body.ou-df-ia-courses.nir div.int-primary li.ou-df-ia-courses a, 
+body.ou-df-ia-postgraduate.nir div.int-primary li.ou-df-ia-postgraduate a, 
+body.ou-df-ia-research.nir div.int-primary li.ou-df-ia-research a, 
+body.ou-df-ia-employers.nir div.int-primary li.ou-df-ia-employers a, 
+body.ou-df-ia-news.nir div.int-primary li.ou-df-ia-news a, 
+body.ou-df-ia-about.nir div.int-primary li.ou-df-ia-about a {background-color:#a01851 !important; color:#fff !important;}
+
+/*body.wls div.int-primary li.int-hasChildren a {background-color:#d01418 !important; color:#fff !important;}*/
+body.nir div.int-primary ul li.int-hasChildren .int-nav-trigger span {border-left: 1px dotted #a01851;}
+/*body.nir div#int-cookies-bar .interaction {background: #a01851 !important;color: #ffffff !important;}*/
+body.nir div.int-primary .int-toplevel-nav ul li {border-right: 1px solid #a01851 !important;}
+body.nir div.int-primary .int-toplevel-nav ul {border-left: 1px solid #a01851 !important;}
+body.nir div.int-primary .int-toplevel-nav {border-bottom: 1px solid #a01851 !important;}
+
+body.nir .int-primary .int-secondlevel-nav {background: #d0b3c1;}
+body.nir .int-primary .int-thirdlevel-nav {background: #e0ccd6;}
+body.nir .int-primary .int-secondlevel-nav ul li.int-nav-active a {background: #e0ccd6;border-color: #d0b3c1;}
+body.nir .int-primary .int-secondlevel-nav ul li a {color: #000;}
+body.nir .int-primary .int-thirdlevel-nav ul li a {color: #000000;}
+body.nir .int-primary .int-secondlevel-nav ul li .int-nav-trigger {border-right: 1px solid #a01851;}
+
+
+
+/* === Scotland === */
+body.ou-df-ia-courses.sct div.int-primary li.ou-df-ia-courses a, 
+body.ou-df-ia-postgraduate.sct div.int-primary li.ou-df-ia-postgraduate a, 
+body.ou-df-ia-research.sct div.int-primary li.ou-df-ia-research a, 
+body.ou-df-ia-employers.sct div.int-primary li.ou-df-ia-employers a, 
+body.ou-df-ia-news.sct div.int-primary li.ou-df-ia-news a, 
+body.ou-df-ia-about.sct div.int-primary li.ou-df-ia-about a {background-color:#0065bd !important; color:#fff !important;}
+
+/*body.wls div.int-primary li.int-hasChildren a {background-color:#d01418 !important; color:#fff !important;}*/
+body.sct div.int-primary ul li.int-hasChildren .int-nav-trigger span {border-left: 1px dotted #fff;}
+/*body.sct div#int-cookies-bar .interaction {background: #0065bd !important;color: #ffffff !important;}*/
+body.sct div.int-primary .int-toplevel-nav ul li {border-right: 1px solid #0065bd !important;}
+body.sct div.int-primary .int-toplevel-nav ul {border-left: 1px solid #0065bd !important;}
+body.sct div.int-primary .int-toplevel-nav {border-bottom: 1px solid #0065bd !important;}
+
+
+
+
+
+
+/* === England === */
+
+
+
+body.wls divdiv#int-cookies-bar .interaction {background-color:#d01418 !important;}
+body.wls table td, body.wls table th {border-bottom: 1px solid #d01418;border-right: 1px solid #d01418;}
+body.wls .int-promo {background: #f3ccd6;margin-bottom: 2em;}
+
+body.wls divdiv#int-cookies-bar .interaction {background-color:#d01418 !important;}
+body.wls table td, body.wls table th {border-bottom: 1px solid #d01418;border-right: 1px solid #d01418;}
+body.wls .int-promo {background: #f3ccd6;margin-bottom: 2em;}
+
+body.nir divdiv#int-cookies-bar .interaction {background-color:#a01851 !important;}
+body.nir table td, body.wls table th {border-bottom: 1px solid #a01851;border-right: 1px solid #a01851;}
+body.nir .int-promo {background: #e0ccd6;margin-bottom: 2em;}
+
+body.ire divdiv#int-cookies-bar .interaction {background-color:#a01851 !important;}
+body.ire table td, body.wls table th {border-bottom: 1px solid #a01851;border-right: 1px solid #a01851;}
+body.ire .int-promo {background: #e0ccd6;margin-bottom: 2em;}
+/*#d01418*/
+
+
+@media (max-width: 767px){
+  body.wls a#ou-logo-wls {display:none;}
+  body.wls a#ou-logo-eng {display:none;}
+  body.wls a#ou-logo-sct {display:none;}
+
+  body.eng a#ou-logo-eng {display:none;}
+  body.eng a#ou-logo-sct {display:none;}
+  body.eng a#ou-logo-wls {display:none;}
+
+  body.sct a#ou-logo-sct {display:none;}
+  body.sct a#ou-logo-eng {display:none;}
+  body.sct a#ou-logo-wls {display:none;}
+
+  body.ire a#ou-logo-wls {display:none;}
+  body.ire a#ou-logo-eng {display:none;}
+  body.ire a#ou-logo-sct {display:none;}
+
+  body.nir a#ou-logo-wls {display:none;}
+  body.nir a#ou-logo-eng {display:none;}
+  body.nir a#ou-logo-sct {display:none;}
+
+  body.no-nation a#ou-logo-wls {display:none;}
+  body.no-nation a#ou-logo-eng {display:none;}
+  body.no-nation a#ou-logo-sct {display:none;}
+}

@@ -1,0 +1,50 @@
+// =============================================================================
+// Buttons
+// 
+// =============================================================================
+
+@button-font-family: 		@secondary-font-family;
+@button-bg: 				@gold;
+@button-color: 				@mid-blue;
+@button-hover-bg: 			@purple;
+@button-hover-color: 		@gold;
+@button-active-bg: 			@dark-purple;
+@button-disabled-bg:        @light-blue;
+
+
+button, input[type=button], input[type=submit], .int-button, a.int-button {
+	.rounded(4px);
+	//.box-shadow(0 3px 0px rgba(0,0,0,0.25));
+	.transition();
+	font-family: @button-font-family;
+	font-size: @lrg-text-size;
+	background:  @button-bg;
+	color: @button-color;
+	font-weight:normal;
+	text-decoration: none;
+	padding: 0.6em 0.8em;
+	display:inline-block;
+	margin-bottom:0.875em;
+	border:1px solid @button-bg;
+	&:hover, &:focus {
+		background: @button-hover-bg;
+		color: @button-hover-color;
+		text-decoration: underline;
+	}
+    &:focus{
+        outline: thin dotted;
+    }
+	&:active {
+		background: @button-active-bg;
+		color: @button-hover-color;
+	}
+}
+
+.int-button-disabled, .int-button-disabled:hover, .int-button-disabled:focus  {
+    background: @button-disabled-bg;
+    border-color: @button-disabled-bg;
+    opacity:0.5;
+    color: #07376d;
+    cursor:default;
+    outline:0;
+}

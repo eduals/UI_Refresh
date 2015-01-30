@@ -1,0 +1,45 @@
+// =============================================================================
+// Search box
+// 
+// =============================================================================
+
+.int-search-box{
+    @media (min-width: @screen-sm) { 
+        padding:1.25em 0 2em; 
+    }
+	.int-row {
+		position:relative;
+		> div {
+			padding-right:58px;
+			@media (min-width: @screen-xs) {
+				padding-right:100px;
+			}
+		}
+	}
+	fieldset{
+		padding:0;
+		margin:0;
+	}
+	input[type="text"], 
+	input[type="search"] {
+		font-size: 1.25em;
+        padding:0.36em 0.8em;
+		@media (min-width: @screen-xs) {
+			font-size: 2.4em;
+		}
+	}
+	button {
+		position:absolute;
+		top:0;
+		right:0;
+		height: 44px;
+		@media (min-width: @screen-xs) {
+			height: 84px;
+		}
+		i {
+			@media (min-width: @screen-xs) {
+				font-size: 3em;
+			}
+		}
+	}
+}

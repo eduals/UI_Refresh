@@ -1,0 +1,37 @@
+// =============================================================================
+// Selectbox
+// 
+// =============================================================================
+
+@selectbox-bg: 		@white;
+
+select {
+	.form-styles(); // mixin from _forms.less
+	position:relative;
+	border-color: @selectbox-bg;
+    overflow:hidden;
+    &.is-error {
+		border-color: @error-color;
+	}
+	&:focus {
+		outline:0;
+		border-color: @gold;
+	}
+    &:disabled {
+        color: @input-placeholder-color;
+    }   
+}
+
+// target webkit only browsers
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+	select {
+		background: @selectbox-bg url(../img/form-sprites-new.png) no-repeat right -6px;
+        padding-right:60px;
+		&:focus {
+			background-position: right -81px;
+		}
+        &:disabled {
+            background-position: right -358px;
+        }
+	}
+}

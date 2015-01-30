@@ -1,0 +1,317 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN""http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Sign IN - Open University</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="description" content="Sign in to the OU website"/>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+
+    <script src="Content/v2/eep/assets/js/vendor/modernizr-2.6.2.min.js"></script>
+
+    <script src="Content/v2/eep/assets/js/vendor/jquery-1.10.2.min.js"></script>
+
+    <link rel="stylesheet" href="Content/v2/headerandfooter/assets/css/headerandfooter.css">
+    <link rel="stylesheet" href="Content/v2/eep/assets/css/screen.css">
+    <link rel="stylesheet" href="Content/v2/eep/assets/css/kentico-custom-styles.css">
+    <link rel="stylesheet" href="Content/v2/headerandfooter/assets/css/ou-df-header.css">
+
+    <!--[if lt IE 9]>
+    <link rel="stylesheet" href="Content/v2/eep/assets/css/ie8.css">
+    <link rel="stylesheet" href="Content/v2/headerandfooter/assets/css/headerandfooter-ie.css">
+    <![endif]-->
+
+    <!--[if lt IE 8]>
+    <link rel="stylesheet" href="Content/v2/eep/assets/css/ie.css">
+    <![endif]-->
+
+    <!--[if IE 7]>
+    <link rel="stylesheet" href="Content/v2/eep/assets/fonts/fontawesome/css/font-awesome-ie7.css">
+    <![endif]-->
+
+    <link rel="stylesheet" href="Content/v2/eep/assets/css/print.css" media="print">
+    <script type="text/javascript" src="Content/v2/headerandfooter/assets/js/ou-df-header.js"></script>
+    <script type="text/javascript">if (typeof window.ou_sitestat == 'function') ou_sitestat();</script>
+    <!-- favicons -->
+    <link rel="apple-touch-icon" href="Content/v2/external/assets/img/favicons/apple-touch-icon.png">
+    <link rel="icon" href="Content/v2/external/assets/img/favicons/favicon.png">
+    <link rel="shortcut icon" href="Content/v2/external/assets/img/favicon.ico">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="Content/v2/external/assets/img/favicons/ie10-win8-tile-icon.png">
+
+    <script src="/SIGNON/Assets/sams-signin.js"></script>
+    <link rel="stylesheet" href="/SIGNON/Assets/sams-signin.css">
+    <link href="Content/modules/cl5976/cl5976.css" type="text/css" rel="stylesheet"/>
+</head>
+<body class="ou ou-mobile ou-three">
+<script type='text/javascript'>
+    // Reset the Jquery $ notation.
+    var $ = jQuery.noConflict();
+
+</script>
+
+<!-- Start of generic site template markup -->
+<div id="int-site">
+
+    <!-- Load the common header -->
+    <!-- Header -->
+    <a href="#int-content" id="int-skip-link" class="btn-skip">
+        <i class="int-icon int-icon-chevron-down"></i>
+        <span> Skip to content</span>
+    </a>
+
+    <div id="int-ouHeader" role="banner">
+
+        <!--Header -->
+        <div id="int-header">
+
+            <a class="int-ouLogo" href="http://www.open.ac.uk/">
+                <img src="Content/v2/headerandfooter/assets/img/ou-logo.png" alt="The Open University"/>
+            </a>
+
+            <div role="navigation" id="int-serviceLinks" class="int-serviceLinks sg-responsive int-container">
+                <ul>
+                    <li class="ou-role-signin" id="ou-signin1">
+                        <a href="https://msds.open.ac.uk/signon/sams001.aspx" id="ou-signin2">Sign in</a> <span>|</span>
+                    </li>
+                    <li>
+                        <a href="https://msds.open.ac.uk/students/">My account</a> <span>/</span>
+                    </li>
+                    <li id="ou-signout" class="ou-role-signout">
+                        <a href="https://msds.open.ac.uk/signon/samsoff.aspx" id="ou-signout2">Sign out</a>
+                        <span>|</span>
+                    </li>
+                    <li>
+                        <a href="http://www.open.ac.uk/contact">Contact us</a> <span>|</span>
+                    </li>
+                    <li id="ou-studenthome" class="ou-role-studenthome">
+                        <a href="http://www.open.ac.uk/students/" id="ou-studenthome2">Current students</a>
+                    </li>
+                    <li class="int-headerSearch">
+                        <div class="int-inputAppend">
+                            <fieldset>
+                                <legend class="int-hide">Site search</legend>
+                                <label for="headerSearch" class="int-hide">Search</label>
+                                <input id="headerSearch" type="search" placeholder="Search..."/>
+                                <a id="headerSearchButton" href="#" class="int-button" onclick="javascript:ou_search();"
+                                   role="button">Search</a>
+                            </fieldset>
+                        </div>
+                    </li>
+                </ul>
+                <a href="#" class="int-mob-menu-toggle">
+                    <span>Menu title</span>
+                    <i class="int-icon int-icon-chevron-down"></i>
+                    <i class="int-icon int-icon-chevron-up"></i>
+                </a>
+            </div>
+        </div>
+        <!--end of Header -->
+
+        <div role="navigation" id="ou-global-primary-navigation" class="ou-df-header-nav">
+            <div class="int-primary">
+                <div class="int-toplevel-nav int-nav-level">
+                    <ul class="int-container">
+                        <li class="ou-df-ia-home int-home"><a href="http://www.open.ac.uk"><span>Home</span></a></li>
+                        <li class="ou-df-ia-courses"><a href="http://www.open.ac.uk/courses"><span
+                                class='ou-page-courses'>Courses</span></a></li>
+                        <li class="ou-df-ia-postgraduate"><a href="http://www.open.ac.uk/postgraduate"><span
+                                class="ou-page-postgraduate">Postgraduate</span></a></li>
+                        <li class="ou-df-ia-research"><a
+                                href="http://www.open.ac.uk/research/main/"><span>Research</span></a></li>
+                        <li class="ou-df-ia-about"><a href="http://www.open.ac.uk/about/main/"><span>About</span></a>
+                        </li>
+                        <li class="ou-df-ia-news"><a href="http://www.open.ac.uk/news"><span>News &amp; media</span></a>
+                        </li>
+                        <li class="ou-df-ia-employers"><a href="http://www.open.ac.uk/employers"><span>Employers</span></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="int-secondlevel-nav int-nav-level">
+
+                </div>
+                <div class="int-thirdlevel-nav int-nav-level">
+
+                </div>
+            </div>
+        </div>
+        <div id="int-nav-mobile" class="int-nav-alt-mob">
+            <div class="int-nav-mob-overlay"></div>
+            <div class="int-nav-alt-primary"></div>
+            <a href="#" id="int-nav-toggle" class="int-nav-toggle">
+                <i class="int-icon int-icon-bars int-icon-lg"></i>
+                <i class="int-icon int-icon-times int-icon-lg"></i>
+            </a>
+        </div>
+    </div>
+    <!--end of header -->
+
+    <!-- Main Content section -->
+    <div id="int-content">
+        <div class="interaction">
+            <div class="int-container">
+
+                <!-- sams content start -->
+                <h1>Sign in to the OU website</h1>
+
+                <div class="int-row">
+                    <div class="int-grid6">
+                        <h2>Sign in</h2>
+
+                        <form class="ou-ouice"
+                              action="https://msds.open.ac.uk/signon/SAMS001A.aspx?nsh=2&URL=http://www.open.ac.uk/"
+                              method="post" id="Form1" name="Form1" autocomplete="off">
+                            <div class="int-row">
+                                <label for="username">Username</label>
+                                <input name="username" aria-describedBy="passwordHint" id="username" type="text"
+                                       size="25" maxlength="100" class="password_l" value="" placeholder="Username"/>
+
+                                <p id="passwordHint">Your username is either the email address you signed up with or,
+                                    for students and staff, your OU computer username or PI.</p>
+                            </div>
+                            <div class="int-row">
+                                <label for="password">Password</label>
+                                <input name="password" id="password" type="password" size="25" class="password_l"
+                                       placeholder="Password"/>
+
+                                <p>You can <strong><a
+                                        href="https://msds.open.ac.uk/signon/SAMSReset1.aspx?URL=http://www.open.ac.uk/">reset
+                                    your password here</a>.</strong></p>
+                            </div>
+                            <div class="int-row">
+                                <label for="DestURL">Choose page to sign in to</label>
+                                <select name="DestURL" id="DestURL" width="40">
+                                    <option value="https://msds.open.ac.uk/students/">StudentHome</option>
+                                    <option value="https://msds.open.ac.uk/tutorhome/">TutorHome</option>
+                                    <option value="http://intranet.open.ac.uk/">IntranetHome</option>
+                                    <option value="http://www.open.ac.uk/" selected="selected">The page I was on
+                                    </option>
+                                </select>
+                            </div>
+                            <div class="int-row">
+                                <button type="submit" name="Proceed1" class="button_l int-floatRight">Sign in</button>
+                            </div>
+                            <input type="hidden" name="FromURL" value="http://www.open.ac.uk/"/>
+                            <hr/>
+                            <p>
+                                <small>More information on our sign in and security features can be found on our <a
+                                        href="http://www.open.ac.uk/students/help/">help page</a></small>
+                            </p>
+                        </form>
+                    </div>
+                    <div class="int-grid6">
+                        <h2>New visitor?</h2>
+                        <p>Whether you're planning your OU studies, using free OpenLearn materials or contacting us for
+                            information, do it faster by creating an account.</p>
+                        <a href="http://www.open.ac.uk/account/createaccount" class="int-button int-floatRight">Create account</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- site footer -->
+    <div class="ab"></div>
+
+    <div class="int-ouFooter" role="contentinfo">
+        <div class="int-container">
+            <div class="header">
+                <div class="crest"><img src="Content/v2/headerandfooter/assets/img/ou-crest.png"
+                                        alt="The Open University Crest"></div>
+                <div class="contact">
+                    <h3>The Open University</h3>
+                </div>
+            </div>
+            <div class="nav-footer">
+                <ul>
+                    <li><a href="http://www.open.ac.uk/contact">Contact us</a></li>
+                    <li><a href="http://www3.open.ac.uk/employment/">Jobs</a></li>
+                    <li>
+                        <a href="http://www.open.ac.uk/about/main/admin-and-governance/policies-and-statements/website-accessibility-the-open-university">Accessibility</a>
+                    </li>
+                    <li><a href="http://www3.open.ac.uk/near-you/wales/p6.asp">Cymraeg </a></li>
+                    <li>
+                        <a href="http://www.open.ac.uk/about/main/admin-and-governance/policies-and-statements/conditions-use-open-university-websites">Conditions
+                            of use</a></li>
+                    <li>
+                        <a href="http://www.open.ac.uk/about/main/admin-and-governance/policies-and-statements/website-privacy-the-ou">Privacy
+                            and cookies</a></li>
+                    <li>
+                        <a href="http://www.open.ac.uk/about/main/admin-and-governance/policies-and-statements/copyright-ou-websites">Copyright</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="small-print">
+                <p class="copyright">
+                    <small>&copy; 2014. All rights reserved. The Open University is incorporated by Royal Charter (RC
+                        000391), an exempt charity in England & Wales and a charity registered in Scotland (SC 038302).
+                        The Open University is authorised and regulated by the Financial Conduct Authority.
+                        Open University Student Budget Accounts Limited (OUSBA) is a wholly owned subsidiary of The Open
+                        University, Companies House number 303735 and until 31 March 2014 was licensed by the Office of
+                        Fair Trading (OFT) under licence number 573250 and from 1 April 2014 is authorised and regulated
+                        by the Financial Conduct Authority (FCA) under interim permission number 573250.
+                    </small>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- /site footer -->
+
+</div>
+<!-- /ou container -->
+
+
+<input type="hidden" id="loaded-components" value="">
+
+
+<!--Vantage files-->
+<script src="Content/v2/core/assets/js/ou.widgets.js"></script>
+<script src="Content/v2/eep/assets/js/modules/eep-framework.js"></script>
+<script src="Content/v2/headerandfooter/assets/js/modules/ou-primary-navigation.js"></script>
+
+<script>
+    //Function that has to be called on the page to initialise the nav
+    (function ($, window) {
+
+        window.OU.PrimaryNavigation = new window.OU.DigitalFramework.Global.PrimaryNavigation({
+            serviceLink: true,    //Set to false to switch off the service links toggle functionality and responsive styling i.e. if you are not using service links on the page. Default is true.
+            activeItem: true      //Set to true to initialise the nav item using js, default is false
+        });
+
+    })(jQuery, window);
+</script>
+
+
+<!--end of Vantage files-->
+<script src="Content/v2/eep/assets/js/vendor/min/jquery-ui-1.10.4.custom.min.js"></script>
+<script src="Content/v2/eep/assets/js/vendor/jquery.placeholder.js"></script>
+<script src="Content/v2/eep/assets/js/vendor/jquery.smartresize.js"></script>
+<script src="Content/v2/eep/assets/js/vendor/cookies.js"></script>
+<script src="Content/v2/eep/assets/js/app.js"></script>
+<script src="Content/v2/eep/assets/js/helpers.js"></script>
+<script src="Content/v2/eep/assets/js/modules/ui-widgets.js"></script>
+<script src="Content/v2/eep/assets/js/modules/course-details.js"></script>
+<script src="Content/v2/eep/assets/js/modules/back-to-top.js"></script>
+<script src="Content/v2/eep/assets/js/modules/modal.js"></script>
+
+<!--[if lt IE 9]>
+<script src="Content/v2/eep/assets/js/vendor/respond.js"></script>
+<![endif]-->
+
+<script src="Content/v2/eep/assets/js/main.js"></script>
+
+<!-- header and footer -->
+
+<!-- end of header and footer -->
+
+<script type="text/javascript">
+    $("link[href*='jquery-ui.css']").remove();
+</script>
+
+<script type="text/javascript">if (typeof window.ou_init == 'function') ou_init();</script>
+</body>
+</html>
+

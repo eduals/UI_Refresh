@@ -1,0 +1,20 @@
+{
+    "ContentEncoding": null,
+    "ContentType": null,
+    "Data": {
+        "PostcodeFormatValid": true,
+        "PostcodeInvalidMessage": "",
+        "IsBfpo": false,
+        "AddressList": [
+            {
+                "AddressLine1": "Driver \u0026 Vehicle Licensing Agency",
+                "AddressLine2": "Vehicle Registrations",
+                "AddressLine3": "Driver \u0026 Vehicle Licensing Centre",
+                "Town": "SWANSEA",
+                "County": "",
+                "Postcode": "SA99 1AR"
+            }
+        ]
+    },
+    "JsonRequestBehavior": 1
+}

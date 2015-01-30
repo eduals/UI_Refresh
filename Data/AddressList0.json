@@ -1,0 +1,6 @@
+{
+    "ContentEncoding": null,
+    "ContentType": null,
+    "Data": {"PostcodeFormatValid": true, "PostcodeInvalidMessage": "", "IsBfpo": false, "AddressList": null},
+    "JsonRequestBehavior": 1
+}

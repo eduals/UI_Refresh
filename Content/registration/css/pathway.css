@@ -1,0 +1,203 @@
+/*Version 20: Added bottom padding for main content*/
+/*----------------------------------------------------------Global*/
+.int-icon-text {
+    font-family: "futura-pt",verdana,sans-serif;
+}
+.int-icon-text .circle {
+    border-radius: 50%;
+    display: inline-block;
+    background: #a6d0ff;
+    color: #0b55a8;
+    margin-right: 5px;
+    width: 1.85em;
+    height: 1.85em;
+    text-align: center;
+}
+.int-icon-text .circle i {
+    line-height: 1.85em;
+}
+button[disabled],
+button:disabled,
+button.disabled,
+a.int-button.disabled,
+input[type="button"][disabled],
+input[type="button"]:disabled
+{
+    border-color: #8797b0;
+    background-color: #e7eff7;
+    color: #8797b0;
+    cursor: not-allowed;
+}
+div.int-alert,
+div.int-alert.int-success,
+div.int-alert.int-error{
+    margin: 0;
+    padding: .75em  .75em .75em 2.8em;
+}
+div.int-alert a.int-alertRemove {
+    color: #B65E00;
+}
+div.int-alert.int-error a.int-alertRemove {
+    color: #de2a1e;
+}
+.int-alert .int-icon {
+    position: absolute;
+    top: .2em;
+    left: .3em;
+}
+.noPadding{
+    padding: 0;
+}
+p.noTitle{
+    margin-top: 16px;
+}
+h1.small{
+    font-size: 1.75em;
+}
+#int-site #int-header {
+    padding: 0 10px;
+}
+main .int-container .interaction{
+    border-radius: 4px;
+    margin-bottom: .8em;
+}
+.int-input-button{
+    padding: .45em .8em;
+}
+.int-noWrap{
+    white-space: nowrap;
+}
+/*Header*/
+#OULogo{
+    display: block;
+}
+#OULogoSmall{
+    display: none;
+}
+#logoContainer{
+    height: 120px;
+    width: 120px;
+    background-color: #E7EFF7;
+    margin: .5em 0;
+    display: inline-block;
+    float: left;
+}
+#titleContainer{
+    margin: .8em 2em .5em;
+    float: left;
+}
+/*Progress Bar*/
+#progressBarContainer.interaction{
+    background-color: #e7eff7;
+    margin-bottom: 0;
+    border-radius: 4px;
+}
+#progressBarContainer.interaction+.interaction{
+    border-radius: 0 0 4px 4px;
+}
+.int-progressBar{
+    padding-top: .5em;
+    height: 1em;
+}
+.int-progressBar.steps2 .stage { width: 50%; }
+.int-progressBar.steps3 .stage { width: 33.33%; }
+.int-progressBar.steps4 .stage { width: 25%; }
+.int-progressBar.steps5 .stage { width: 20%; }
+.int-progressBar.steps6 .stage { width: 16.66%; }
+.int-progressBar.steps7 .stage { width: 14.28%; }
+.int-progressBar.steps8 .stage { width: 12.5%; }
+.int-progressBar.steps9 .stage { width: 11.11%; }
+.int-progressBar.steps10 .stage { width: 10%; }
+.int-progressBar .stage{
+    text-align: center;
+    color: #312b39;
+    float: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.int-progressBar .mobile{
+    display: none;
+    color: #002158;
+}
+.int-progressBar .stage.current {
+    color: #0b55a8;
+    border-color: #ffc23d;
+    font-weight: bold;
+}
+.int-progressBar .stage.done {
+    color: #0b55a8;
+    border-color: #0b55a8;
+}
+/*----------------------------------------------------------Media Queries*/
+@media (min-width: 960px) {
+    /*Progress Bar*/
+    .int-progressBar .stage{
+        border-top: .5em solid #fff;
+        padding: .5em 0;
+    }
+}
+@media (max-width: 959px){
+    /*Progress Bar*/
+    .int-progressBar .stage{
+        border-top: .3em solid #fff;
+        padding: .3em 0;
+        font-size: .95em;
+    }
+}
+@media (max-width: 767px){
+    /*Header*/
+    #OULogo{
+        display: none;
+    }
+    #OULogoSmall{
+        display: block;
+    }
+    #logoContainer {
+        float: none;
+        height: 90px;
+        width: 90px;
+        margin: 15px 0 0;
+    }
+    #titleContainer {
+        margin: 0;
+        width: 100%;
+        float: none;
+    }
+    /*Progress Bar*/
+    #progressBarContainer.interaction,
+    #progressBarContainer.interaction+.interaction{
+        border-radius: 0;
+    }
+    .int-progressBar{
+        padding-top: 0;
+        height: 0;
+    }
+    .int-progressBar .stage{
+        display: none;
+    }
+    .int-progressBar .mobile{
+        display: block;
+        float: right;
+        font-weight: bold;
+    }
+    /*Global*/
+    #content .interaction{
+        border-radius: 0;
+        margin-bottom: .8em;
+    }
+    .int-quick-facts{
+        margin-bottom: 0;
+    }
+}
+
+/*Full bleed footer*/
+body{
+    background-color: #002158;
+}
+#int-content{
+    background-color: #fff;
+    padding: 2em 0;
+}
+#banner{
+    margin-bottom: 0;
+}

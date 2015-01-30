@@ -1,0 +1,57 @@
+// =============================================================================
+// Video Link
+// 
+// =============================================================================
+
+.int-video-link {
+	
+	a {
+		.transition();
+		display: block;
+		position: relative;
+		color: fade(@dark-grey, 90%);
+		overflow:hidden;
+		margin-bottom:1em;
+		&:before  {
+			.transition();
+			content: '';
+			display:block;
+			position:absolute;
+			z-index:50;
+			top:0;
+			left:0;
+			bottom:0;
+			width:100%;
+			background: fade(@dark-grey, 0%);
+		}
+		img {
+			.transition();
+			float:left;
+		}
+		> div{
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			z-index:60;
+			
+			> div{
+				margin-left: -50%;
+				margin-top: -50%;
+			}			
+		}
+		&:hover, &:focus {
+			color: fade(@dark-grey, 100%);
+			&:before {
+				background: fade(@dark-grey, 30%);
+			}
+			img {
+				.scale(1.2);
+			}
+		}
+	}
+	
+}
+
+.lt-ie9 .int-video-link {
+	a {color: @dark-grey;}
+}

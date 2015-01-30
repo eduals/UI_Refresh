@@ -1,0 +1,88 @@
+<div class="interaction hidden" id="yourDetailsUKInteraction">
+    <fieldset>
+        <legend class="h2"><span>About you</span></legend>
+        <div id="aboutYouFormMessage" aria-live="polite"></div>
+        <p>Fields marked with <span class="int-requiredAsterisk" role="presentation">*</span> must be filled in.</p>
+        <hr/>
+        <div class="int-row">
+            <div class="int-grid3"><label for="addressInputLine1" class="int-floatRight">Address line 1<span class="int-requiredAsterisk" role="presentation">*</span></label></div>
+            <div class="int-grid6">
+                <input type="text" id="addressInputLine1" placeholder="Address line 1" aria-required="true" required/>
+            </div>
+        </div>
+        <div class="int-row">
+            <div class="int-grid3"><label for="addressInputLine2" class="int-floatRight">Address line 2</label></div>
+            <div class="int-grid6">
+                <input type="text" id="addressInputLine2" placeholder="Address line 2"/>
+            </div>
+        </div>
+        <div class="int-row">
+            <div class="int-grid3"><label for="addressInputLine3" class="int-floatRight">Address line 3</label></div>
+            <div class="int-grid6">
+                <input type="text" id="addressInputLine3" placeholder="Address line 3"/>
+            </div>
+        </div>
+        <div class="int-row">
+            <div class="int-grid3"><label for="addressTownCityInput" class="int-floatRight">Town / City <span class="int-requiredAsterisk" role="presentation">*</span></label></div>
+            <div class="int-grid6">
+                <input type="text" id="addressTownCityInput" placeholder="Town / City" aria-required="true" required/>
+            </div>
+        </div>
+        <div class="int-row">
+            <div class="int-grid3"><label for="addressPostCodeInput" class="int-floatRight">Postcode <span class="int-requiredAsterisk" role="presentation">*</span></label></div>
+            <div class="int-grid6">
+                <input type="text" id="addressPostCodeInput" placeholder="Postcode" aria-required="true" required/>
+            </div>
+        </div>
+        <hr/>
+        <div class="int-row">
+            <div class="int-grid3"><label for="titleListSelect" class="int-floatRight">Title <span class="int-requiredAsterisk" role="presentation">*</span></label></div>
+            <div class="int-grid6">
+                <select id="titleListSelect" aria-required="true" required>
+                    <option value="" disabled selected>Choose</option>
+                    <option value="1">Mr.</option>
+                    <option value="2">Mrs.</option>
+                    <option value="3">Miss.</option>
+                    <option value="3">Ms.</option>
+                    <option value="3">Dr.</option>
+                </select>
+            </div>
+        </div>
+        <div class="int-row">
+            <div class="int-grid3"><label for="firstNameInput" class="int-floatRight">First name(s) <span class="int-requiredAsterisk" role="presentation">*</span></label></div>
+            <div class="int-grid6">
+                <input type="text" id="firstNameInput" placeholder="First name(s)" aria-required="true" required/>
+            </div>
+        </div>
+        <div class="int-row">
+            <div class="int-grid3"><label for="lastNameInput" class="int-floatRight">Last name <span class="int-requiredAsterisk" role="presentation">*</span></label></div>
+            <div class="int-grid6">
+                <input type="text" id="lastNameInput" placeholder="Last name" aria-required="true" required/>
+            </div>
+        </div>
+        <div class="int-row" id="dateOfBirthInputGroup">
+            <div class="int-grid3">
+                <span class="int-floatRight int-label">Date of birth (DD-MM-YYYY)<span class="int-requiredAsterisk" role="presentation">*</span></span>
+                <label for="DD" class="int-hide">Day (DD) <span class="int-requiredAsterisk" role="presentation">*</span></label>
+                <label for="MM" class="int-hide">Month (MM) <span class="int-requiredAsterisk" role="presentation">*</span></label>
+                <label for="YYYY" class="int-hide">Year (YYYY) <span class="int-requiredAsterisk" role="presentation">*</span></label>
+            </div>
+            <div class="int-grid2">
+                <label for="DD" class="int-hide">Date of Birth - Day</label><input type="text" id="DD" placeholder="DD" aria-required="true" required/>
+            </div>
+            <div class="int-grid2">
+                <label for="MM" class="int-hide">Date of Birth - Month</label><input type="text" id="MM" placeholder="MM" aria-required="true" required/>
+            </div>
+            <div class="int-grid2">
+                <label for="YYYY" class="int-hide">Date of Birth - Year</label><input type="text" id="YYYY" placeholder="YYYY" aria-required="true" required/>
+            </div>
+        </div>
+        <hr/>
+        <div class="int-row">
+            <div class="int-grid3"><label for="OUPIInput" class="int-floatRight">OU personal identifier (if known)</label></div>
+            <div class="int-grid6">
+                <input type="text" id="OUPIInput" placeholder="OU personal identifier (optional)"/>
+            </div>
+        </div>
+    </fieldset>
+</div>

@@ -1,0 +1,228 @@
+{
+    "ContentEncoding": null,
+    "ContentType": null,
+    "Data": {
+        "PostcodeFormatValid": true,
+        "PostcodeInvalidMessage": "",
+        "IsBfpo": false,
+        "AddressList": [
+            {
+                "AddressLine1": "10 Park Road",
+                "AddressLine2": "Stevington",
+                "AddressLine3": "",
+                "Town": "BEDFORD",
+                "County": "",
+                "Postcode": "MK43 7QG"
+            },
+            {
+                "AddressLine1": "13 Park Road",
+                "AddressLine2": "Stevington",
+                "AddressLine3": "",
+                "Town": "BEDFORD",
+                "County": "",
+                "Postcode": "MK43 7QG"
+            },
+            {
+                "AddressLine1": "15a Park Road",
+                "AddressLine2": "Stevington",
+                "AddressLine3": "",
+                "Town": "BEDFORD",
+                "County": "",
+                "Postcode": "MK43 7QG"
+            },
+            {
+                "AddressLine1": "15b Park Road",
+                "AddressLine2": "Stevington",
+                "AddressLine3": "",
+                "Town": "BEDFORD",
+                "County": "",
+                "Postcode": "MK43 7QG"
+            },
+            {
+                "AddressLine1": "34 Park Road",
+                "AddressLine2": "Stevington",
+                "AddressLine3": "",
+                "Town": "BEDFORD",
+                "County": "",
+                "Postcode": "MK43 7QG"
+            },
+            {
+                "AddressLine1": "36 Park Road",
+                "AddressLine2": "Stevington",
+                "AddressLine3": "",
+                "Town": "BEDFORD",
+                "County": "",
+                "Postcode": "MK43 7QG"
+            },
+            {
+                "AddressLine1": "38 Park Road",
+                "AddressLine2": "Stevington",
+                "AddressLine3": "",
+                "Town": "BEDFORD",
+                "County": "",
+                "Postcode": "MK43 7QG"
+            },
+            {
+                "AddressLine1": "40 Park Road",
+                "AddressLine2": "Stevington",
+                "AddressLine3": "",
+                "Town": "BEDFORD",
+                "County": "",
+                "Postcode": "MK43 7QG"
+            },
+            {
+                "AddressLine1": "41 Park Road",
+                "AddressLine2": "Stevington",
+                "AddressLine3": "",
+                "Town": "BEDFORD",
+                "County": "",
+                "Postcode": "MK43 7QG"
+            },
+            {
+                "AddressLine1": "42 Park Road",
+                "AddressLine2": "Stevington",
+                "AddressLine3": "",
+                "Town": "BEDFORD",
+                "County": "",
+                "Postcode": "MK43 7QG"
+            },
+            {
+                "AddressLine1": "43 Park Road",
+                "AddressLine2": "Stevington",
+                "AddressLine3": "",
+                "Town": "BEDFORD",
+                "County": "",
+                "Postcode": "MK43 7QG"
+            },
+            {
+                "AddressLine1": "44 Park Road",
+                "AddressLine2": "Stevington",
+                "AddressLine3": "",
+                "Town": "BEDFORD",
+                "County": "",
+                "Postcode": "MK43 7QG"
+            },
+            {
+                "AddressLine1": "46 Park Road",
+                "AddressLine2": "Stevington",
+                "AddressLine3": "",
+                "Town": "BEDFORD",
+                "County": "",
+                "Postcode": "MK43 7QG"
+            },
+            {
+                "AddressLine1": "56 Park Road",
+                "AddressLine2": "Stevington",
+                "AddressLine3": "",
+                "Town": "BEDFORD",
+                "County": "",
+                "Postcode": "MK43 7QG"
+            },
+            {
+                "AddressLine1": "58 Park Road",
+                "AddressLine2": "Stevington",
+                "AddressLine3": "",
+                "Town": "BEDFORD",
+                "County": "",
+                "Postcode": "MK43 7QG"
+            },
+            {
+                "AddressLine1": "60 Park Road",
+                "AddressLine2": "Stevington",
+                "AddressLine3": "",
+                "Town": "BEDFORD",
+                "County": "",
+                "Postcode": "MK43 7QG"
+            },
+            {
+                "AddressLine1": "62 Park Road",
+                "AddressLine2": "Stevington",
+                "AddressLine3": "",
+                "Town": "BEDFORD",
+                "County": "",
+                "Postcode": "MK43 7QG"
+            },
+            {
+                "AddressLine1": "64 Park Road",
+                "AddressLine2": "Stevington",
+                "AddressLine3": "",
+                "Town": "BEDFORD",
+                "County": "",
+                "Postcode": "MK43 7QG"
+            },
+            {
+                "AddressLine1": "66 Park Road",
+                "AddressLine2": "Stevington",
+                "AddressLine3": "",
+                "Town": "BEDFORD",
+                "County": "",
+                "Postcode": "MK43 7QG"
+            },
+            {
+                "AddressLine1": "68 Park Road",
+                "AddressLine2": "Stevington",
+                "AddressLine3": "",
+                "Town": "BEDFORD",
+                "County": "",
+                "Postcode": "MK43 7QG"
+            },
+            {
+                "AddressLine1": "88 Park Road",
+                "AddressLine2": "Stevington",
+                "AddressLine3": "",
+                "Town": "BEDFORD",
+                "County": "",
+                "Postcode": "MK43 7QG"
+            },
+            {
+                "AddressLine1": "93 Park Road",
+                "AddressLine2": "Stevington",
+                "AddressLine3": "",
+                "Town": "BEDFORD",
+                "County": "",
+                "Postcode": "MK43 7QG"
+            },
+            {
+                "AddressLine1": "95 Park Road",
+                "AddressLine2": "Stevington",
+                "AddressLine3": "",
+                "Town": "BEDFORD",
+                "County": "",
+                "Postcode": "MK43 7QG"
+            },
+            {
+                "AddressLine1": "105 Park Road",
+                "AddressLine2": "Stevington",
+                "AddressLine3": "",
+                "Town": "BEDFORD",
+                "County": "",
+                "Postcode": "MK43 7QG"
+            },
+            {
+                "AddressLine1": "Evening House",
+                "AddressLine2": "Park Road",
+                "AddressLine3": "Stevington",
+                "Town": "BEDFORD",
+                "County": "",
+                "Postcode": "MK43 7QG"
+            },
+            {
+                "AddressLine1": "Old Chapel",
+                "AddressLine2": "Park Road",
+                "AddressLine3": "Stevington",
+                "Town": "BEDFORD",
+                "County": "",
+                "Postcode": "MK43 7QG"
+            },
+            {
+                "AddressLine1": "Park Road House",
+                "AddressLine2": "Park Road",
+                "AddressLine3": "Stevington",
+                "Town": "BEDFORD",
+                "County": "",
+                "Postcode": "MK43 7QG"
+            }
+        ]
+    },
+    "JsonRequestBehavior": 1
+}
