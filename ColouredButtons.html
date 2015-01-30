@@ -345,7 +345,51 @@
 <div class="int-container">
 <!-- Main Form -->
 <div class="cl-fullBleedBottomPadding">
+    <style>
+        /*Light Yellow Button*/
+        button.int-button-light-yellow,
+        input[type=button].int-button-light-yellow,
+        input[type=submit].int-button-light-yellow,
+        .int-button.int-button-light-yellow,
+        a.int-button.int-button-light-yellow {
+            background: #FFDA8B;
+            color: #0b55a8;
+            border: 1px solid #FFDA8B;
+        }
+        button.int-button-light-yellow:hover,
+        input[type=button].int-button-light-yellow:hover,
+        input[type=submit].int-button-light-yellow:hover,
+        .int-button.int-button-light-yellow:hover,
+        a.int-button.int-button-light-yellow:hover,
+        button.int-button-light-yellow:focus,
+        input[type=button].int-button-light-yellow:focus,
+        input[type=submit].int-button-light-yellow:focus,
+        .int-button.int-button-light-yellow:focus,
+        a.int-button.int-button-light-yellow:focus {
+            background: #880088;
+            color: #ffc23d;
+            border: 1px solid #ffc23d;
+        }
+        button.int-button-light-yellow:active,
+        input[type=button].int-button-light-yellow:active,
+        input[type=submit].int-button-light-yellow:active,
+        .int-button.int-button-light-yellow:active,
+        a.int-button.int-button-light-yellow:active {
+            background: #470d43;
+            color: #ffc23d;
+            border: 1px solid #ffc23d;
+        }
+    </style>
+    <br/>
+    <input type="text"/>
+    <button class="int-button">Button</button>
+    <a class="int-button" href="#">Button</a>
+    <input class="int-button" type="button" value="Button"/>
 
+
+    <button class="int-button int-button-light-yellow">Button</button>
+    <a class="int-button int-button-light-yellow" href="#">Button</a>
+    <input class="int-button int-button-light-yellow" type="button" value="Button"/>
 </div>
 <!-- !Main Form -->
 </div>
