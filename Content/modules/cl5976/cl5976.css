@@ -4,9 +4,34 @@
     ----------------------------------------------------------
     The Open University © Copyright 2015. All rights reserved
     ----------------------------------------------------------
-    v1.8 Added paragraph styling for interaction based tooltips
+    v1.9 Remove modal overlay focus styles
 */
 /*----------------------------------------------------------General Styles*/
+/*Fluid Iframes*/
+.cl-fluidMedia {
+    position: relative;
+    padding-bottom: 56.25%; /* proportion value to aspect ratio 16:9 (9 / 16 = 0.5625 or 56.25%) */
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+}
+
+.cl-fluidMedia.medium {
+    padding-bottom: 34.25%;
+}
+
+.cl-fluidMedia.small {
+    padding-bottom: 24.25%;
+}
+
+.cl-fluidMedia iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
 /*Input group*/
 .cl-inputGroup {
     position: relative;
@@ -193,6 +218,11 @@ input[type="button"]:disabled {
     background: url(img/overlay-075.png);
     background: rgba(0, 0, 0, .75);
     z-index: 999;
+}
+
+.cl-modal-overlay:focus,
+.cl-modal:focus {
+    outline: 0;
 }
 
 .cl-modal-container {

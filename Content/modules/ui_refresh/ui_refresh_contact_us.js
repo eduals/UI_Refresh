@@ -16,6 +16,7 @@
             customTriggerShowEvent: 'paste retypeMatch',
             customTriggerHideEvent: 'blur'
         },
+        $seeOnMap = $('#seeOnMap'),
         slowTransition = 1000,
         $addressList = $('#ddlSelectAddress'),
         $addressListContainer = $('#divSelectAddress'),
@@ -34,6 +35,16 @@
     new cl.Tooltip($retypeEmail, $('#retypeEmailFi'), retypeInputOptions);
     new cl.EventPreventDefault($retypeEmail, {events: 'paste'});
 
+    //Other ways to contact us modal
+    new cl.Modal($('#otherWaysToContactUsModal'), {
+        $modalOpener: $("#otherWaysToContactUsModalOpener"),
+        hideModalCallback: function () {
+            $seeOnMap.attr('src', '');
+        },
+        showModalCallback: function () {
+            $seeOnMap.attr('src', 'https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9820.03089022188!2d-0.707872!3d52.024957!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x26f33d629ce23606!2sOpen+University+Worldwide+Ltd!5e0!3m2!1sen!2suk!4v1423053543926');
+        }
+    });
 
     //Address Section
     new cl.Tooltip($postcodeSearchInput, $('#postcodeTooltip'));
@@ -53,11 +64,9 @@
     //!Uncomment in live version
 
     //Delete in live version Todo
-    var dummy0 = 'Content/ui_refresh/data/dummy_data0.json';
-    var dummy1 = 'Content/ui_refresh/data/dummy_data2.json';
-    url = function(){
-        return ($postcodeSearchInput.val().length ? dummy1 : dummy0);
-    };
+    var dummy0 = 'Content/modules/ui_refresh/data/dummy_data0.json';
+    var dummy1 = 'Content/modules/ui_refresh/data/dummy_data2.json';
+    url = dummy1;
     //!Delete in live version
 
     //Postcode Search
@@ -72,7 +81,7 @@
     function getAddressList() {
         $.ajax({
             type: "POST",
-            url: url(), //Todo change this to a variable not an invocation
+            url: url, //Todo change this to a variable not an invocation
             crossDomain: true,
             contentType: "application/json",
             data: '{ postcode: "' + $postcodeSearchInput.val() + '" }',
@@ -157,14 +166,13 @@
         $postcodeInput.val(removeCommas(selectedAddress.PostCode));
     }
 
-    function removeCommas(str){
+    function removeCommas(str) {
         return str.replace(/,/g, '');
     }
 
     function showPostcodeSearchForm() {
         hideAddressRegion();
         $postcodeSearchRegion.slideDown();
-        $overseasPostcodeInput.hide();
     }
 
     function showAddressRegion() {

@@ -5,7 +5,7 @@
 // ----------------------------------------------------------
 
 (function ($, cl) {
-    cl.version = 'cl5976 | Written by Paul Liu | paul.liu@open.ac.uk | v1.22 Moved $body to inside closure';
+    cl.version = 'cl5976 | Written by Paul Liu | paul.liu@open.ac.uk | v1.23 Change tabindex of modal';
     cl.dependencies = 'jQuery,jQueryUI';
 
     var $body = $('body');
@@ -619,7 +619,7 @@
             var base = this;
 
             base.$modal.attr({
-                'tabindex': 0,
+                'tabindex': -1,
                 'role': 'dialog'
             });
 
