@@ -1,17 +1,17 @@
 // ----------------------------------------------------------
-// cl5976 | Written by Paul Liu | paul.liu@open.ac.uk
+// ui_refresh | Written by Paul Liu | paul.liu@open.ac.uk
 // ----------------------------------------------------------
 // The Open University © Copyright 2015. All rights reserved
 // ----------------------------------------------------------
 
-(function ($, cl) {
-    cl.version = 'cl5976 | Written by Paul Liu | paul.liu@open.ac.uk | v1.23 Change tabindex of modal';
-    cl.dependencies = 'jQuery,jQueryUI';
+(function ($, ui) {
+    ui.version = 'ui_refresh | Written by Paul Liu | paul.liu@open.ac.uk | v1.24 Re-namespace to ui_refresh';
+    ui.dependencies = 'jQuery,jQueryUI';
 
     var $body = $('body');
 
     //Methods
-    cl.maxCharLengthReached = function ($input, maximumCharLength, removeAlertFromDOMDelay) {
+    ui.maxCharLengthReached = function ($input, maximumCharLength, removeAlertFromDOMDelay) {
         var delay = removeAlertFromDOMDelay || 5000,
             valueLength,
             maxLength = maximumCharLength || $input.attr('maxlength'),
@@ -29,12 +29,12 @@
             }
         });
     };
-    cl.checkFunction = function (fn, base) {
+    ui.checkFunction = function (fn, base) {
         if (typeof fn === 'function') {
             fn(base);
         }
     };
-    cl.matchChecker = function ($input1, $input2, event) {
+    ui.matchChecker = function ($input1, $input2, event) {
         $input2.keyup(function () {
             var value = $(this).val(),
                 input1Value = $input1.val();
@@ -44,7 +44,7 @@
             }
         });
     };
-    cl.loopObject = function (object, callback) {
+    ui.loopObject = function (object, callback) {
         var key;
 
         for (key in object) {
@@ -53,7 +53,7 @@
             }
         }
     };
-    cl.preventFormSubmit = function ($input, $button) {
+    ui.preventFormSubmit = function ($input, $button) {
         $input.keydown(function (e) {
             if (e.which === 13) {
                 e.preventDefault();
@@ -63,7 +63,7 @@
             }
         });
     };
-    cl.obscurePasswordOnBlur = function ($input) {
+    ui.obscurePasswordOnBlur = function ($input) {
         $input.on({
             blur: function () {
                 $input.attr('type', 'password');
@@ -118,7 +118,7 @@
             base.$alert = $('<div>' + message + '</div>').addClass(classes);
 
             //Add attributes
-            cl.loopObject(attributes, function (key, value) {
+            ui.loopObject(attributes, function (key, value) {
                 base.$alert.attr(key.toString(), value.toString());
             });
 
@@ -147,14 +147,14 @@
     };
 
     //Prototypes
-    cl.EventPreventDefault = function ($el, options) {
+    ui.EventPreventDefault = function ($el, options) {
         var base = this;
 
         base.opts = $.extend({}, this.defaults, options);
         base.$formEl = $el;
         base.init();
     };
-    cl.EventPreventDefault.prototype = {
+    ui.EventPreventDefault.prototype = {
         defaults: {
             events: 'paste cut copy',
             ariaAlertsMarkup: {
@@ -191,14 +191,14 @@
         }
     };
 
-    cl.Tooltip = function ($input, $tooltipContainer, options) {
+    ui.Tooltip = function ($input, $tooltipContainer, options) {
         this.opts = $.extend({}, this.defaults, options);
         this.$input = $input;
         this.$tooltipContainer = $tooltipContainer;
         this.$tooltip = $tooltipContainer.find('.cl-inputFocusTooltip').uniqueId();
         this.init(this.opts);
     };
-    cl.Tooltip.prototype = {
+    ui.Tooltip.prototype = {
         defaults: {
             alert: false,
             customTrigger: false,
@@ -268,7 +268,7 @@
             if (!tooltipIsVisible) {
                 $tooltip.show();
                 base.setAriaHiddenExpanded();
-                cl.checkFunction(o.showTooltipCallback, base);
+                ui.checkFunction(o.showTooltipCallback, base);
             }
         },
         hideTooltip: function () {
@@ -280,7 +280,7 @@
             if (tooltipIsVisible) {
                 $tooltip.hide();
                 base.setAriaHiddenExpanded();
-                cl.checkFunction(o.hideTooltipCallback, base);
+                ui.checkFunction(o.hideTooltipCallback, base);
             }
         },
         setAriaHiddenExpanded: function () {
@@ -308,7 +308,7 @@
         }
     };
 
-    cl.PasswordCheckList = function ($input, $checkList, options) {
+    ui.PasswordCheckList = function ($input, $checkList, options) {
         var base = this;
 
         base.opts = $.extend({}, this.defaults, options);
@@ -317,7 +317,7 @@
         base.$screenReaderAlertContainer = $('<div id="cl-passwordCheckList-screenReaderAlert" aria-live="assertive"></div>').appendTo('body');
         base.init();
     };
-    cl.PasswordCheckList.prototype = {
+    ui.PasswordCheckList.prototype = {
         defaults: {
             regEx: {
                 length: [8, 12],
@@ -451,7 +451,7 @@
         }
     };
 
-    cl.Modal = function ($container, options) {
+    ui.Modal = function ($container, options) {
         var base = this, o, s;
         base.$modalContainer = $container;
         base.opts = $.extend({}, base.defaults, options);
@@ -470,7 +470,7 @@
         base.scrollPosition = undefined;
         base.init();
     };
-    cl.Modal.prototype = {
+    ui.Modal.prototype = {
         defaults: {
             selectors: {
                 modal: '.cl-modal',
@@ -698,5 +698,8 @@
     };
 
     //Expose aria prototypes to global scope
-    cl.aria = aria;
-})(jQuery, window.cl5976 = window.cl5976 || {});
+    ui.aria = aria;
+
+    //Create alias for ui_refresh
+    window.cl5976 = ui;
+})(jQuery, window.ui_refresh = window.ui_refresh || {});
