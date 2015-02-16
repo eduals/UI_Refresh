@@ -190,4 +190,4 @@
         }
     }
 
-})(jQuery, window.cl5976);
+})(jQuery, window.ui_refresh);

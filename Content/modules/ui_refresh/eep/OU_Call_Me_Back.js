@@ -3,7 +3,7 @@
     var messageRequired = 'is a required field';
 
     function message(href, anchorText, text) {
-        return '<a href="#' + href + '">' + anchorText + '</a>: ' + text;
+        return '<a href="#' + href + '">' + anchorText + '</a> : ' + text;
     }
 
     function messageCharacterLength(length) {

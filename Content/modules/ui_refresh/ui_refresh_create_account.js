@@ -26,4 +26,4 @@
     cl.obscurePasswordOnBlur($password);
     cl.obscurePasswordOnBlur($retypePassword);
 
-})(jQuery, window.cl5976 = window.cl5976 || {});
+})(jQuery, window.cl5976 = window.ui_refresh || {});
