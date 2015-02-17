@@ -42,7 +42,7 @@
             $seeOnMap.attr('src', '');
         },
         showModalCallback: function () {
-            $seeOnMap.attr('src', 'https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9820.03089022188!2d-0.707872!3d52.024957!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x26f33d629ce23606!2sOpen+University+Worldwide+Ltd!5e0!3m2!1sen!2suk!4v1423053543926');
+            $seeOnMap.attr('src', 'https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2455.120602912755!2d-0.7075171384086828!3d52.02290056921254!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0000000000000000%3A0x8cd2ce40201164d8!2sThe+Open+University!5e0!3m2!1sen!2suk!4v1424085338022');
         }
     });
 
@@ -59,15 +59,9 @@
         }
     });
 
-    //Uncomment in live version Todo
-    //url = "/" + window.location.pathname.split('/')[1] + "/CMSPages/OU/AddressSearchService.asmx/FindAddresses";
-    //!Uncomment in live version
+    url = "/" + window.location.pathname.split('/')[1] + "/CMSPages/OU/AddressSearchService.asmx/FindAddresses";
 
-    //Delete in live version Todo
-    var dummy0 = 'Content/modules/ui_refresh/data/dummy_data0.json';
-    var dummy1 = 'Content/modules/ui_refresh/data/dummy_data2.json';
-    url = dummy1;
-    //!Delete in live version
+    url = 'Content/modules/ui_refresh/data/dummy_data0.json';
 
     //Postcode Search
     $postcodeSearchButton.click(function () {
@@ -81,7 +75,7 @@
     function getAddressList() {
         $.ajax({
             type: "POST",
-            url: url, //Todo change this to a variable not an invocation
+            url: url,
             crossDomain: true,
             contentType: "application/json",
             data: '{ postcode: "' + $postcodeSearchInput.val() + '" }',
