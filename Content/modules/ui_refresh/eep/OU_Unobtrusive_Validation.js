@@ -10,7 +10,9 @@ window._form = $("form");
 
 /// wire-up checkboxes and radios on blur to validate
 $(document).on("ready", function () {
-    $("form input[type=checkbox], form input[type=radio]").on("click change", function () {
+
+    $("form input[type=checkbox], form input[type=radio]").on("click change", function ()
+    {
         window._form.validate().element(this);
     });
 
@@ -35,31 +37,32 @@ $(document).on("ready", function () {
         // remove the red border
         var $errors = $(".is-error");
         $errors.removeClass("is-error");
-        
+
         // remove items from the summary
         $("#error-box ul li").each(function () {
             $(this).remove();
         });
 
-        
+
         setTimeout(function () {
             // hide the summary
-          $('#error-box').hide();
+            $('#error-box').hide();
         }, 1);
 
-       
+
 
         //remove inline items
         $('span.int-errorMessage').each(function () {
             $(this).remove();
         });
     };
-    
+
     $(".clear-errors").click($.validator.clearErrors);
 });
 
 /// attach validation to current <form>
-function initValidation(showErrorMessagesInline) {
+function initValidation(showErrorMessagesInline)
+{
     window._form.validate({
         errorClass: "is-error",
         focusInvalid: false,
@@ -83,7 +86,7 @@ function initValidation(showErrorMessagesInline) {
 
         showErrors: function (errorMap, errorList) {
             this.defaultShowErrors();
-            
+
             // when we show and hide validation messages, it causes elements to move up or down the page. 
             // if the user clicks on submit (for example), first validation kicks in, possibly causing the submit button to move, and 
             // so the button never actually receives the click event.
@@ -126,7 +129,23 @@ function initValidation(showErrorMessagesInline) {
                         }
 
                         // display inline error message 
-                        $('<span class="int-errorMessage show-me" for="' + identifier + '" role="alert" aria-live="assertive" style="display:none;" data-validation-target-name="' + this.element.name + '">' + this.message + '</span>').appendTo($(elementToAppendMessageAfter).parent());
+                        var $errorMessage = $('<span class="int-errorMessage show-me" for="' + identifier + '" role="alert" aria-live="assertive" style="display:none;" data-validation-target-name="' + this.element.name + '">' + this.message + '</span>');
+
+                        if (currentElement.parent().hasClass('cl-inputGroup'))
+                        {
+                            currentElement.parent().after($errorMessage);
+                        }
+                        else
+                        {
+                            $errorMessage.appendTo($(elementToAppendMessageAfter).parent());
+                        }
+
+
+                        //DAx tracking (CREM-018: As a DAx reporting users I want to record when the in page validation for incorrect password format is displayed (on the sign-up page).)
+                        if (identifier == "password" && document.URL.indexOf('/createaccount') > -1)
+                        {
+                            SignUpFailedPasswordValidation();
+                        }
                     }
                 }
             });
@@ -200,14 +219,14 @@ function initValidation(showErrorMessagesInline) {
             var errorId = error.attr("for");
 
             $.each($errorBoxList.find("li"), function () {
-                var $errorMessage = $(this);               
+                var $errorMessage = $(this);
                 if (errorId == $errorMessage.attr("for") || errorId == $errorMessage.attr("data-validation-target-name")) {
                     $errorMessage.remove();
                 }
             });
 
             if ($errorBoxList.find("li").size() == 0) {
-              $('#error-box').hide();
+                $('#error-box').hide();
             }
 
             if (showErrorMessagesInline) {
@@ -245,18 +264,18 @@ function initValidation(showErrorMessagesInline) {
     );
 
     $.validator.addMethod("surnamealphas",
-                function (value, element) {
-                    return this.optional(element) || value.match(/^[a-zA-Z-'()@ ][a-zA-Z-'()@/ ]*$/);
-                },
+        function (value, element) {
+            return this.optional(element) || value.match(/^[a-zA-Z-'()@ ][a-zA-Z-'()@/ ]*$/);
+        },
         "Please enter only letters and the following characters - ' ( ) @ /, you cannot have / at the beginning"
     );
 
     $.validator.addMethod("simplifiedEmail",
-               function (value, element) {
-                   return this.optional(element) || value.match(/^[a-zA-Z0-9_\\.-]+@([a-zA-Z0-9-]+\.)+[a-zA-Z]{2,6}[\s]*$/);
-               },
-       "Please enter a valid email address"
-   );
+        function (value, element) {
+            return this.optional(element) || value.match(/^[a-zA-Z0-9_\\.-]+@([a-zA-Z0-9-]+\.)+[a-zA-Z]{2,6}[\s]*$/);
+        },
+        "Please enter a valid email address"
+    );
     //^[a-zA-Z0-9_\\.-]+@([a-zA-Z0-9-]+\\.)+[a-zA-Z]{2,6}[\\s]*$
     /// UK date format
     $.validator.addMethod("dateUK",
@@ -322,19 +341,19 @@ function initValidation(showErrorMessagesInline) {
 
     /// Check date is in the past
     $.validator.addMethod("mustbeinpast",
-                function (value, element, params) {
-                    var adata = value.split('/');
-                    var dd = parseInt(adata[0], 10);
-                    var mm = parseInt(adata[1], 10);
-                    var yyyy = parseInt(adata[2], 10);
+        function (value, element, params) {
+            var adata = value.split('/');
+            var dd = parseInt(adata[0], 10);
+            var mm = parseInt(adata[1], 10);
+            var yyyy = parseInt(adata[2], 10);
 
-                    var mydate = new Date();
-                    mydate.setFullYear(yyyy, mm - 1, dd);
+            var mydate = new Date();
+            mydate.setFullYear(yyyy, mm - 1, dd);
 
-                    var currdate = new Date();
+            var currdate = new Date();
 
-                    return this.optional(element) || currdate > mydate;
-                },
+            return this.optional(element) || currdate > mydate;
+        },
         "Date of birth must be in the past"
     );
 
@@ -345,10 +364,10 @@ function initValidation(showErrorMessagesInline) {
             if (valLength > 0) {
                 if (value.replace(" ", "").match(/^(?:\+|00)/)) {
                     return this.optional(element) ||
-                        value.match(/^(?:\+|00 ?)(?:[0-9] ?){10,16}$/);
+                    value.match(/^(?:\+|00 ?)(?:[0-9] ?){10,16}$/);
                 } else {
                     return this.optional(element) ||
-                        value.match(/^(?:[0-9] ?){10,11}$/);
+                    value.match(/^(?:[0-9] ?){10,11}$/);
                 }
             } else {
                 return this.optional(element) && valLength == 0;
@@ -381,11 +400,11 @@ function initValidation(showErrorMessagesInline) {
 
 
     $.validator.addMethod("password",
-      function (value, element) {
-          return this.optional(element) || value.match(/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s)(?=.*[\!\*\^\?\]\[\+\-_@#$%&]).{8,12}$/);
-      },
-      "Please enter a valid password"
-  );
+        function (value, element) {
+            return this.optional(element) || value.match(/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s)(?=.*[\!\*\^\?\]\[\+\-_@#$%&]).{8,12}$/);
+        },
+        "Please enter a valid password"
+    );
 
     $.validator.addMethod("textareamax",
         function (value, element, params) {

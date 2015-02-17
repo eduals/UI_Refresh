@@ -1,7 +1,12 @@
-﻿(function($){
-    $(document).ready(function () {
+﻿(function ($)
+{
+    //$.validator.setDefaults({ ignore: ":hidden" });
 
-        $(".validate-email, .validate-confirm-email").bind("cut copy paste contextmenu", function (e) {
+    $(document).ready(function ()
+    {
+
+        $(".validate-email, .validate-confirm-email").bind("cut copy paste contextmenu", function (e)
+        {
             e.preventDefault();
         });
 
@@ -80,9 +85,11 @@
             postcodealphas: true,
             maxlength: 8,
             messages: {
-                postcodealphas: "<a href='#txtPostcode'>Post Code</a> : may only contain letters, numbers and spaces",
-                maxlength: "<a href='#txtPostcode'>Post Code</a> : must not be more than 8 characters"
-            }
+                postcodealphas: "<a href='#txtPostcode'>Postcode</a> : may only contain letters, numbers and spaces",
+                maxlength: "<a href='#txtPostcode'>Postcode</a> : must not be more than 8 characters",
+                required: "<a href='#txtPostcode'>Postcode</a> : is a required field"
+            },
+            required: true
         });
 
         $(".validate-address-line1").rules("add", {
@@ -153,19 +160,39 @@
             required: true
         });
 
-        $('form').submit(function () {
-            if ($(this).valid()) {
+        $(".validate-location").rules("add", {
+            messages: { required: "<a href='#locationSelect'>Location</a> : is a required field" },
+            required: true
+        });
+
+        $('form').submit(function ()
+        {
+            if ($(this).valid())
+            {
                 OU.EEP.Throbber.Start();
             }
         });
 
-        $(".txtAddressLine1").on("blur", function (e) {
-            if ($(this).val().replace(" ", "").length > 0) {
+        $(".txtAddressLine1").on("blur", function (e)
+        {
+            if ($(this).val().replace(" ", "").length > 0)
+            {
                 $("#divFindAddressError").hide();
             }
         });
     });
 
+    function showMessage()
+    {
+        var msgText = $(".ppt-alert").attr("value");
+        if (msgText)
+        {
+            alert(msgText);
+        }
+    }
+
     var prm = Sys.WebForms.PageRequestManager.getInstance();
     prm.add_endRequest(showMessage());
+
 })(jQuery);
+

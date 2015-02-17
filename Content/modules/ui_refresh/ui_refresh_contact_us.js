@@ -82,6 +82,7 @@
             dataType: "json",
             error: function () {
                 showAddressFinderError();
+                showAddressRegion();
             },
             success: function (data) {
                 viewModel.addressList = data.d;
@@ -100,7 +101,7 @@
                         var valueSelected = this.value;
                         if (valueSelected == "-1") {
                             clearAddressFields();
-                            $addressRegion.slideDown(1000);
+                            showAddressRegion();
                         } else {
                             $addressRegion.hide();
                             setAddressFields(viewModel.addressList[valueSelected]);

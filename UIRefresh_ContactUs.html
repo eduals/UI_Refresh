@@ -101,7 +101,7 @@
 </div>
 <script type="text/javascript">
     //<![CDATA[
-    Sys.WebForms.PageRequestManager._initialize('manScript', 'form', ['tctxM',''], [], [], 90, '');
+    //Sys.WebForms.PageRequestManager._initialize('manScript', 'form', ['tctxM',''], [], [], 90, '');
     //]]>
 </script>
 <div id="CMSHeaderDiv">
@@ -113,7 +113,7 @@
 
 <script type='text/javascript'>
     // Reset the Jquery $ notation.
-    var $ = jQuery.noConflict();
+    //var $ = jQuery.noConflict();
 
 </script>
 
@@ -784,8 +784,8 @@
 <script src="Content/v2/eep/assets/js/vendor/jquery-1.10.2.min.js"></script>
 
 
-<script src="/contact/CMSScripts/Custom/OUJavaScriptFiles/ou-product-qualification.js"></script>
-<script src="/contact/CMSScripts/Custom/OUJavaScriptFiles/ou_search.js"></script>
+<!--<script src="/contact/CMSScripts/Custom/OUJavaScriptFiles/ou-product-qualification.js"></script>
+<script src="/contact/CMSScripts/Custom/OUJavaScriptFiles/ou_search.js"></script>-->
 
 <!--Vantage files-->
 <script src="Content/v2/core/assets/js/ou.widgets.js"></script>
@@ -847,7 +847,7 @@
 </script>
 
 <script type="text/javascript">
-    //<![CDATA[
+/*    //<![CDATA[
     if (typeof(Sys.Browser.WebKit) == 'undefined') {
         Sys.Browser.WebKit = {};
     }
@@ -855,13 +855,17 @@
         Sys.Browser.agent = Sys.Browser.WebKit;
         Sys.Browser.version = parseFloat(navigator.userAgent.match(/WebKit\/(\d+(\.\d+)?)/)[1]);
         Sys.Browser.name = 'WebKit';
-    }
+    }*/
     //]]>
-</script><script type='text/javascript' src='/contact/CMSScripts/Custom/OUJavaScriptFiles/OU_Throbber.js'></script><script type='text/javascript' src='/contact/CMSScripts/Custom/OUJavaScriptFiles/OU_Alerts-fix.js'></script><script type='text/javascript' src='/contact/OUEEPCREM/WebParts/jquery.validate.js'></script><script type='text/javascript' src='/contact/OUEEPCREM/WebParts/additional-methods.js'></script><script type='text/javascript' src='/contact/OUEEPCREM/WebParts/OU_Unobtrusive_Validation.js'></script>
+</script><script type='text/javascript' src='Content/modules/ui_refresh/eep/OU_Throbber.js'></script>
+<script type='text/javascript' src='Content/modules/ui_refresh/eep/OU_Alerts-fix.js'></script>
+<script type='text/javascript' src='Content/modules/ui_refresh/eep/jquery.validate.js'></script>
+<script type='text/javascript' src='Content/modules/ui_refresh/eep/additional-methods.js'></script>
+<script type='text/javascript' src='Content/modules/ui_refresh/eep/OU_Unobtrusive_Validation.js'></script>
 <script type='text/javascript' src='Content/modules/ui_refresh/eep/OU_ContactUsForm.js'></script>
-<script type='text/javascript' src='/contact/CMSScripts/Custom/OUJavaScriptFiles/OU-DAX-contact-site.js'></script>
+<!--<script type='text/javascript' src='Content/modules/ui_refresh/eep/OU-DAX-contact-site.js'></script>-->
 <script type="text/javascript">
-    //<![CDATA[
+/*    //<![CDATA[
 
     WebForm_InitCallback();
     theForm.oldSubmit = theForm.submit;
@@ -869,7 +873,7 @@
 
     theForm.oldOnSubmit = theForm.onsubmit;
     theForm.onsubmit = WebForm_SaveScrollPositionOnSubmit;
-    //]]>
+    //]]>*/
 </script>
 <script type='text/javascript' src='Content/modules/ui_refresh/ui_refresh.js'></script>
 <script type='text/javascript' src='Content/modules/ui_refresh/ui_refresh_contact_us.js'></script>
