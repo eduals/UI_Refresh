@@ -5,7 +5,7 @@
 // ----------------------------------------------------------
 
 (function ($, ui) {
-    ui.version = 'ui_refresh | Written by Paul Liu | paul.liu@open.ac.uk | v1.24 Re-namespace to ui_refresh';
+    ui.version = 'ui_refresh | Written by Paul Liu | paul.liu@open.ac.uk | v1.25 Added fork of OU.Widgets tabs';
     ui.dependencies = 'jQuery,jQueryUI';
 
     var $body = $('body');
@@ -76,6 +76,12 @@
 
     //Aria
     var aria = {};
+    aria.hidden = function ($el) {
+        var isHidden = $el.is(':hidden');
+
+        $el.attr('aria-hidden', isHidden).attr('aria-expanded', !isHidden);
+    };
+
     aria.Alert = function (options) {
         var base = this;
 
@@ -670,6 +676,144 @@
                     base.showModal();
                 }).attr('aria-controls', base.modalId);
             }
+
+            return base;
+        }
+    };
+
+    ui.Tabs = function ($element, options) {
+        var base = this;
+
+        base.$element = $element;
+        base.$tabsContainer = $element.children('div').eq(0);
+        base.$tabs = base.$tabsContainer.find('a');
+        base.$tabpanelsContainer = $element.children('div').eq(1);
+        base.$tabpanels = base.$tabpanelsContainer.children('div');
+        base.options = $.extend({}, base.defaults, options);
+        base.$activeTab = undefined;
+        base.$activePanel = undefined;
+        base.init();
+    };
+    ui.Tabs.prototype = {
+        defaults: {
+            activeClass: 'active',
+            setHash: true //Set to false to prevent hash added after tab click
+        },
+        init: function () {
+            return this.setActiveInitialActiveTabAndPanel().setTabsClickHandler().aria();
+        },
+        setHash: function (hash, setHash) {
+            if (setHash) {
+                if (history.pushState) {
+                    history.pushState(null, null, hash);
+                }
+                else {
+                    //Prevents flickering
+                    var $panel = $(hash),
+                        id = $panel.attr('id');
+
+                    $panel.removeAttr('id'); //Remove id before location is set
+                    window.location.hash = hash; //Set the location
+                    $panel.attr('id', id); //Add id back in
+                }
+            }
+        },
+        setActiveInitialActiveTabAndPanel: function () {
+            var base = this,
+                active = base.options.activeClass,
+                hashes = (function () {
+                    var hashes = [];
+
+                    base.$tabs.each(function () {
+                        hashes.push($(this).attr('href'));
+                    });
+
+                    return hashes;
+                })(),
+                location = window.location.hash,
+                setHash = base.options.setHash;
+
+            //Set active tab from class or hash
+            if (location.length && ($.inArray(location, hashes) && setHash)) {
+                base.$activeTab = base.$tabs.removeClass(active).filter('[href="' + location + '"]').addClass(active);
+            } else {
+                base.$activeTab = base.$tabs.filter('.' + active)
+            }
+
+            //Set initial active panel
+            base.$activePanel = base.$tabpanels.eq(base.$tabsContainer.find('.' + active).index()).addClass(active);
+
+            return base;
+        },
+        setTabsClickHandler: function () {
+            var base = this,
+                active = base.options.activeClass,
+                setHash = base.options.setHash;
+
+            base.$tabsContainer.on('click', 'a', function (e) {
+                e.preventDefault();
+
+                //Remove active class from last active tabs and panels
+                base.$activePanel.removeClass(active);
+                base.$activeTab.removeClass(active);
+
+                //Add active class to tab and panel
+                var $tab = $(this).addClass(active),
+                    $panel = base.$tabpanels.eq($tab.index()).addClass(active);
+
+                //Set window location
+                base.setHash($tab.attr('href'), setHash);
+
+                base.$activeTab = $tab.trigger({
+                    type: "cl-tab-activated",
+                    $tab: $tab,
+                    $panel: $panel
+                });
+                base.$activePanel = $panel.trigger({
+                    type: "cl-tabpanel-active",
+                    $tab: $tab,
+                    $panel: $panel
+                });
+            });
+
+            return base;
+        },
+        aria: function () {
+            var base = this,
+                ids = [];
+
+            base.$tabsContainer.attr('role', 'tablist');
+
+            base.$tabpanels
+                .uniqueId()
+                .attr('role', 'tabpanel')
+                .each(function () {
+                    ids.push($(this).attr('id'));
+                    aria.hidden($(this));
+                });
+
+            base.$tabs
+                .each(function () {
+                    $(this).attr({
+                        'aria-controls': ids[$(this).index()],
+                        'role': 'tab',
+                        'aria-selected': 'false'
+                    });
+                })
+                .filter('.' + this.options.activeClass)
+                .attr('aria-selected', 'true');
+
+            //Aria hidden/expanded for tab panels
+            base.$tabpanelsContainer.on('cl-tabpanel-active', 'div', function () {
+                base.$tabpanels.each(function () {
+                    aria.hidden($(this));
+                })
+            });
+            //Aria selected for tabs
+            base.$tabsContainer.on('cl-tab-activated', 'a', function () {
+                base.$tabs.not('.' + base.options.activeClass).attr('aria-selected', 'false');
+                $(this).attr('aria-selected', 'true');
+            });
 
             return base;
         }

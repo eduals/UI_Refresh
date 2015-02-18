@@ -252,6 +252,66 @@
 .int-togglerTrigger{
     margin: 0;
 }
+
+/*Schemes*/
+/*Blue*/
+.int-tab .tabs a{
+    margin-top: .5em;
+    float: left;
+    padding: 1em;
+    border: 1px solid transparent;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    margin-bottom: -2px;
+    white-space: nowrap;
+    border-radius: 0;
+}
+.int-tab .tabs a.active{
+    background: #e7eff7;
+    border: 1px solid #e7eff7;
+    border-bottom: 0;
+    border-bottom: 0px;
+}
 .int-tab .panels > div{
-    padding: 0 1em 1em 1em;
+    display: none;
+    border: 4px solid #e7eff7;
+    background: #fff;
+    clear: both;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 1em;
+}
+
+@media (max-width: 767px) {
+    .int-tab .tabs {
+        padding-left: 0;
+    }
+    .int-tab .tabs a {
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        border-color: #e7eff7;
+        border-image: none;
+        border-style: solid;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        border-width: 1px 1px 0;
+        float: left;
+        margin-bottom: 0;
+        margin-top: 0;
+        /*  padding: 1em; */
+        white-space: nowrap;
+        width: 100%;
+    }
+    .int-tab .tabs a.active {
+        background: none repeat scroll 0 0 #e7eff7;
+        border-color: #DDDDDD #DDDDDD -moz-use-text-color;
+        border-image: none;
+        border-style: solid solid none;
+        border-width: 1px 1px 0 .5em;
+        padding-left:.6em;
+    }
 }
