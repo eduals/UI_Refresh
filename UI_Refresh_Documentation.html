@@ -50,10 +50,10 @@
 
         <div id="main" class="int-container cl-fullBleedBottomPadding">
             <h1>UI Refresh Documentation</h1>
+            <h2>Helper functions</h2>
 
-            <h2>Methods</h2>
-            <h2>Widgets</h2>
-            <h3>Tooltip</h3>
+            <h2>Event prevent default</h2>
+            <h2>Tooltip</h2>
             <div class="cl-tab docs-widget" id="tooltip">
                 <div class="tabs">
                     <a href="#tooltip-component-tab" class="active">Component</a>
@@ -87,10 +87,10 @@
                             <!-- Password tooltip -->
                             <div class="int-row">
                                 <div class="int-grid3">
-                                    <label for="passwordTooltipInput" class="int-floatRight">Password</label>
+                                    <label for="passwordInput" class="int-floatRight">Password</label>
                                 </div>
                                 <div class="int-grid6">
-                                    <input id="passwordTooltipInput" type="text" placeholder="Password"/>
+                                    <input id="passwordInput" type="text" placeholder="Password" maxlength="12"/>
                                 </div>
                                 <div class="int-grid3">
                                     <div class="cl-inputFocusTooltipContainer" id="passwordTooltip">
@@ -137,20 +137,30 @@
                             <!-- Event triggered tooltip -->
                             <div class="int-row">
                                 <div class="int-grid3">
-                                    <label for="eventTriggeredTooltip" class="int-floatRight">Event triggered tooltip</label>
+                                    <label for="retypePassword" class="int-floatRight">Retype password</label>
                                 </div>
                                 <div class="int-grid6">
-                                    <input id="eventTriggeredTooltip" type="text" placeholder="Paste value"/>
+                                    <input id="retypePassword" type="text" placeholder="Retype password" maxlength="12"/>
                                 </div>
                                 <div class="int-grid3">
-
+                                    <div class="cl-inputFocusTooltipContainer" id="retypePasswordTooltip">
+                                        <div class="cl-inputFocusTooltip">
+                                            Please retype your password instead of pasting.
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                             <!-- End Event triggered tooltip -->
 
-                            <br/>
-                            <br/>
-                            <br/>
+                            <div class="int-row">
+                                <div class="int-grid3">&nbsp;</div>
+                                <div class="int-grid6">
+                                    <p>The retype password field has a tooltip that is triggered by the paste event. In this example,
+                                        the paste is prevented so that the user explicitly retypes their password to confirm their
+                                        choice instead of copying from the password field, and the tooltip is display to inform them that they need to retype instead of pasting.</p>
+                                    <p>This is an example of an event triggered tooltip. Any event can be used to trigger and hide the tooltip, even custom ones.</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div id="tooltip-html-tab" class="docs-html-panel">
@@ -190,7 +200,7 @@
                     </div>
                 </div>
             </div>
-            <h3>Modal</h3>
+            <h2>Modal</h2>
             <div class="cl-tab docs-widget" id="modal">
                 <div class="tabs">
                     <a href="#tabs-component-tab" class="active">Component</a>
@@ -251,16 +261,16 @@
                                     <hr/>
                                     <div class="int-row">
                                         <div class="int-grid3">
-                                            <h3>Call us:</h3>
+                                            <h2>Call us:</h2>
                                             <p>Please call us on <strong>0300 303 5303</strong>.</p>
                                             <p>Our advisers are available to take your call Monday to Friday 08:00 to 20:00, Saturday 09:00 to 17:00 UK Time Excluding Bank Holidays.</p>
                                         </div>
                                         <div class="int-grid3">
-                                            <h3>Attend an event:</h3>
+                                            <h2>Attend an event:</h2>
                                             <p>Come and meet us at an <a href="http://www3.open.ac.uk/contact/events.aspx" target="_blank">event near you</a>.</p>
                                         </div>
                                         <div class="int-grid3">
-                                            <h3>Write to us at:</h3>
+                                            <h2>Write to us at:</h2>
                                             <p>
                                                 Student Registration &amp; Enquiry Service<br>
                                                 The Open University<br>
@@ -270,7 +280,7 @@
                                             </p>
                                         </div>
                                         <div class="int-grid3">
-                                            <h3>If you're visiting:</h3>
+                                            <h2>If you're visiting:</h2>
                                             <p>
                                                 The Open University <br>
                                                 Walton Hall<br>
@@ -327,7 +337,7 @@
                     </div>
                 </div>
             </div>
-            <h3>Tabs</h3>
+            <h2>Tabs</h2>
             <div class="cl-tab docs-widget" id="tabs">
                 <div class="tabs">
                     <a href="#tabs-component-tab" class="active">Component</a>
@@ -392,8 +402,6 @@
             </div>
         </div>
 
-
-
     </div>
 
     <input type="hidden" id="loaded-components" value="">
@@ -440,16 +448,26 @@
 <script data-js-pre="#tooltip">
 (function($, ui){
 
-    //Basic tooltip
+    /*Basic tooltip*/
     new ui.Tooltip($('#basicTooltipInput'), $('#basicTooltip'));
 
-    //Password
-    var $passwordInput = $('#passwordTooltipInput');
+    /*Password*/
+    var $passwordInput = $('#passwordInput');
     //Init tooltip
     new ui.Tooltip($passwordInput, $('#passwordTooltip'));
     //Init password check list
     new ui.PasswordCheckList($passwordInput, $('#passwordCheckList'));
 
+
+    /*Event triggered tooltip*/
+    var retypePassword = $('#retypePassword');
+    new ui.Tooltip(retypePassword, $('#retypePasswordTooltip'), {
+        alert: true,
+        customTrigger: true,
+        customTriggerShowEvent: 'paste',
+        customTriggerHideEvent: 'blur'
+    });
+    new ui.EventPreventDefault(retypePassword);
 
 })(jQuery, window.ui_refresh);
 </script>
