@@ -1,0 +1,63 @@
+// =============================================================================
+//  Modal window
+// 
+// =============================================================================
+
+.int-modal-window {
+	position: absolute;
+	top: 0;
+	left: 0;
+    width:0;
+    height:0;
+	z-index: 200;
+    display:none;	
+	.interaction {
+        .transition(0.3s, ease-in-out);
+		position: relative;
+		z-index: 210;
+        height:auto;
+        max-height:0;
+		margin: 0 auto;
+        overflow:hidden;
+		.int-modal-inner {
+            position:relative;
+            padding:1px 30px 20px;
+        }
+        .int-btn-close {
+            position:absolute;
+            top:-12px;
+            right:-12px;
+            z-index:220;
+            visibility: hidden;
+        }
+	}
+    
+    &.int-active {
+        width:90%;
+        max-width: 692px;
+        height:auto;
+        max-height:155em;
+        display:block;
+        .interaction {
+            max-height:155em;
+        }
+    }
+    &.int-modal-lrg {
+        &.int-active {
+            max-width:958px;   
+        }
+    }
+    &.int-modal-sml {
+        &.int-active {
+            max-width:480px;   
+        }
+    }
+}
+
+.ui-dialog {
+    .interaction;
+}
+
+.int-modal {
+    max-width: 692px;
+}

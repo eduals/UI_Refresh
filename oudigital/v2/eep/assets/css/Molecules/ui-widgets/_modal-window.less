@@ -1,0 +1,159 @@
+// =============================================================================
+//  Modal window
+// 
+// =============================================================================
+
+@mobileModal: ~"(max-width: 767px) and (max-height: 600px) and (orientation: landscape)",
+                    ~"(max-width: 600px) and (max-height: 800px) and (orientation: portrait)";
+
+.int-modal-window {
+	position: absolute;
+	top: 0;
+	left: 0;
+    width:0;
+    height:0;
+	z-index: 200;
+    display:none;	
+	.interaction {
+        .transition(0.3s, ease-in-out);
+		position: relative;
+		z-index: 210;
+        height:auto;
+        max-height:0;
+		margin: 0 auto;
+        overflow:hidden;
+		.int-modal-inner {
+            position:relative;
+            padding:1px 30px 20px;
+        }
+        .int-btn-close {
+            position:absolute;
+            top:-12px;
+            right:-12px;
+            z-index:220;
+            visibility: hidden;
+        }
+	}
+    
+    &.int-active {
+        width:90%;
+        max-width: 692px;
+        height:auto;
+        max-height:155em;
+        display:block;
+        .interaction {
+            max-height:155em;
+        }
+    }
+    &.int-modal-lrg {
+        &.int-active {
+            max-width:958px;   
+        }
+    }
+    &.int-modal-sml {
+        &.int-active {
+            max-width:480px;   
+        }
+    }
+}
+
+.ui-dialog {
+    .interaction;
+    position:absolute;
+    padding:1px 30px 20px;
+    .ui-dialog-title {
+        font-size: 1.75em;
+        margin: .67em 1.5em .67em 0;
+        display: inline-block;
+        font-family: @secondary-font-family;
+    }
+    .ui-dialog-titlebar-close{
+        padding: 0; 
+        margin: 0;
+        position: absolute;
+        right: .8em;
+        top: .8em;
+        &:hover .ui-icon-closethick {
+            text-decoration: underline;
+        }
+    }
+    .ui-dialog-buttonset {
+        .ui-button, .int-button {
+            margin-right:.4em;
+        }
+    }
+    .int-dialogContent
+    {
+        position:absolute;
+        left: 0;
+        right: 0;
+        border-bottom: 1px solid #a6d0ff;
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+    .int-dialogInnerContainer
+    {
+        padding: 0 30px;
+    }
+}
+@media (max-width: @screen-xs-max) {
+    .ui-dialog {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+.int-modal {
+    max-width: 692px;
+}
+
+@media @mobileModal
+{
+    .ui-dialog {
+        height: auto !important;
+        width: 96% !important;
+        left: 2% !important;
+        right: 2% !important;
+        top: 2% !important;
+        bottom: 2% !important;
+        .ui-tabs {
+            position: relative;
+            .ui-tabs-nav li {
+                a {
+                    display: block;
+                    width: 100%;
+                    border-color: transparent;
+
+                    &:after {
+                        display: none;
+                    }
+                }
+            }
+            .int-dialogInnerContainer {
+                padding-left: 3px;
+                padding-right: 3px;
+            }
+        }
+        .int-dialogWrap, .ui-dialog-content {
+            height: auto !important;
+        }
+        .int-dialogContent {
+            overflow: hidden;
+            position: relative;
+            height: auto !important;
+        }
+    }
+    .int-dialogInnerContainer
+    {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .ui-dialog-buttonset
+    {
+        padding: 0;
+        button {
+            margin-top: 1em;
+            margin-bottom: 0;
+        }
+    }
+}

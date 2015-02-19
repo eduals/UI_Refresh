@@ -1,0 +1,52 @@
+// =============================================================================
+// Forms
+// 
+// =============================================================================
+
+@interaction-bg-color: 	@mid-blue;
+@label-color: 		    @white;
+@label-font-family: 	@secondary-font-family;
+@label-font-size: 		@lrg-text-size;
+
+.form-styles() {
+	.box-sizing();
+	//.box-shadow(0 3px 0px rgba(0,0,0,0.25));
+	.rounded(4px);
+	.appearance();
+	width:100%;
+	max-width: 100%;
+	font-size: @lrg-text-size;
+	background: @white; /* Old browsers */
+	padding: 0.32em 0.8em;
+	border: 4px solid transparent;
+    margin-bottom:0.5em;
+}
+
+fieldset {
+	border:0;
+	legend {
+		color: @label-color;
+        font-size: @lrg-text-size;
+	}
+}
+
+label {
+	display:block;
+	padding-bottom:0.25em;
+	font-family: @label-font-family;
+	font-size: @lrg-text-size;
+	cursor:pointer;
+    padding:8px 0;
+}
+
+.int-requiredAsterisk {
+	color: @white;
+	font-weight:bold;
+	font-size: @lrg-text-size;
+    display: inline;
+}
+
+.int-form-key {
+    float:right;
+    padding-bottom:0.5em;
+}

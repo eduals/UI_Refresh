@@ -1,0 +1,29 @@
+// =============================================================================
+// Side Box
+// 
+// =============================================================================
+
+@qf-bg: @light-grey-blue;
+@qf-border: @light-blue;
+
+.int-side-box {
+	background: @qf-bg;
+	border: 1px solid @qf-border;
+	@media (min-width: @screen-md) {
+		.rounded(4px);
+		border-width:20px;
+	}
+	h2, dt, dd, li {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	dt, li {
+		margin-top:11px;
+		padding-top:16px;
+		border-top: 1px solid @qf-border;
+	}
+	li:before {
+        content: ''; 
+        display:none;
+    }
+}

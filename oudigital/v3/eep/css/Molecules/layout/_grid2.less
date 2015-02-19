@@ -1,0 +1,137 @@
+/*Grids
+..........................................................*/
+
+body:after {
+  display:none;
+  content: 'xs';
+}
+@media (min-width: @screen-sm-min) {
+  body:after {
+    content: 'sm';
+  }
+}
+@media (min-width: @screen-md-min) {
+  body:after {
+    content: 'md';
+  }
+}
+@media (min-width: @screen-lg-min) {
+  body:after {
+    content: 'lg';
+  }
+}
+
+.int-container {
+	.clearfix();
+	width:100%;
+	padding:0 15px;
+	margin:0 auto;
+	max-width: @container-lg;
+}
+
+.int-row:before, .int-row:after, .int-wrap:before, .int-wrap:after, .int-innerFeature:before, .int-innerFeature:after, .int-formFeature:before, .int-formFeature:after, .int-togglerFeature:before, .int-togglerFeature:after, .int-togglerFeatureNote:before, .int-togglerFeatureNote:after
+{
+	display: table;
+	line-height: 0;
+	content: "";
+}
+.int-row:after, .int-wrap:after, .int-innerFeature:after, .int-formFeature:after, .int-togglerFeature:after, .int-togglerFeatureNote:after
+{
+	clear: both;
+}
+[class*="int-grid"], [class*="int-col"]
+{
+	float: left;
+	display: block;
+	width: 100%;
+	margin-left: 2%;
+	position:relative;
+  .box-sizing();
+}
+[class*="int-grid"]:first-child, [class*="int-grid"] .int-grid, [class*="int-col"]:first-child
+{
+	margin-left: 0;
+}
+.int-grid12, [class*="of2"] .int-grid6, [class*="of3"] .int-grid4, [class*="1/3rd"] .int-grid4, [class*="2/3rd"] .int-grid8
+{
+	width: 100%;
+	margin-left: 0;
+}
+.int-grid11
+{
+	width: 91.5%;
+}
+[class*="2/3rd"] .int-grid7
+{
+    width: 87.25%;   
+}
+.int-grid10, [class*="of2"] .int-grid5
+{
+	width: 83%;
+}
+.int-grid9, [class*="of3"] .int-grid3, [class*="1/3rd"] .int-grid3, [class*="2/3rd"] .int-grid6
+{
+	width: 74.5%;
+}
+.int-grid8, [class*="of2"] .int-grid4, [class*="2/3rd"]
+{
+	width: 66%;
+}
+[class*="2/3rd"] .int-grid5
+{
+    width: 61.75%;   
+}
+.int-grid7
+{
+	width: 57.5%;
+}
+.int-grid6, [class*="of2"], [class*="of2"] .int-grid3, [class*="of3"] .int-grid2, [class*="1/3rd"] .int-grid2, [class*="2/3rd"] .int-grid4
+{
+	width: 49%;
+}
+.int-grid5
+{
+	width: 40.5%;
+}
+[class*="2/3rd"] .int-grid3
+{
+    width: 36.25%;   
+}
+.int-grid4, [class*="of2"] .int-grid2, [class*="of3"], [class*="1/3rd"]
+{
+	width: 32%;
+}
+.int-grid3, [class*="of3"] .int-grid1, [class*="1/3rd"] .int-grid1, [class*="2/3rd"] .int-grid2
+{
+	width: 23.5%;
+}
+.int-grid2, [class*="of2"] .int-grid1
+{
+	width: 15%;
+}
+[class*="2/3rd"] .int-grid1
+{
+    width: 10.75%;   
+}
+.int-grid1
+{
+	width: 6.5%;
+}
+
+
+@media (max-width: 767px) {
+
+	[class*="int-grid"] {
+      width: 100%;
+      margin-left: 0;
+  }
+  [class*="col"], [class*="/3rd"], [class*="col"] [class*="int-grid"]
+  {
+      width: 100%;
+      margin-left: 0;
+  }
+  [class*="of2"], .int-col3of3 {
+      margin-left: 0;
+  }
+
+}

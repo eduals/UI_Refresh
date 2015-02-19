@@ -1,0 +1,386 @@
+/*
+    ----------------------------------------------------------
+    cl5976 | Written by Paul Liu | paul.liu@open.ac.uk
+    ----------------------------------------------------------
+    The Open University © Copyright 2015. All rights reserved
+    ----------------------------------------------------------
+    v1.11 Change log table added
+*/
+/*----------------------------------------------------------General Styles*/
+/*Change log Table*/
+table.cl-change-log{
+    border: 1px solid #A6D0FF;
+}
+table.cl-change-log thead{
+    background-color: #E7EFF7;
+    border: 1px solid #E7EFF7;
+}
+
+table.cl-change-log th {
+     padding-top: 1em;
+}
+
+/*Tabs*/
+.cl-tab .background {
+    padding: 1em;
+    background: #f8f8f8;
+}
+
+.cl-tab .panels > div {
+    display: none;
+    border: 4px solid #e7eff7;
+    background: #fff;
+    clear: both;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 1em;
+}
+
+.cl-tab .panels > div.active {
+    display: block;
+}
+
+.cl-tab .tabs {
+    padding-left: .5em;
+}
+
+.cl-tab .tabs a {
+    margin-top: .5em;
+    float: left;
+    padding: 1em;
+    border: 1px solid transparent;
+    margin-bottom: -2px;
+    white-space: nowrap;
+}
+
+.cl-tab .tabs a.active {
+    background: #e7eff7;
+    border: 1px solid #e7eff7;
+    border-bottom: 0;
+    border-bottom: 0px;
+}
+
+@media (max-width: 767px) {
+    .cl-tab .tabs {
+        padding-left: 0;
+    }
+
+    .cl-tab .tabs a {
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        border-color: #e7eff7;
+        border-image: none;
+        border-style: solid;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        border-width: 1px 1px 0;
+        float: left;
+        margin-bottom: 0;
+        margin-top: 0;
+        /*  padding: 1em; */
+        white-space: nowrap;
+        width: 100%;
+    }
+
+    .cl-tab .tabs a.active {
+        background: none repeat scroll 0 0 #e7eff7;
+        border-color: #DDDDDD #DDDDDD -moz-use-text-color;
+        border-image: none;
+        border-style: solid solid none;
+        border-width: 1px 1px 0 .5em;
+        padding-left: .6em;
+    }
+}
+
+/*Fluid Iframes*/
+.cl-fluidMedia {
+    position: relative;
+    padding-bottom: 56.25%; /* proportion value to aspect ratio 16:9 (9 / 16 = 0.5625 or 56.25%) */
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+}
+
+.cl-fluidMedia.medium {
+    padding-bottom: 34.25%;
+}
+
+.cl-fluidMedia.small {
+    padding-bottom: 24.25%;
+}
+
+.cl-fluidMedia iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/*Input group*/
+.cl-inputGroup {
+    position: relative;
+    display: table;
+    border-collapse: separate;
+}
+
+.cl-inputGroup-btn {
+    border-radius: 4px;
+    display: table-cell;
+    width: 1%;
+    white-space: nowrap;
+    vertical-align: middle;
+}
+
+.cl-inputGroup > :first-child {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.cl-inputGroup > :last-child > button {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    padding: .48em .8em .49em;
+}
+
+/*IE hack to get legends to wrap*/
+legend {
+    white-space: normal;
+    width: 100%;
+    *margin-left: -7px;
+}
+
+legend span {
+    display: block;
+    width: 100%;
+    font-size: 1.4em;
+}
+
+legend.h2 {
+    margin-bottom: .67em;
+    margin-top: .67em;
+    font-family: CaratReg, "Book Antiqua", Georgia, serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #fff;
+    float: left;
+}
+
+.no-margin {
+    margin: 0;
+}
+
+.no-padding {
+    padding: 0;
+}
+
+.cl-floatLeft,
+.int-floatLeft {
+    float: left;
+}
+
+.cl-floatRight,
+.int-floatRight {
+    float: right;
+}
+
+label.int-floatRight,
+.int-label.int-floatRight {
+    float: right;
+    text-align: right;
+}
+
+.hidden {
+    display: none;
+}
+
+.hidden.visible {
+    display: block;
+}
+
+button[disabled],
+button:disabled,
+button.disabled,
+a.int-button.disabled,
+input[type="button"][disabled],
+input[type="button"]:disabled {
+    border-color: #8797b0;
+    background-color: #e7eff7;
+    color: #8797b0;
+    cursor: not-allowed;
+}
+
+/*----------------------------------------------------------Input Focus Tooltip*/
+.cl-inputFocusTooltipContainer {
+    position: relative;
+}
+
+.cl-inputFocusTooltip {
+    display: none;
+    color: #0b55a8;
+    background-color: #FFC23D;
+    border-radius: 4px;
+    padding: .8em;
+    position: absolute;
+    width: 100%;
+}
+
+.interaction .cl-inputFocusTooltip,
+.interaction .cl-inputFocusTooltip p,
+.cl-inputFocusTooltip p,
+.cl-inputFocusTooltip ul,
+.cl-inputFocusTooltip li {
+    color: #0b55a8;
+}
+
+.cl-inputFocusTooltip .p-indent {
+    margin-left: .5em;
+}
+
+.cl-fullBleedBottomPadding {
+    padding-bottom: 3em;
+}
+
+/*----------------------------------------------------------Password Check List*/
+.cl-passwordCheckListBullet {
+    position: absolute;
+    left: .2em;
+    top: .2em;
+}
+
+.generatedcontent .cl-inputFocusTooltip ul li:before {
+    /*    content: "\2022";*/
+    content: "";
+    padding-right: .5em;
+    color: #0b55a8;
+    font-size: 1.6em;
+    position: absolute;
+    left: -2px;
+    top: 0;
+    line-height: .8;
+}
+
+.cl-passwordCheckListBullet.int-icon-times-circle {
+    color: #A02A1E;
+}
+
+.cl-passwordCheckListBullet.int-icon-check-circle {
+    color: #00643C;
+}
+
+/*----------------------------------------------------------Modal*/
+.cl-modal h2,
+.cl-modal h3,
+.cl-modal h4,
+.cl-modal h5,
+.cl-modal h6 {
+    color: #fff;
+}
+
+.cl-modal-close-button {
+    border-radius: 50%;
+    text-align: center;
+    display: inline-block;
+    background: #ffc23d;
+    width: 30px;
+    height: 30px;
+    font-size: 17.6px;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    right: .8em;
+    top: .8em;
+    z-index: inherit;
+}
+
+.cl-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    background: url(img/overlay-075.png);
+    background: rgba(0, 0, 0, .75);
+    z-index: 999;
+}
+
+.cl-modal-overlay:focus,
+.cl-modal:focus {
+    outline: 0;
+}
+
+.cl-modal-container {
+    position: relative;
+}
+
+.cl-modal {
+    position: absolute;
+    padding: 2em;
+    background: #0b55a8;
+    color: #fff;
+    overflow: auto;
+    border-radius: 4px;
+    z-index: 9999;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1180px;
+    max-height: 100%;
+}
+
+.cl-modal.small {
+    max-width: 500px;
+}
+
+.cl-modal.medium {
+    max-width: 900px;
+}
+
+@media (min-width: 960px) {
+    .cl-floatRight-lg {
+        float: right;
+    }
+
+    .cl-floatLeft-lg {
+        float: left;
+    }
+}
+
+@media (max-width: 959px) {
+    .cl-floatRight-md {
+        float: right;
+    }
+
+    .cl-floatLeft-md {
+        float: left;
+    }
+}
+
+@media (max-width: 767px) {
+    .cl-mobile-hidden,
+    .cl-hidden-sm {
+        display: none;
+    }
+
+    label.int-floatRight,
+    .int-label.int-floatRight {
+        float: left;
+        text-align: left;
+    }
+
+    .cl-inputFocusTooltip {
+        position: relative;
+    }
+
+    .cl-floatRight-sm {
+        float: right;
+    }
+
+    .cl-floatLeft-sm {
+        float: left;
+    }
+}

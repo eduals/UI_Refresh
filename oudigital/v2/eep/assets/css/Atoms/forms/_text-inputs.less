@@ -1,0 +1,33 @@
+// =============================================================================
+// Text inputs
+// 
+// =============================================================================
+
+@input-focus-color: 			@gold;
+@input-placeholder-color: #8797b0;
+
+input, textarea {
+	.placeholder(@input-placeholder-color);
+    &.placeholder { color: @input-placeholder-color; }
+}
+
+input[type="text"], 
+input[type="password"],
+input[type="search"],
+input[type="url"],
+input[type="email"],
+input[type="number"],
+textarea {
+	.form-styles(); // mixin from _forms.less
+	.transition();
+	&.is-error {
+		border-color: @error-color;
+	}
+	&:focus {
+		outline: 0;
+		border-color: @input-focus-color;
+	}
+    &:disabled, &.disabled { 
+        border-color: @input-placeholder-color;
+    }
+}

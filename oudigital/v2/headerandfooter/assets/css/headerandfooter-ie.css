@@ -1,0 +1,157 @@
+/*Stles for Ie 7 & 8*/
+
+/*header*/
+/*#int-ouHeader
+{
+    width: 100%;
+    display: block;
+    position: relative;
+    clear: both;
+}
+
+#int-header
+{
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+#int-ouHeader .int-serviceLinks ul
+{
+    display: block;
+    margin: 0;
+    position: relative;
+    float: left;
+    *width: 70%;
+}
+#int-ouHeader .int-headerSearch */ /* for IE 8*/
+/*{
+    float: none;
+    width: 100%;
+    *width: auto;
+}
+#int-header
+{
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+    position: relative;
+
+
+}
+.int-inputAppend
+{   
+    display:inline;
+    width: 100%;
+}
+
+#int-ouHeader .int-serviceLinks ul li
+{
+    width: 50%;
+}*/
+
+
+#int-site #int-header
+{
+    *width: 98%;
+
+}
+#int-ouHeader .int-serviceLinks ul
+{
+    *width: 100%;
+    *display: table;
+    *float: right;
+}
+#int-ouHeader .int-serviceLinks ul li
+{
+    *display: table-cell;
+    *position:relative;
+}
+#int-ouHeader .int-headerSearch input
+{
+    *width: auto;
+}
+#int-ouHeader .int-headerSearch a.int-button
+{
+    padding-top: 9px;
+    padding-bottom:9px;
+}
+.int-inputAppend
+{   
+    *display:inline-table;
+    *float: right;
+    *margin-top: .2em;
+}
+.int-inputAppend a
+{
+    *width: 1%;
+    
+}
+
+/*footer*/
+.int-ouFooter {
+	font-size: 0.875em;
+}
+.int-ouFooter .int-container
+{
+    width: auto;
+}
+.int-ouFooter .header {
+	padding: 0;
+	zoom: 1;
+	position: relative;
+	color: #ffffff;
+	font-size: 0.875em;
+}
+.int-ouFooter .header .crest {
+	width: 12%;
+	top: 15px;
+	left: 2.5em;
+	display: inline;
+}
+.int-ouFooter .header .crest img {
+	display: block;
+	width: 100%;
+	height: auto;
+	width: 89px;
+}
+.int-ouFooter .header .contact {
+	margin-left: 13.8em;
+	width: auto;
+	border-bottom: 1px solid #1a3869;
+	padding-top: 8px;
+	display: block;
+}
+.nav-footer ul {
+	zoom: 1;
+	margin: 5px 0 25px;
+	padding: 0;
+	margin-left: 12em;
+	border-bottom: 0;
+}
+.nav-footer ul li:first-child a {
+	padding-left: 0;
+}
+.nav-footer ul li a
+{
+	border: 0;
+	padding: .5em 2em .5em 0;
+	white-space: nowrap;
+}
+.nav-footer ul li
+{
+	float: left;
+	width: auto;
+	list-style: none;
+}
+.nav-footer ul li a:hover, .nav-footer ul li a:focus {
+	background: none;
+	color: #ffc23d;
+}
+.nav-footer ul li a:hover
+{
+	text-decoration: underline;
+} 
+.footer .int-container
+{
+	width: auto;
+}

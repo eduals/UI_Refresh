@@ -1,0 +1,87 @@
+// =============================================================================
+// Checkboxes
+// 
+// =============================================================================
+
+input[type=checkbox], input[type=radio] {
+	float:left;
+    margin: 0.7em 0.875em 0 0;
+}
+.generatedcontent {
+    
+    input[type=checkbox], input[type=radio] {
+        margin-top:0.45em;
+    }
+    
+    input[type="checkbox"]+label, input[type="radio"]+label {
+        padding-top:8px;
+    }
+    
+    input[type="checkbox"]+label:before, input[type="radio"]+label:before{
+      content:"";
+      display:inline-block;
+      height:32px;
+      margin:-2px 8px 0 -32px;
+      vertical-align:middle;
+      width:32px;
+      background:url(../img/form-sprites.png) no-repeat;
+    }
+    
+    input[type="checkbox"]:focus+label:before, input[type="radio"]:focus+label:before {
+        outline:1px dotted yellow;
+    }
+    
+    input[type="checkbox"]+label:before{
+        background-position: 0 -250px;
+    }
+    input[type="checkbox"]:checked + label:before {
+        background-position: 0 -300px;
+    }
+    
+    label.checkbox-checked:before {
+        background-position: 0 -300px !important;
+    }
+    
+    input[type="radio"]+label:before{
+        background-position: 0 -150px;
+    }
+    input[type="radio"]:checked+label:before, input[type="radio"].checked+label:before{
+        background-position: 0 -200px;
+    }
+    
+    label.radio-checked:before {
+        background-position: 0 -200px !important;
+    }
+	.int-accordion {
+		input[type="checkbox"]+label:before {
+			background-position: 0 -350px;
+		}
+		input[type="checkbox"]:checked+label:before {
+			background-position: 0 -400px;
+		}
+		label.checkbox-checked:before {
+			background-position: 0 -400px !important;
+		}	
+	}
+    &.lt-ie9 {
+        .interaction {
+            input[type=checkbox], input[type=radio] {
+                float:left;
+                margin: 0.35em 0.875em 0 0;
+            }
+            input[type="checkbox"]+label, input[type="radio"]+label {
+                padding-top:0px;
+            }
+            label:before, label:before{
+                content:"";
+                height:0px;
+                width:0px;
+                display:none;
+                background:none;
+                position:absolute;
+                left:-9999px;
+                top:-9999px;
+            }
+        }
+    }
+}

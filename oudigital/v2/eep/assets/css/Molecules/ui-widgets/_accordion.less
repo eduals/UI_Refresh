@@ -1,0 +1,111 @@
+// =============================================================================
+// Accordion
+// 
+// =============================================================================
+
+@accordion-bg:  @white;
+@accordion-header-color: @mid-blue;
+
+.interaction .ui-accordion {
+    margin-bottom:1em;
+    h2, h3, h4, h5, h6, th {
+        background: @accordion-bg;
+        color: @accordion-header-color;
+        &.subheading {
+            color:@dark-grey;
+        }
+    }
+    > h2, > h3, > h4, > h5 {
+        margin:0.75em 0 0;
+        outline: 0;
+    }
+    p, ul, ol, dt, dd, td, caption {
+        color: @dark-grey;   
+    }
+    a {
+        color:@purple;
+    }
+    
+    .ui-accordion-header {
+        .rounded(4px);
+        //.box-shadow(0 3px 0px rgba(0,0,0,0.25));
+        color: @purple;
+        cursor:pointer;
+        padding:0.75em 1em 0.75em 50px;
+        position:relative;
+        .int-icon-btn, .ui-accordion-header-icon {
+            position:absolute;
+            left:10px;
+            top:13px;
+            font-size: 17.6px;
+            i {
+                position:relative;
+                top:2px;  
+            }
+            &.int-accordion-open {
+                display:none;
+            }
+        }
+        
+        .ui-accordion-header-icon {
+            .rounded(50%);
+            .transition();
+            text-align:center;
+            display:inline-block;		
+            background: @icon-btn-bg;
+            //box-shadow: 0 -1px 2px darken(@icon-btn-bg, 25%) inset, 1px 1px 1px 0px rgba(0, 0, 0, 0.2);
+            width: @icon-btn-size;
+            height:@icon-btn-size;            
+        }
+        .ui-icon-triangle-1-s:before {
+            content: @fa-var-chevron-down;
+            font-family: FontAwesome;
+            display: block;
+            margin-top: 7px;
+        }
+        .ui-icon-triangle-1-e:before {
+            content: @fa-var-chevron-right;
+            font-family: FontAwesome;
+            display: block;
+            margin-top: 7px;
+        }
+        &.ui-state-focus, &.ui-state-hover {
+            text-decoration:underline;
+            .int-icon-btn {
+                background: @icon-btn-hover-bg;
+                //box-shadow: 0 -1px 2px darken(@icon-btn-hover-bg, 25%) inset, 1px 1px 1px 0px rgba(0, 0, 0, 0.2);
+                text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.5);
+                i {
+                    color: @icon-btn-hover-color;
+                }   
+            }
+        }
+        
+        &.ui-accordion-header-active {
+            .border-radius( 4px, 4px, 0px, 0px);
+            .box-shadow(0 0px 0px rgba(0,0,0,0));
+            color: @accordion-header-color;
+            cursor: default;
+            .int-accordion-closed {
+                display:none;
+            }
+            .int-accordion-open {
+                display:inline-block;
+            }
+            &.ui-state-focus, &.ui-state-hover {
+                text-decoration:none;
+            }
+            /*&.ui-state-focus { border:3px dashed red !important; }*/
+        }
+        
+    }
+    .ui-accordion-content {
+        .border-radius( 0px, 0px, 4px, 4px);
+        //.box-shadow(0 3px 0px rgba(0,0,0,0.25));
+        background: @accordion-bg;
+        padding:0.25em 1.75em 0.5em 50px;
+        @media (max-width: @screen-xs-max) {
+            padding-left:1em;   
+        }
+    }
+}

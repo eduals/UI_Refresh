@@ -1,0 +1,50 @@
+// =============================================================================
+//  Toggler
+// 
+// =============================================================================
+
+@toggler-bg: #e7eff7;
+
+.js {
+    .int-toggler {
+        margin-bottom:0.25em;
+        .int-toggleTrigger {
+            background: @toggler-bg;
+            cursor:pointer;
+            position:relative;
+            padding:0.5em;
+            margin:0;
+            a {
+                display:block;
+                &:hover, &:focus {
+                    span { text-decoration:underline; }    
+                }
+            }
+            span {
+                font-size: @h3-font-size;
+                display:inline-block;
+                padding-left:0.5em;
+            }
+            b { font-size:1.125em; }
+            .open { display:none; }
+        }
+
+        .int-toggleContent {
+            display:none;
+        }
+        &.int-active {
+            .int-toggleContent {
+                display:block;
+                padding: 0.8em 0;
+            }
+            .int-toggleTrigger {
+                .open { display:inline-block; }
+                .closed { display:none; }
+            }
+        }
+    }
+}
+/*R2.1 Fix for Toggler Text Colour - update, this causing issues for original toggler*/
+/* h1 span, h2 span, h3 span, h4 span, h5 span, h6 span {
+    color: #a6d0ff;
+}*/

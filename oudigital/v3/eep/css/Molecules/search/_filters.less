@@ -1,0 +1,51 @@
+// =============================================================================
+// Search filter
+// 
+// =============================================================================
+
+@search-filter-color: @mid-blue;
+@search-filter-bg: @light-blue;
+@search-filter-toggle-color: @light-blue;
+@search-filter-toggle-bg: @mid-blue;
+@search-filter-disabled-color: #97a9c3;
+@search-filter-disabled-bg: #e7eff7;
+
+.int-search-filter {
+	border-bottom: 20px solid #e7eff7;
+	margin-bottom: 30px;
+	ul {
+		margin:0 0 30px 0;
+		padding:0;
+		li {
+			padding:0;
+			&:before {
+				content:'';
+				display:none;
+			}
+			a, span {
+				font-family: @secondary-font-family;
+				font-size: @h3-font-size;
+				font-weight:normal;
+				text-decoration:none;
+				line-height:44px;
+				text-align:center;
+				float:left;
+				width:44px;
+				height:44px;
+				margin:0 1px 1px 0;
+			}
+			a {
+				color:@search-filter-color;
+				background-color:@search-filter-bg;
+				&:hover, &.active {
+					color:@search-filter-toggle-color;
+					background-color:@search-filter-toggle-bg;
+				}
+			}
+			span {
+				color:@search-filter-disabled-color;
+				background-color:@search-filter-disabled-bg;
+			}
+		}
+	}
+}

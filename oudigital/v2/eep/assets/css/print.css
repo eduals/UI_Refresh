@@ -1,0 +1,14 @@
+#int-ouHeader, nav, .footer, .int-ouFooter, .video-wrapper, .country-changer, .int-search-box, .btn-top, .breadcrumb, dl.int-tags, .int-header-image, .int-modal-inner{display:none;}
+a:link:after { content: " (" attr(href) ") ";
+    word-wrap: break-word;
+    font-weight:bold;
+    font-style: italic;
+    font-size:90%;
+}
+.ui-tabs-panel, .int-toggler .int-toggleContent {display:block !important;} /*To display all content within tabs*/
+h1,h2,h3,h4,h4,h5,h6,img,div,span{
+    page-break-after:avoid;
+    page-break-before:avoid;
+    float:none;
+}
+.int-course-overview .int-quick-facts, .int-toggleContent{margin-top:0; padding:0; float:none; width:100%;}

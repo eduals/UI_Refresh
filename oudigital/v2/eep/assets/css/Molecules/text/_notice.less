@@ -1,0 +1,266 @@
+// =============================================================================
+// Notice
+// 
+// =============================================================================
+
+@base-padding: 16px;
+
+@icon-size-pencil: 67px;
+@icon-size-academic: 74px;
+@icon-size-award: 98px;
+@icon-size-people: 84px;
+@icon-size-save: 64px;
+
+@icon-size-academic-width: 74px;
+@icon-size-academic-height: 60px;
+
+@icon-size-award-width: 98px;
+@icon-size-award-height: 101px;
+
+@icon-size-people-width: 84px;
+@icon-size-people-height: 50px;
+
+@icon-size-pencil-width: 67px;
+@icon-size-pencil-height: 95px;
+
+@icon-size-prospectus-width: 98px;
+@icon-size-prospectus-height: 101px;
+
+@icon-size-save-width: 64px;
+@icon-size-save-height: 64px;
+
+@padding-multiplier: 9;
+@base-padding-full-width: @base-padding * @padding-multiplier;
+
+.icon-spacing(@icon-size) {
+	@icon-padding: @icon-size + @base-padding;
+	@icon-pos-x: @icon-padding - @icon-size - @base-padding;
+}
+
+.icon-spacing-full-width(@icon-size) {
+	@icon-padding: @icon-size + @base-padding-full-width;
+	@icon-pos-x: @icon-padding - @icon-size - @base-padding;
+}
+
+// =============================================================================
+// Form Notice
+// 
+// =============================================================================
+
+@padding-multiplier-form: 6;
+@base-padding-full-width-form: @base-padding * @padding-multiplier-form;
+@form-icon-background-position: 0 20px;
+@form-icon-size: 64px;
+
+.form-icon-spacing(@form-icon-size) {
+	@icon-padding: @form-icon-size + @base-padding;
+	@icon-pos-x: @icon-padding - @form-icon-size - @base-padding;
+}
+
+.form-icon-spacing-full-width(@form-icon-size) {
+	@icon-padding: @form-icon-size + @base-padding-full-width-form;
+	@icon-pos-x: @icon-padding - @form-icon-size - @base-padding;
+}
+
+
+
+.int-notice {
+	padding: 1em @base-padding-full-width 1.5em @base-padding-full-width;
+	&.int-notice-icon {
+		background-repeat: no-repeat;
+		&.int-notice-icon-pencil {
+			background-image: url('../img/icons/icon-pencil.png');
+			.icon-spacing-full-width(@icon-size-pencil-width);
+			background-position: @icon-pos-x center;
+			padding-left: @icon-padding;
+		}
+		&.int-notice-icon-academic {
+			background-image: url('../img/icons/icon-academic.png');
+			.icon-spacing-full-width(@icon-size-academic-width);
+			background-position: @icon-pos-x center;
+			padding-left: @icon-padding;
+		}
+		&.int-notice-icon-award {
+			background-image: url('../img/icons/icon-award.png');
+			.icon-spacing-full-width(@icon-size-award-width);
+			background-position: @icon-pos-x center;
+			padding-left: @icon-padding;
+		}
+		&.int-notice-icon-people {
+			background-image: url('../img/icons/icon-people.png');
+			.icon-spacing-full-width(@icon-size-people-width);
+			background-position: @icon-pos-x center;
+			padding-left: @icon-padding;
+		}
+        &.int-notice-icon-prospectus {
+			background-image: url('../img/icons/icon-prospectus.png');
+			.icon-spacing-full-width(@icon-size-prospectus-width);
+			background-position: @icon-pos-x center;
+			padding-left: @icon-padding;
+		}
+        &.int-notice-icon-save {
+			background-image: url('../img/icons/icon-save.png');
+			.icon-spacing-full-width(@icon-size-save-width);
+			background-position: @icon-pos-x center;
+			padding-left: @icon-padding;
+		}
+    }
+}
+.interaction {
+    .int-form-notice {
+	    padding: 1em @base-padding-full-width-form 1.5em @base-padding-full-width-form;
+	    &.int-notice-icon {
+		    background-repeat: no-repeat;
+            &.int-notice-icon-clock {
+			    background-image: url('../img/icons/icon-clock-inverted-64px.png');
+			    .form-icon-spacing-full-width(@form-icon-size);
+			    background-position: @icon-pos-x center;
+			    padding-left: @base-padding-full-width-form;
+		    }
+            &.int-notice-icon-piggy {
+			    background-image: url('../img/icons/icon-piggy-bank-inverted-64px.png');
+			    .form-icon-spacing-full-width(@form-icon-size);
+			    background-position: @icon-pos-x center;
+			    padding-left: @base-padding-full-width-form;
+		    }
+            &.int-notice-icon-academic {
+			    background-image: url('../img/icons/icon-academic-inverted-64px.png');
+			    .form-icon-spacing-full-width(@form-icon-size);
+			    background-position: @icon-pos-x center;
+			    padding-left: @base-padding-full-width-form;
+		    }
+            &.int-notice-icon-open-sign {
+			    background-image: url('../img/icons/icon-open-sign-inverted-64px.png');
+			    .form-icon-spacing-full-width(@form-icon-size);
+			    background-position: @icon-pos-x center;
+			    padding-left: @base-padding-full-width-form;
+		    }
+            &.int-notice-icon-ribbon {
+			    background-image: url('../img/icons/icon-ribbon-inverted-64px.png');
+                .form-icon-spacing-full-width(@form-icon-size);
+                background-position: @icon-pos-x center;
+                padding-left: @base-padding-full-width-form;
+            }
+	    }
+    }
+}
+
+.int-grid1,
+.int-grid2,
+.int-grid3,
+.int-grid4,
+.int-grid5,
+.int-grid6,
+.int-grid7,
+.int-grid8 {
+	.int-notice {
+		padding-left: @base-padding;
+		padding-right: @base-padding;
+		&.int-notice-icon {
+			&.int-notice-icon-pencil {
+				.icon-spacing(@icon-size-pencil-width);
+				background-position: @icon-pos-x center;
+				padding-left: @icon-padding;
+			}
+			&.int-notice-icon-academic {
+				.icon-spacing(@icon-size-academic-width);
+				background-position: @icon-pos-x center;
+				padding-left: @icon-padding;
+			}
+			&.int-notice-icon-award {
+				.icon-spacing(@icon-size-award-width);
+				background-position: @icon-pos-x center;
+				padding-left: @icon-padding;
+			}
+			&.int-notice-icon-people {
+				.icon-spacing(@icon-size-people-width);
+				background-position: @icon-pos-x center;
+				padding-left: @icon-padding;
+			}			
+            &.int-notice-icon-prospectus {
+				.icon-spacing(@icon-size-prospectus-width);
+				background-position: @icon-pos-x center;
+				padding-left: @icon-padding;
+            }
+             &.int-notice-icon-save {
+			    .icon-spacing(@icon-size-save-width);
+				background-position: @icon-pos-x center;
+				padding-left: @icon-padding;
+		    }
+		}
+	}
+}
+
+.interaction {
+    .int-grid1,
+    .int-grid2,
+    .int-grid3,
+    .int-grid4,
+    .int-grid5,
+    .int-grid6,
+    .int-grid7,
+    .int-grid8,
+    .int-grid9 {
+        .int-form-notice {
+            padding-left: @base-padding;
+            padding-right: @base-padding;
+
+            &.int-notice-icon {
+                &[class*="int-notice-icon-"]{
+                    .form-icon-spacing(@form-icon-size);
+                    background-position: 0 22px;
+                }
+            }
+        }
+    }
+}
+
+//Commented out to prevent issues with displaying SVG in IE9+, to be reinstated for R2.1
+//.svg {
+//	.int-notice {
+//		&.int-notice-icon {
+//			&.int-notice-icon-pencil {
+//				background-image: url('../img/icons/icon-pencil.svg');
+//				background-size: @icon-size-pencil-width @icon-size-pencil-height;
+//			}
+//			&.int-notice-icon-academic {
+//				background-image: url('../img/icons/icon-academic.svg');
+//				background-size: @icon-size-academic-width @icon-size-academic-height;
+//			}
+//			&.int-notice-icon-award {
+//				background-image: url('../img/icons/icon-award.svg');
+//				background-size: @icon-size-award-width @icon-size-award-height;
+//			}
+//			&.int-notice-icon-people {
+//				background-image: url('../img/icons/icon-people.svg');
+//				background-size: @icon-size-people-width @icon-size-people-height;
+//			}	
+//            &.int-notice-icon-prospectus {
+//				background-image: url('../img/icons/icon-prospectus.svg');
+//				background-size: @icon-size-prospectus-width @icon-size-prospectus-height;
+//		}
+//	}
+//}
+//}
+
+@media (max-width: @screen-xs) {
+	.int-notice, .int-form-notice,
+	.svg .int-notice,
+	.int-grid1 .int-notice, .int-grid1 .int-form-notice,
+	.int-grid2 .int-notice, .int-grid2 .int-form-notice,
+	.int-grid3 .int-notice, .int-grid3 .int-form-notice,
+	.int-grid4 .int-notice, .int-grid4 .int-form-notice,
+	.int-grid5 .int-notice, .int-grid5 .int-form-notice,
+	.int-grid6 .int-notice, .int-grid6 .int-form-notice,
+	.int-grid7 .int-notice, .int-grid7 .int-form-notice,
+	.int-grid8 .int-notice, .int-grid8 .int-form-notice {
+		padding-left: 0;
+		padding-right: 0;
+		&.int-notice-icon {
+			&[class*="int-notice-icon-"]{
+				padding-left: 0;
+				background-image: none;
+			}
+		}
+	}
+}

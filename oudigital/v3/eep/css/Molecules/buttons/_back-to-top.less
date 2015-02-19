@@ -1,0 +1,13 @@
+.js #int-content .btn-top {
+    .transition();
+    position:fixed;
+    bottom:-42px;
+    right:0;
+    z-index:180;
+    @media (max-width: @screen-xs-max) {
+        bottom:-44px;   
+    }
+    &.scrollIn {
+        bottom:0;
+    }
+}

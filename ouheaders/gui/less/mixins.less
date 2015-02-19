@@ -1,0 +1,57 @@
+﻿// layout and appearance
+.boxSizing(@sizing: border-box) {
+  -moz-box-sizing: @sizing;
+  -webkit-box-sizing: @sizing;
+  box-sizing: @sizing;
+}
+.appearance(@hidden: none) {
+  -moz-appearance: @hidden;
+  -webkit-appearance: @hidden;
+  appearance: @hidden;
+}
+.visibilityHidden() {
+    visibility: hidden;
+    display: none;
+}
+.visibilityVisible() {
+    visibility: visible;
+    display: inline;
+}
+.borderRadiusNone(@border-radius: 0) {
+    -webkit-border-radius: @border-radius;
+    -moz-border-radius: @border-radius;
+    border-radius: @border-radius;
+}
+.borderRadius4(@border-radius4: 4px) {
+    -webkit-border-radius: @border-radius4;
+    -moz-border-radius: @border-radius4;
+    border-radius: @border-radius4;
+}
+.hide() {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(1px, 1px, 1px, 1px);
+}
+// Images
+.imageSprite() {
+    background-image: url('/ouheaders/gui/sprite.png');
+}
+
+// Buttons
+.iaNavActive() {
+    background-color:@blue;
+	color: @white;
+	text-decoration:none;
+}
+
+//transitions
+.transitionOut(@transition: 0.2s ease-out) {
+    -webkit-transition: @transition;
+       -moz-transition: @transition;
+         -o-transition: @transition;
+            transition: @transition;
+}

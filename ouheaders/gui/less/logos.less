@@ -1,0 +1,120 @@
+﻿// Default
+
+#ou-header a.ou-logo {
+    float: left;
+    display: block;
+    margin: 20px 0 0 0;
+    height: 61px;
+    width: 87px;
+    .imageSprite();
+    background-position: 0 -1px;
+}
+
+// Display correct logo based on nation
+
+// England
+
+#ou-header {
+    a.ou-logo.england {
+        display: block;
+	    visibility: visible;
+    }
+    a.ou-logo.scotland,
+    a.ou-logo.nir,
+    a.ou-logo.roi,
+    a.ou-logo.wales,
+    a.ou-logo.cymraeg {
+        .visibilityHidden();
+    }
+}
+
+// Scotland
+.scotland {
+    #ou-header {
+        a.ou-logo.scotland {
+            &:extend(#ou-header a.ou-logo.england);
+        }
+        a.ou-logo.england,
+        a.ou-logo.nir,
+        a.ou-logo.roi,
+        a.ou-logo.wales,
+        a.ou-logo.cymraeg {
+            &:extend(#ou-header a.ou-logo.scotland);
+        }
+    }
+}
+.scotland #ou-header a.ou-logo {
+    background-position: 0 -300px;
+    width: 105px;
+    height: 74px;
+}
+
+// Wales
+.wales {
+    #ou-header {
+        a.ou-logo.wales {
+            &:extend(#ou-header a.ou-logo.england);
+        }
+        a.ou-logo.england,
+        a.ou-logo.scotland,
+        a.ou-logo.nir,
+        a.ou-logo.roi,
+        a.ou-logo.cymraeg {
+            &:extend(#ou-header a.ou-logo.scotland);
+        }
+    }
+}
+
+.cymraeg {
+    #ou-header {
+        a.ou-logo.cymraeg {
+            &:extend(#ou-header a.ou-logo.england);
+        }
+        a.ou-logo.england,
+        a.ou-logo.scotland,
+        a.ou-logo.nir,
+        a.ou-logo.roi,
+        a.ou-logo.wales {
+            &:extend(#ou-header a.ou-logo.scotland);
+        }
+    }
+}
+
+.wales #ou-header a.ou-logo,
+.cymraeg #ou-header a.ou-logo {
+    background-position: 0 -150px;
+    width: 105px;
+    height: 78px;
+}
+
+// Republic of Ireland
+.roi {
+    #ou-header {
+        a.ou-logo.roi {
+            &:extend(#ou-header a.ou-logo.england);
+        }
+        a.ou-logo.england,
+        a.ou-logo.scotland,
+        a.ou-logo.nir,
+        a.ou-logo.wales,
+        a.ou-logo.cymraeg {
+            &:extend(#ou-header a.ou-logo.scotland);
+        }
+    }
+}
+
+// Northern Ireland
+.nir {
+    #ou-header {
+        a.ou-logo.nir {
+            &:extend(#ou-header a.ou-logo.england);
+        }
+        a.ou-logo.england,
+        a.ou-logo.scotland,
+        a.ou-logo.roi,
+        a.ou-logo.wales,
+        a.ou-logo.cymraeg {
+	        &:extend(#ou-header a.ou-logo.scotland);
+        }
+    }
+}

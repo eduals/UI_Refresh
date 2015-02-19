@@ -1,0 +1,48 @@
+// =============================================================================
+// Divider
+// 
+// =============================================================================
+
+@divider-bg: @light-blue;
+@divider-sub-bg: @light-grey-blue;
+
+.int-divider {
+
+	.clearfix();
+	
+	border-bottom:5px solid @light-blue;
+	margin:30px 0 30px 0;
+	text-align:center;
+	
+	&.int-divider-arrow:after {
+		content: '';
+		display:inline-block;
+		width: 0;
+		height: 0;
+		position:absolute;
+        left: 50%;
+        margin-left:-10px;
+        .triangle(down, 20px, @light-blue);
+	}
+	
+	&.int-divider-lrg 
+	{
+		border-width:15px;
+		
+		&.int-divider-arrow:after {
+			border-top-width: 30px;
+			border-left-width: 30px;
+			border-right-width: 30px;
+            margin-left:-20px !important;
+		}
+	}
+    
+    &.int-divider-sub {
+        border-color: @divider-sub-bg !important;  
+        &:after {
+            border-top-color: @divider-sub-bg !important;   
+        }
+    }
+
+}
+

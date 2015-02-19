@@ -1,0 +1,135 @@
+
+.int-container { width:960px; }
+
+/* Fix for Primary nav hover */
+
+.int-nav-primary > ul > li:hover .int-nav-sub-menu, .int-nav-primary > ul > li .int-nav-sub-menu:hover {
+    display:block;
+    width:100%;
+    left:0px;
+    position:absolute;
+    height:auto;
+    max-height:50em;
+    overflow:visible;
+}
+
+.int-nav-primary > ul > li .int-nav-sub-menu .int-container {
+    width:960px !important;
+}
+
+/* Presentational fix for primary nav */
+
+.int-nav-primary > ul > li .int-nav-sub-menu ul li { 
+    margin-bottom:-4px;
+    margin-left:6px;
+}
+
+/* Fix for Meta nav menu (BUG: creates horizontal scroll bar)*/
+
+.int-nav-meta-menu.int-nav-meta-open {
+    display:block;
+    width:100% !important;
+    border:1px solid #0b55a8;
+}
+
+/* Presentational fixes for meta nav */
+
+.int-meta-search .search-btn button, 
+.int-meta-country button,
+.int-meta-signin fieldset .field-container button {
+    padding:3px 10px 4px;
+}
+
+.int-meta-search .search-btn button {
+    margin:5px 0 0 25px;
+}
+
+.int-meta-country .country-select {
+    width:70% !important;
+    margin-top: 4px;
+}
+
+.int-meta-social a .int-social-btn {
+    height:35px;
+    margin-top:4px;
+    margin-left:15px;
+}
+
+.int-meta-social a .int-social-btn i {
+    font-size:1.6em;
+}
+
+/* Course overview (Quick facts) */
+
+.int-course-overview .int-quick-facts { margin-top:0 !important; }
+
+.int-row, .int-wrap {
+    clear:both;
+    width:auto;
+    zoom:1;
+}
+
+.int-tags { margin:0; }
+.int-tags li { display:inline; *zoom:1  }
+
+/* Button */
+
+button,
+input[type=button],
+input[type=submit],
+button.int-button,
+button.int-button-disabled {
+	padding: 0.4em 0.1em;
+}
+
+/* Video Link */
+
+.int-video-link {
+	position: relative;
+}
+
+.int-video-link a:hover {
+	text-decoration: none;
+}
+
+.int-video-link a > div > div {
+	margin-left: -17px;
+	margin-top: -24px;
+}
+
+/* Search Box */
+
+.int-search-box .int-row {
+	position: static;
+}
+
+.int-search-box button {
+	position: static;
+	float: right;
+	margin-top: -105px;
+}
+
+.int-search-box input[type="text"], 
+.int-search-box input[type="search"] {
+	font-size:20em;
+	padding: 20px 0 21px 0;
+	margin-left: 0;
+	margin-top: -1px;
+	margin-bottom: 20px;
+	border:0;
+}
+
+/* Icon Button */
+
+.int-icon-btn i {
+	line-height: 26px;
+}
+
+/*Set margin to login box within IE Only - DV*/
+.int-container .int-wrap .interaction {
+margin: 1em 0;
+}
+
+/*Styling inputs within IE7 - to replace box-sizing - DV*/
+div.interaction input[type="text"], div.interaction textarea{margin-left:-.75em;width:92%;}
+.int-container .interaction{margin:0;}

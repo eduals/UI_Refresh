@@ -1,0 +1,38 @@
+﻿/*Lists*/
+.int-striped-list {
+  border-top: 1px solid #a6d0ff;
+}
+.int-striped-list li {
+  border-bottom: 1px solid #a6d0ff;
+}
+/*Forms*/
+.generatedcontent .interaction input[type=checkbox],
+.generatedcontent .interaction input[type=radio] {
+  float: left;
+  margin: 0.35em 0.875em 0 0;
+}
+.generatedcontent .interaction input[type="checkbox"] + label,
+.generatedcontent .interaction input[type="radio"] + label {
+  padding-top: 0px;
+}
+.generatedcontent .interaction label:before,
+.generatedcontent .interaction label:before {
+  content: "";
+  height: 0px;
+  width: 0px;
+  display: none;
+  background: none;
+  position: absolute;
+  left: -9999px;
+  top: -9999px;
+}
+/*Video*/
+.int-video-link a {
+  color: #312b39;
+}
+/*Interaction*/
+.int-container .interaction
+{
+    margin: 2em -15px;
+    padding: 1em;
+}

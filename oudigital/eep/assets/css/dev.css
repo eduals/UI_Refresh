@@ -1,0 +1,561 @@
+/*dev.css v3 Tweaks to z-index of tooltip*/
+
+/*In Page Sticky On Blue Background*/
+.int-sticky-inpage.int-sticky-inpage-blue
+{
+    background: #0b55a8;
+}
+.int-sticky-inpage.int-sticky-inpage-blue a
+{
+    color: #fff;
+}
+.int-sticky-inpage.int-sticky-inpage-blue .ui-state-active a
+{
+    color: #312b39;
+}
+/*Change text colour of toggler to darker blue - DV*/
+.js .int-toggler  span 
+{
+    color: #0b55a8;
+}
+/*Change checkbox image to blue box on white background - sprite already uploaded - DV*/
+.generatedcontent  .int-toggler input[type="checkbox"] + label:before
+{
+    background-position: 0 -350px;
+}
+.generatedcontent  .int-toggler input[type="checkbox"]:checked + label:before
+{
+    background-position: 0 -400px;
+}
+.generatedcontent .int-toggler  label.checkbox-checked:before
+{
+    background-position: 0 -400px !important;
+}
+/*Set toggler label text colour to blue- DV*/
+.int-toggler label
+{
+    color: #0b55a8;
+}
+/*Set margin to login box within IE8 Only - to be added to IE8 specific styles - DV*/
+.int-container .int-wrap .interaction
+{
+    margin: 1em 0;
+}
+/*In Page Sticky On Blue Background For Accounts Tab*/
+.accounts-tab-nav
+{
+    border-bottom: 1px solid #81b2ea;
+    width: 100%;
+    z-index: 100;
+}
+.accounts-tab-nav, .accounts-tab-nav.int-sticky-inpage
+{
+    background: #0b55a8;
+}
+.accounts-tab li a:hover,
+.accounts-tab li a:focus 
+{
+    background: #a6d0ff;
+    border-bottom: 1px solid #81b2ea;
+    text-decoration: underline;
+    color:#312b39;
+}
+/*media query added to style menu on larger viewports*/
+@media (min-width: 767px) {
+    .accounts-tab li.active a:hover,
+    .accounts-tab li.active a:focus
+	{
+        background: #ffc23d;
+        border-bottom: 1px solid #ffc23d;
+        text-decoration: underline;
+    }
+    .accounts-tab li a {
+        color: #fff;
+    }
+    .accounts-tab li.active a
+	{
+        color: #312b39;
+        background: #ffc23d;
+        border-bottom: 1px solid #ffc23d;
+        border-right: 1px solid #ffc23d;
+        padding-left: 19px;
+        left: -1px;
+        margin-right: -1px;
+    }
+    .accounts-tab li.active a:after
+	{
+        content: '';
+        display: block;
+        width: 0;
+        height: 0;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-top: 10px solid #ffc23d;
+        position: absolute;
+        bottom: -10px;
+        left: 50%;
+        margin-left: -10px;
+    }
+}
+@media (max-width: 767px){
+    .accounts-tab-nav.int-sticky-inpage .int-container
+	{
+        background: #a6d0ff;
+    }
+}
+.accounts-tab section
+{
+    display: none;
+}
+/*Context Tooltip*/
+.int-tooltip.int-tooltip-context
+{
+    position: absolute;
+    display: none;
+    z-index: 3;
+    outline: 0;
+}
+.int-tooltip.int-tooltip-context div
+{
+    outline: 0;
+}
+.int-tooltip.int-tooltip-context .close-tooltip
+{
+    float: right;
+}
+.int-tooltip.int-tooltip-context .close-tooltip-container
+{
+    width: 100%;
+    height: 30px;
+    margin-bottom: 10px;
+}
+.int-tooltip.int-tooltip-context.int-tooltip-arrow-left:before
+{
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-right: 20px solid #002158;
+    position: absolute;
+    top: 15px;
+    left: -20px;
+}
+/*Accordion Toggler*/
+.interaction .int-accordion-toggler
+{
+	margin: 1em 0;
+}
+.interaction .int-accordion-toggler p,
+.interaction .int-accordion-toggler ul,
+.interaction .int-accordion-toggler ol, 
+.interaction .int-accordion-toggler dl,
+.interaction .int-accordion-toggler dd, 
+.interaction .int-accordion-toggler label,
+.interaction .int-accordion-toggler h1,
+.interaction .int-accordion-toggler h2,
+.interaction .int-accordion-toggler h3,
+.interaction .int-accordion-toggler h4,
+.interaction .int-accordion-toggler h5,
+.interaction .int-accordion-toggler h6
+{
+	color: #0b55a8;
+}
+.interaction .int-accordion-toggler a
+{
+	color: #808;
+}
+.interaction .int-accordion-toggler > div
+{
+    display: none;
+    background-color: #fff;
+    -webkit-border-radius:  0 0 4px 4px;
+    -moz-border-radius:  0 0 4px 4px;
+    border-radius:  0 0 4px 4px;
+    color: #0b55a8;
+}
+.interaction .int-accordion-toggler > h3:first-child
+{
+	margin-top: 0;
+}
+.interaction .int-accordion-toggler > h3
+{
+    cursor: pointer;
+    margin: 0.25em 0 0;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    font-size: 1.5em;
+    background-color: #fff;
+    padding: .5em .3em;
+	color: #0b55a8;
+}
+.interaction .int-accordion-toggler > h3:hover
+{
+	text-decoration: underline;
+}
+.interaction .int-accordion-toggler > h3.int-togglerHeadActive
+{
+    -webkit-border-radius: 4px 4px 0 0;
+    -moz-border-radius: 4px 4px 0 0;
+    border-radius: 4px 4px 0 0;
+}
+.interaction .int-accordion-toggler > h3 [class*="int-icon"]
+{
+    text-align: center;
+    display: inline-block;
+    margin: 0 .3em .1em;
+    color: #0b55a8;
+	font-size: 1.125em;
+	position: relative;
+	vertical-align: middle;
+}
+.interaction .int-accordion-toggler > h3.int-togglerHeadActive [class*="int-icon"]
+{
+    color: #880088;
+}
+.interaction .int-accordion-toggler > div.int-togglerContentActive
+{
+    display: block;
+}
+.interaction .int-accordion-toggler-content
+{
+    padding-left: 2.7em;
+    padding-top: .5em;
+    padding-bottom: 1em;
+}
+.interaction .int-accordion-toggler .todo
+{
+    color: #880088;
+}
+.js .int-toggler.int-active .int-toggleContent 
+{
+	border: 4px solid #e7eff7;
+	border-top: 0;
+	padding: 1em;
+}
+/*Styling for validation messages ready for QA - DV*/
+/*Styling for validation messages ready for QA - DV*/
+div.int-alert, div.int-alert.int-success, div.int-alert.int-error, .int-errorMessage
+{
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    border-width: 2px;
+    border-style: solid;
+    position: relative;
+    vertical-align:middle;
+}
+div.int-alert, div.int-alert.int-success, div.int-alert.int-error
+{
+    margin: 1.25em 0 0;
+    background: #fff;
+    padding: .75em 2.8em;
+}
+.accounts-tab div[class*="int-alert"]
+{
+    margin-top: 1.25em;
+}
+div.int-alert + h1,
+div.int-alert + h2,
+div.int-alert + h3,
+div.int-alert + h4,
+div.int-alert + h5,
+div.int-alert + h6,
+div.int-alert + p
+{
+    margin-top: .67em;
+}
+div.int-alert.int-noIcon
+{
+    padding-left: .75em;
+    padding-right: .75em;
+}
+.int-icon-remove:before, .ui-icon-closethick:before
+{
+    content: "\f00d";
+}
+.int-alert.int-alertSticky
+{
+    -moz-animation: fadein 1s;
+    -webkit-animation: fadein 1s;
+    -o-animation: fadein 1s;
+    animation: fadein 1s;
+}
+.int-alertSticky
+{
+    position: fixed;
+    width: auto;
+    margin-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    top: 6.8em;
+    left: 24.5%;
+    right: 6.5%;
+    display: block;
+    border-top: 0;
+    -moz-border-radius: 0 0 3px 3px;
+    -webkit-border-radius: 0 0 3px 3px;
+    border-radius: 0 0 3px 3px;
+    -moz-box-shadow: 0 4px 11px -4px rgba(0,0,0,0.3);
+    -webkit-box-shadow: 0 4px 11px -4px rgba(0,0,0,0.3);
+    box-shadow: 0 4px 11px -4px rgba(0,0,0,0.3);
+    border-bottom-color: rgba(255,255,255,0.5);
+    z-index: 999999;
+    opacity: .95;
+    filter: alpha(opacity=95);
+}
+.int-alert:before, .int-note:before, .int-alert:after, .int-note:after
+{
+    display: table;
+    line-height: 0;
+    content: "";
+}
+.int-alert a.int-alertRemove
+{
+    line-height: 1.2em;
+    position: relative;
+    float: right;
+    -moz-text-shadow: 0px 1px 0px #FFFFFF;
+    -webkit-text-shadow: 0px 1px 0px #FFFFFF;
+    text-shadow: 0px 1px 0px #FFFFFF;
+    color:#008A00;
+    margin-left: 1em;
+}
+.int-alert a.int-alertRemove:focus
+{
+    outline: thin dotted
+}
+.int-alert a.int-alertRemove [class*="int-icon"]:hover
+{
+    color: #060;
+    text-decoration: underline;
+}
+.int-alert .int-icon
+{
+    position: absolute;
+    top: .2em;
+    left: .2em;
+}
+/*Alert*/
+.generatedcontent .int-alert ul li:before
+{
+    color: #B65E00;
+}
+div.int-alert,
+div.int-alert p,
+div.int-alert ul,
+div.int-alert ol,
+div.int-alert dl,
+div.int-alert dd,
+div.int-alert label,
+div.int-alert h1,
+div.int-alert h2,
+div.int-alert h3,
+div.int-alert h4,
+div.int-alert h5,
+div.int-alert h6
+{
+    border-color: #B65E00;
+    color: #B65E00;
+}
+.int-alert h3
+{
+    font-weight: bold;
+    color: #B65E00;
+}
+.int-alert .int-icon + h3
+{
+    margin-top: .2em;
+}
+.int-alert a
+{
+    color: #B65E00;
+}
+/*Success*/
+.generatedcontent .int-alert.int-success ul li:before
+{
+    color: #008A00;
+}
+.int-alert.int-success,
+div.int-alert.int-success p,
+div.int-alert.int-success ul,
+div.int-alert.int-success ol,
+div.int-alert.int-success dl,
+div.int-alert.int-success dd,
+div.int-alert.int-success label,
+div.int-alert.int-success h1,
+div.int-alert.int-success h2,
+div.int-alert.int-success h3,
+div.int-alert.int-success h4,
+div.int-alert.int-success h5,
+div.int-alert.int-success h6
+{
+    border-color: #008A00;
+    color: #008A00;
+}
+.int-alert.int-success h3
+{
+    font-weight: bold;
+    color: #008A00;
+}
+.int-alert.int-success a
+{
+    color: #008A00;
+}
+/*Error*/
+div.int-error-msg /*To override legacy error message*/
+{
+    font-weight: bold;
+    display:block;
+    font-size:1em;
+}
+.generatedcontent .int-alert.int-error ul li:before
+{
+    color: #de2a1e;
+}
+div.int-alert.int-error,
+div.int-alert.int-error p,
+div.int-alert.int-error ul,
+div.int-alert.int-error ol,
+div.int-alert.int-error dl,
+div.int-alert.int-error dd,
+div.int-alert.int-error label,
+div.int-alert.int-error h1,
+div.int-alert.int-error h2,
+div.int-alert.int-error h3,
+div.int-alert.int-error h4,
+div.int-alert.int-error h5,
+div.int-alert.int-error h6
+{
+    border-color: #de2a1e;
+    color: #de2a1e;
+}
+div.int-alert.int-error h3
+{
+    color: #de2a1e;
+}
+div.int-alert.int-error a
+{
+    font-weight: bold;
+    color: #de2a1e;
+}
+/*Inline error messages*/
+.int-errorMessage{
+    display:inline-block;
+    background: #F9E5EA;
+    width:100%;
+    padding: .5em .5em .5em 1em;
+    font-weight:bold;
+    margin:-.7em 0 1em 0;
+    color: #de2a1e;
+    border: 2px solid #de2a1e;
+}
+.int-errorMessage a
+{
+    color: #de2a1e;
+}
+@media (max-width: 767px)
+{
+    div.int-error-msg, div.int-alert.int-error, div.int-alert.int-success
+    {
+        margin-top:4.5em;
+    }
+}
+
+/*.int-form-notice
+{
+    padding: 1em 144px 1.5em;
+}*/
+/*.int-formNotice.int-notice-icon[class*="int-notice-icon"]
+{
+	background-position: 10px 20px;
+	padding-left: 115px;
+	background-size: 65px;
+    background-repeat: no-repeat;
+}*/
+
+/* notices - rows of info with background image icon positioned left*/
+/*.int-notice.int-notice-icon[class*="int-notice-icon"]
+{
+	background-position: 10px 20px;
+	padding-left: 115px;
+	background-size: 65px;
+}*/
+/*.int-form-notice.int-notice-icon.int-notice-icon-clock
+{
+	background-image: url(../img/icons/Clock_Icon.png);
+    background-size: 60px;
+	background-position: 13px 25px;
+}
+.int-form-notice.int-notice-icon.int-notice-icon-piggy
+{
+	background-image: url(../img/icons/PiggyBank_Icon.png);
+    background-size: 67px;
+    background-position: 8px 20px;
+}
+.int-form-notice.int-notice-icon.int-notice-icon-mortarboard
+{
+	background-image: url(../img/icons/mortarboard_Icon.png);
+}
+.int-form-notice.int-notice-icon.int-notice-icon-opensign
+{
+	background-image: url(../img/icons/OpenSign_Icon.png);
+}
+.int-form-notice.int-notice-icon.int-notice-icon-ribbon
+{
+	background-image: url(../img/icons/Ribbon_Icon.png);
+}
+.int-form-notice.int-notice-icon.int-notice-icon-save
+{
+	background-image: url(../img/icons/Save_Icon.png);
+}*/
+/*@media (max-width: 480px)
+{
+	.int-formNotice.int-notice-icon[class*="int-notice-icon"]
+	{
+		padding-left: 0;
+		background-image: none;
+	}
+}*/
+
+#int-content > .interaction /*Stops page from being hidden in responsive view when .interaction is used to as the immediate child beneath main #int-content*/
+{
+	width: 100%;
+}
+/* List no bullet style*/
+.generatedcontent .int-noBullets li:before 
+{
+    content: "";
+    display: none;
+}
+/*IE hack to get legends to wrap*/
+legend {
+    white-space: normal;
+    width: 100%;
+    *margin-left: -7px;
+}
+legend span {
+    display:block;
+    width: 100%;
+    font-size: 1.4em;
+}
+legend.heading1, legend.heading2, legend.heading3
+{
+    margin-bottom: .67em;
+    margin-top: .67em;
+    font-family: CaratReg,"Book Antiqua",Georgia,serif;
+    font-weight: normal;
+    font-style: normal;
+    color: #fff;
+}
+legend.heading1+hr, legend.heading2+hr, legend.heading3+hr
+{
+    margin-top: 0;
+}
+/*removes margin top,  where an alert is displayed directly below a legend styled as a header*/
+legend.heading1+.int-alert, legend.heading2+.int-alert, legend.heading3+.int-alert
+{
+    margin-top: 0;
+}

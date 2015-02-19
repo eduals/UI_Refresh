@@ -1,0 +1,134 @@
+// =============================================================================
+// Unordered list
+// 
+// =============================================================================
+
+@bullet-point-color: 	@mid-blue;
+@list-border-color: 	@light-blue;
+@list-striped-bg: 		@light-grey-blue;
+@list-item-v-spacing: 	0.25em;
+
+@list-interaction-border-color: 	@light-blue;
+@list-interaction-striped-bg: 		#002158;
+
+@list-promo-border-color: 	@light-blue;
+@list-promo-striped-bg: 	@light-grey-blue;
+
+
+
+ul {
+    margin-left:20px;
+}
+
+.generatedcontent {
+    ul {
+        list-style-type:none;
+        padding:0;
+        margin-left:0;
+        li{
+            position:relative;
+            padding-left:1.5em;
+            &:first-child {margin-top: 0;}
+            &:before {
+                content: "\2022";
+                padding-right:0.5em;
+                color: @bullet-point-color;
+                font-size:1.6em;
+                position:absolute;
+                left:-2px;
+                top:0px;
+                line-height:0.8;
+            }
+        }
+        ul, ol {
+            margin:0;
+        }
+    }
+
+    .interaction {
+        ul {
+            li {
+                &:before {
+                    color: #ffc23d;
+                }
+            }
+        }
+    }
+	
+	.int-striped-list, 
+	.int-bordered-list {
+		li {
+			&:before {
+				content:'';
+				display:none;
+			}
+		}
+	}
+
+}
+
+.int-striped-list, 
+.int-bordered-list {
+	list-style:none;
+	margin-left:0;
+	li {
+		padding: 0.875em 1em 0.75em 1em;
+		margin-top: 0;
+	}
+}
+
+.int-striped-list {
+    li {
+        &:nth-child(even) {
+            background: @list-striped-bg;
+        }
+    }
+}
+
+// Remove striping in interactive component
+.interaction .int-striped-list {
+    li {
+        &:nth-child(even) {
+            background: transparent;
+        }
+    }
+}
+
+.int-bordered-list,
+.lt-ie9 .int-striped-list {
+	border-top: 1px solid @list-border-color;
+	li {
+		border-bottom: 1px solid @list-border-color;
+	}
+}
+
+main {
+    ul {
+        li {
+            margin-top: @list-item-v-spacing;
+            ol, ul {
+                li:first-child {
+                    margin-top: @list-item-v-spacing;
+                }
+            }
+        }
+    }
+}
+.generatedcontent main ul { 
+    margin-left:0;
+}
+//To override CMS styling on tabs - DV
+.ui-tabs {
+
+    .ui-tabs-nav {
+
+        li {
+            a {
+                font-size: 1em !important;
+                padding:10px 18px !important;
+            }
+        }
+    }
+}
+
+

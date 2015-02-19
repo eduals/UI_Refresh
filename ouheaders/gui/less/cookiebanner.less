@@ -1,0 +1,58 @@
+﻿/* cookie banner */
+
+.ou-cookies-bar {
+	background: #0b55a8;
+	color: #ffffff;
+    a {
+        font-weight: 700;
+	    color: #ffc23d
+    }
+    p {
+        margin-top: 0;
+    }
+    h3 {
+        color: #fff;
+        font-family: @secondary-font-family;
+        font-style: normal;
+	    font-weight: normal;
+        margin-bottom: .5em;
+        margin-top: .67em;
+    }
+    .ou-button,
+    a.ou-button {
+        .borderRadius4;
+        .transitionOut;
+        font-family: @secondaryFont;
+        font-size: 1.25em;
+        background: #ffc23d;
+        color: #0b55a8;
+        font-weight: normal;
+        text-decoration: none;
+        padding: 0.6em 0.8em;
+        display: inline-block;
+        margin-bottom: 0.875em;
+        border: 1px solid #ffc23d;
+        &:hover, &:focus {
+            background: #880088;
+            color: #ffc23d;
+            text-decoration: none;
+        }
+        &:focus {
+            outline: thin dotted;
+        }
+        &:active {
+            background: #470d43;
+            color: #ffc23d;
+        }
+    }
+    @media (max-width: 767px) {
+        p {
+            padding-right: 45px;
+        }
+        .ou-button {
+            font-size: 0.875em;
+        }
+    }
+}
+
+

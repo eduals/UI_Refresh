@@ -1,0 +1,33 @@
+// =============================================================================
+// Selectbox
+// 
+// =============================================================================
+
+@selectbox-bg: 		@white;
+
+select {
+	.form-styles(); // mixin from _forms.less
+	position:relative;
+	border-color: @selectbox-bg;
+    overflow:hidden;
+    background: @selectbox-bg url(../img/form-sprites-new.png) no-repeat right -6px;
+    padding-right:60px;
+    &.is-error {
+		border-color: @error-color;
+	}
+	&:focus {
+		outline:0;
+		border-color: @gold;
+        background-position: right -81px;
+	}
+    &:disabled {
+        color: @input-placeholder-color;
+        background-position: right -358px;
+    }
+    // prevents newer versions of IE displaying default dropdown arrow
+    select::-ms-expand {
+        display: none;
+    }  
+}
+
+
