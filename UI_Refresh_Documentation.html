@@ -1,0 +1,328 @@
+﻿<!DOCTYPE html>
+<!--[if (lt IE 9)&!(IEMobile)]><html lang="en-GB" class="no-js lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="en-GB" class="no-js">
+<!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+
+    <title>Component Library</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <script src="oudigital/v3/eep/js/vendor/modernizr-2.6.2.min.js"></script>
+
+    <!-- #include virtual="/ouheaders/ou-head.html" -->
+
+    <link rel="stylesheet" href="oudigital/v3/eep/css/screen.css">
+    <link rel="stylesheet" href="oudigital/v3/eep/css/kentico-custom-styles.css">
+
+    <!-- TODO Remove In Production Release -->
+    <link rel="stylesheet" href="oudigital/v3/eep/css/dev.css">
+
+    <!--[if lt IE 9]>
+    <link  rel="stylesheet" href="oudigital/v3/eep/css/ie8.css">
+    <![endif]-->
+    <!--[if lt IE 8]>
+    <link  rel="stylesheet" href="oudigital/v3/eep/css/ie.css">
+    <![endif]-->
+    <!--[if IE 7]>
+    <link  rel="stylesheet" href="oudigital/v3/eep/fonts/fontawesome/css/font-awesome-ie7.css">
+    <![endif]-->
+
+    <link rel="stylesheet" href="oudigital/v3/eep/css/print.css" media="print">
+
+    <!-- favicons -->
+    <link rel="apple-touch-icon" href="oudigital/v3/external/img/favicons/apple-touch-icon.png">
+    <link rel="icon" href="oudigital/v3/external/img/favicons/favicon.png">
+    <link rel="shortcut icon" href="oudigital/v3/external/img/favicon.ico">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="oudigital/v3/external/img/favicons/ie10-win8-tile-icon.png">
+    <link rel="stylesheet" href="modules/ou.docs/ou.docs.css">
+    <link rel="stylesheet" href="modules/ou.docs/prettify.css">
+    <link rel="stylesheet" href="modules/ui_refresh/ui_refresh.css">
+</head>
+<body>
+
+    <!-- Content here -->
+    <div id="int-site" tabindex="-1" style="outline: 0;">
+
+        <div id="main" class="int-container">
+            <h1>UI Refresh Documentation</h1>
+
+            <h2>Methods</h2>
+            <h2>Widgets</h2>
+            <h3>Tooltip</h3>
+
+            <h3>Password Check List</h3>
+
+            <h3>Modal</h3>
+            <div class="cl-tab docs-widget" id="modal">
+                <div class="tabs">
+                    <a href="#tabs-component-tab" class="active">Component</a>
+                    <a href="#tabs-html-tab">HTML</a>
+                    <a href="#tabs-js-tab">JavaScript</a>
+                    <a href="#tabs-support-tab">Supporting Text</a>
+                    <a href="#tabs-change-tab">Change Log</a>
+                </div>
+                <div class="panels">
+                    <div id="modal-component-tab" class="docs-component-panel">
+                        <!-- Buttons to trigger modals -->
+                        <button type="button" id="modal_small_button">Small modal</button>
+                        <button type="button" id="modal_medium_button">Medium modal</button>
+                        <button type="button" id="modal_large_button">Large modal</button>
+
+
+                        <!-- Small Modal -->
+                        <div id="modal_small"  aria-live="assertive" class="cl-modal-container print-hide">
+                            <div class="cl-modal-overlay">
+                                <div class="interaction cl-modal small">
+                                    <button type="button" class="cl-modal-close-button" title="close"><span class="ui-button-icon-primary ui-icon ui-icon-closethick"></span><span class="ui-button-text">close</span></button>
+                                    <h2>Payment options</h2>
+                                    <p>There are several ways to pay. For advice about them and about financial support, go to the <a href="http://www3.open.ac.uk/study/explained/how-to-pay.shtml"  target="_blank">how to pay</a> pages.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Medium Modal -->
+                        <div id="modal_medium"  aria-live="assertive" class="cl-modal-container print-hide">
+                            <div class="cl-modal-overlay">
+                                <div class="interaction cl-modal medium">
+                                    <button type="button" class="cl-modal-close-button" title="close"><span class="ui-button-icon-primary ui-icon ui-icon-closethick"></span><span class="ui-button-text">close</span></button>
+                                    <h2>Country of residence</h2>
+                                    <p>
+                                        In order to gain an Open University qualification you will need to study a number of specified modules.
+                                        If you live outside the UK and Agreed Study Areas, you may find that not all the modules required for successful
+                                        completion of your chosen qualification are available. Visit the
+                                        <a href="http://www3.open.ac.uk/study/explained/resident-outside-the-uk.shtml" target="_blank">Where Can I Study pages</a>
+                                        to check whether the modules you want to study are presented where you live.
+                                    </p>
+                                    <h2>Agreed Study Areas:</h2>
+                                    <p>
+                                        Aland Islands, Andorra, Austria, Belgium, Bulgaria, Channel Islands, Cyprus, Czech Republic, Denmark,
+                                        Estonia, Finland, France, Germany, Gibraltar, Greece, Hungary, Isle of Man, Italy, Latvia, Liechtenstein,
+                                        Lithuania, Luxembourg, Malta, Monaco, Netherlands, Poland, Portugal, Republic of Ireland, Romania, San Marino,
+                                        Slovakia, Slovenia, Spain, Sweden, Switzerland and Vatican City State
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Large Modal -->
+                        <div id="modal_large"  aria-live="assertive" class="cl-modal-container">
+                            <div class="cl-modal-overlay">
+                                <div class="interaction cl-modal">
+                                    <button type="button" class="cl-modal-close-button" title="close"><span class="ui-button-icon-primary ui-icon ui-icon-closethick"></span><span class="ui-button-text">close</span></button>
+                                    <h2>Other ways to contact us </h2>
+                                    <hr/>
+                                    <div class="int-row">
+                                        <div class="int-grid3">
+                                            <h3>Call us:</h3>
+                                            <p>Please call us on <strong>0300 303 5303</strong>.</p>
+                                            <p>Our advisers are available to take your call Monday to Friday 08:00 to 20:00, Saturday 09:00 to 17:00 UK Time Excluding Bank Holidays.</p>
+                                        </div>
+                                        <div class="int-grid3">
+                                            <h3>Attend an event:</h3>
+                                            <p>Come and meet us at an <a href="http://www3.open.ac.uk/contact/events.aspx" target="_blank">event near you</a>.</p>
+                                        </div>
+                                        <div class="int-grid3">
+                                            <h3>Write to us at:</h3>
+                                            <p>
+                                                Student Registration &amp; Enquiry Service<br>
+                                                The Open University<br>
+                                                PO Box 197<br>
+                                                Milton Keynes<br>
+                                                MK7 6BJ
+                                            </p>
+                                        </div>
+                                        <div class="int-grid3">
+                                            <h3>If you're visiting:</h3>
+                                            <p>
+                                                The Open University <br>
+                                                Walton Hall<br>
+                                                Milton Keynes <br>
+                                                MK7 6AA
+                                            </p>
+                                            <p>Once on campus we have a <a href="http://www.open.ac.uk/courses/Courses/media/Courses/High%20level%20pages/Contact%20us/wh-campus.png" target="_blank">map available</a>.</p>
+                                        </div>
+                                    </div>
+                                    <div class="int-row">
+                                        <div class="cl-fluidMedia small">
+                                            <iframe id="seeOnMap" src="" frameborder="0"></iframe>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div id="modal-html-tab" class="docs-html-panel">
+                        <pre class="prettyprint"></pre>
+                    </div>
+                    <div id="modal-js-tab" class="docs-js-panel">
+                        <pre class="prettyprint"></pre>
+                    </div>
+                    <div id="modal-support-tab" class="docs-support-panel"></div>
+                    <div id="modal-change-tab" class="docs-change-panel">
+                        <table class="cl-change-log int-plainTable">
+                            <colgroup>
+                                <col class="int-c10">
+                                <col class="int-c90">
+                            </colgroup>
+                            <thead>
+                            <tr>
+                                <th>Version</th>
+                                <th>Changes</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>ui_refresh.js v1.0</td>
+                                <td>Added.</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <h3>Tabs</h3>
+            <div class="cl-tab docs-widget" id="tabs">
+                <div class="tabs">
+                    <a href="#tabs-component-tab" class="active">Component</a>
+                    <a href="#tabs-html-tab">HTML</a>
+                    <a href="#tabs-js-tab">JavaScript</a>
+                    <a href="#tabs-support-tab">Supporting Text</a>
+                    <a href="#tabs-change-tab">Change Log</a>
+                </div>
+                <div class="panels">
+                    <div id="tabs-component-tab" class="docs-component-panel">
+<div class="cl-tab" id="tabsexample">
+    <div class="tabs">
+        <a href="#tab1" class="active">Tab 1</a>
+        <a href="#tab2">Tab 2</a>
+        <a href="#tab3">Tab 3</a>
+        <a href="#tab4">Tab 4</a>
+    </div>
+    <div class="panels">
+        <div id="tab1">1</div>
+        <div id="tab2">2</div>
+        <div id="tab3">3</div>
+        <div id="tab4">4</div>
+    </div>
+</div>
+                    </div>
+                    <div id="tabs-html-tab" class="docs-html-panel">
+                        <pre class="prettyprint"></pre>
+                    </div>
+                    <div id="tabs-js-tab" class="docs-js-panel">
+                        <pre class="prettyprint"></pre>
+                    </div>
+                    <div id="tabs-support-tab" class="docs-support-panel"></div>
+                    <div id="tabs-change-tab" class="docs-change-panel"></div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+
+    <input type="hidden" id="loaded-components" value="">
+
+    <script src="oudigital/v3/eep/js/vendor/jquery-1.10.2.min.js"></script>
+
+    <!--Vantage files-->
+    <script src="oudigital/v3/core/js/vendor/spin.js"></script>
+    <script src="oudigital/v3/core/js/ou.widgets.js"></script>
+    <!--end of Vantage files-->
+
+    <script src="oudigital/v3/eep/js/vendor/min/jquery-ui-1.10.4.custom.min.js"></script>
+    <script src="oudigital/v3/core/js/vendor/jquery.actual.js"></script>
+    <script src="oudigital/v3/eep/js/vendor/jquery.placeholder.js"></script>
+    <script src="oudigital/v3/eep/js/vendor/jquery.smartresize.js"></script>
+    <script src="oudigital/v3/eep/js/vendor/cookies.js"></script>
+    <script src="oudigital/v3/eep/js/ou.eep.js"></script>
+
+    <!--[if lt IE 9]>
+    <script src="oudigital/v3/eep/js/vendor/respond.js"></script>
+    <![endif]-->
+
+    <script src="oudigital/v3/eep/js/main.js"></script>
+    <script src="modules/ou.docs/ou.docs.js"></script>
+    <script src="modules/ou.docs/prettify.js"></script>
+    <script src="modules/ui_refresh/ui_refresh.js"></script>
+    <script>
+        (function($, ui, docs) {
+            $('.docs-widget').each(function(){
+                var $docsTab = $(this),
+                    $component = $docsTab.find('.docs-component-panel'),
+                    $HTMLPre = $docsTab.find('.docs-html-panel').children('pre'),
+                    $jsPre = $docsTab.find('.docs-js-panel').children('pre'),
+                    js = $jsPre.data('scripts');
+
+                new ui.Tabs($docsTab, {setHash: false});
+                docs.codeDump($component, $HTMLPre);
+            });
+
+        })(jQuery, window.ui_refresh, window.OU.Docs);
+
+    </script>
+
+
+<script id="modal-script" data-js-pre="#modal">
+(function($, ui){
+
+    //Small modal example
+    var smallModal = new ui.Modal($('#modal_small'), {
+        $modalOpener: $('#modal_small_button')
+    });
+
+    //Medium modal example
+    var mediumModal = new ui.Modal($('#modal_medium'), {
+        $modalOpener: $('#modal_medium_button')
+    });
+
+    //Large modal example and using callbacks
+    var $seeOnMap = $('#seeOnMap');
+
+    var largeModal = new ui.Modal($('#modal_large'), {
+        $modalOpener: $("#modal_large_button"),
+        hideModalCallback: function () {
+            //Called immediately after the modal is hidden
+            $seeOnMap.attr('src', '');
+        },
+        showModalCallback: function () {
+            //Called immediately after the modal is displayed
+            $seeOnMap.attr('src', 'https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2' +
+            '455.120602912755!2d-0.7075171384086828!3d52.02290056921254!3m2!1i1024!2i' +
+            '768!4f13.1!3m3!1m2!1s0x0000000000000000%3A0x8cd2ce40201164d8!2sThe+Open+' +
+            'University!5e0!3m2!1sen!2suk!4v1424085338022');
+        }
+    });
+
+})(jQuery, window.ui_refresh);
+</script>
+<script id="tabs-script" data-js-pre="#tabs">
+(function($, ui){
+
+    new ui.Tabs($('#tabsexample'));
+
+})(jQuery, window.ui_refresh);
+</script>
+
+    <script>
+        (function($, ui, docs) {
+            $('[data-js-pre]').each(function(){
+                var $js = $(this),
+                    $jsPre = $($js.data('js-pre')).find('.docs-js-panel').children('pre');
+
+                docs.codeDump($js, $jsPre);
+            });
+
+            prettyPrint();
+
+        })(jQuery, window.ui_refresh, window.OU.Docs);
+    </script>
+</body>
+</html>
