@@ -357,14 +357,14 @@
                     <dd> <a href="/coursesaf/what-study-like/distance-learning">Distance learning</a>  </dd>
 
                     <dt>Course cost</dt>
-                    <dd> See <a class="loadTab" href="#fees-and-funding">Fees &amp; funding</a>  </dd>
+                    <dd> See <a class="cl-tab-alias" href="#fees-and-funding">Fees &amp; funding</a>  </dd>
 
 
                     <dt>Entry requirements</dt>
                     <dd>None<br />
                         <br />
                         Are you ready for study?<br />
-                        <a class="loadTab" href="#am-i-ready">Find out here</a>   </dd>
+                        <a class="cl-tab-alias" href="#am-i-ready">Find out here</a>   </dd>
 
 
                 </dl>
@@ -1780,32 +1780,11 @@
 <script type='text/javascript' src='modules/ui_refresh/ui_refresh.js'></script>
 <script>
     (function($, ui) {
-        var $coursesTab = $('#ou-courses-tabs');
 
-        if($coursesTab.length){
-            var tabsWidget = new ui.Tabs($coursesTab);
-
-            //Todo document ready can be removed once .loadTab click event is removed from digital framework
-            $(document).ready(function(){
-                //Initialise loadTab to trigger the click event on the relevant tab when clicked
-                $('.loadTab').off().click(function(){
-                    var $link = $(this);
-
-                    tabsWidget.$tabs.filter('[href="' + $link.attr('href') +'"]').trigger('click');
-                });
-
-                //Scroll to the container for the courses tab when the tabs are clicked
-                tabsWidget.$tabs.click(function(){
-                    scrollPageTo($coursesTab);
-                });
-
-                function scrollPageTo($el) {
-                    if ($el.length > 0) {
-                        $('html, body').animate({ scrollTop: $el.offset().top }, 'slow');
-                    }
-                }
-            });
-        }
+        new ui.Tabs($('#ou-courses-tabs'), {
+            scrollToTabs: true,
+            tabAliasLinks: true
+        });
 
     })(jQuery, window.ui_refresh);
 </script>

@@ -5,10 +5,11 @@
 // ----------------------------------------------------------
 
 (function ($, ui) {
-    ui.version = 'ui_refresh | Written by Paul Liu | paul.liu@open.ac.uk | v1.25 Added fork of OU.Widgets tabs';
+    ui.version = 'ui_refresh | Written by Paul Liu | paul.liu@open.ac.uk | v1.26 Added scrollPageTo. Abstracted checks and functionality into the main tabs prototyp';
     ui.dependencies = 'jQuery,jQueryUI';
 
-    var $body = $('body');
+    var $body = $('body'),
+        $HTMLBody = $('html, body');
 
     //Methods
     ui.maxCharLengthReached = function ($input, maximumCharLength, removeAlertFromDOMDelay) {
@@ -72,6 +73,11 @@
                 $input.attr('type', 'text');
             }
         });
+    };
+    ui.scrollPageTo = function ($el, transition) {
+        if ($el.length > 0) {
+            $HTMLBody.animate({scrollTop: $el.offset().top}, transition);
+        }
     };
 
     //Aria
@@ -692,15 +698,37 @@
         base.options = $.extend({}, base.defaults, options);
         base.$activeTab = undefined;
         base.$activePanel = undefined;
-        base.init();
+        base.$aliasLinks = undefined;
+
+        if (base.$element.length) {
+            base.init();
+        }
     };
     ui.Tabs.prototype = {
         defaults: {
             activeClass: 'active',
-            setHash: true //Set to false to prevent hash added after tab click
+            setHash: true, //Set to false to prevent hash added after tab click
+            scrollToTabs: false, //Set to true to scroll to tabs
+            scrollPageToTabsTransition: "slow",
+            tabAliasLinks: false, //Set to true if you want other link/buttons to be able to activate the tab
+            tabAliasLinksSelector: '.cl-tab-alias' //Set the selector that needs to be aliased
         },
         init: function () {
-            return this.setActiveInitialActiveTabAndPanel().setTabsClickHandler().aria();
+            return this.setActiveInitialActiveTabAndPanel().setTabsClickHandler().setTabAliasLinks().aria();
+        },
+        setTabAliasLinks: function () {
+            var base = this,
+                opts = base.options;
+
+            if (opts.tabAliasLinks) {
+                base.$aliasLinks = $(opts.tabAliasLinksSelector).click(function () {
+                    var $link = $(this);
+
+                    base.$tabs.filter('[href="' + $link.attr('href') + '"]').trigger('click');
+                });
+            }
+
+            return base;
         },
         setHash: function (hash, setHash) {
             if (setHash) {
@@ -747,8 +775,9 @@
         },
         setTabsClickHandler: function () {
             var base = this,
-                active = base.options.activeClass,
-                setHash = base.options.setHash;
+                opts = base.options,
+                active = opts.activeClass,
+                setHash = opts.setHash;
 
             base.$tabsContainer.on('click', 'a', function (e) {
                 e.preventDefault();
@@ -763,6 +792,11 @@
 
                 //Set window location
                 base.setHash($tab.attr('href'), setHash);
+
+                //Scroll to page if activated
+                if (opts.scrollToTabs) {
+                    ui.scrollPageTo(base.$element, opts.scrollPageToTabsTransition);
+                }
 
                 base.$activeTab = $tab.trigger({
                     type: "cl-tab-activated",
