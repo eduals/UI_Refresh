@@ -48,15 +48,148 @@
     <!-- Content here -->
     <div id="int-site" tabindex="-1" style="outline: 0;">
 
-        <div id="main" class="int-container">
+        <div id="main" class="int-container cl-fullBleedBottomPadding">
             <h1>UI Refresh Documentation</h1>
 
             <h2>Methods</h2>
             <h2>Widgets</h2>
             <h3>Tooltip</h3>
+            <div class="cl-tab docs-widget" id="tooltip">
+                <div class="tabs">
+                    <a href="#tooltip-component-tab" class="active">Component</a>
+                    <a href="#tooltip-html-tab">HTML</a>
+                    <a href="#tooltip-js-tab">JavaScript</a>
+                    <a href="#tooltip-support-tab">Supporting Text</a>
+                    <a href="#tooltip-change-tab">Change Log</a>
+                </div>
+                <div class="panels">
+                    <div id="tooltip-component-tab" class="docs-component-panel">
+                        <div class="interaction cl-docs-padding">
+                            <!-- Basic tooltip -->
+                            <div class="int-row">
+                                <div class="int-grid3">
+                                    <label for="basicTooltipInput" class="int-floatRight">Basic tooltip</label>
+                                </div>
+                                <div class="int-grid6">
+                                    <input id="basicTooltipInput" type="text" placeholder="Focus on this input"/>
+                                </div>
+                                <div class="int-grid3">
+                                    <div class="cl-inputFocusTooltipContainer" id="basicTooltip">
+                                        <div class="cl-inputFocusTooltip">
+                                            <p>This is a basic tooltip. A basic tooltip is triggered when an form element is given focus.</p>
+                                            This tooltip should only be used on text inputs, selects and textareas, not checkboxes and radios.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Basic tooltip -->
 
-            <h3>Password Check List</h3>
+                            <!-- Password tooltip -->
+                            <div class="int-row">
+                                <div class="int-grid3">
+                                    <label for="passwordTooltipInput" class="int-floatRight">Password</label>
+                                </div>
+                                <div class="int-grid6">
+                                    <input id="passwordTooltipInput" type="text" placeholder="Password"/>
+                                </div>
+                                <div class="int-grid3">
+                                    <div class="cl-inputFocusTooltipContainer" id="passwordTooltip">
+                                        <div class="cl-inputFocusTooltip">
+                                            <p>Your new password must contain</p>
+                                            <ul class="icon-list" id="passwordCheckList">
+                                                <li><i class="int-icon-circle cl-passwordCheckListBullet" ></i> 8 to 12 characters,
+                                                </li>
+                                                <li><i class="int-icon-circle cl-passwordCheckListBullet" ></i> a number,
+                                                </li>
+                                                <li><i class="int-icon-circle cl-passwordCheckListBullet" ></i> a lower case letter,
+                                                </li>
+                                                <li><i class="int-icon-circle cl-passwordCheckListBullet" ></i> an upper case letter, and
+                                                </li>
+                                                <li><i class="int-icon-circle cl-passwordCheckListBullet" ></i>
+                                                    <span>a special character from the following</span>
+                                                    <span class="int-hide">exclamation mark, dollar, percentage, caret, ampersand, asterisk, left bracket, right bracket, at sign, number sign, question mark, plus, hyphen, underscore</span>
+                                                    <span aria-hidden="true">! $ % ^ &amp; * [ ] @ # ? + - _</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Password tooltip -->
 
+                            <div class="int-row">
+                                <div class="int-grid3">&nbsp;</div>
+                                <div class="int-grid6">
+                                    <p>The password field is made up of two widgets:</p>
+                                    <ul>
+                                        <li>
+                                            A basic tooltip to display the password requirements information
+                                        </li>
+                                        <li>
+                                            A password check list widget which updates in response
+                                            to user keystrokes to see if the password requirements have been met
+                                        </li>
+                                    </ul>
+                                    <p>Both widgets need to be initialised. See JavaScript tab for details.</p>
+                                </div>
+                            </div>
+
+                            <!-- Event triggered tooltip -->
+                            <div class="int-row">
+                                <div class="int-grid3">
+                                    <label for="eventTriggeredTooltip" class="int-floatRight">Event triggered tooltip</label>
+                                </div>
+                                <div class="int-grid6">
+                                    <input id="eventTriggeredTooltip" type="text" placeholder="Paste value"/>
+                                </div>
+                                <div class="int-grid3">
+
+                                </div>
+                            </div>
+                            <!-- End Event triggered tooltip -->
+
+                            <br/>
+                            <br/>
+                            <br/>
+                        </div>
+                    </div>
+                    <div id="tooltip-html-tab" class="docs-html-panel">
+                        <pre class="prettyprint"></pre>
+                    </div>
+                    <div id="tooltip-js-tab" class="docs-js-panel">
+                        <pre class="prettyprint"></pre>
+                    </div>
+                    <div id="tooltip-support-tab" class="docs-support-panel"></div>
+                    <div id="tooltip-change-tab" class="docs-change-panel">
+                        <table class="cl-change-log int-plainTable">
+                            <colgroup>
+                                <col class="cl-col20">
+                                <col class="cl-col10">
+                                <col class="cl-col70">
+                            </colgroup>
+                            <thead>
+                            <tr>
+                                <th>File</th>
+                                <th>Version</th>
+                                <th>Changes</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>ui_refresh.js</td>
+                                <td>v1.25</td>
+                                <td>Added.</td>
+                            </tr>
+                            <tr>
+                                <td>ui_refresh.css</td>
+                                <td>v1.10</td>
+                                <td>Added.</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
             <h3>Modal</h3>
             <div class="cl-tab docs-widget" id="modal">
                 <div class="tabs">
@@ -167,18 +300,26 @@
                     <div id="modal-change-tab" class="docs-change-panel">
                         <table class="cl-change-log int-plainTable">
                             <colgroup>
-                                <col class="int-c10">
-                                <col class="int-c90">
+                                <col class="cl-col20">
+                                <col class="cl-col10">
+                                <col class="cl-col70">
                             </colgroup>
                             <thead>
                             <tr>
+                                <th>File</th>
                                 <th>Version</th>
                                 <th>Changes</th>
                             </tr>
                             </thead>
                             <tbody>
                             <tr>
-                                <td>ui_refresh.js v1.0</td>
+                                <td>ui_refresh.js</td>
+                                <td>v1.0</td>
+                                <td>Added.</td>
+                            </tr>
+                            <tr>
+                                <td>ui_refresh.css</td>
+                                <td>v1.0</td>
                                 <td>Added.</td>
                             </tr>
                             </tbody>
@@ -219,7 +360,34 @@
                         <pre class="prettyprint"></pre>
                     </div>
                     <div id="tabs-support-tab" class="docs-support-panel"></div>
-                    <div id="tabs-change-tab" class="docs-change-panel"></div>
+                    <div id="tabs-change-tab" class="docs-change-panel">
+                        <table class="cl-change-log int-plainTable">
+                            <colgroup>
+                                <col class="cl-col20">
+                                <col class="cl-col10">
+                                <col class="cl-col70">
+                            </colgroup>
+                            <thead>
+                            <tr>
+                                <th>File</th>
+                                <th>Version</th>
+                                <th>Changes</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>ui_refresh.js</td>
+                                <td>v1.25</td>
+                                <td>Added.</td>
+                            </tr>
+                            <tr>
+                                <td>ui_refresh.css</td>
+                                <td>v1.10</td>
+                                <td>Added.</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
             </div>
         </div>
@@ -269,8 +437,23 @@
 
     </script>
 
+<script data-js-pre="#tooltip">
+(function($, ui){
 
-<script id="modal-script" data-js-pre="#modal">
+    //Basic tooltip
+    new ui.Tooltip($('#basicTooltipInput'), $('#basicTooltip'));
+
+    //Password
+    var $passwordInput = $('#passwordTooltipInput');
+    //Init tooltip
+    new ui.Tooltip($passwordInput, $('#passwordTooltip'));
+    //Init password check list
+    new ui.PasswordCheckList($passwordInput, $('#passwordCheckList'));
+
+
+})(jQuery, window.ui_refresh);
+</script>
+<script data-js-pre="#modal">
 (function($, ui){
 
     //Small modal example
@@ -303,7 +486,7 @@
 
 })(jQuery, window.ui_refresh);
 </script>
-<script id="tabs-script" data-js-pre="#tabs">
+<script data-js-pre="#tabs">
 (function($, ui){
 
     new ui.Tabs($('#tabsexample'));
