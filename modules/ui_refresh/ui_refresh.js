@@ -688,30 +688,31 @@
     };
 
     ui.Tabs = function ($element, options) {
-        var base = this;
-
-        base.$element = $element;
-        base.$tabsContainer = $element.children('div').eq(0);
-        base.$tabs = base.$tabsContainer.find('a');
-        base.$tabpanelsContainer = $element.children('div').eq(1);
-        base.$tabpanels = base.$tabpanelsContainer.children('div');
-        base.options = $.extend({}, base.defaults, options);
-        base.$activeTab = undefined;
-        base.$activePanel = undefined;
-        base.$aliasLinks = undefined;
-
-        if (base.$element.length) {
+        if ($element.length) {
+            var base = this;
+            base.$element = $element;
+            base.$tabsContainer = $element.children('div').eq(0);
+            base.$tabs = base.$tabsContainer.find('a');
+            base.$tabpanelsContainer = $element.children('div').eq(1);
+            base.$tabpanels = base.$tabpanelsContainer.children('div');
+            base.options = $.extend({}, base.defaults, options);
+            base.$activeTab = undefined;
+            base.$activePanel = undefined;
+            base.$aliasLinks = undefined;
+            base.$previousTab = undefined;
             base.init();
         }
     };
     ui.Tabs.prototype = {
         defaults: {
-            activeClass: 'active',
+            activeClass: 'active', //Set the active added to the tabs and panels when activated
             setHash: true, //Set to false to prevent hash added after tab click
             scrollToTabs: false, //Set to true to scroll to tabs
             scrollPageToTabsTransition: "slow",
-            tabAliasLinks: false, //Set to true if you want other link/buttons to be able to activate the tab
-            tabAliasLinksSelector: '.cl-tab-alias' //Set the selector that needs to be aliased
+            tabAliasLinks: false, //Set to true if you want other link to be able to activate the tab - set the href of the alias link to the same as the tab
+            tabAliasLinksSelector: '.cl-tab-alias', //Set the selector that needs to be aliased
+            dax: false, //Set to true to allow function to be set for dax tracking
+            daxCallback: undefined
         },
         init: function () {
             return this.setActiveInitialActiveTabAndPanel().setTabsClickHandler().setTabAliasLinks().aria();
@@ -721,7 +722,9 @@
                 opts = base.options;
 
             if (opts.tabAliasLinks) {
-                base.$aliasLinks = $(opts.tabAliasLinksSelector).click(function () {
+                base.$aliasLinks = $(opts.tabAliasLinksSelector).click(function (e) {
+                    e.preventDefault();
+
                     var $link = $(this);
 
                     base.$tabs.filter('[href="' + $link.attr('href') + '"]').trigger('click');
@@ -770,25 +773,27 @@
 
             //Set initial active panel
             base.$activePanel = base.$tabpanels.eq(base.$tabsContainer.find('.' + active).index()).addClass(active);
-
+            base.$previousTab = base.$activeTab;
             return base;
         },
         setTabsClickHandler: function () {
             var base = this,
                 opts = base.options,
                 active = opts.activeClass,
-                setHash = opts.setHash;
+                setHash = opts.setHash,
+                dax = opts.dax && typeof opts.daxCallback === 'function',
+                $tab, $panel;
 
             base.$tabsContainer.on('click', 'a', function (e) {
                 e.preventDefault();
 
                 //Remove active class from last active tabs and panels
                 base.$activePanel.removeClass(active);
-                base.$activeTab.removeClass(active);
+                base.$previousTab = base.$activeTab.removeClass(active);
 
                 //Add active class to tab and panel
-                var $tab = $(this).addClass(active),
-                    $panel = base.$tabpanels.eq($tab.index()).addClass(active);
+                $tab = $(this).addClass(active);
+                $panel = base.$tabpanels.eq($tab.index()).addClass(active);
 
                 //Set window location
                 base.setHash($tab.attr('href'), setHash);
@@ -798,16 +803,21 @@
                     ui.scrollPageTo(base.$element, opts.scrollPageToTabsTransition);
                 }
 
-                base.$activeTab = $tab.trigger({
-                    type: "cl-tab-activated",
-                    $tab: $tab,
-                    $panel: $panel
+                //Broadcast events for aria to handle aria state tags
+                base.$activeTab = $tab.trigger('cl-tab-activated');
+                base.$activePanel = $panel.trigger('cl-tab-panel-activated');
+                //Broadcast data for use for dax
+                base.$element.trigger({
+                    type: "cl-tab-clicked",
+                    $activeTab: base.$activeTab,
+                    $activePanel: base.$activePanel,
+                    $previousTab: base.$previousTab
                 });
-                base.$activePanel = $panel.trigger({
-                    type: "cl-tabpanel-active",
-                    $tab: $tab,
-                    $panel: $panel
-                });
+
+                //DAX Tracking function
+                if (dax) {
+                    opts.daxCallback(base);
+                }
             });
 
             return base;
@@ -837,13 +847,13 @@
                 .filter('.' + this.options.activeClass)
                 .attr('aria-selected', 'true');
 
-            //Aria hidden/expanded for tab panels
-            base.$tabpanelsContainer.on('cl-tabpanel-active', 'div', function () {
+            //Catch events to handle aria hidden/expanded for tab panels
+            base.$tabpanelsContainer.on('cl-tab-panel-activated', 'div', function () {
                 base.$tabpanels.each(function () {
                     aria.hidden($(this));
-                })
+                });
             });
-            //Aria selected for tabs
+            //Catch events to handle aria selected for tabs
             base.$tabsContainer.on('cl-tab-activated', 'a', function () {
                 base.$tabs.not('.' + base.options.activeClass).attr('aria-selected', 'false');
                 $(this).attr('aria-selected', 'true');

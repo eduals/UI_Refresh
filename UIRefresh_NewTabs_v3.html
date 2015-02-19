@@ -1779,7 +1779,7 @@
 
 <script type='text/javascript' src='modules/ui_refresh/ui_refresh.js'></script>
 <script>
-    (function($, ui) {
+    (function ($, ui) {
 
         new ui.Tabs($('#ou-courses-tabs'), {
             scrollToTabs: true,
@@ -1787,6 +1787,35 @@
         });
 
     })(jQuery, window.ui_refresh);
+</script>
+
+<script>
+    // QUAL Tab Navigation - record navigation between tabs (20419-002)
+    $('#ou-courses-tabs').on('cl-tab-clicked',function (e) {
+/*        var TrackedObject = e.$activeTab;
+
+        var sPageName = pgNameForCOMSCORE();
+
+        // Extract the qualification code.
+        var qualificationCode = $('.product-award-code-identifier').html();
+
+        // Decode to DAX name.
+        var tab_from = '&ou_ev_refas=' + TabIdentifier(e.$previousTab.text());
+        var tab_to = '&ou_ev_as=' + TabIdentifier(TrackedObject.text());
+
+        // Build up the tracking string.
+        var s = 'category=qualification&ou_ev_ty=navigation&ou_ev_ac=on-page&ou_ev_mt=click&ou_ev_pl=tab-menu' + tab_to + tab_from + '&ou_ev_val=none&ou_ev_msg=none&ou_qual=' + qualificationCode;
+
+        // Call the common tracker function.
+        EEP_Dax_tracker(sPageName, TrackedObject, s);*/
+
+        poc(e.$previousTab, e.$activeTab); //todo remove
+    });
+
+    function poc(a, b){
+        console.log(a.attr('href'));
+        console.log(b.attr('href'));
+    }
 </script>
 
 </form>

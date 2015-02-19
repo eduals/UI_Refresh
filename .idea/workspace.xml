@@ -25,11 +25,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="UI_Refresh_Documentation.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="UI_Refresh_Documentation.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/UI_Refresh_Documentation.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-18.884615" vertical-offset="8196" max-vertical-offset="9078">
-              <caret line="511" column="30" selection-start-line="511" selection-start-column="30" selection-end-line="511" selection-end-column="30" />
+            <state vertical-scroll-proportion="0.76870745" vertical-offset="8196" max-vertical-offset="9078">
+              <caret line="522" column="0" selection-start-line="522" selection-start-column="0" selection-end-line="522" selection-end-column="0" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -37,11 +37,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UIRefresh_NewTabs_v3.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="UIRefresh_NewTabs_v3.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/UIRefresh_NewTabs_v3.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6826138" vertical-offset="29743" max-vertical-offset="30600">
-              <caret line="1784" column="30" selection-start-line="1784" selection-start-column="30" selection-end-line="1784" selection-end-column="30" />
+            <state vertical-scroll-proportion="-5.1372547" vertical-offset="30117" max-vertical-offset="31093">
+              <caret line="1787" column="0" selection-start-line="1787" selection-start-column="0" selection-end-line="1787" selection-end-column="0" />
               <folding>
                 <element signature="n#style#0;n#iframe#0;n#noscript#0;n#head#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#4;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -60,8 +60,8 @@
       <file leaf-file-name="ui_refresh.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/modules/ui_refresh/ui_refresh.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.08" vertical-offset="1351" max-vertical-offset="2975">
-              <caret line="731" column="10" selection-start-line="731" selection-start-column="10" selection-end-line="731" selection-end-column="10" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="1663" max-vertical-offset="2941">
+              <caret line="819" column="17" selection-start-line="819" selection-start-column="17" selection-end-line="819" selection-end-column="17" />
               <folding>
                 <element signature="e#706#1321#0" expanded="false" />
                 <element signature="e#1005#1313#0" expanded="false" />
@@ -83,6 +83,8 @@
                 <element signature="e#2361#2560#0" expanded="false" />
                 <element signature="e#2393#2457#0" expanded="false" />
                 <element signature="e#2490#2550#0" expanded="false" />
+                <element signature="e#2619#2740#0" expanded="false" />
+                <element signature="e#2649#2734#0" expanded="false" />
                 <element signature="e#2806#2932#0" expanded="false" />
                 <element signature="e#2971#3135#0" expanded="false" />
                 <element signature="e#3086#3129#0" expanded="false" />
@@ -101,8 +103,10 @@
                 <element signature="e#5028#5081#0" expanded="false" />
                 <element signature="e#5196#5336#0" expanded="false" />
                 <element signature="e#5377#6446#0" expanded="false" />
+                <element signature="e#5397#5709#0" expanded="false" />
                 <element signature="e#5467#5667#0" expanded="false" />
                 <element signature="e#5737#5791#0" expanded="false" />
+                <element signature="e#5830#6209#0" expanded="false" />
                 <element signature="e#6004#6171#0" expanded="false" />
                 <element signature="e#6256#6440#0" expanded="false" />
                 <element signature="e#6297#6428#0" expanded="false" />
@@ -199,15 +203,36 @@
                 <element signature="e#22404#22758#0" expanded="false" />
                 <element signature="e#22523#22722#0" expanded="false" />
                 <element signature="e#22573#22670#0" expanded="false" />
-                <element signature="e#24493#25043#0" expanded="false" />
-                <element signature="e#25100#26088#0" expanded="false" />
-                <element signature="e#25220#25446#0" expanded="false" />
-                <element signature="e#27907#28136#0" expanded="false" />
-                <element signature="e#27942#28116#0" expanded="false" />
-                <element signature="e#28902#29467#0" expanded="false" />
-                <element signature="e#29140#29438#0" expanded="false" />
-                <element signature="e#29282#29367#0" expanded="false" />
+                <element signature="e#23495#24167#0" expanded="false" />
+                <element signature="e#24195#24315#0" expanded="false" />
+                <element signature="e#24355#24795#0" expanded="false" />
+                <element signature="e#24460#24759#0" expanded="false" />
+                <element signature="e#24546#24743#0" expanded="false" />
+                <element signature="e#24839#25389#0" expanded="false" />
+                <element signature="e#24866#25379#0" expanded="false" />
+                <element signature="e#24907#24983#0" expanded="false" />
+                <element signature="e#25005#25365#0" expanded="false" />
+                <element signature="e#25566#25792#0" expanded="false" />
+                <element signature="e#25654#25736#0" expanded="false" />
+                <element signature="e#28528#28639#0" expanded="false" />
+                <element signature="e#28700#28929#0" expanded="false" />
+                <element signature="e#28735#28909#0" expanded="false" />
+                <element signature="e#29194#29322#0" expanded="false" />
+                <element signature="e#29245#29306#0" expanded="false" />
+                <element signature="e#29457#29622#0" expanded="false" />
+                <element signature="e#29984#30282#0" expanded="false" />
+                <element signature="e#30126#30211#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ou-product-qualification.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/modules/ui_refresh/eep/ou-product-qualification.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="4985" max-vertical-offset="11322">
+              <caret line="313" column="60" selection-start-line="313" selection-start-column="60" selection-end-line="313" selection-end-column="60" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -254,7 +279,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/SalesForceLogin.html" />
         <option value="$PROJECT_DIR$/Employers_LiveAgentDeployment(1).html" />
         <option value="$PROJECT_DIR$/Employers_Chat_v3.html" />
         <option value="$PROJECT_DIR$/dump.js" />
@@ -303,8 +327,9 @@
         <option value="$PROJECT_DIR$/UIRefresh_NewTabs.html" />
         <option value="$PROJECT_DIR$/modules/ui_refresh/ui_refresh.css" />
         <option value="$PROJECT_DIR$/UI_Refresh_Documentation.html" />
-        <option value="$PROJECT_DIR$/UIRefresh_NewTabs_v3.html" />
+        <option value="$PROJECT_DIR$/modules/ui_refresh/eep/ou-product-qualification.js" />
         <option value="$PROJECT_DIR$/modules/ui_refresh/ui_refresh.js" />
+        <option value="$PROJECT_DIR$/UIRefresh_NewTabs_v3.html" />
       </list>
     </option>
   </component>
@@ -374,6 +399,28 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="ui_refresh" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DEV_RegistrationPathway" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="UI_Refresh" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ui_refresh" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eep" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -479,7 +526,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -487,7 +534,7 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18177083" sideWeight="0.6710098" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18177083" sideWeight="0.6710098" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -541,7 +588,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="172" />
+      <option name="time" value="173" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -617,6 +664,8 @@
             <element signature="e#2361#2560#0" expanded="false" />
             <element signature="e#2393#2457#0" expanded="false" />
             <element signature="e#2490#2550#0" expanded="false" />
+            <element signature="e#2619#2740#0" expanded="false" />
+            <element signature="e#2649#2734#0" expanded="false" />
             <element signature="e#2806#2932#0" expanded="false" />
             <element signature="e#2971#3135#0" expanded="false" />
             <element signature="e#3086#3129#0" expanded="false" />
@@ -635,8 +684,10 @@
             <element signature="e#5028#5081#0" expanded="false" />
             <element signature="e#5196#5336#0" expanded="false" />
             <element signature="e#5377#6446#0" expanded="false" />
+            <element signature="e#5397#5709#0" expanded="false" />
             <element signature="e#5467#5667#0" expanded="false" />
             <element signature="e#5737#5791#0" expanded="false" />
+            <element signature="e#5830#6209#0" expanded="false" />
             <element signature="e#6004#6171#0" expanded="false" />
             <element signature="e#6256#6440#0" expanded="false" />
             <element signature="e#6297#6428#0" expanded="false" />
@@ -733,14 +784,25 @@
             <element signature="e#22404#22758#0" expanded="false" />
             <element signature="e#22523#22722#0" expanded="false" />
             <element signature="e#22573#22670#0" expanded="false" />
-            <element signature="e#24493#25043#0" expanded="false" />
-            <element signature="e#25100#26088#0" expanded="false" />
-            <element signature="e#25220#25446#0" expanded="false" />
-            <element signature="e#27907#28136#0" expanded="false" />
-            <element signature="e#27942#28116#0" expanded="false" />
-            <element signature="e#28902#29467#0" expanded="false" />
-            <element signature="e#29140#29438#0" expanded="false" />
-            <element signature="e#29282#29367#0" expanded="false" />
+            <element signature="e#23495#24167#0" expanded="false" />
+            <element signature="e#24195#24315#0" expanded="false" />
+            <element signature="e#24355#24795#0" expanded="false" />
+            <element signature="e#24460#24759#0" expanded="false" />
+            <element signature="e#24546#24743#0" expanded="false" />
+            <element signature="e#24839#25389#0" expanded="false" />
+            <element signature="e#24866#25379#0" expanded="false" />
+            <element signature="e#24907#24983#0" expanded="false" />
+            <element signature="e#25005#25365#0" expanded="false" />
+            <element signature="e#25566#25792#0" expanded="false" />
+            <element signature="e#25654#25736#0" expanded="false" />
+            <element signature="e#28528#28639#0" expanded="false" />
+            <element signature="e#28700#28929#0" expanded="false" />
+            <element signature="e#28735#28909#0" expanded="false" />
+            <element signature="e#29194#29322#0" expanded="false" />
+            <element signature="e#29245#29306#0" expanded="false" />
+            <element signature="e#29457#29622#0" expanded="false" />
+            <element signature="e#29984#30282#0" expanded="false" />
+            <element signature="e#30126#30211#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -974,6 +1036,18 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-26.73077" vertical-offset="12888" max-vertical-offset="13770">
           <caret line="877" column="0" selection-start-line="877" selection-start-column="0" selection-end-line="877" selection-end-column="87" />
+          <folding>
+            <element signature="tag#div#0;tag#form#0;tag#body#0;tag#html#0" expanded="false" />
+            <element signature="tag#script#0;tag#form#0;tag#body#0;tag#html#0" expanded="false" />
+            <element signature="tag#script#4;tag#form#0;tag#body#0;tag#html#0" expanded="false" />
+            <element signature="tag#div#1;tag#form#0;tag#body#0;tag#html#0" expanded="false" />
+            <element signature="tag#script#7;tag#form#0;tag#body#0;tag#html#0" expanded="false" />
+            <element signature="tag#a#0;tag#div#4;tag#form#0;tag#body#0;tag#html#0" expanded="false" />
+            <element signature="tag#div#2;tag#div#0;tag#div#4;tag#form#0;tag#body#0;tag#html#0" expanded="false" />
+            <element signature="tag#div#0;tag#main#0;tag#div#4;tag#form#0;tag#body#0;tag#html#0" expanded="false" />
+            <element signature="tag#div#0;tag#div#7;tag#div#1;tag#div#0;tag#div#0;tag#div#0;tag#div#0;tag#div#1;tag#main#0;tag#div#4;tag#form#0;tag#body#0;tag#html#0" expanded="false" />
+            <element signature="tag#div#1;tag#div#0;tag#div#1;tag#div#7;tag#div#1;tag#div#0;tag#div#0;tag#div#0;tag#div#0;tag#div#1;tag#main#0;tag#div#4;tag#form#0;tag#body#0;tag#html#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1031,10 +1105,36 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/modules/ui_refresh/eep/ou-product-qualification.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="4985" max-vertical-offset="11322">
+          <caret line="313" column="60" selection-start-line="313" selection-start-column="60" selection-end-line="313" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/UIRefresh_NewTabs_v3.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.1372547" vertical-offset="30117" max-vertical-offset="31093">
+          <caret line="1787" column="0" selection-start-line="1787" selection-start-column="0" selection-end-line="1787" selection-end-column="0" />
+          <folding>
+            <element signature="n#style#0;n#iframe#0;n#noscript#0;n#head#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#4;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#5;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#header#0;n#main#0;n#div#5;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#7;n#div#0;n#div#0;n#div#0;n#section#0;n#div#0;n#div#1;n#div#0;n#div#1;n#main#0;n#div#5;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#4;n#div#0;n#div#0;n#div#0;n#section#0;n#div#1;n#div#1;n#div#0;n#div#1;n#main#0;n#div#5;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#4;n#div#0;n#div#0;n#div#0;n#section#0;n#div#1;n#div#1;n#div#0;n#div#1;n#main#0;n#div#5;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#4;n#div#0;n#div#0;n#div#0;n#section#0;n#div#1;n#div#1;n#div#0;n#div#1;n#main#0;n#div#5;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#5;n#div#0;n#div#0;n#div#0;n#section#0;n#div#3;n#div#1;n#div#0;n#div#1;n#main#0;n#div#5;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/modules/ui_refresh/ui_refresh.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.08" vertical-offset="1351" max-vertical-offset="2975">
-          <caret line="731" column="10" selection-start-line="731" selection-start-column="10" selection-end-line="731" selection-end-column="10" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="1663" max-vertical-offset="2941">
+          <caret line="819" column="17" selection-start-line="819" selection-start-column="17" selection-end-line="819" selection-end-column="17" />
           <folding>
             <element signature="e#706#1321#0" expanded="false" />
             <element signature="e#1005#1313#0" expanded="false" />
@@ -1056,6 +1156,8 @@
             <element signature="e#2361#2560#0" expanded="false" />
             <element signature="e#2393#2457#0" expanded="false" />
             <element signature="e#2490#2550#0" expanded="false" />
+            <element signature="e#2619#2740#0" expanded="false" />
+            <element signature="e#2649#2734#0" expanded="false" />
             <element signature="e#2806#2932#0" expanded="false" />
             <element signature="e#2971#3135#0" expanded="false" />
             <element signature="e#3086#3129#0" expanded="false" />
@@ -1074,8 +1176,10 @@
             <element signature="e#5028#5081#0" expanded="false" />
             <element signature="e#5196#5336#0" expanded="false" />
             <element signature="e#5377#6446#0" expanded="false" />
+            <element signature="e#5397#5709#0" expanded="false" />
             <element signature="e#5467#5667#0" expanded="false" />
             <element signature="e#5737#5791#0" expanded="false" />
+            <element signature="e#5830#6209#0" expanded="false" />
             <element signature="e#6004#6171#0" expanded="false" />
             <element signature="e#6256#6440#0" expanded="false" />
             <element signature="e#6297#6428#0" expanded="false" />
@@ -1172,42 +1276,35 @@
             <element signature="e#22404#22758#0" expanded="false" />
             <element signature="e#22523#22722#0" expanded="false" />
             <element signature="e#22573#22670#0" expanded="false" />
-            <element signature="e#24493#25043#0" expanded="false" />
-            <element signature="e#25100#26088#0" expanded="false" />
-            <element signature="e#25220#25446#0" expanded="false" />
-            <element signature="e#27907#28136#0" expanded="false" />
-            <element signature="e#27942#28116#0" expanded="false" />
-            <element signature="e#28902#29467#0" expanded="false" />
-            <element signature="e#29140#29438#0" expanded="false" />
-            <element signature="e#29282#29367#0" expanded="false" />
+            <element signature="e#23495#24167#0" expanded="false" />
+            <element signature="e#24195#24315#0" expanded="false" />
+            <element signature="e#24355#24795#0" expanded="false" />
+            <element signature="e#24460#24759#0" expanded="false" />
+            <element signature="e#24546#24743#0" expanded="false" />
+            <element signature="e#24839#25389#0" expanded="false" />
+            <element signature="e#24866#25379#0" expanded="false" />
+            <element signature="e#24907#24983#0" expanded="false" />
+            <element signature="e#25005#25365#0" expanded="false" />
+            <element signature="e#25566#25792#0" expanded="false" />
+            <element signature="e#25654#25736#0" expanded="false" />
+            <element signature="e#28528#28639#0" expanded="false" />
+            <element signature="e#28700#28929#0" expanded="false" />
+            <element signature="e#28735#28909#0" expanded="false" />
+            <element signature="e#29194#29322#0" expanded="false" />
+            <element signature="e#29245#29306#0" expanded="false" />
+            <element signature="e#29457#29622#0" expanded="false" />
+            <element signature="e#29984#30282#0" expanded="false" />
+            <element signature="e#30126#30211#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/UI_Refresh_Documentation.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-18.884615" vertical-offset="8196" max-vertical-offset="9078">
-          <caret line="511" column="30" selection-start-line="511" selection-start-column="30" selection-end-line="511" selection-end-column="30" />
+        <state vertical-scroll-proportion="0.76870745" vertical-offset="8196" max-vertical-offset="9078">
+          <caret line="522" column="0" selection-start-line="522" selection-start-column="0" selection-end-line="522" selection-end-column="0" />
           <folding>
             <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/UIRefresh_NewTabs_v3.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6826138" vertical-offset="29743" max-vertical-offset="30600">
-          <caret line="1784" column="30" selection-start-line="1784" selection-start-column="30" selection-end-line="1784" selection-end-column="30" />
-          <folding>
-            <element signature="n#style#0;n#iframe#0;n#noscript#0;n#head#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#4;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#5;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#header#0;n#main#0;n#div#5;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#7;n#div#0;n#div#0;n#div#0;n#section#0;n#div#0;n#div#1;n#div#0;n#div#1;n#main#0;n#div#5;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#4;n#div#0;n#div#0;n#div#0;n#section#0;n#div#1;n#div#1;n#div#0;n#div#1;n#main#0;n#div#5;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#4;n#div#0;n#div#0;n#div#0;n#section#0;n#div#1;n#div#1;n#div#0;n#div#1;n#main#0;n#div#5;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#4;n#div#0;n#div#0;n#div#0;n#section#0;n#div#1;n#div#1;n#div#0;n#div#1;n#main#0;n#div#5;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#5;n#div#0;n#div#0;n#div#0;n#section#0;n#div#3;n#div#1;n#div#0;n#div#1;n#main#0;n#div#5;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
