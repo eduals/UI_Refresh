@@ -5,7 +5,7 @@
 // ----------------------------------------------------------
 
 (function ($, ui) {
-    ui.version = 'ui_refresh | Written by Paul Liu | paul.liu@open.ac.uk | v1.27 Select tabs container and tab panel containers by class not eq';
+    ui.version = 'ui_refresh | Written by Paul Liu | paul.liu@open.ac.uk | v1.28 Added check for if no tabs are set initially';
     ui.dependencies = 'jQuery,jQueryUI';
 
     var $body = $('body'),
@@ -768,7 +768,12 @@
             if (location.length && ($.inArray(location, hashes) && setHash)) {
                 base.$activeTab = base.$tabs.removeClass(active).filter('[href="' + location + '"]').addClass(active);
             } else {
-                base.$activeTab = base.$tabs.filter('.' + active)
+                base.$activeTab = base.$tabs.filter('.' + active);
+            }
+
+            //Set tab to first tab if none set
+            if (base.$tabs.filter('.' + active).length === 0) {
+                base.$activeTab = base.$tabs.eq(0).addClass(active);
             }
 
             //Set initial active panel
