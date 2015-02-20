@@ -64,104 +64,104 @@
                 </div>
                 <div class="panels">
                     <div id="tooltip-component-tab" class="docs-component-panel">
-                        <div class="interaction cl-docs-padding">
-                            <!-- Basic tooltip -->
-                            <div class="int-row">
-                                <div class="int-grid3">
-                                    <label for="basicTooltipInput" class="int-floatRight">Basic tooltip</label>
-                                </div>
-                                <div class="int-grid6">
-                                    <input id="basicTooltipInput" type="text" placeholder="Focus on this input"/>
-                                </div>
-                                <div class="int-grid3">
-                                    <div class="cl-inputFocusTooltipContainer" id="basicTooltip">
-                                        <div class="cl-inputFocusTooltip">
-                                            <p>This is a basic tooltip. A basic tooltip is triggered when an form element is given focus.</p>
-                                            This tooltip should only be used on text inputs, selects and textareas, not checkboxes and radios.
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- End Basic tooltip -->
+<div class="interaction cl-docs-padding">
+    <!-- Basic tooltip -->
+    <div class="int-row">
+        <div class="int-grid3">
+            <label for="basicTooltipInput" class="int-floatRight">Basic tooltip</label>
+        </div>
+        <div class="int-grid6">
+            <input id="basicTooltipInput" type="text" placeholder="Focus on this input"/>
+        </div>
+        <div class="int-grid3">
+            <div class="cl-inputFocusTooltipContainer" id="basicTooltip">
+                <div class="cl-inputFocusTooltip">
+                    <p>This is a basic tooltip. A basic tooltip is triggered when an form element is given focus.</p>
+                    This tooltip should only be used on text inputs, selects and textareas, not checkboxes and radios.
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Basic tooltip -->
 
-                            <!-- Password tooltip -->
-                            <div class="int-row">
-                                <div class="int-grid3">
-                                    <label for="passwordInput" class="int-floatRight">Password</label>
-                                </div>
-                                <div class="int-grid6">
-                                    <input id="passwordInput" type="text" placeholder="Password" maxlength="12"/>
-                                </div>
-                                <div class="int-grid3">
-                                    <div class="cl-inputFocusTooltipContainer" id="passwordTooltip">
-                                        <div class="cl-inputFocusTooltip">
-                                            <p>Your new password must contain</p>
-                                            <ul class="icon-list" id="passwordCheckList">
-                                                <li><i class="int-icon-circle cl-passwordCheckListBullet" ></i> 8 to 12 characters,
-                                                </li>
-                                                <li><i class="int-icon-circle cl-passwordCheckListBullet" ></i> a number,
-                                                </li>
-                                                <li><i class="int-icon-circle cl-passwordCheckListBullet" ></i> a lower case letter,
-                                                </li>
-                                                <li><i class="int-icon-circle cl-passwordCheckListBullet" ></i> an upper case letter, and
-                                                </li>
-                                                <li><i class="int-icon-circle cl-passwordCheckListBullet" ></i>
-                                                    <span>a special character from the following</span>
-                                                    <span class="int-hide">exclamation mark, dollar, percentage, caret, ampersand, asterisk, left bracket, right bracket, at sign, number sign, question mark, plus, hyphen, underscore</span>
-                                                    <span aria-hidden="true">! $ % ^ &amp; * [ ] @ # ? + - _</span>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- End Password tooltip -->
+    <!-- Password tooltip -->
+    <div class="int-row">
+        <div class="int-grid3">
+            <label for="passwordInput" class="int-floatRight">Password</label>
+        </div>
+        <div class="int-grid6">
+            <input id="passwordInput" type="text" placeholder="Password" maxlength="12"/>
+        </div>
+        <div class="int-grid3">
+            <div class="cl-inputFocusTooltipContainer" id="passwordTooltip">
+                <div class="cl-inputFocusTooltip">
+                    <p>Your new password must contain</p>
+                    <ul class="icon-list" id="passwordCheckList">
+                        <li><i class="int-icon-circle cl-passwordCheckListBullet" ></i> 8 to 12 characters,
+                        </li>
+                        <li><i class="int-icon-circle cl-passwordCheckListBullet" ></i> a number,
+                        </li>
+                        <li><i class="int-icon-circle cl-passwordCheckListBullet" ></i> a lower case letter,
+                        </li>
+                        <li><i class="int-icon-circle cl-passwordCheckListBullet" ></i> an upper case letter, and
+                        </li>
+                        <li><i class="int-icon-circle cl-passwordCheckListBullet" ></i>
+                            <span>a special character from the following</span>
+                            <span class="int-hide">exclamation mark, dollar, percentage, caret, ampersand, asterisk, left bracket, right bracket, at sign, number sign, question mark, plus, hyphen, underscore</span>
+                            <span aria-hidden="true">! $ % ^ &amp; * [ ] @ # ? + - _</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Password tooltip -->
 
-                            <div class="int-row">
-                                <div class="int-grid3">&nbsp;</div>
-                                <div class="int-grid6">
-                                    <p>The password field is made up of two widgets:</p>
-                                    <ul>
-                                        <li>
-                                            A basic tooltip to display the password requirements information
-                                        </li>
-                                        <li>
-                                            A password check list widget which updates in response
-                                            to user keystrokes to see if the password requirements have been met
-                                        </li>
-                                    </ul>
-                                    <p>Both widgets need to be initialised. See JavaScript tab for details.</p>
-                                </div>
-                            </div>
+    <div class="int-row">
+        <div class="int-grid3">&nbsp;</div>
+        <div class="int-grid6">
+            <p>The password field is made up of two widgets:</p>
+            <ul>
+                <li>
+                    A basic tooltip to display the password requirements information
+                </li>
+                <li>
+                    A password check list widget which updates in response
+                    to user keystrokes to see if the password requirements have been met
+                </li>
+            </ul>
+            <p>Both widgets need to be initialised. See JavaScript tab for details.</p>
+        </div>
+    </div>
 
-                            <!-- Event triggered tooltip -->
-                            <div class="int-row">
-                                <div class="int-grid3">
-                                    <label for="retypePassword" class="int-floatRight">Retype password</label>
-                                </div>
-                                <div class="int-grid6">
-                                    <input id="retypePassword" type="text" placeholder="Retype password" maxlength="12"/>
-                                </div>
-                                <div class="int-grid3">
-                                    <div class="cl-inputFocusTooltipContainer" id="retypePasswordTooltip">
-                                        <div class="cl-inputFocusTooltip">
-                                            Please retype your password instead of pasting.
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- End Event triggered tooltip -->
+    <!-- Event triggered tooltip -->
+    <div class="int-row">
+        <div class="int-grid3">
+            <label for="retypePassword" class="int-floatRight">Retype password</label>
+        </div>
+        <div class="int-grid6">
+            <input id="retypePassword" type="text" placeholder="Retype password" maxlength="12"/>
+        </div>
+        <div class="int-grid3">
+            <div class="cl-inputFocusTooltipContainer" id="retypePasswordTooltip">
+                <div class="cl-inputFocusTooltip">
+                    Please retype your password instead of pasting.
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Event triggered tooltip -->
 
-                            <div class="int-row">
-                                <div class="int-grid3">&nbsp;</div>
-                                <div class="int-grid6">
-                                    <p>The retype password field has a tooltip that is triggered by the paste event. In this example,
-                                        the paste is prevented so that the user explicitly retypes their password to confirm their
-                                        choice instead of copying from the password field, and the tooltip is display to inform them that they need to retype instead of pasting.</p>
-                                    <p>This is an example of an event triggered tooltip. Any event can be used to trigger and hide the tooltip, even custom ones.</p>
-                                </div>
-                            </div>
-                        </div>
+    <div class="int-row">
+        <div class="int-grid3">&nbsp;</div>
+        <div class="int-grid6">
+            <p>The retype password field has a tooltip that is triggered by the paste event. In this example,
+                the paste is prevented so that the user explicitly retypes their password to confirm their
+                choice instead of copying from the password field, and the tooltip is display to inform them that they need to retype instead of pasting.</p>
+            <p>This is an example of an event triggered tooltip. Any event can be used to trigger and hide the tooltip, even custom ones.</p>
+        </div>
+    </div>
+</div>
                     </div>
                     <div id="tooltip-html-tab" class="docs-html-panel">
                         <pre class="prettyprint"></pre>
@@ -211,93 +211,96 @@
                 </div>
                 <div class="panels">
                     <div id="modal-component-tab" class="docs-component-panel">
-                        <!-- Buttons to trigger modals -->
-                        <button type="button" id="modal_small_button">Small modal</button>
-                        <button type="button" id="modal_medium_button">Medium modal</button>
-                        <button type="button" id="modal_large_button">Large modal</button>
+<!-- Buttons to trigger modals -->
+<button type="button" id="modal_small_button">Small modal</button>
+<button type="button" id="modal_medium_button">Medium modal</button>
+<button type="button" id="modal_large_button">Large modal</button>
 
 
-                        <!-- Small Modal -->
-                        <div id="modal_small"  aria-live="assertive" class="cl-modal-container print-hide">
-                            <div class="cl-modal-overlay">
-                                <div class="interaction cl-modal small">
-                                    <button type="button" class="cl-modal-close-button" title="close"><span class="ui-button-icon-primary ui-icon ui-icon-closethick"></span><span class="ui-button-text">close</span></button>
-                                    <h2>Payment options</h2>
-                                    <p>There are several ways to pay. For advice about them and about financial support, go to the <a href="http://www3.open.ac.uk/study/explained/how-to-pay.shtml"  target="_blank">how to pay</a> pages.</p>
-                                </div>
-                            </div>
-                        </div>
+<!-- Small Modal -->
+<div id="modal_small"  aria-live="assertive" class="cl-modal-container print-hide">
+    <div class="cl-modal-overlay">
+        <div class="interaction cl-modal small">
+            <button type="button" class="cl-modal-close-button" title="close"><span class="ui-button-icon-primary ui-icon ui-icon-closethick"></span><span class="ui-button-text">close</span></button>
+            <h2>Payment options</h2>
+            <p>There are several ways to pay. For advice about them and about financial support,
+                go to the <a href="http://www3.open.ac.uk/study/explained/how-to-pay.shtml"  target="_blank">how to pay</a> pages.</p>
+        </div>
+    </div>
+</div>
 
-                        <!-- Medium Modal -->
-                        <div id="modal_medium"  aria-live="assertive" class="cl-modal-container print-hide">
-                            <div class="cl-modal-overlay">
-                                <div class="interaction cl-modal medium">
-                                    <button type="button" class="cl-modal-close-button" title="close"><span class="ui-button-icon-primary ui-icon ui-icon-closethick"></span><span class="ui-button-text">close</span></button>
-                                    <h2>Country of residence</h2>
-                                    <p>
-                                        In order to gain an Open University qualification you will need to study a number of specified modules.
-                                        If you live outside the UK and Agreed Study Areas, you may find that not all the modules required for successful
-                                        completion of your chosen qualification are available. Visit the
-                                        <a href="http://www3.open.ac.uk/study/explained/resident-outside-the-uk.shtml" target="_blank">Where Can I Study pages</a>
-                                        to check whether the modules you want to study are presented where you live.
-                                    </p>
-                                    <h2>Agreed Study Areas:</h2>
-                                    <p>
-                                        Aland Islands, Andorra, Austria, Belgium, Bulgaria, Channel Islands, Cyprus, Czech Republic, Denmark,
-                                        Estonia, Finland, France, Germany, Gibraltar, Greece, Hungary, Isle of Man, Italy, Latvia, Liechtenstein,
-                                        Lithuania, Luxembourg, Malta, Monaco, Netherlands, Poland, Portugal, Republic of Ireland, Romania, San Marino,
-                                        Slovakia, Slovenia, Spain, Sweden, Switzerland and Vatican City State
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
+<!-- Medium Modal -->
+<div id="modal_medium"  aria-live="assertive" class="cl-modal-container print-hide">
+    <div class="cl-modal-overlay">
+        <div class="interaction cl-modal medium">
+            <button type="button" class="cl-modal-close-button" title="close"><span class="ui-button-icon-primary ui-icon ui-icon-closethick"></span><span class="ui-button-text">close</span></button>
+            <h2>Country of residence</h2>
+            <p>
+                In order to gain an Open University qualification you will need to study a number of specified modules.
+                If you live outside the UK and Agreed Study Areas, you may find that not all the modules required for successful
+                completion of your chosen qualification are available. Visit the
+                <a href="http://www3.open.ac.uk/study/explained/resident-outside-the-uk.shtml" target="_blank">Where Can I Study pages</a>
+                to check whether the modules you want to study are presented where you live.
+            </p>
+            <h2>Agreed Study Areas:</h2>
+            <p>
+                Aland Islands, Andorra, Austria, Belgium, Bulgaria, Channel Islands, Cyprus, Czech Republic, Denmark,
+                Estonia, Finland, France, Germany, Gibraltar, Greece, Hungary, Isle of Man, Italy, Latvia, Liechtenstein,
+                Lithuania, Luxembourg, Malta, Monaco, Netherlands, Poland, Portugal, Republic of Ireland, Romania, San Marino,
+                Slovakia, Slovenia, Spain, Sweden, Switzerland and Vatican City State
+            </p>
+        </div>
+    </div>
+</div>
 
-                        <!-- Large Modal -->
-                        <div id="modal_large"  aria-live="assertive" class="cl-modal-container">
-                            <div class="cl-modal-overlay">
-                                <div class="interaction cl-modal">
-                                    <button type="button" class="cl-modal-close-button" title="close"><span class="ui-button-icon-primary ui-icon ui-icon-closethick"></span><span class="ui-button-text">close</span></button>
-                                    <h2>Other ways to contact us </h2>
-                                    <hr/>
-                                    <div class="int-row">
-                                        <div class="int-grid3">
-                                            <h2>Call us:</h2>
-                                            <p>Please call us on <strong>0300 303 5303</strong>.</p>
-                                            <p>Our advisers are available to take your call Monday to Friday 08:00 to 20:00, Saturday 09:00 to 17:00 UK Time Excluding Bank Holidays.</p>
-                                        </div>
-                                        <div class="int-grid3">
-                                            <h2>Attend an event:</h2>
-                                            <p>Come and meet us at an <a href="http://www3.open.ac.uk/contact/events.aspx" target="_blank">event near you</a>.</p>
-                                        </div>
-                                        <div class="int-grid3">
-                                            <h2>Write to us at:</h2>
-                                            <p>
-                                                Student Registration &amp; Enquiry Service<br>
-                                                The Open University<br>
-                                                PO Box 197<br>
-                                                Milton Keynes<br>
-                                                MK7 6BJ
-                                            </p>
-                                        </div>
-                                        <div class="int-grid3">
-                                            <h2>If you're visiting:</h2>
-                                            <p>
-                                                The Open University <br>
-                                                Walton Hall<br>
-                                                Milton Keynes <br>
-                                                MK7 6AA
-                                            </p>
-                                            <p>Once on campus we have a <a href="http://www.open.ac.uk/courses/Courses/media/Courses/High%20level%20pages/Contact%20us/wh-campus.png" target="_blank">map available</a>.</p>
-                                        </div>
-                                    </div>
-                                    <div class="int-row">
-                                        <div class="cl-fluidMedia small">
-                                            <iframe id="seeOnMap" src="" frameborder="0"></iframe>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+<!-- Large Modal -->
+<div id="modal_large"  aria-live="assertive" class="cl-modal-container">
+    <div class="cl-modal-overlay">
+        <div class="interaction cl-modal">
+            <button type="button" class="cl-modal-close-button" title="close"><span class="ui-button-icon-primary ui-icon ui-icon-closethick"></span><span class="ui-button-text">close</span></button>
+            <h2>Other ways to contact us </h2>
+            <hr/>
+            <div class="int-row">
+                <div class="int-grid3">
+                    <h2>Call us:</h2>
+                    <p>Please call us on <strong>0300 303 5303</strong>.</p>
+                    <p>Our advisers are available to take your call Monday to Friday
+                        08:00 to 20:00, Saturday 09:00 to 17:00 UK Time Excluding Bank Holidays.</p>
+                </div>
+                <div class="int-grid3">
+                    <h2>Attend an event:</h2>
+                    <p>Come and meet us at an <a href="http://www3.open.ac.uk/contact/events.aspx" target="_blank">event near you</a>.</p>
+                </div>
+                <div class="int-grid3">
+                    <h2>Write to us at:</h2>
+                    <p>
+                        Student Registration &amp; Enquiry Service<br>
+                        The Open University<br>
+                        PO Box 197<br>
+                        Milton Keynes<br>
+                        MK7 6BJ
+                    </p>
+                </div>
+                <div class="int-grid3">
+                    <h2>If you're visiting:</h2>
+                    <p>
+                        The Open University <br>
+                        Walton Hall<br>
+                        Milton Keynes <br>
+                        MK7 6AA
+                    </p>
+                    <p>Once on campus we have a
+                        <a href="http://www.open.ac.uk/courses/Courses/media/Courses/High%20level%20pages/Contact%20us/wh-campus.png" target="_blank">map available</a>.</p>
+                </div>
+            </div>
+            <div class="int-row">
+                <div class="cl-fluidMedia small">
+                    <iframe id="seeOnMap" src="" frameborder="0"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
                     </div>
                     <div id="modal-html-tab" class="docs-html-panel">
@@ -369,7 +372,109 @@
                     <div id="tabs-js-tab" class="docs-js-panel">
                         <pre class="prettyprint"></pre>
                     </div>
-                    <div id="tabs-support-tab" class="docs-support-panel"></div>
+                    <div id="tabs-support-tab" class="docs-support-panel">
+                        <h3>Setting the active tab</h3>
+                        <p>The active tab can be set by adding the class <code class="prettyprint">active</code>
+                            to the relevant anchor. This can be changed to a different class if necessary
+                            see <code class="prettyprint">activeClass</code> in the options table below for details.</p>
+                        <p>When <code class="prettyprint">setHash</code> in the options is enabled, the active tab will be
+                            set by the hash in the url if this matches a panel id. If not, or if no hash is available,
+                            the active tab defaults to the one set by the user using the active class.</p>
+                        <h3>Options</h3>
+                        <p>An object literal can be passed in as a second parameter into the constructor to override default behaviour and add additional functionality:</p>
+
+                        <div class="cl-code">
+                            <pre class="prettyprint">
+new ui.Tabs($('#tabsexample'), {
+    activeClass: 'active',
+    setHash: true,
+    scrollToTabs: false,
+    scrollPageToTabsTransition: "slow",
+    tabAliasLinks: false,
+    tabAliasLinksSelector: '.cl-tab-alias',
+    dax: false,
+    daxCallback: undefined
+});
+                            </pre>
+                        </div>
+
+                        <table class="cl-change-log int-plainTable">
+                            <colgroup>
+                                <col class="cl-col20">
+                                <col class="cl-col5">
+                                <col class="cl-col5">
+                                <col class="cl-col60">
+                                <col class="cl-col10">
+                            </colgroup>
+                            <thead>
+                            <tr>
+                                <th>Option</th>
+                                <th>Type</th>
+                                <th>Default value</th>
+                                <th>Description</th>
+                                <th title="Optional options do not need to be set on initialisation">Optional</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>activeClass</td>
+                                <td>string</td>
+                                <td>'active'</td>
+                                <td>Sets the class used as the active class for tabs and tab panels.</td>
+                                <td>Y</td>
+                            </tr>
+                            <tr>
+                                <td>setHash</td>
+                                <td>bool</td>
+                                <td>true</td>
+                                <td>Adds a hash value to the url of the page when a tab is clicked. This uses history.pushState to prevent page jumps when the tab is clicked. Browsers which does not support history.pushState, a window.location.hash fallback is used.</td>
+                                <td>Y</td>
+                            </tr>
+                            <tr>
+                                <td>scrollToTabs</td>
+                                <td>bool</td>
+                                <td>false</td>
+                                <td>Scroll page to the top of the tabs widget.</td>
+                                <td>Y</td>
+                            </tr>
+                            <tr>
+                                <td>scrollPageToTabsTransition</td>
+                                <td>string / number</td>
+                                <td>'slow'</td>
+                                <td>Set the transition speed of the page scrolling.</td>
+                                <td>Y</td>
+                            </tr>
+                            <tr>
+                                <td>tabAliasLinks</td>
+                                <td>bool</td>
+                                <td>false</td>
+                                <td>Allows other links to activate the tabs. Alias links need to share the same href value as the tab they need to trigger and have the selector defined by tabAliasLinksSelector below. Alias links need to be in the DOM before the tabs is initialised.</td>
+                                <td>Y</td>
+                            </tr>
+                            <tr>
+                                <td>tabAliasLinksSelector</td>
+                                <td>string</td>
+                                <td>'.cl-tab-alias'</td>
+                                <td>Set the selector of the alias link.</td>
+                                <td>Y</td>
+                            </tr>
+                            <tr>
+                                <td>dax</td>
+                                <td>bool</td>
+                                <td>false</td>
+                                <td>Allows dax callback to be added to the tab click handler.</td>
+                                <td>Y</td>
+                            </tr>
+                            <tr>
+                                <td>daxCallback</td>
+                                <td>function</td>
+                                <td>undefined</td>
+                                <td>Callback function for dax tracking. All the fields of the tabs instance will be available to this function i.e. base.$activeTab, base.$previousTab, base.$tabs.</td>
+                                <td>Y</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
                     <div id="tabs-change-tab" class="docs-change-panel">
                         <table class="cl-change-log int-plainTable">
                             <colgroup>

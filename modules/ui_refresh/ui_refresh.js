@@ -5,7 +5,7 @@
 // ----------------------------------------------------------
 
 (function ($, ui) {
-    ui.version = 'ui_refresh | Written by Paul Liu | paul.liu@open.ac.uk | v1.26 Added scrollPageTo. Abstracted checks and functionality into the main tabs prototyp';
+    ui.version = 'ui_refresh | Written by Paul Liu | paul.liu@open.ac.uk | v1.27 Select tabs container and tab panel containers by class not eq';
     ui.dependencies = 'jQuery,jQueryUI';
 
     var $body = $('body'),
@@ -691,9 +691,9 @@
         if ($element.length) {
             var base = this;
             base.$element = $element;
-            base.$tabsContainer = $element.children('div').eq(0);
+            base.$tabsContainer = $element.children('div.tabs');
             base.$tabs = base.$tabsContainer.find('a');
-            base.$tabpanelsContainer = $element.children('div').eq(1);
+            base.$tabpanelsContainer = $element.children('div.panels');
             base.$tabpanels = base.$tabpanelsContainer.children('div');
             base.options = $.extend({}, base.defaults, options);
             base.$activeTab = undefined;
