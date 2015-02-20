@@ -54,7 +54,7 @@
 
             <h2>Event prevent default</h2>
             <h2>Tooltip</h2>
-            <div class="cl-tab docs-widget" id="tooltip">
+            <div class="cl-tab cl-docs-widget" id="tooltip">
                 <div class="tabs">
                     <a href="#tooltip-component-tab" class="active">Component</a>
                     <a href="#tooltip-html-tab">HTML</a>
@@ -169,9 +169,74 @@
                     <div id="tooltip-js-tab" class="docs-js-panel">
                         <pre class="prettyprint"></pre>
                     </div>
-                    <div id="tooltip-support-tab" class="docs-support-panel"></div>
+                    <div id="tooltip-support-tab" class="docs-support-panel">
+
+                        <h3>Options</h3>
+                        <table class="cl-table int-plainTable">
+                            <colgroup>
+                                <col class="cl-col20">
+                                <col class="cl-col5">
+                                <col class="cl-col5">
+                                <col class="cl-col60">
+                                <col class="cl-col10">
+                            </colgroup>
+                            <thead>
+                            <tr>
+                                <th>Option</th>
+                                <th>Type</th>
+                                <th>Default value</th>
+                                <th>Description</th>
+                                <th title="Optional options do not need to be set on initialisation">Optional</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td><code class="prettyprint">alert</code></td>
+                                <td><code class="prettyprint">bool</code></td>
+                                <td><code class="prettyprint">false</code></td>
+                                <td>Callback function to be fired when the modal button is clicked.</td>
+                                <td>Y</td>
+                            </tr>
+                            <tr>
+                                <td><code class="prettyprint">customTrigger</code></td>
+                                <td><code class="prettyprint">bool</code></td>
+                                <td><code class="prettyprint">false</code></td>
+                                <td>Set to true to be able to set custom events to show and hide the tooltip. Define the custom triggers in <code class="prettyprint">customTriggerShowEvent</code> and <code class="prettyprint">customTriggerHideEvent</code></td>
+                                <td>Y</td>
+                            </tr>
+                            <tr>
+                                <td><code class="prettyprint">customTriggerShowEvent</code></td>
+                                <td><code class="prettyprint">string</code></td>
+                                <td><code class="prettyprint">undefined</code></td>
+                                <td>If custom trigger is true, set the custom event to show the tooltip.</td>
+                                <td>Y</td>
+                            </tr>
+                            <tr>
+                                <td><code class="prettyprint">customTriggerHideEvent</code></td>
+                                <td><code class="prettyprint">string</code></td>
+                                <td><code class="prettyprint">undefined</code></td>
+                                <td>If custom trigger is true, set the custom event to hide the tooltip.</td>
+                                <td>Y</td>
+                            </tr>
+                            <tr>
+                                <td><code class="prettyprint">showTooltipCallback</code></td>
+                                <td><code class="prettyprint">function</code></td>
+                                <td><code class="prettyprint">undefined</code></td>
+                                <td>Callback function to be fired when the tooltip is shown.</td>
+                                <td>Y</td>
+                            </tr>
+                            <tr>
+                                <td><code class="prettyprint">hideTooltipCallback</code></td>
+                                <td><code class="prettyprint">function</code></td>
+                                <td><code class="prettyprint">undefined</code></td>
+                                <td>Callback function to be fired when the tooltip is hidden.</td>
+                                <td>Y</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
                     <div id="tooltip-change-tab" class="docs-change-panel">
-                        <table class="cl-change-log int-plainTable">
+                        <table class="cl-table int-plainTable">
                             <colgroup>
                                 <col class="cl-col20">
                                 <col class="cl-col10">
@@ -201,7 +266,7 @@
                 </div>
             </div>
             <h2>Modal</h2>
-            <div class="cl-tab docs-widget" id="modal">
+            <div class="cl-tab cl-docs-widget" id="modal">
                 <div class="tabs">
                     <a href="#tabs-component-tab" class="active">Component</a>
                     <a href="#tabs-html-tab">HTML</a>
@@ -229,6 +294,7 @@
     </div>
 </div>
 
+
 <!-- Medium Modal -->
 <div id="modal_medium"  aria-live="assertive" class="cl-modal-container print-hide">
     <div class="cl-modal-overlay">
@@ -252,6 +318,7 @@
         </div>
     </div>
 </div>
+
 
 <!-- Large Modal -->
 <div id="modal_large"  aria-live="assertive" class="cl-modal-container">
@@ -309,9 +376,91 @@
                     <div id="modal-js-tab" class="docs-js-panel">
                         <pre class="prettyprint"></pre>
                     </div>
-                    <div id="modal-support-tab" class="docs-support-panel"></div>
+                    <div id="modal-support-tab" class="docs-support-panel">
+                        <h3>Modal sizes</h3>
+                        <p>Modals come in 3 sizes, small, medium and large:</p>
+                        <ul>
+                            <li>The small modal has a class of <code class="bordered prettyprint">small</code> added to the interaction container
+                                <br/> i.e. <code class="prettyprint">&#60;div class="interaction cl-modal small"&#62;&#60;/div&#62;</code> </li>
+                            <li>The medium modal has a class of <code class="bordered prettyprint">medium</code> added to the interaction container
+                                <br/> i.e. <code class="prettyprint">&#60;div class="interaction cl-modal medium"&#62;&#60;/div&#62;</code> </li>
+                            <li>The large modal is the default modal so it does not require an additional class.
+                                <br/> i.e. <code class="prettyprint">&#60;div class="interaction cl-modal"&#62;&#60;/div&#62;</code> </li>
+                        </ul>
+
+                        <h3>Options</h3>
+                        <table class="cl-table int-plainTable">
+                            <colgroup>
+                                <col class="cl-col20">
+                                <col class="cl-col5">
+                                <col class="cl-col5">
+                                <col class="cl-col60">
+                                <col class="cl-col10">
+                            </colgroup>
+                            <thead>
+                            <tr>
+                                <th>Option</th>
+                                <th>Type</th>
+                                <th>Default value</th>
+                                <th>Description</th>
+                                <th title="Optional options do not need to be set on initialisation">Optional</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td><code class="prettyprint">closeModalButtonCallback</code></td>
+                                <td><code class="prettyprint">function</code></td>
+                                <td><code class="prettyprint">undefined,</code></td>
+                                <td>Callback function to be fired when the modal button is clicked.</td>
+                                <td>Y</td>
+                            </tr>
+                            <tr>
+                                <td><code class="prettyprint">hideModalCallback</code></td>
+                                <td><code class="prettyprint">function</code></td>
+                                <td><code class="prettyprint">undefined</code></td>
+                                <td>Callback function to be fired when the modal is hidden.</td>
+                                <td>Y</td>
+                            </tr>
+                            <tr>
+                                <td><code class="prettyprint">showModalCallback</code></td>
+                                <td><code class="prettyprint">function</code></td>
+                                <td><code class="prettyprint">undefined</code></td>
+                                <td>Callback function to be fired when the modal is shown.</td>
+                                <td>Y</td>
+                            </tr>
+                            <tr>
+                                <td><code class="prettyprint">$modalOpener</code></td>
+                                <td><code class="prettyprint">jQuery</code></td>
+                                <td><code class="prettyprint">''</code></td>
+                                <td>A trigger to show the modal.</td>
+                                <td>Y</td>
+                            </tr>
+                            <tr>
+                                <td><code class="prettyprint">rememberScrollPosition</code></td>
+                                <td><code class="prettyprint">bool</code></td>
+                                <td><code class="prettyprint">true</code></td>
+                                <td>Remove the scroll bar when the modal is active to prevent the background from scrolling underneath the overlay.</td>
+                                <td>Y</td>
+                            </tr>
+                            <tr>
+                                <td><code class="prettyprint">scrollableElementSelector</code></td>
+                                <td><code class="prettyprint">jQuery</code> / <code class="prettyprint">document</code></td>
+                                <td><code class="prettyprint">document</code></td>
+                                <td>Set the element that is scrollable. Some applications do not have the document as the scrollable element. Set an alternative scrollable element here.</td>
+                                <td>Y</td>
+                            </tr>
+                            <tr>
+                                <td><code class="prettyprint">init</code></td>
+                                <td><code class="prettyprint">function</code></td>
+                                <td><code class="prettyprint">undefined</code></td>
+                                <td>Callback function to be fired when the modal is initialised.</td>
+                                <td>Y</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
                     <div id="modal-change-tab" class="docs-change-panel">
-                        <table class="cl-change-log int-plainTable">
+                        <table class="cl-table int-plainTable">
                             <colgroup>
                                 <col class="cl-col20">
                                 <col class="cl-col10">
@@ -341,7 +490,7 @@
                 </div>
             </div>
             <h2>Tabs</h2>
-            <div class="cl-tab docs-widget" id="tabs">
+            <div class="cl-tab cl-docs-widget" id="tabs">
                 <div class="tabs">
                     <a href="#tabs-component-tab" class="active">Component</a>
                     <a href="#tabs-html-tab">HTML</a>
@@ -374,12 +523,13 @@
                     </div>
                     <div id="tabs-support-tab" class="docs-support-panel">
                         <h3>Setting the active tab</h3>
-                        <p>The active tab can be set by adding the class <code class="prettyprint">active</code>
+                        <p>The active tab can be set by adding the class <code class="bordered prettyprint">active</code>
                             to the relevant anchor. This can be changed to a different class if necessary
-                            see <code class="prettyprint">activeClass</code> in the options table below for details.</p>
-                        <p>When <code class="prettyprint">setHash</code> in the options is enabled, the active tab will be
+                            - see <code class="bordered prettyprint">activeClass</code> in the options table below for details.</p>
+                        <p>When <code class="bordered prettyprint">setHash</code> in the options is enabled, the active tab will be
                             set by the hash in the url if this matches a panel id. If not, or if no hash is available,
                             the active tab defaults to the one set by the user using the active class.</p>
+                        <p>If no hash and no active class is set, the active tab will default to the first tab in the list.</p>
                         <h3>Options</h3>
                         <p>An object literal can be passed in as a second parameter into the constructor to override default behaviour and add additional functionality:</p>
 
@@ -398,7 +548,7 @@ new ui.Tabs($('#tabsexample'), {
                             </pre>
                         </div>
 
-                        <table class="cl-change-log int-plainTable">
+                        <table class="cl-table int-plainTable">
                             <colgroup>
                                 <col class="cl-col20">
                                 <col class="cl-col5">
@@ -417,58 +567,58 @@ new ui.Tabs($('#tabsexample'), {
                             </thead>
                             <tbody>
                             <tr>
-                                <td>activeClass</td>
-                                <td>string</td>
-                                <td>'active'</td>
+                                <td><code class="prettyprint">activeClass</code></td>
+                                <td><code class="prettyprint">string</code></td>
+                                <td><code class="prettyprint">'active'</code></td>
                                 <td>Sets the class used as the active class for tabs and tab panels.</td>
                                 <td>Y</td>
                             </tr>
                             <tr>
-                                <td>setHash</td>
-                                <td>bool</td>
-                                <td>true</td>
+                                <td><code class="prettyprint">setHash</code></td>
+                                <td><code class="prettyprint">bool</code></td>
+                                <td><code class="prettyprint">true</code></td>
                                 <td>Adds a hash value to the url of the page when a tab is clicked. This uses history.pushState to prevent page jumps when the tab is clicked. Browsers which does not support history.pushState, a window.location.hash fallback is used.</td>
                                 <td>Y</td>
                             </tr>
                             <tr>
-                                <td>scrollToTabs</td>
-                                <td>bool</td>
-                                <td>false</td>
+                                <td><code class="prettyprint">scrollToTabs</code></td>
+                                <td><code class="prettyprint">bool</code></td>
+                                <td><code class="prettyprint">false</code></td>
                                 <td>Scroll page to the top of the tabs widget.</td>
                                 <td>Y</td>
                             </tr>
                             <tr>
-                                <td>scrollPageToTabsTransition</td>
-                                <td>string / number</td>
-                                <td>'slow'</td>
+                                <td><code class="prettyprint">scrollPageToTabsTransition</code></td>
+                                <td><code class="prettyprint">string</code> / <code class="prettyprint">number</code></td>
+                                <td><code class="prettyprint">'slow'</code></td>
                                 <td>Set the transition speed of the page scrolling.</td>
                                 <td>Y</td>
                             </tr>
                             <tr>
-                                <td>tabAliasLinks</td>
-                                <td>bool</td>
-                                <td>false</td>
+                                <td><code class="prettyprint">tabAliasLinks</code></td>
+                                <td><code class="prettyprint">bool</code></td>
+                                <td><code class="prettyprint">false</code></td>
                                 <td>Allows other links to activate the tabs. Alias links need to share the same href value as the tab they need to trigger and have the selector defined by tabAliasLinksSelector below. Alias links need to be in the DOM before the tabs is initialised.</td>
                                 <td>Y</td>
                             </tr>
                             <tr>
-                                <td>tabAliasLinksSelector</td>
-                                <td>string</td>
-                                <td>'.cl-tab-alias'</td>
+                                <td><code class="prettyprint">tabAliasLinksSelector</code></td>
+                                <td><code class="prettyprint">string</code></td>
+                                <td><code class="prettyprint">'.cl-tab-alias'</code></td>
                                 <td>Set the selector of the alias link.</td>
                                 <td>Y</td>
                             </tr>
                             <tr>
-                                <td>dax</td>
-                                <td>bool</td>
-                                <td>false</td>
+                                <td><code class="prettyprint">dax</code></td>
+                                <td><code class="prettyprint">bool</code></td>
+                                <td><code class="prettyprint">false</code></td>
                                 <td>Allows dax callback to be added to the tab click handler.</td>
                                 <td>Y</td>
                             </tr>
                             <tr>
-                                <td>daxCallback</td>
-                                <td>function</td>
-                                <td>undefined</td>
+                                <td><code class="prettyprint">daxCallback</code></td>
+                                <td><code class="prettyprint">function</code></td>
+                                <td><code class="prettyprint">undefined</code></td>
                                 <td>Callback function for dax tracking. All the fields of the tabs instance will be available to this function i.e. base.$activeTab, base.$previousTab, base.$tabs.</td>
                                 <td>Y</td>
                             </tr>
@@ -476,7 +626,7 @@ new ui.Tabs($('#tabsexample'), {
                         </table>
                     </div>
                     <div id="tabs-change-tab" class="docs-change-panel">
-                        <table class="cl-change-log int-plainTable">
+                        <table class="cl-table int-plainTable">
                             <colgroup>
                                 <col class="cl-col20">
                                 <col class="cl-col10">
@@ -535,7 +685,7 @@ new ui.Tabs($('#tabsexample'), {
     <script src="modules/ui_refresh/ui_refresh.js"></script>
     <script>
         (function($, ui, docs) {
-            $('.docs-widget').each(function(){
+            $('.cl-docs-widget').each(function(){
                 var $docsTab = $(this),
                     $component = $docsTab.find('.docs-component-panel'),
                     $HTMLPre = $docsTab.find('.docs-html-panel').children('pre'),
