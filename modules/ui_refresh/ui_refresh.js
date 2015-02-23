@@ -5,7 +5,7 @@
 // ----------------------------------------------------------
 
 (function ($, ui) {
-    ui.version = 'ui_refresh | Written by Paul Liu | paul.liu@open.ac.uk | v1.28 Added check for if no tabs are set initially';
+    ui.version = 'ui_refresh | Written by Paul Liu | paul.liu@open.ac.uk | v1.29 Use global invoke callback function checkFunction()';
     ui.dependencies = 'jQuery,jQueryUI';
 
     var $body = $('body'),
@@ -505,7 +505,7 @@
                 .setModalOpenerClickHandler()
                 .aria();
 
-            base.invokeCallback(o.init);
+            ui.checkFunction(o.init, base);
 
             return base;
         },
@@ -519,17 +519,25 @@
                 if ($modalOpener.length) {
                     $modalOpener.focus();
                 }
-                base.invokeCallback(callback);
+                ui.checkFunction(callback, base);
             });
 
             return base;
         },
-        invokeCallback: function (callback) {
-            var base = this;
+        setCloseButtonClickHandler: function () {
+            var base = this,
+                callback = base.opts.closeModalButtonCallback,
+                $modalOpener = base.$modalOpener;
 
-            if (typeof callback === 'function') {
-                callback(base);
-            }
+            base.$closeButton.click(function () {
+                base.hideModal();
+                if ($modalOpener.length) {
+                    $modalOpener.focus();
+                }
+                ui.checkFunction(callback, base);
+            });
+
+            return base;
         },
         setWindowsResizeHandler: function (bool) {
             var base = this,
@@ -555,8 +563,8 @@
                     .setWindowsResizeHandler(true)
                     .setBackgroundScroll(false)
                     .setModalTabbing(true)
-                    .setFocusToFirstTabbableElement()
-                    .invokeCallback(callback);
+                    .setFocusToFirstTabbableElement();
+                ui.checkFunction(callback, base);
             });
 
             return base;
@@ -569,8 +577,8 @@
                 base.setWindowsResizeHandler(false)
                     .setBackgroundScroll(true)
                     .setBackgroundScrollPosition()
-                    .setModalTabbing(false)
-                    .invokeCallback(callback);
+                    .setModalTabbing(false);
+                ui.checkFunction(callback, base);
             });
 
             return base;

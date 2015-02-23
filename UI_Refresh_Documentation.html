@@ -387,7 +387,6 @@
                             <li>The large modal is the default modal so it does not require an additional class.
                                 <br/> i.e. <code class="prettyprint">&#60;div class="interaction cl-modal"&#62;&#60;/div&#62;</code> </li>
                         </ul>
-
                         <h3>Options</h3>
                         <table class="cl-table int-plainTable">
                             <colgroup>
@@ -410,29 +409,29 @@
                             <tr>
                                 <td><code class="prettyprint">closeModalButtonCallback</code></td>
                                 <td><code class="prettyprint">function</code></td>
-                                <td><code class="prettyprint">undefined,</code></td>
-                                <td>Callback function to be fired when the modal button is clicked.</td>
+                                <td><code class="prettyprint">undefined</code></td>
+                                <td>Set the callback function to be fired when the modal close button is clicked.</td>
                                 <td>Y</td>
                             </tr>
                             <tr>
                                 <td><code class="prettyprint">hideModalCallback</code></td>
                                 <td><code class="prettyprint">function</code></td>
                                 <td><code class="prettyprint">undefined</code></td>
-                                <td>Callback function to be fired when the modal is hidden.</td>
+                                <td>Set the callback function to be fired straight after the modal is hidden.</td>
                                 <td>Y</td>
                             </tr>
                             <tr>
                                 <td><code class="prettyprint">showModalCallback</code></td>
                                 <td><code class="prettyprint">function</code></td>
                                 <td><code class="prettyprint">undefined</code></td>
-                                <td>Callback function to be fired when the modal is shown.</td>
+                                <td>Set the callback function to be fired straight after the modal is shown.</td>
                                 <td>Y</td>
                             </tr>
                             <tr>
                                 <td><code class="prettyprint">$modalOpener</code></td>
                                 <td><code class="prettyprint">jQuery</code></td>
                                 <td><code class="prettyprint">''</code></td>
-                                <td>A trigger to show the modal.</td>
+                                <td>Set the trigger to show the modal.</td>
                                 <td>Y</td>
                             </tr>
                             <tr>
@@ -453,11 +452,38 @@
                                 <td><code class="prettyprint">init</code></td>
                                 <td><code class="prettyprint">function</code></td>
                                 <td><code class="prettyprint">undefined</code></td>
-                                <td>Callback function to be fired when the modal is initialised.</td>
+                                <td>Set the callback function to be fired straight after the modal is initialised.</td>
                                 <td>Y</td>
                             </tr>
                             </tbody>
                         </table>
+                        <h3>Setting callback functions</h3>
+                        <p>Callback functions can be set in the options object literal and called when widget events occur. </p>
+                        <div class="cl-code">
+                            <pre class="prettyprint">
+var smallModal = new ui.Modal($('#modal_small'), {
+    $modalOpener: $('#modal_small_button'),
+    hideModalCallback: function (base) {
+        console.log('modal hidden');
+
+        //You can access the widgets properties and methods by passing in base as the argument
+        console.log(base.$modalContainer);
+    },
+    showModalCallback: function (base) {
+        console.log('modal shown');
+
+        //You can access the widgets properties and methods by passing in base as the argument
+        console.log(base.$modal);
+    },
+    init: function(base){
+        console.log('widget initialised');
+
+        //You can access the widgets properties and methods by passing in base as the argument
+        console.log(base.$closeButton);
+    }
+});
+                            </pre>
+                        </div>
                     </div>
                     <div id="modal-change-tab" class="docs-change-panel">
                         <table class="cl-table int-plainTable">

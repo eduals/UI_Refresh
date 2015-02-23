@@ -4,7 +4,7 @@
     ----------------------------------------------------------
     The Open University © Copyright 2015. All rights reserved
     ----------------------------------------------------------
-    v1.13 Added border radius for widget tabs
+    v1.14 Removed bottom border on table
 */
 /*----------------------------------------------------------General Styles*/
 
@@ -29,10 +29,14 @@ div.cl-code {
     border-radius: 4px;
 }
 
-/*Change log Table*/
+/*Table*/
 table.cl-table {
     border: 1px solid #E7EFF7;
     margin-bottom: 0;
+}
+
+table.cl-table thead tr:last-child th {
+    border-bottom: 0;
 }
 
 table.cl-table thead {
