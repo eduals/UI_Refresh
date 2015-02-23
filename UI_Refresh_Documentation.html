@@ -50,9 +50,6 @@
 
         <div id="main" class="int-container cl-fullBleedBottomPadding">
             <h1>UI Refresh Documentation</h1>
-            <h2>Helper functions</h2>
-
-            <h2>Event prevent default</h2>
             <h2>Tooltip</h2>
             <div class="cl-tab cl-docs-widget" id="tooltip">
                 <div class="tabs">
@@ -171,7 +168,7 @@
                     </div>
                     <div id="tooltip-support-tab" class="docs-support-panel">
 
-                        <h3>Options</h3>
+                        <h3>Tooltip options</h3>
                         <table class="cl-table int-plainTable">
                             <colgroup>
                                 <col class="cl-col20">
@@ -194,7 +191,7 @@
                                 <td><code class="prettyprint">alert</code></td>
                                 <td><code class="prettyprint">bool</code></td>
                                 <td><code class="prettyprint">false</code></td>
-                                <td>Callback function to be fired when the modal button is clicked.</td>
+                                <td>Set to true for screen readers to register the tooltip as an alert.</td>
                                 <td>Y</td>
                             </tr>
                             <tr>
@@ -230,6 +227,67 @@
                                 <td><code class="prettyprint">function</code></td>
                                 <td><code class="prettyprint">undefined</code></td>
                                 <td>Callback function to be fired when the tooltip is hidden.</td>
+                                <td>Y</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        <h3>Password check list</h3>
+                        <p>The password check list is designed to work within a tooltip. The icons update according to what the user types within the password input to check if the conditions have been met. </p>
+
+                        <h3>Event prevent default options</h3>
+                        <p>It is sometimes necessary to prevent the default behaviour of events on certain kinds of inputs. This can be problematic for screen readers no feedback is given that the
+                        event has been prevented. The event prevent default widget addresses this by firing a hidden alert for screen readers to understand an event has been prevented.</p>
+                        <table class="cl-table int-plainTable">
+                            <colgroup>
+                                <col class="cl-col20">
+                                <col class="cl-col5">
+                                <col class="cl-col5">
+                                <col class="cl-col60">
+                                <col class="cl-col10">
+                            </colgroup>
+                            <thead>
+                            <tr>
+                                <th>Option</th>
+                                <th>Type</th>
+                                <th>Default value</th>
+                                <th>Description</th>
+                                <th title="Optional options do not need to be set on initialisation">Optional</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td><code class="prettyprint">events</code></td>
+                                <td><code class="prettyprint">string</code></td>
+                                <td><code class="prettyprint">'paste cut copy'</code></td>
+                                <td>Space separate list of events whose default behaviour needs to be prevented.</td>
+                                <td>Y</td>
+                            </tr>
+                            <tr>
+                                <td><code class="prettyprint">ariaAlertsMarkup</code></td>
+                                <td><code class="prettyprint">object literal</code></td>
+                                <td>See <strong>'Default text'</strong> for details</td>
+                                <td><p>Object literal containing the text read out by the screen reader when the event is prevented. The object literal key is mapped to the
+                                    each space separated value defined in <code class="bordered prettyprint">events</code>.
+                                </p>
+
+                                    <div class="cl-code">
+                                        <strong>Default text</strong>
+                                        <pre class="prettyprint">
+{
+    'paste': 'Paste prevented on this field. Please retype.',
+    'cut': 'Cut prevented on this field.',
+    'copy': 'Copy prevented on this field.'
+}
+                                        </pre>
+                                    </div>
+                                </td>
+                                <td>Y</td>
+                            </tr>
+                            <tr>
+                                <td><code class="prettyprint">destroyDelay</code></td>
+                                <td><code class="prettyprint">number</code></td>
+                                <td><code class="prettyprint">5000</code></td>
+                                <td>After the screen reader has read the alert, the alert needs to be removed from the DOM. This sets the delay.</td>
                                 <td>Y</td>
                             </tr>
                             </tbody>
@@ -481,6 +539,23 @@ var smallModal = new ui.Modal($('#modal_small'), {
         //You can access the widgets properties and methods by passing in base as the argument
         console.log(base.$closeButton);
     }
+});
+                            </pre>
+                        </div>
+                        <h3>Set custom handlers and accessing properties and methods</h3>
+                        <div class="cl-code">
+                            <pre class="prettyprint">
+var smallModal = new ui.Modal($('#modal_small'));
+
+//set custom click handler to show modal
+$('#modal_small_button').click(function(){
+    smallModal.showModal();
+});
+
+//access instance properties/cached jQuery DOM elements
+smallModal.$modal.css({});
+smallModal.$closeButton.click(function(){
+    console.log('modal close button clicked');
 });
                             </pre>
                         </div>

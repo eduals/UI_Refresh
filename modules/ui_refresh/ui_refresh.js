@@ -524,21 +524,6 @@
 
             return base;
         },
-        setCloseButtonClickHandler: function () {
-            var base = this,
-                callback = base.opts.closeModalButtonCallback,
-                $modalOpener = base.$modalOpener;
-
-            base.$closeButton.click(function () {
-                base.hideModal();
-                if ($modalOpener.length) {
-                    $modalOpener.focus();
-                }
-                ui.checkFunction(callback, base);
-            });
-
-            return base;
-        },
         setWindowsResizeHandler: function (bool) {
             var base = this,
                 $window = base.$window;
